@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE module PUBLIC
+  "-//Puppy Crawl//DTD Check Configuration 1.1//EN"
+  "http://www.puppycrawl.com/dtds/configuration_1_1.dtd">
+<!-- Checkstyle rules for OOP at Kasetsart U.
+     This file written by Thai Pangsakulyanont.
+  -->
+<module name="Checker">
+  <module name="TreeWalker">
+    <property name="tabWidth" value="4"/>
+
+    <module name="MissingOverride"/>
+    <module name="SimplifyBooleanReturn"/>
+    <module name="StringLiteralEquality"/>
+    <module name="FallThrough"/>
+    <module name="JavadocType">
+      <property name="scope" value="public"/>
+      <property name="allowUnknownTags" value="false"/>
+      <property name="authorFormat" value="[A-Z][\w-]*\s+[A-Z][\w-]+"/>
+    </module>
+    <module name="JavadocMethod">
+      <property name="scope" value="public"/>
+    </module>
+    <module name="JavadocStyle">
+    </module>
+    <module name="TodoComment">
+      <property name="format" value="TODO"/>
+    </module>
+    <module name="Indentation">
+      <property name="caseIndent" value="0"/>
+    </module>
+
+    <module name="ConstantName"/>
+    <module name="LocalFinalVariableName"/>
+    <module name="LocalVariableName"/>
+    <module name="MemberName"/>
+    <module name="MethodName"/>
+    <module name="PackageName"/>
+    <module name="ParameterName"/>
+    <module name="TypeName"/>
+
+  </module>
+</module>
