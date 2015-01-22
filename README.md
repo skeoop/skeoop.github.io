@@ -1,6 +1,6 @@
 # Object-Oriented Programming
 
-This repository contains course materials for Object-Oriented Programming 2 at Kasetsart.
+This repository contains course materials for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th).
 
 [Wiki](https://bitbucket.org/skeoop/oop/wiki) contains the [course description](https://bitbucket.org/skeoop/oop/wiki/Home) and [weekly schedule](https://bitbucket.org/skeoop/oop/wiki/Schedule).
 
