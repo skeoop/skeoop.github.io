@@ -81,9 +81,17 @@ public class ConsoleDialog {
         Scanner scanline = new Scanner(args);
         Valuable money = null;
         while( scanline.hasNext() ) {
+           
+            //TODO this code is messy and depends on what kind
+            // of Coins, BankNotes, Coupons we should create.
+            // Move this code to MoneyFactory and call
+            // MoneyFactory.getInstance().makeMoney(String)
+            // to create a Valuable.
+            
+           
             if (scanline.hasNextDouble() ) {
                 // create a coin or banknote
-                int value = scanline.nextDouble();
+                double value = scanline.nextDouble();
                 if (value < 20) money = new Coin(value);
                 else money = new BankNote((int)value);
             }
@@ -186,5 +194,33 @@ public class ConsoleDialog {
         ConsoleDialog console = new ConsoleDialog(purse);
         console.run();
         savePurse(purse, "purse.dat");
+    }
+}
+
+/**
+ * Encapsulate operation of creating money objects.
+ */
+class MoneyFactory {
+    private static MoneyFactory instance = new MoneyFactory();
+    
+    private MoneyFactory() {
+    }
+    
+    /** Get the money factory instance. */
+    public static MoneyFactory getInstance() { return instance; }
+
+    /**
+     * Return a money object that represents the value
+     * of the String parameter.
+     * @param amount is amount of money or some description, e.g. "red" for coupon
+     * @return Valuable object for the amount.
+     * What should you return if the parameter isn't valid?
+     * For example, "purple" or "17"?
+     */
+    public Valuable makeMoney(String amount) {
+        
+        // not implemented yet
+        return null;
+        
     }
 }
