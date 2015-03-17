@@ -1,0 +1,29 @@
+== Most Instructive Design Patterns
+
+We asked:
+  ''What design patterns are the most instructive or useful?''
+
+Here's what the 2012 Software Spec & Design class voted:
+
+Pattern     	Votes
+MVC     	18
+State    	17
+Factory Method	16
+Command  	15
+Strategy	15
+Facade  	12
+Singleton	12
+Iterator	11
+Observer	11
+Adapter  	5
+Decorator	4
+Template Method	3
+Prototype	2
+Mediator	1
+Bridge	
+Composite		
+Flyweight	
+Front Controller	
+Null Object	
+Proxy	
+
