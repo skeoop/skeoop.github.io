@@ -1,7 +1,5 @@
 package ku.util;
 
-import java.util.EmptyStackException;
-
 /**
  * A stack with LIFO access and a fixed capacity.
  * @author jim
