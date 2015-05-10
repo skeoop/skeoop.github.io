@@ -1,7 +1,7 @@
 ### Model-View-Controller by [Taweerat Chaiman and Patinya Yongyai](https://Taweerat_C@bitbucket.org/oop2final/model-view-controller-pattern/)
 * Does not use standard template for design patterns, which maybe why you omitted...
-* Doesn't explain *why* use this pattern?  What are the forces?
-* No UML diagram
+    * Forces - doesn't explain *why* use this pattern.  What are the forces?
+    * No UML diagram
 * Example is good
 * Grammar is good
 
@@ -16,8 +16,8 @@
 * Grammer is good.
 
 ### Model-View-Controller by [Jidapar Jettananurak and Salilthip Phuklang](https://bitbucket.org/b5710546542/model-view-controller-pattern)
-* Brief explanation is good but doesn't explain why use the pattern.
-* How do controller and model communicate with view?
+* Brief explanation is good but doesn't explain **why use the pattern**.
+* How do controller and model communicate with view? (not shown)
 * Example is OK but model is anemic (doesn't do much). Since controller has methods like "removeStudent" the model layer should have a class for managing students, such as StudenDao (database access object) or Registrar.
 * No exercise.
 * Grammar is good.
@@ -25,7 +25,7 @@
 ### Factory Method by [Sorawit Sakulkalanuwat and Kasidit Phoncharoen](https://bitbucket.org/kasidit_p/factory-method/)
 
 * Does not use standard design pattern format.
-* Explanation is good but does not explain "why" use the apttern.
+* Explanation is good but does not explain "why" use the pattern.
 * Example does not show advantage of using factory (too simple).
 * Exercise needs more explanation of what to do. No comments in code.
 * Grammar is good.
@@ -66,7 +66,7 @@ TODO: 1) Fix formatting of page (markdown). 2) Fix example. 3) Fix grammar and p
 
 ### Command by [Wanchanapon Thanwaranurak and Voraton Lertrattanapaisal]( https://bitbucket.org/b5710546593/commandpattern)
 * Does not use standard design pattern template.
-** Please *don't* use chatty Q&A style headers "What is It?", etc. Use design pattern template.
+** Please **don't** use chatty Q&A style headers "What is It?", etc. Use design pattern template.
 * UML is OK but missing some associations.
 * Explanation is poor.
 * Grammar is poor -- please correct it.
