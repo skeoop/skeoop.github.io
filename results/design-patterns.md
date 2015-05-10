@@ -90,7 +90,7 @@ TODO: 1) Fix formatting of page (markdown). 2) Fix example. 3) Fix grammar and p
 * Many grammar and punctuation errors. Please fix.
 
 ### Singleton by [Kitipoom Kongpetch](https://bitbucket.org/b5710546160/singleton)
-Copy of Wikipedia page.  No score for this assignment.
+**Copy of Wikipedia page.  No score for this assignment.**
 
 ### Singleton by [Raksit Mantanacharu and Sanrasern Chaihetphon](https://bitbucket.org/raksit_m/singleton_pattern)
 * Doesn't use standard design pattern format. Instead has blog-like headers "What is it?".
@@ -107,7 +107,8 @@ Copy of Wikipedia page.  No score for this assignment.
 
 
 ### Adapter by [Chawakorn Aougsuk and Chinatip Vichian](https://bitbucket.org/Chawakorn_A/adapter-pattern)
-* Copy from Wikipedia. No score for this assignment.
+**Copy from Wikipedia. No score for this assignment.**
+
 * Description of pattern contains irrelevant info (first 2 sections "What are design patterns" and "Benefits of design patterns").
 * The **context** and **purpose** of adapters isn't clearly stated. Its buried in example of power adapter.
 * Exericse for students  is vague. Questions 4 and 5 have no use.
@@ -118,7 +119,7 @@ Copy of Wikipedia page.  No score for this assignment.
 * Doesn't state motifvation and purpose of the pattern.
 * Example of LengthClassAdapter inseightful, and method meterToCentimeter, centimeterToMeter are poorly written.
 * UML for Class Adapter is not possible in Java (multiple inheritance). UML for Object Adapter is OK, but "adaptee" attribute should be lowercase. 
-* Grammar is OK, but some errors.
+* Grammar is OK, but some errors. Please fix them.
 
 
 ### Decorator by [Pakpon Jetapai and Phasin Sarunpornkul](https://bitbucket.org/b5710546381/decorator-pattern)
