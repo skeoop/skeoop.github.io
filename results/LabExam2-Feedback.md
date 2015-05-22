@@ -293,6 +293,7 @@ public static void main(String[] args) {
 ```
 but this violates Java's guidelines about running Swing on the EventDispatcher thread.
 By creating Swing components on the non-UI thread you are effectively "running" them, so you need to create the UI objects on the EventDispatcher thread, too.
+I deducted 1 pt for this shortcut.
 
 For complete explanation, see "Concurrency in Swing" in the Java Tutorial.
 
