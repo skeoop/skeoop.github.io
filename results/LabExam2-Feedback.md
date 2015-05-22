@@ -1,7 +1,8 @@
-== Problem 1 (Enumeration Adapter)
+## Problem 1 (Enumeration Adapter)
 
 Many students wrote very good code for this problem.
-```#!java
+```
+#!java
 import java.util.Enumeration;
 import java.util.Iterator;
 /**
@@ -40,9 +41,10 @@ public class EnumerationAdapter<T> implements Iterator<T>{
 }
 ```
 
-=== Mistakes in Problem 1
+### Mistakes in Problem 1
 **1. Unnecessary "if"**
-```#!java
+```
+#!java
 public void hasNext() {
     if ( e.hasMoreElements() ) return true;
     else return false;
@@ -50,7 +52,8 @@ public void hasNext() {
 ```
 
 **2. Unnecessary Cast**
-```#!java
+```
+#!java
 Enumeration<T> e;
 
 public T next() {
@@ -58,7 +61,8 @@ public T next() {
 }
 
 **3. Extra check (this is an error)**
-```#!java
+```
+#!java
 public T next() {
     if (hasNext()) retun (T) e.nextElement();
     return null;
@@ -68,7 +72,7 @@ This is an error because normally Iterator.next()
 will throw `NoSuchElementException` if hasNext if false.
 This check changes that behavior.
 
-== Problem 2. StopWatch using States
+## Problem 2. StopWatch using States
 I checked for the following:
 
 1. States have methods for all state-dependent behavior: start(), stop(),
@@ -80,10 +84,11 @@ each time a state is entered. JUnit tests are in the "results" folder in class r
 4. If the StopWatch code does **not** use states (essentially just using
 my starter code) then the code does not get any score for JUnit tests.
 
-==== What is "State Dependent" Behavior?
+#### What is "State Dependent" Behavior?
 Any behavior (methods) where the object responds differently depending
 on its state.  For the StopWatch, any method that has something like:
-```#!java
+```
+#!java
     if (running) do this;
     else do that;
 ```
@@ -92,7 +97,8 @@ depends on state!
 The best application of states is in code by Thongrapee and Benjapol.
 Here's an example with method Javadoc omitted to conserve space. Your code
 **should** have Javadoc for interface methods.
-```#!java
+```
+#!java
 package stopwatch;
 /**
  * The behavior of {@link Stopwatch} that it delegates to states.
@@ -114,7 +120,8 @@ for (at least) these 4 methods.
 The StopWatch only has 2 states: RUNNING or STOPPED.
 Here's an example from Benjapol's `RunningState`. He wrote excellent Javadoc,
 which is not shown here for brevity:
-```#!java
+```
+#!java
 package stopwatch;
 /**
  * A {@link StopWatchState} for behavior of a running StopWatch.
@@ -159,7 +166,8 @@ I deducted points for:
 * using `static` behavior -- that is not the state pattern and changes the API of StopWatch.
 * StopWatch has a reference to the UI and/or tries to update the UI itself. The StopWatch should work without any UI. It should not be *coupled* to the UI.
 
-```#!java
+```
+#!java
 package stopwatch;
 
 /** A StopWatch with millisecond precision, using States. */
@@ -192,13 +200,14 @@ public class StopWatch {
 }
 ```
 It is OK to handle `isRunning()` in the StopWatch, since the StopWatch knows its own state:
-```#!java
+```
+#!java
     public boolean isRunning() {
         return state == RUNNING;
     }
 ```
 
-== Problem 3: Graphical UI Using Commands
+## Problem 3: Graphical UI Using Commands
 I graded 3 aspects:
 
 1. The UI uses command objects to change behavior of the Start/Stop button.
@@ -208,7 +217,8 @@ I graded 3 aspects:
 === Using Command Objects for Start/Stop
 The Start/Stop button needs 2 commands: one for "start" and one for "stop".
 Since its a JButton, using Swing `Action` objects is the simplest, most convenient solution:
-```#!java
+```
+#!java
     // JButton can be a local variable in initComponents().
     // After you "program" it, you never need to refer to it again!
     final JButton startStopButton = new JButton();
@@ -234,7 +244,8 @@ Since its a JButton, using Swing `Action` objects is the simplest, most convenie
 
 The `timer` refers to a `javax.swing.Timer` that merely calls a method
 to update the display time:
-```#!java
+```
+#!java
     ActionListener updateTask = new ActionListener() {
         public void actionPerformed(ActionEvent evt) {
             updateDisplayTime();
@@ -247,13 +258,14 @@ Some students used a *Lambda Expression* for this, which is much more compact:
     Timer timer = new Timer(5, (evt) -> updateDisplayTime() );
 ```
 
-== 4. Main
+## 4. Main
 The Main class's `main` method should do 2 things.
 
-1. Create objects and perform dependency injection.
-2. Create and launch Swing objects on the event dispatcher thread.
+1. Create objects and perform dependency injection. (2 pts)
+2. Create and launch Swing objects on the event dispatcher thread. (3 pts)
 
-```#!java
+```
+#!java
 public static void main(String[] args) {
 	final StopWatch stopwatch = new StopWatch();
     SwingUtilities.invokeLater(
@@ -268,7 +280,8 @@ public static void main(String[] args) {
 
 ```
 It is tempting to make the following short-cut (assuming your StopWatchUI is Runnable and the `run` method shows the UI):
-```#!java
+```
+#!java
 public static void main(String[] args) {
     StopWatch stopwatch = new StopWatch();
     StopWatchUI stopwatchUI = new StopWatchUI(stopwatch);
