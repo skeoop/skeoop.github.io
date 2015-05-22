@@ -93,13 +93,12 @@ my starter code) then the code does not get any score for JUnit tests.
 
 #### What is "State Dependent" Behavior?
 Any behavior (methods) where the object responds differently depending
-on its state.  For the StopWatch, any method that has something like:
+on its state.  For the StopWatch,  any method that behaves differently when the stopwatch is running or stopped is state-dependent:
 ```
 #!java
-    if (running) do this;
-    else do that;
+    if (running) do Something;
+    else do SomethingElse;
 ```
-depends on state!
 
 The best solutions for this problem are by Thongrapee and Benjapol.    
 Here's a solution with the method Javadoc omitted; your code
