@@ -59,6 +59,7 @@ Enumeration<T> e;
 public T next() {
     return (T) e.nextElement();
 }
+```
 
 **3. Extra check (this is an error)**
 ```
@@ -68,8 +69,8 @@ public T next() {
     return null;
 }
 ```
-This is an error because normally Iterator.next()
-will throw `NoSuchElementException` if hasNext if false.
+This is an error because Iterator.next() should
+throw `NoSuchElementException` if you invoke next() when hasNext if false.
 This check changes that behavior.
 
 ## Problem 2. StopWatch using States
