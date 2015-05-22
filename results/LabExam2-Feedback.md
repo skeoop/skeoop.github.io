@@ -61,7 +61,13 @@ public T next() {
 }
 ```
 
-**3. Extra check (this is an error)**
+**3. Omitting Type Parameter**
+```
+#!java
+public class EnumerationAdapter<E> implements Iterator {
+```
+
+**4. Extra check (this is an error)**
 ```
 #!java
 public T next() {
