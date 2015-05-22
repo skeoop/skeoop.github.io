@@ -95,8 +95,8 @@ on its state.  For the StopWatch, any method that has something like:
 ```
 depends on state!
 
-The best application of states is in code by Thongrapee and Benjapol.
-Here's an example with method Javadoc omitted to conserve space. Your code
+The best solutions for this problem are by Thongrapee and Benjapol.    
+Here's a solution with the method Javadoc omitted; your code
 **should** have Javadoc for interface methods.
 ```
 #!java
@@ -153,15 +153,15 @@ public class RunningState extends StopWatchState {
 }
 ```
 
-Finally, the StopWatch needs to do 3 things to use the State Pattern:
+Finally, to use the **State Pattern** the StopWatch needs to do 3 things:
 
-1. Define a `State` attribute and a way for states to change the actual state (`setState`).
+1. Define a `State` attribute and a way for states to change the current state, such as  `setState()`.
 2. Delegate behavior that depends on state to the current `state`. *This is the key to the pattern!*
-3. Create a concrete State object for each state (only once), and make these State objects accessible to the states -- using package scope or inner classes.
+3. Create a concrete State object for each state (only once), and make these State objects accessible to the states -- e.g. package scope or inner classes.
 
 I deducted points for:
 
-* not having enough states
+* not having enough methods in states
 * using "if" in StopWatch instead of states
 * creating a new concrete state object each time a state is entered
 * using `static` behavior -- that is not the state pattern and changes the API of StopWatch.
@@ -215,9 +215,9 @@ I graded 3 aspects:
 2. The UI is well designed. In particular, the constructor does not call "setVisible(true)".
 3. The UI works correctly.  It displays current elapsed time of stopwatch and the buttons work correctly.
 
-=== Using Command Objects for Start/Stop
+#### Using Command Objects for Start/Stop
 The Start/Stop button needs 2 commands: one for "start" and one for "stop".
-Since its a JButton, using Swing `Action` objects is the simplest, most convenient solution:
+Using Swing `Action` objects is the simplest, most convenient solution:
 ```
 #!java
     // JButton can be a local variable in initComponents().
@@ -242,6 +242,7 @@ Since its a JButton, using Swing `Action` objects is the simplest, most convenie
     // assume the StopWatch is initially stopped
     startStopButton.setAction( startAction );
 ```
+Notice that the commands (Actions) change the command of the JButton. That's the command pattern.
 
 The `timer` refers to a `javax.swing.Timer` that merely calls a method
 to update the display time:
@@ -255,11 +256,12 @@ to update the display time:
     Timer timer = new Timer( INTERVAL, updateTask );
 ```
 Some students used a *Lambda Expression* for this, which is much more compact:
-```#!java
-    Timer timer = new Timer(5, (evt) -> updateDisplayTime() );
+```
+#!java
+    Timer timer = new Timer( INTERVAL, (evt) -> updateDisplayTime() );
 ```
 
-## 4. Main
+## Problem 4: Main
 The Main class's `main` method should do 2 things.
 
 1. Create objects and perform dependency injection. (2 pts)
