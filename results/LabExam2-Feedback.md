@@ -1,6 +1,11 @@
 ## Problem 1 (Enumeration Adapter)
 
 Many students wrote very good code for this problem.
+An adapter converts one interface (Enumeration) to
+another interface (Iterator).  Since Enumeration has
+a type parameter (`<T>`), the Iterator it provides
+should have the same type parameter.
+
 ```
 #!java
 import java.util.Enumeration;
@@ -9,7 +14,7 @@ import java.util.Iterator;
  * Adapt an Enumeration to provide Iterator interface.
  * @param T is the type of element in the enumeration
  */
-public class EnumerationAdapter<T> implements Iterator<T>{
+public class EnumerationAdapter<T> implements Iterator<T> {
 	private Enumeration<T> enumeration;
 	/**
 	 * Constructor
@@ -42,32 +47,16 @@ public class EnumerationAdapter<T> implements Iterator<T>{
 ```
 
 ### Mistakes in Problem 1
-**1. Unnecessary "if"**
-```
-#!java
-public void hasNext() {
-    if ( e.hasMoreElements() ) return true;
-    else return false;
-}
-```
 
-**2. Unnecessary Cast**
-```
-#!java
-Enumeration<T> e;
-
-public T next() {
-    return (T) e.nextElement();
-}
-```
-
-**3. Omitting Type Parameter**
+**1. Omitting Type Parameter**
+EnumerationAdapter should have a type parameter,
+and it must be applied to both Iterator and Enumeration.
 ```
 #!java
 public class EnumerationAdapter<E> implements Iterator {
 ```
 
-**4. Extra check (this is an error)**
+**2. Extra check**
 ```
 #!java
 public T next() {
@@ -78,6 +67,28 @@ public T next() {
 This is an error because Iterator.next() should
 throw `NoSuchElementException` if you invoke next() when hasNext if false.
 This check changes that behavior.
+
+The next two are coding issues. No points deducted for them.
+
+**3. Unnecessary "if"**
+```
+#!java
+public void hasNext() {
+    if ( e.hasMoreElements() ) return true;
+    else return false;
+}
+```
+its simpler to just write `return e.hasMoreElements()`.
+
+**4. Unnecessary Cast**
+```
+#!java
+Enumeration<T> e;
+
+public T next() {
+    return (T) e.nextElement();  // cast is not needed
+}
+```
 
 ## Problem 2. StopWatch using States
 I checked for the following:
@@ -122,6 +133,13 @@ public abstract class StopWatchState {
 ```
 It is OK to use different names for the methods, but you should have handlers
 for (at least) these 4 methods.
+
+Several students **deleted** the `isRunning()` method. Changing the
+interface of the StopWatch is not allowed, so this is an error,
+but I didn't deduct points. I think you misunderstood the instructions
+where I wrote "delete the running attribute".  That does **not** mean
+to delete the method, too!
+
 
 The StopWatch only has 2 states: RUNNING or STOPPED.
 Here's an example from Benjapol's `RunningState`. He wrote excellent Javadoc,
