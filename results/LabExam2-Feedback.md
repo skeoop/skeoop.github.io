@@ -1,6 +1,7 @@
 ## Problem 1 (Enumeration Adapter)
 
 Many students wrote very good code for this problem.
+
 An adapter converts one interface (Enumeration) to
 another interface (Iterator).  Since Enumeration has
 a type parameter (`<T>`), the Iterator it provides
@@ -53,7 +54,8 @@ EnumerationAdapter should have a type parameter,
 and it must be applied to both Iterator and Enumeration.
 ```
 #!java
-public class EnumerationAdapter<E> implements Iterator {
+public class EnumerationAdapter<E> implements Iterator { // ERROR: missing type parameter
+    private Enumeration<String> e;  // ERROR: Wrong type. Should be <E>.
 ```
 
 **2. Extra check**
@@ -165,7 +167,7 @@ public class RunningState extends StopWatchState {
 	}
 
 	public void reset() {
-		// Cannot reset while stopwatch is running
+		// Cannot reset while stopwatch is running, so do nothing.
 	}
 
 	public boolean isRunning() { return true; }
