@@ -11,9 +11,9 @@ Information about the topics covered and requirements are in the [course descrip
     [week2](https://bitbucket.org/skeoop/oop/src/master/week2) for week2 material,
     and so on
 
-<font color="blue">Results & Feedback</font>: the [results](https://bitbucket.org/skeoop/oop/src/master/results) folder in the source repository contains results and feedback on programmand assignments and labs.
+[Results & Feedback]( https://bitbucket.org/skeoop/oop/src/master/results): the [results](https://bitbucket.org/skeoop/oop/src/master/results) folder in the source repository contains results and feedback on programmand assignments and labs.
 
-<font color="blue">Individual Feedback</font>: TAs will use bitbucket to comment on your labwork, and a Google Doc to record individual feedback and things for you to work on.  Check the Google Doc regularly, because you are responsible for implementing any corrections or rework that the TAs/instructor write in that doc. It counts toward your grade.
+**Individual Feedback and Corrections**: TAs will use Bitbucket to comment on your labwork, and a Google Doc to record individual feedback and things for you to work on.  Check the Google Doc regularly, because you are responsible for implementing any corrections or rework that the TAs/instructor write in that doc. It counts toward your grade.
 
 ### Cloning the Course Repository
 
