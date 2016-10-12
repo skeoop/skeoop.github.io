@@ -13,7 +13,18 @@ Information about the topics covered and requirements are in the [course descrip
 
 [Results & Feedback]( https://bitbucket.org/skeoop/oop/src/master/results): the [results](https://bitbucket.org/skeoop/oop/src/master/results) folder in the source repository contains results and feedback on programming assignments and labs.
 
-**Individual Feedback**: TAs will use Bitbucket and Google Docs to comment on your lab work and give instructions on what you need to correct.  We will meet with students (1-on-1) to individually review your work, so be prepared to explain it! You must correct all problems or defects the TAs and instructor find **within one week**. 
+**Individual Feedback** via Google Docs and "issues". TAs and instructor will give feedback and corrections to your lab work. You must implement corrections within one week of the time that we post them.
+
+
+### Individual Feedback
+
+The TAs and instructor will review your lab work every week and provide feedback and instructions for what you need to fix or improve.  We will try to meet with you 1-on-1 to review your work -- so be prepared to explain it!  Feedback is provided by:
+* a Google Docs file to summarize feedback and work to be done
+* Bitbucket issues for your assignment.  You should fix and then **close** each issue, and write a brief explanation about what you did when you close the issue.
+* Comments in your code. Bitbucket lets you comment in source code. We may use that for extra clarity.
+
+You must correct all problems or defects in lab work **within one week**.  Its not practical to repeatedly review and correct your work, so you have just one chance to fix it.  After that, the TA's evaluation is final.
+
 Check your Google Doc file regularly, because you are responsible for implementing any corrections or rework that the TAs/instructor write in that doc. It counts toward your grade.
 
 ### Cloning the Course Repository
