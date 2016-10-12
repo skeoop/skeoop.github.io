@@ -31,7 +31,7 @@ Check your Google Doc file regularly, because you are responsible for implementi
 
 All the course material is stored on Bitbucket as a Git repository.  You can make a personal copy by cloning it onto your computer.
 
-The Source repository and wiki have been updated many times, with a lot of material revised and deleted. Clone the whole thing will waste lots of disk space and bandwidth (for downloading), because it copies the entire history of the repository.   T clone the course repo, just clone the most recent update by using the ``git clone --depth 1`` as follows:
+The source repository and wiki have been updated many times, with a lot of material revised and deleted. Clone the whole thing will waste lots of disk space and bandwidth (for downloading), because it copies the entire history of the repository.   To clone the course repo, just clone the current version by using the ``git clone --depth 1`` as follows:
 
     # Change to the directory where you want to copy course material to.
     # Git will create a subdirectory named "oop".
