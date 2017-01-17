@@ -1,60 +1,82 @@
 Exercises on object references
 
-## Background: Date class
+## Example: Person class
 
-The original Java class for dates is `java.util.Date`.  To create a date, use:
+We will use this class in these exercises:
 ```
-import java.util.Date;
+/**
+ * A person with a name.
+ * @author KU Registrar
+ */
+public class Person {
+    private String name;
 
-Date birthday = new Date( 95, 5, 21); // 21 June 1995. Year is always +1900. Jan=0, Feb=1, March=2, ...
-// a better way to set the month is use Calendar class.
-Date birthday = new Date( 95, Calendar.JUNE, 21); 
-```
-You can **change** a Date using `setDate`, `setMonth`, and `setYear`.
-```java
-// Change the date to 25 December 2001
-birthday.setDate(25);
-birthday.setMonth(Calendar.DECEMBER);  // or setMonth(11)
-birthday.setYear(101);   // actual year - 1900.
-```
+    /** Initialize a new person with a name. */
+    public Person(String name) {
+        this.name = name;
+    }
 
-## Question 1: Copying Dates?
+    /** Set the person's name. */
+    public void setName(String newname) {
+        this.newname = name;
+    }
 
-What date is printed when we execute this code:
-```
-import java.util.Date;
-Date a = new Date( 100, 0, 15 ); // 15 january 2000
-Date b = a;
-b.setMonth(11);    // change month to December
-System.out.println( a.toString() );
-```
-Answers:
-1. 15 January 2000
-2. 15 December 2000
-
-Give a reason for your answer.
-
-## Question 2: 
-
-
-
-
-
-## Better Date classes.
-
-Java 8 has a new package `java.time` containing more convenient classes for dates, times,
-and intervals of time.  For example, to create a date for 25 December 2001 use:
-```
-import java.time.LocalDate;
-import java.time.Month;
-LocalDate xmas = LocalDate.of(2001, 12, 25); // 12 = December!
-// or use a named constant for month (for clarity)
-LocalDate xmas = LocalDate.of(2001, Month.DECEMBER, 25);
+    /** return the name of this person. */
+    public String toString() {
+        return "Person "+name;
+    }
+}
 ```
 
+## Question 1: Copying Person?
+
+What is printed when we execute this code:
+```
+Person a = new Person("Bill");
+Person b = new Person("Sally");
+b = a;
+b.setName("Hacker");
+System.out.println( a ); // what is printed?
+System.out.println( b ); // what is printed?
+```
+
+What happened to Sally?
+
+## Question 2: An equals( ) method
+
+You should **not** write an equals method like this.
+You'll see why.
+```
+// In the Person class:
+    /**
+     * Two Persons are equal if they have the same name.
+     */
+    public boolean equals(Person other) {
+        if (other == null) return false;
+        return this.name.equals( other.name );
+    }
+```
+
+Explain the output of equals() using the "reference as remote control" analogy.
+```
+Person a = new Person( "Bill" );
+Object b = new Person( "Bill" );
+System.out.println( a.equals(b) ); // surely this is true, right?
+System.out.println( b.equals(a) ); 
+
+// cast b as a Person reference
+System.out.println( a.equals( (Person)b ) );
+
+// create a new reference to the same person:
+Person c = (Object) b;
+c == b;       // is true.  This shows b & c refer to SAME object
+a.equals(c)   // true or false?
+c.equals(a)   // true of false?
+```
 
 
-## 2. What are the classes and attributes in this problem?
+
+## Question 3: What are the classes and attributes in this problem?
 
 A board game is played by 2 players on an 8x8 board.  Each player has a number of pieces on the board. Each player's pieces have different color (can be any color but not the same color). The players take turns moving a piece, like in chess.  There are three types of pieces: A, B, and C.  Each piece moves differently.  A pieces can capture any piece (A, B, C), B and C can capture each other.
 

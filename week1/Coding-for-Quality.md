@@ -1,15 +1,15 @@
 * Code Should be Easy to Read
   * Use whitespace for readability
   * Use the naming standard
-  * Use consistent intentation and formatting
+  * Consistent intentation and formatting
 * Don't Repeat Yourself (DRY)
 * Comments where needed.  This includes all class and method Javadoc.
 * Avoid magic numbers.
 * One purpose for each variable
 * Use good names
-* No global variables
+* Avoid global variables
 * Return results, don't print them
-* Fail fast
+* Fail fast (return error or throw exception when data or params are invalid)
 
 
 These guidelines are similar to the style standard

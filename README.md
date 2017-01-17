@@ -4,7 +4,7 @@ This repository contains course materials for Object-Oriented Programming 2 at [
 
 Information about the topics covered and requirements are in the [course description](https://bitbucket.org/skeoop/oop/wiki/About) in the [Wiki](https://bitbucket.org/skeoop/oop/wiki).
 
-[Wiki](https://bitbucket.org/skeoop/oop/wiki) contains the [course description](https://bitbucket.org/skeoop/oop/wiki/About) and a [weekly schedule](https://bitbucket.org/skeoop/oop/wiki/Home) including topics, homework, and links to the lab and programming assignments.
+[Wiki](https://bitbucket.org/skeoop/oop/wiki) contains the [course description](https://bitbucket.org/skeoop/oop/wiki/About) and [weekly schedule](https://bitbucket.org/skeoop/oop/wiki/Home) including topics, homework, and links to the lab and programming assignments.
 
 [Source](https://bitbucket.org/skeoop/oop/src/master) repository has lecture slides, assignments, and related material.     
     [week1](https://bitbucket.org/skeoop/oop/src/master/week1) for week 1 material,
@@ -31,7 +31,7 @@ Check your Google Doc file regularly, because you are responsible for implementi
 
 All the course material is stored on Bitbucket as a Git repository.  You can make a personal copy by cloning it onto your computer.
 
-The source repository and wiki have been updated many times, with a lot of material revised and deleted. Clone the whole thing will waste lots of disk space and bandwidth (for downloading), because it copies the entire history of the repository.   To clone the course repo, just clone the current version by using the ``git clone --depth 1`` as follows:
+The source repository and wiki have been updated many times, with a lot of material revised and deleted. Cloning the whole thing will waste lots of disk space and bandwidth (for downloading), because it copies the entire history of the repository.   To clone the course repo, just clone the current version by using the ``git clone --depth 1`` as follows:
 
     # Change to the directory where you want to copy course material to.
     # Git will create a subdirectory named "oop".
