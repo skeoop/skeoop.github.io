@@ -2,16 +2,16 @@
 
 | Objective  | Practice the common git commands and workflow.  |
 | --- | --- |
-| What to Submit | A Git repository named **fixcode** with README.md and .gitignore submitted to github.  |
+| What to Submit | A Git repository named **gitdemo** with README.md and .gitignore submitted to github.  |
 
 For this lab, you will use the Git command line tool.
 
 ## Create a Local Git Project
 
-1. Create a directory named `fixcode` inside your Eclipse workspace. You will use this repository for Java practice later.
-2. Initialize a git repository inside the `fixcode` directory:
+1. Create a directory named `gitdemo` inside your Eclipse workspace. You will use this repository for Java practice later.
+2. Initialize a git repository inside the `gitdemo` directory:
 ```
-> cd /somepath/workspace/fixcode
+> cd /somepath/workspace/gitdemo
 > git init
 ```
 3. Create a README.md file. This file can contain Markdown formatting. An example README is:
@@ -75,13 +75,13 @@ build/
 
 So far, you've been using Git locally on your computer. In this step you will connect your repository to a "remote" repository on Github.
 
-1. Go to github.com and create an **empty** project for your project, named "fixcode".
+1. Go to github.com and create an **empty** project for your project, named "gitdemo".
 It is important that this repo be totally empty because you want to upload files from your local repository.
     * Make the repository be "public" (the default on Github)
 2. Copy the repository URL to your clipboard (or just remember it).
-3. In the command window on your local computer (in the `fixcode` directory), add a "remote" repo to your project.
+3. In the command window on your local computer (in the `gitdemo` directory), add a "remote" repo to your project.
 ```
-> git remote add origin https://github.com/your_github_id/fixcode.git
+> git remote add origin https://github.com/your_github_id/gitdemo.git
 ```
 "origin" is the standard name for the default remote.
 4. "Push" (copy) your local repository to the remote repository, and also set it as the default "upstream" (-u) repository:
