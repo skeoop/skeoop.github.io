@@ -15,8 +15,8 @@ Should we be worried about `System.nanoTime()` overflowing the maximum `long` (o
 3. `StringBuilder` is an important class for working with Strings. It lets you "build" and modify a String without creating lots of intermediate objects, which is what happens if you write "I"+" like "+" Java." (this creates 5 strings).
 To answer this question, either use BlueJ's interactive window and object workbench (to inspect the object), or use the debugger of an IDE such as Eclipse.
     * a) What are the attributes of a `StringBuilder` object?
-    * b) Create a table showing the values of the StringBuilder's attributes after each of these statements is executed. For the array attribute, show the size of array and its values, such as 'h','e','l','l','o', but don't show nulls.
-
+    * b) For the code listing below, create a table showing the values of the StringBuilder's attributes after each statement (1-4) is executed. Show the size of char array and its values, such as 'h','e','l','l','o', but don't show nulls.
+    * c) What happens if you try to add more than 18 characters (the initial capacity of StringBuilder) to a StringBuilder?
 ```java
  StringBuilder sb = new StringBuilder("I");  // 1
 
@@ -26,7 +26,7 @@ To answer this question, either use BlueJ's interactive window and object workbe
 
  sb.replace(2,6,"love"); // 4
 ```
-    * c) What happens if you try to add more than 18 characters (the initial capacity of StringBuilder) to a StringBuilder?
+
 
 **About StringBuilder**
 The StringBuilder methods that "build" the string (like append, insert, replace) return a reference to the StringBuilder object itself. Using this, we can chain multiple method calls together, such as:
