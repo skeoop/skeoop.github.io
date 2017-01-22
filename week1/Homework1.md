@@ -17,7 +17,7 @@ To answer this question, either use BlueJ's interactive window and object workbe
     * a) What are the attributes of a `StringBuilder` object?
     * b) Create a table showing the values of the StringBuilder's attributes after each of these statements is executed. For the array attribute, show the size of array and its values, such as 'h','e','l','l','o', but don't show nulls.
 
- ```java
+```java
  StringBuilder sb = new StringBuilder("I");  // 1
 
  sb.append("Str").append("ings!"); // 2
@@ -25,7 +25,7 @@ To answer this question, either use BlueJ's interactive window and object workbe
  sb.insert(1," hate "); // 3
 
  sb.replace(2,6,"love"); // 4
- ```
+```
     * c) What happens if you try to add more than 18 characters (the initial capacity of StringBuilder) to a StringBuilder?
 
 **About StringBuilder**
