@@ -1,6 +1,6 @@
-Exercises on classes and objects. 
+## Exercises on classes and objects. 
 
-## 1. Three fundamentals of OOP (fill in the blanks)
+### 1. Three fundamentals of OOP (fill in the blanks)
 
 ________________ means that an object contains both data (state) and methods that operate on the data.
 
@@ -13,7 +13,7 @@ ________________ in code, this means we can invoke a method of an object referen
 (or caring) that actual class of the object that will perform it.  `System.out.println(object)` is an example.  `println` invokes `object.toString()` for any object, without knowing what class the object belongs to.
 
 
-## 2. Data Hiding
+### 2. Data Hiding
 
 OO programs usually *hide* the attributes of an object by declaring them to be **private**.
 We provide `get` and `set` methods to access the values.
@@ -28,7 +28,7 @@ Advantages of data hiding include: (a) protect integrity of an object's own data
 the way the class is implemented without changing the external interface.
 
 
-## 3. Which fundamental characteristic of OOP is used in each of these situations?
+### 3. Which fundamental characteristic of OOP is used in each of these situations?
 
 1. A BankAccount class knows its balance and has methods for deposit, withdraw, and get the balance.
 
