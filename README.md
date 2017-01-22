@@ -13,7 +13,7 @@ This [Source Repository](https://bitbucket.org/skeoop/oop/src/master) has lectur
 
 ### Cloning the Course Repository
 
-All the course material is stored in a Git repository on Bitbucket.  You can make a personal copy by cloning it onto your computer.  **Please read below** for the correct way to clone.
+All the course material is stored in a Git repository on Bitbucket.  You can make a personal copy by cloning it to your computer.  **Please read below** for the correct way to clone.
 
 The source repository and wiki have been updated many times, with a lot of revisions and deletions. Cloning the entire history will waste time (for download) and disk space.  Just clone the current version by using the ``git clone --depth 1`` as follows:
 
