@@ -5,21 +5,24 @@ import java.math.BigDecimal;
 import java.util.Scanner;
 
 /**
- * Task file for PA1-StopWatch.  Run this to try out your stopwatch,
- * then divide and rewrite it (Problem 2) to eliminate duplicate code.
- * 
- * This is a collection of common tasks involving strings and doubles,
+ * Task file for Stopwatch.
+ *
+ * The methods perform some common tasks involving strings and doubles,
  * to compare speed of using different data types.
+ *
+ * This class has a lot of duplicate code!
+ * Each task method contains the same code for starting the stopwatch,
+ * stopping the stopwatch, printing elapsed time, and describing the task
+ * (even though the description of each task is different).
  * 
- * This class has a lot of duplicate code.
  * Your job is to separate the code that is the same in each method
  * from the code that is different, and restructure it so that 
  * you can re-use the task-timer code that is the same.
  * 
  * When you get done you should have 7 classes:
  * A TaskTimer class (the reusable code) that can time any task
- * 5 task classes that implement Runnable
- * A Main class (application) to run the 5 tasks.
+ * 5 task classes that implement Runnable. Each task has a toString that describes the task.
+ * A Main class (application) to run the tasks using TaskTimer.
  * 
  * You can define the 5 task classes in the same source file as
  * the Main class or put them in separate files.
@@ -27,33 +30,25 @@ import java.util.Scanner;
  * is declared "public" and the other classes omit the "public".
  */
 public class SpeedTest {
-	// the loop counter used in the tasks (can be changed)
-	private int counter = 100000;
 	// size of the array used in floating point tasks.
 	// Don't make this too big to avoid slowing down test with paging
 	// or possible out-of-memory error.
 	static final int ARRAY_SIZE = 500000;
 	
 	/**
-	 * Set the loop count used in tests.
-	 * @param count is number of loop iterations
-	 */
-	public void setCounter(int count) { this.counter = count; }
-	
-	/**
 	 * task 1: append chars to a string.
 	 */
-	public void testAppendToString( ) {
+	public static void testAppendToString(int count) {
 		final char CHAR = 'a';
-		System.out.printf("Append to String with count=%,d\n", counter);
-		StopWatch timer = new StopWatch();
+		System.out.printf("Append %,d chars to String\n", count);
+		Stopwatch timer = new Stopwatch();
 		timer.start();
-		String sum = ""; 
+		String result = ""; 
 		int k = 0;
-		while(k++ < counter) {
-			sum = sum + CHAR;
+		while(k++ < count) {
+			result = result + CHAR;
 		}
-		System.out.println("final string length = " + sum.length());
+		System.out.println("final string length = " + result.length());
 		
 		timer.stop();
 		System.out.printf("Elapsed time %.6f sec\n\n", timer.getElapsed());
@@ -62,15 +57,15 @@ public class SpeedTest {
 	/**
 	 * task 2: append chars to a StringBuilder
 	 */
-	public void testAppendToStringBuilder( ) {
+	public static void testAppendToStringBuilder(int count ) {
 		final char CHAR = 'a';
-		System.out.printf("Append to StringBuilder with count=%,d\n", counter);
-		StopWatch timer = new StopWatch();
+		System.out.printf("Append %,d chars to StringBuilder\n", count);
+		Stopwatch timer = new Stopwatch();
 
 		timer.start();
 		StringBuilder builder = new StringBuilder(); 
 		int k = 0;
-		while(k++ < counter) {
+		while(k++ < count) {
 			builder = builder.append(CHAR);
 		}
 		// now create a String from the result, to be compatible with task 1.
@@ -85,10 +80,10 @@ public class SpeedTest {
 	 * task 3: add double primitives from an array.
 	 * You need a large counter value to get a measurable time.
 	 */
-	public void testSumDoublePrimitive() {
+	public static void testSumDoublePrimitive(int counter) {
 		System.out.printf("Sum array of double primitives with count=%,d\n", counter);
-		StopWatch timer = new StopWatch();
-		// create array of values to add, before we start the timer
+		Stopwatch timer = new Stopwatch();
+		// create array of values to add before we start the timer
 		double[] values = new double[ARRAY_SIZE];
 		for(int k=0; k<ARRAY_SIZE; k++) values[k] = k+1;
 		
@@ -96,7 +91,7 @@ public class SpeedTest {
 		double sum = 0.0;
 		// count = loop counter, i = array index value
 		for(int count=0, i=0; count<counter; count++, i++) {
-			if (i >= ARRAY_SIZE) i = 0;
+			if (i >= values.length) i = 0;  // reuse the array when get to last value
 			sum = sum + values[i];
 		}
 		System.out.println("sum = " + sum);
@@ -110,9 +105,9 @@ public class SpeedTest {
 	 * task 4: add Double objects from an array.
 	 * You need a large counter value to get a measurable time.
 	 */
-	public void testSumDouble() {
+	public static void testSumDouble(int counter) {
 		System.out.printf("Sum array of Double objects with count=%,d\n", counter);
-		StopWatch timer = new StopWatch();
+		Stopwatch timer = new Stopwatch();
 		// create array of values to add, before we start the timer
 		Double[] values = new Double[ARRAY_SIZE];
 		for(int i=0; i<ARRAY_SIZE; i++) values[i] = new Double(i+1);
@@ -121,7 +116,7 @@ public class SpeedTest {
 		Double sum = new Double(0.0);
 		// count = loop counter, i = array index
 		for(int count=0, i=0; count<counter; count++, i++) {
-			if (i >= ARRAY_SIZE) i = 0;
+			if (i >= values.length) i = 0;
 			sum = sum + values[i];
 		}
 		System.out.println("sum = " + sum);
@@ -135,9 +130,9 @@ public class SpeedTest {
 	 * task 5: add BigDecimal objects from an array.
 	 * You need a large counter value to get a measurable time.
 	 */
-	public void testSumBigDecimal() {
+	public static void testSumBigDecimal(int counter) {
 		System.out.printf("Sum array of BigDecimal with count=%,d\n", counter);
-		StopWatch timer = new StopWatch();
+		Stopwatch timer = new Stopwatch();
 		// create array of values to add, before we start the timer
 		BigDecimal[] values = new BigDecimal[ARRAY_SIZE];
 		for(int i=0; i<ARRAY_SIZE; i++) values[i] = new BigDecimal(i+1);
@@ -145,7 +140,7 @@ public class SpeedTest {
 		timer.start();
 		BigDecimal sum = new BigDecimal(0.0);
 		for(int count=0, i=0; count<counter; count++, i++) {
-			if (i >= ARRAY_SIZE) i = 0;
+			if (i >= values.length) i = 0;
 			sum = sum.add( values[i] );
 		}
 		System.out.println("sum = " + sum);
@@ -159,17 +154,17 @@ public class SpeedTest {
 	 */
 	public static void main(String[] args) throws IOException {
 
-		SpeedTest tester = new SpeedTest();
-		tester.setCounter(100000);
+		SpeedTest.testAppendToString(50000);
+		// same task but with a larger string size (append more chars)
+		SpeedTest.testAppendToString(100000);
+		// do the same thing using StringBuilder.
+		SpeedTest.testAppendToStringBuilder(100000);
 		
-		tester.testAppendToString();
-		tester.testAppendToStringBuilder();
+		// Use a large loop count for floating point tests in order to get accurate times
+		int counter = 1000000000; 
 		
-		// Use a bigger loop count for floating point tests in order to get accurate times
-		tester.setCounter(100000000); // 100 million
-		
-		tester.testSumDoublePrimitive();
-		tester.testSumDouble();
-		tester.testSumBigDecimal();
+		SpeedTest.testSumDoublePrimitive(counter);
+		SpeedTest.testSumDouble(counter);
+		SpeedTest.testSumBigDecimal(counter);
 	}
 }
