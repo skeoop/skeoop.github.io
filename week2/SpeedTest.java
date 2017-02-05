@@ -43,6 +43,7 @@ public class SpeedTest {
 		System.out.printf("Append %,d chars to String\n", count);
 		Stopwatch timer = new Stopwatch();
 		timer.start();
+
 		String result = ""; 
 		int k = 0;
 		while(k++ < count) {
@@ -82,11 +83,12 @@ public class SpeedTest {
 	 */
 	public static void testSumDoublePrimitive(int counter) {
 		System.out.printf("Sum array of double primitives with count=%,d\n", counter);
-		Stopwatch timer = new Stopwatch();
+		
 		// create array of values to add before we start the timer
 		double[] values = new double[ARRAY_SIZE];
 		for(int k=0; k<ARRAY_SIZE; k++) values[k] = k+1;
 		
+        Stopwatch timer = new Stopwatch();
 		timer.start();
 		double sum = 0.0;
 		// count = loop counter, i = array index value
@@ -97,7 +99,7 @@ public class SpeedTest {
 		System.out.println("sum = " + sum);
 		
 		timer.stop();
-		System.out.printf("Elapsed time %.6f sec\n\n", timer.getElapsed());
+		System.out.printf("Elapsed time %.8f sec\n\n", timer.getElapsed());
 	}
 	
 	
@@ -107,11 +109,11 @@ public class SpeedTest {
 	 */
 	public static void testSumDouble(int counter) {
 		System.out.printf("Sum array of Double objects with count=%,d\n", counter);
-		Stopwatch timer = new Stopwatch();
+
 		// create array of values to add, before we start the timer
 		Double[] values = new Double[ARRAY_SIZE];
 		for(int i=0; i<ARRAY_SIZE; i++) values[i] = new Double(i+1);
-		
+		Stopwatch timer = new Stopwatch();		
 		timer.start();
 		Double sum = new Double(0.0);
 		// count = loop counter, i = array index
