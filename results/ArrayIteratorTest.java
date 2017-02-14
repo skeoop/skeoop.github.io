@@ -106,11 +106,11 @@ public class ArrayIteratorTest {
 	@Test(timeout=100)
 	public void testArrayWithSomeNull() {
 		iter = makeArrayIterator( "one", null, null, "two", null, "three");
-		assertSame("one", iter.next());
+		assertEquals("one", iter.next());
 		assertTrue(iter.hasNext());
-		assertSame("two", iter.next());
+		assertEquals("two", iter.next());
 		assertTrue(iter.hasNext());
-		assertSame("three", iter.next());
+		assertEquals("three", iter.next());
 		assertFalse(iter.hasNext());
 	}
 	
@@ -119,7 +119,7 @@ public class ArrayIteratorTest {
 	public void testArrayWithTrailingNull() {
 		iter = makeArrayIterator( "one", null, null, null );
 		assertTrue(iter.hasNext());
-		assertSame("one", iter.next());
+		assertEquals("one", iter.next());
 		assertFalse(iter.hasNext());
 	}
 	
@@ -130,10 +130,10 @@ public class ArrayIteratorTest {
 	@Test(timeout=100, expected=java.util.NoSuchElementException.class)
 	public void testNoSuchElement() {
 		iter = makeArrayIterator("one", "two");
-		assertSame("one", iter.next());
-		assertSame("two", iter.next());
+		assertEquals("one", iter.next());
+		assertEquals("two", iter.next());
 		// should throw NoSuchElementException
-		iter.next(); 
+		assertEquals("", iter.next()); 
 	}
 	
 	/**
