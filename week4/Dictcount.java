@@ -34,18 +34,18 @@ public class Dictcount {
 	
 	/**
 	 * Read all the words from an input stream and count how many words
-	 * start with "a", "b", etc.  There is one word per line.
-	 * Return the count as a map, with one key for each letter ("a", "b", ...) 
+	 * start with 'a', 'b', etc.  There is one word per line.
+	 * Return the count as a map, with one key for each letter ('a', 'b', ...) 
 	 * that actually occurs at the start of one or more words. 
 	 * 
 	 * @param input an input stream for reading a file containing words, one per line
 	 * 
-	 * @return a Map containing letter counts. The keys are the letters "a", "b",
+	 * @return a Map containing letter counts. The keys are the letters 'a', 'b',
 	 * etc.  The values are the count of words for that letter.
 	 * If there are no words for a letter you don't have to put any key in 
 	 * the map. Only add keys for letter you actually see.
 	 */
-	public static Map<String,Integer> frequencyCount(InputStream input) {
+	public static Map<Character,Integer> frequencyCount(InputStream input) {
 		//TODO write this method
 		
 		return null;
@@ -56,10 +56,10 @@ public class Dictcount {
 	 * and values are Integers.
 	 * @param map a map of String to Integer
 	 */
-	public static void printFrequencyCount(Map<String,Integer> map) {
+	public static void printFrequencyCount(Map<Character,Integer> map) {
 		// to get all the keys use map.keySet.
 		// Since it is a Set and Set in a Collection, you can use a for-each loop.
-		for(String key : map.keySet()) {
+		for(Character key : map.keySet()) {
 			// print the key (string) and value (integer)
 		}
 	}
@@ -72,7 +72,7 @@ public class Dictcount {
 			System.out.println("Do you have internet access?");
 			System.exit(1);
 		}
-		Map<String,Integer> count = frequencyCount(input);
+		Map<Character,Integer> count = frequencyCount(input);
 		printFrequencyCount(count);
 	}
 }
