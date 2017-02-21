@@ -15,7 +15,7 @@ Facade  	12
 Singleton	12
 Iterator	11
 Observer	11
-Adapter  	5
+Adapter  	8
 Decorator	4
 Template Method	3
 Prototype	2
