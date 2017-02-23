@@ -1,0 +1,39 @@
+### Improve this code.
+
+Apply the advice: 
+
+* avoid duplicate code
+* add temporary variable
+* introduce explanatory variable
+* use space to improve readability
+* program defensively: avoid input errors
+
+```
+public static Map<Character,Integer> frequencyCount(InputStream instream) {
+    Map<Character,Integer> map = new HashMap<Character,Integer>();  
+    Scanner input = new Scanner(instream);
+    while(input.hasNext()){
+        String word = input.nextLine();
+        if(map.containsKey(word.charAt(0))){
+        	map.put(word.charAt(0),map.get(word.charAt(0))+1);
+        }
+        else{
+        	map.put(word.charAt(0),1);
+        }
+    }
+    // to avoid resource leak, close the Scanner when done.
+    input.close();
+    return map;
+}
+```
+
+### Improve this code: avoid unnecessary if
+
+* `money` is a List of items in the Purse, `capacity` is max allowed number of items
+
+```
+public boolean isFull() {
+    if (money.size() >= capacity) return true;
+    else return false;
+}
+```
