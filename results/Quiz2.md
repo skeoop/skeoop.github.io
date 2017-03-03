@@ -4,7 +4,7 @@
 
 * The scores were low.
 * Statistics
-
+|-----------------|----|---|
 | Total Quizzes   | 48 |   |
 | Possible Points | 24 |   |
 | Average Score   | 8.4 |  |
