@@ -4,15 +4,17 @@
 
 * The scores were low.
 * Statistics
-|-----------------|----|---|
-| Total Quizzes   | 48 |   |
-| Possible Points | 24 |   |
-| Average Score   | 8.4 |  |
+
+|                 |    |    |
+|:----------------|---:|:---|
+| Total Quizzes   | 48 |    |
+| Possible Points | 24 |    |
+| Average Score   | 8.4|    |
 | Q.1 Correct     | 28 | TA gave you the answer before class.  |
-| Q.2 Correct     |  3 | You have used iterators many times, right?  |
+| Q.2 Correct     |  3 | You have used iterators before, right?  |
 | Q.3 Correct or nearly | 4 | ArrayIterator was code you wrote yourself.  |
 | Q.4 6/6 Interfaces correct | 3 | Excellect if you know them all. |
-| Q.4 5/6 Interfaces correct | 6 | Should know at least 5 of them.  |
+| Q.4 5/6 Interfaces correct | 6 | Good if you know at least 5.    |
 
 * Grading: no credit for incorrect capitals, such as `comparable` instead of `Comparable`, `Iterator()` instead of `iterator()` (method).
 * In Q.4 no credit if you write same answer for 2 interfaces (except last 2). It show you are guessing.
