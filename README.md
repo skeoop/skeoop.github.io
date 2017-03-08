@@ -22,3 +22,16 @@ The source repository and wiki have been updated many times, with a lot of revis
     cmd> cd someplace
     cmd> git clone --depth 1 git@bitbucket.org:skeoop/oop.git
 after that, you can update your clone anytime using ``git pull``.
+
+### Assignments on Github using Github for Education
+
+For some assignments, quizzes, etc., we will create a repository for you and send you an "invitiation" containing the URL of your repo.
+For example, if the assignment was named "quiz123" you would have a repo with URL:
+```
+https://classroom.github.com/OOP2017/quiz123-yourname
+```
+where ```yourname``` is your Github login name.
+
+
+Ref:
+* [Github Classroom videos](https://classroom.github.com/videos)

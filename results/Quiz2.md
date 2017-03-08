@@ -20,6 +20,7 @@
 * Examples of "nonsense":
 ```java
 String [] students = Registrar.getStudentNames("01219113");
+
 // array does not have an Iterator() method. 
 Iterator<String> iter = students.Iterator();
 // array does not have a a getInstance() method.

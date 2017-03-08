@@ -1,76 +1,77 @@
 package ku.util;
-
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import java.util.*;
+import org.junit.*;
 import org.junit.runner.Description;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import static org.junit.Assert.*;
 
 /**
- * JUnit 4 tests for the ArrayIterator problem in PA2.
- * 
- * To run these tests in Eclipse: 
- * first add JUnit 4 library to your project,
- * then right click on this file in Package Explorer pane
- * and choose Run as -> JUnit Test.
- * 
- * To run these tests in BlueJ, just add this file to
- * the project. Right click on it and choose Run Unit Tests.
- * 
- *  To compile and run tests at the command line:
- *  
- *  CLASSPATH=$CLASSPATH:/path/to/junit4.jar (Bash shell)
- *  set CLASSPATH=%CLASSPATH%;D:/path/to/junit4.jar
- *  javac *.java 
- *  java  ArrayIteratorTest
- * 
- * @author jim
+ *  JUnit 4 tests for ArrayIterator assignment.
+ *
+ *  You can use BlueJ, Eclipse, or Netbeans to run these
+ *  tests in your project.  In Eclipse or Netbeans you 
+ *  need to add the junit4-x.jar to the project (but not
+ *  in BlueJ, JUnit is included automatically).
+ *
+ *  To run tests at the command line, compile this file
+ *  and your ArrayIterator.java file:
+ *  javac -cp /path/to/junit4.jar;. *.java 
+ *
+ *  Then run using java command:
+ *  java -cp /path/to/junit4.jar;. ArrayIteratorTest
  */
+@SuppressWarnings("unchecked")
 public class ArrayIteratorTest {
-	ArrayIterator<String> iter;
+	// array of mixed type data
+	private Object [] array;
 	
+	private ArrayIterator iter;
 	
 	/**
-	 * Must pass this test before you can run the other tests.
-	 * If you don't see what is wrong, read the assignment more carefully.
-	 * Its supposed to be an Iterator.
+	 * Create an array for tests.
+	 */
+	@Before
+	public void setUp() {
+		// an array without nulls
+		array = new Object [] {
+				"Hello.",
+				"",
+				new Date(),
+				new Integer(999),
+				new Double(1.23),
+				new Character('x')
+		};
+		// create the iterator
+		iter = new ArrayIterator<Object>( array );
+	}
+
+	/**
+	 *  Test that ArrayIterator implements java.util.Iterator.
 	 */
 	@Test
-	public void testImplementsIteratorInterface() {
-		ArrayIterator<String > iter = 
-				new ArrayIterator<String>( new String[] {"I'm","an","Iterator"} );
+	public void testImplementsIterator() {
 		assertTrue( iter instanceof java.util.Iterator );
 	}
-	
+
+	/** Test using array with just one element. */
 	@Test(timeout=100)
-	public void testEmptyArrayIterator() {
-		ArrayIterator<Object> iter = makeArrayIterator( );
-		assertFalse(iter.hasNext());
-		assertFalse(iter.hasNext());
+	public void testSingletonArray() {
+		String [] array = { "numero uno" };
+		ArrayIterator it = new ArrayIterator(array);
+		assertTrue( it.hasNext() );
+		assertSame( array[0], it.next() );
+		assertFalse( it.hasNext() );
 	}
 	
-	@Test(timeout=100)
-	public void testArrayWithOneItem() {
-		String item = "one";
-		iter = makeArrayIterator( item );
-		assertTrue(iter.hasNext());
-		assertTrue(iter.hasNext());
-		assertSame(item, iter.next());
-		assertFalse(iter.hasNext());
-	}
-	
-	/** basic test: call hasNext and next in the typical order. No nulls. */
+	/** basic test: call hasNext and next in the typical order. */
 	@Test(timeout=100)
 	public void basicIteratorTest() {
 		Object [] array = new Object[] {"one", new Date(), new Integer(2) };
-		// copy array to verify it doesn't change
-		Object [] copy = java.util.Arrays.copyOf(array, array.length);
-		ArrayIterator iter = new ArrayIterator(array);
+		// copy array to verify it d
+		Object [] copy= new Object[array.length];
+		System.arraycopy(array, 0, copy, 0, array.length);
+		iter = new ArrayIterator(array);
 		for(int k=0; k<array.length; k++) {
 			assertTrue( iter.hasNext() );
 			assertSame( array[k], iter.next() );
@@ -78,127 +79,157 @@ public class ArrayIteratorTest {
 		assertFalse( iter.hasNext() );
 		// hasNext should continue to return false
 		assertFalse( iter.hasNext() );
-		// iterator should not change the array
+		assertFalse( iter.hasNext() );
+		// should not change the array
 		assertTrue( java.util.Arrays.equals( array, copy ) );
-	}
-
-	/** Test that we can call next() without first calling hasNext(). */
-	@Test(timeout=100)
-	public void testArrayOfMany() {
-		iter = makeArrayIterator( "one", "two", "three", "four" );
-		assertSame("one", iter.next());
-		assertSame("two", iter.next());
-		assertSame("three", iter.next());
-		assertTrue(iter.hasNext());
-		assertTrue(iter.hasNext()); // deliberate duplicate call
-		assertSame("four", iter.next());
-		assertFalse(iter.hasNext());
-	}
-
-	/** An Iterator for an array of nulls, to test handling of nulls. */
-	@Test(timeout=100)
-	public void testArrayWithOnlyNull() {
-		iter = makeArrayIterator( null, null );
-		assertFalse(iter.hasNext());
-	}
-	
-	/** Test with some null and non-null elements. */
-	@Test(timeout=100)
-	public void testArrayWithSomeNull() {
-		iter = makeArrayIterator( "one", null, null, "two", null, "three");
-		assertEquals("one", iter.next());
-		assertTrue(iter.hasNext());
-		assertEquals("two", iter.next());
-		assertTrue(iter.hasNext());
-		assertEquals("three", iter.next());
-		assertFalse(iter.hasNext());
-	}
-	
-	/** Test the case where nulls come at the end of array. */
-	@Test(timeout=100)
-	public void testArrayWithTrailingNull() {
-		iter = makeArrayIterator( "one", null, null, null );
-		assertTrue(iter.hasNext());
-		assertEquals("one", iter.next());
-		assertFalse(iter.hasNext());
 	}
 	
 	/**
-	 * This test *should* throw NoSuchElementException
-	 * next() is called after all elements have been read.
+	 * Test that we can call next() without first calling hasNext
+	 */
+	@Test(timeout=100)
+	public void testNextWithoutHasNext() {
+		// read all the elements without calling hasNext
+		for( int k=0; k<array.length; k++ ) 
+			assertSame( array[k], iter.next() );
+		assertFalse(  iter.hasNext() );
+	}
+			
+	/**
+	 * test an array of size zero.
+	 */
+	@Test
+	public void testArraySizeZero() {
+		array = new Object[0];
+		iter = new ArrayIterator(array);
+		assertFalse( iter.hasNext() );
+	}
+	
+	/**
+	 * Test using array of null.
+	 */
+	@Test(timeout=100)
+	public void testArrayOfNulls() {
+		array = new Object[] { null, null };
+		iter = new ArrayIterator(array);
+		assertFalse( iter.hasNext() );
+		assertFalse( iter.hasNext() );
+		// same test using next() only
+		array = new Object[] { null, null };
+		iter = new ArrayIterator(array);
+		boolean gotException = false;
+		try {
+			iter.next();
+		} catch(NoSuchElementException nse) {
+			gotException = true;
+		}
+		if (!gotException) fail("next didn't detect no more elements.");
+	}
+	
+	/**
+	 * Test array with null at end only.
+	 */
+	@Test(timeout=100)
+	public void testArrayNullAtEnd() {
+		Double element = new Double(0);
+		Double [] array = new Double[] { element, null, null, null };
+		Iterator<Double> iter = new ArrayIterator<Double>(array);
+		assertTrue( iter.hasNext() );
+		assertEquals( element, iter.next() );
+		assertFalse( iter.hasNext() );
+	}
+
+	/**
+	 * Test skipping over null elements in middle of array.
+	 */
+	@Test(timeout=100)
+	public void testSkipNulls() {
+		array = new Object[] { null, "first", null, null, null, "second" };
+		iter = new ArrayIterator(array);
+		assertTrue( iter.hasNext() );
+		assertEquals( "first", iter.next() );
+		assertTrue( iter.hasNext() );
+		assertEquals( "second", iter.next() );
+		assertFalse( iter.hasNext() );
+		// same test without using hasNext
+		array = new Object[] { null, "first", null, null, null, "second" };
+		iter = new ArrayIterator(array);
+		assertEquals( "first", iter.next() );
+		assertEquals( "second", iter.next() );
+		assertFalse( iter.hasNext() );
+	}
+	
+	/**
+	 * Calling next after end of data should throw exception.
 	 */
 	@Test(timeout=100, expected=java.util.NoSuchElementException.class)
-	public void testNoSuchElement() {
-		iter = makeArrayIterator("one", "two");
-		assertEquals("one", iter.next());
-		assertEquals("two", iter.next());
-		// should throw NoSuchElementException
-		assertEquals("", iter.next()); 
+	public void testNextThrowsException() {
+		// read all the elements. Protect against bad code using a counter.
+		int count = array.length + 1;
+		while( iter.hasNext() && count-- > 0 ) iter.next(); // consume it
+
+		assertFalse("after returning entire array, hasNext should be false", iter.hasNext() );
+		if (count <= 0) fail("ArrayIterator returned too many elements.");
+		
+		// this should throw NoSuchElementException
+		iter.next();
+	}
+	
+	/**
+	 * Test of typed (parameterized) iterator
+	 */
+	@Test
+	public void testNumberIterator() {
+		final Number [] numbers = 
+				new Number[] {  new Integer(0), 
+								new Double(1), new Float(2F),
+								new Long(Long.MAX_VALUE) };
+		// for testing typed ArrayIterator
+		ArrayIterator<Number> iter = new ArrayIterator<Number>(numbers);
+		
+		for(int k=0; k<numbers.length; k++) {
+			assertTrue( iter.hasNext() );
+			Number n = iter.next(); // should return Number not Object
+			assertSame( numbers[k], n );
+		}
 	}
 	
 	/**
 	 * Test remove() removes the element most recently
-	 * returned by next(). 
+	 * returned by next().  Not the "next" element the 
+	 * cursor points to.
 	 */
-	@Test(timeout=100)
+	@Test
 	public void testRemove() {
-		Object[] array = new Object[] {"first", new Double(4), "last"};
-		ArrayIterator iter = new ArrayIterator(array);
+		array = new Object[] {"first", new Date(), new Double(4), null, "last"};
+		iter = new ArrayIterator(array);
 		Object a0 = array[0];
 		Object a1 = array[1];
 		Object a2 = array[2];
 		assertSame( a0, iter.next() );
 		assertSame( a1, iter.next() );
 		iter.remove();
-		assertSame( a2, iter.next() );
 		// only array[1] should be null
 		assertSame( a0, array[0] );
 		assertNull( array[1] );
 		assertSame( a2, array[2] );
-		// remove another element
+		// remove another one
+		// this time, call hasNext() before remove.
+		// It should remove the last element returned by next() (a2).
+		assertTrue( iter.hasNext());
+		assertSame( a2, iter.next() );
+		assertTrue( iter.hasNext() ); // advance past null
 		iter.remove();
 		assertNull( array[2] );
 	}
-	
-	/**
-	 * Create an array iterator from arguments provided
-	 * to this method.
-	 * @param args the arguments to put in the array iterator
-	 * @return Iterator for the arguments.
-	 * 
-	 * The return type should be Iterator<T>, but I made
-	 * it ArrayIterator<T> so the code will compile for
-	 * students who didn't declare that they implement Iterator.
-	 */
-	private static <T> ArrayIterator<T> makeArrayIterator(T ... args) {
-		T a[] = java.util.Arrays.copyOf(args, args.length); // make an array
-		return new ArrayIterator<T>( a );
-	}
-	
-	/**
-	 * Try the makeArrayIterator method. Not a JUnit test.
-	 */
-	public static void tryMakeArrayIterator( ) {
-		System.out.println("An iterator of String:");
-		Iterator<String> iter = makeArrayIterator("hi", "bye");
-		while(iter.hasNext()) System.out.print(iter.next() + " ");
-		System.out.println("\nAn iterator of Number:");
-		Iterator<? extends Number> nums = makeArrayIterator(new Double(1.5), new java.math.BigDecimal("0.1"), new Integer(10));
-		while(nums.hasNext()) System.out.print(nums.next() + " ");
-		System.out.println();
-	}
-	
-	/**
-	 * Run JUnit tests as a stand-alone test suite,
-	 * and describe the results.
-	 */
+
+	/** run a test suite and describe the results */
 	public static void main(String[] args) {
-		Class<?> testclass = ArrayIteratorTest.class;
-		Result result = org.junit.runner.JUnitCore.runClasses( testclass );
+		Result result = org.junit.runner.JUnitCore.runClasses( ku.util.ArrayIteratorTest.class );
 		int count = result.getRunCount();
 		int failed = result.getFailureCount();
-		System.out.printf( "%s Result.  Success: %d  Failure: %d\n",
-				testclass.getSimpleName(), count-failed, failed);
+		System.out.printf("Unit Tests.  Success: %d  Failure: %d\n",
+				count-failed, failed);
 		List<Failure> failures = result.getFailures();
 		// this doesn't seem to return all the failures
 		for(Failure f: failures) {
