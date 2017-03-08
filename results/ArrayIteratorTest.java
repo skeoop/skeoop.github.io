@@ -62,8 +62,8 @@ public class ArrayIteratorTest {
 	}
 
 	/** 
-     * Test using array with just one element. 
-     */
+	 * Test using array with just one element. 
+	 */
 	@Test(timeout=100)
 	public void testSingletonArray() {
 		String [] array = { "numero uno" };
@@ -74,8 +74,8 @@ public class ArrayIteratorTest {
 	}
 	
 	/** 
-     * Basic test: call hasNext and next in the typical order. 
-     */
+	 * Basic test: call hasNext and next in the typical order. 
+	 */
 	@Test(timeout=100)
 	public void basicIteratorTest() {
 		Object [] array = new Object[] {"one", new Date(), new Integer(2) };
@@ -208,9 +208,9 @@ public class ArrayIteratorTest {
 	/**
 	 * Test remove() removes the element most recently
 	 * returned by next().  This should work even if the client
-     * calls hasNext() after next. I verified this using an Iterator
-     * created from an ArrayList.
-     * Test that it actually removes just one element from the array.
+	 * calls hasNext() after next. I verified this using an Iterator
+	 * created from an ArrayList.
+	 * Test that it actually removes just one element from the array.
 	 */
 	@Test
 	public void testRemove() {
