@@ -7,26 +7,33 @@ import org.junit.runner.notification.Failure;
 import static org.junit.Assert.*;
 
 /**
- *  JUnit 4 tests for ArrayIterator assignment.
+ *  JUnit 4 tests for the ArrayIterator assignment.
  *
- *  You can use BlueJ, Eclipse, or Netbeans to run these
- *  tests in your project.  In Eclipse or Netbeans you 
- *  need to add the junit4-x.jar to the project (but not
- *  in BlueJ, JUnit is included automatically).
+ *  You can run these tests using BlueJ, Eclipse, Netbeans,
+ *  or the command line.  This test file requires JUnit 4 
+ *  libraries be part of the builpath or on the classpath.
+ *
+ *  Your ArrayIterator must be in the ku.util package and
+ *  implement Iterator<T>.
+ *
+ *  You can run this as a JUnit test suite or run as a
+ *  program using the main() method of this class. The
+ *  main method runs all the tests and displays number of
+ *  tests passed and description of failures.
  *
  *  To run tests at the command line, compile this file
  *  and your ArrayIterator.java file:
- *  javac -cp /path/to/junit4.jar;. *.java 
+ *  javac -cp /path/to/junit4.jar;. ku/util/*.java 
  *
  *  Then run using java command:
- *  java -cp /path/to/junit4.jar;. ArrayIteratorTest
+ *  java -cp /path/to/junit4.jar;. ku.util.ArrayIteratorTest
  */
 @SuppressWarnings("unchecked")
 public class ArrayIteratorTest {
 	// array of mixed type data
 	private Object [] array;
 	
-	private ArrayIterator iter;
+	private ArrayIterator<?> iter;
 	
 	/**
 	 * Create an array for tests.
@@ -54,7 +61,9 @@ public class ArrayIteratorTest {
 		assertTrue( iter instanceof java.util.Iterator );
 	}
 
-	/** Test using array with just one element. */
+	/** 
+     * Test using array with just one element. 
+     */
 	@Test(timeout=100)
 	public void testSingletonArray() {
 		String [] array = { "numero uno" };
@@ -64,12 +73,14 @@ public class ArrayIteratorTest {
 		assertFalse( it.hasNext() );
 	}
 	
-	/** basic test: call hasNext and next in the typical order. */
+	/** 
+     * Basic test: call hasNext and next in the typical order. 
+     */
 	@Test(timeout=100)
 	public void basicIteratorTest() {
 		Object [] array = new Object[] {"one", new Date(), new Integer(2) };
-		// copy array to verify it d
-		Object [] copy= new Object[array.length];
+		// copy the array to verify it isn't modified
+		Object [] copy = new Object[array.length];
 		System.arraycopy(array, 0, copy, 0, array.length);
 		iter = new ArrayIterator(array);
 		for(int k=0; k<array.length; k++) {
@@ -85,7 +96,7 @@ public class ArrayIteratorTest {
 	}
 	
 	/**
-	 * Test that we can call next() without first calling hasNext
+	 * Test that we can call next() without first calling hasNext.
 	 */
 	@Test(timeout=100)
 	public void testNextWithoutHasNext() {
@@ -96,7 +107,7 @@ public class ArrayIteratorTest {
 	}
 			
 	/**
-	 * test an array of size zero.
+	 * Test using an array of size zero.
 	 */
 	@Test
 	public void testArraySizeZero() {
@@ -106,7 +117,7 @@ public class ArrayIteratorTest {
 	}
 	
 	/**
-	 * Test using array of null.
+	 * Test using array of all null.
 	 */
 	@Test(timeout=100)
 	public void testArrayOfNulls() {
@@ -127,7 +138,7 @@ public class ArrayIteratorTest {
 	}
 	
 	/**
-	 * Test array with null at end only.
+	 * Test array with null elements at end only.
 	 */
 	@Test(timeout=100)
 	public void testArrayNullAtEnd() {
@@ -176,7 +187,7 @@ public class ArrayIteratorTest {
 	}
 	
 	/**
-	 * Test of typed (parameterized) iterator
+	 * Test of typed (parameterized) iterator.
 	 */
 	@Test
 	public void testNumberIterator() {
@@ -196,8 +207,10 @@ public class ArrayIteratorTest {
 	
 	/**
 	 * Test remove() removes the element most recently
-	 * returned by next().  Not the "next" element the 
-	 * cursor points to.
+	 * returned by next().  This should work even if the client
+     * calls hasNext() after next. I verified this using an Iterator
+     * created from an ArrayList.
+     * Test that it actually removes just one element from the array.
 	 */
 	@Test
 	public void testRemove() {
@@ -208,22 +221,23 @@ public class ArrayIteratorTest {
 		Object a2 = array[2];
 		assertSame( a0, iter.next() );
 		assertSame( a1, iter.next() );
+		// this should remove array[1] by setting it to null
 		iter.remove();
 		// only array[1] should be null
 		assertSame( a0, array[0] );
 		assertNull( array[1] );
 		assertSame( a2, array[2] );
-		// remove another one
+		// remove another element.
 		// this time, call hasNext() before remove.
-		// It should remove the last element returned by next() (a2).
-		assertTrue( iter.hasNext());
+		// It should remove the last element returned by next(), namely array[2].
+		assertTrue( iter.hasNext() );
 		assertSame( a2, iter.next() );
 		assertTrue( iter.hasNext() ); // advance past null
 		iter.remove();
 		assertNull( array[2] );
 	}
 
-	/** run a test suite and describe the results */
+	/** Run a test suite and describe the results. */
 	public static void main(String[] args) {
 		Result result = org.junit.runner.JUnitCore.runClasses( ku.util.ArrayIteratorTest.class );
 		int count = result.getRunCount();
