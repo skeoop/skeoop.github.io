@@ -67,8 +67,9 @@ public class WordCounterTest {
 		Map<String,Integer> words = null;
 		try {
 			InputStream in = getInputStream( URLNAME );
+			if (in == null) throw new IOException("Resource does not exist: "+URLNAME);
 			words = loadWords( in );
-		} catch (IOException e) {
+		} catch (Exception e) {
 			System.out.println("Exception reading wordlist file "+URLNAME);
 			System.out.println( e.getMessage() );
 			System.exit(1);
@@ -98,7 +99,7 @@ public class WordCounterTest {
 	// The test will be faster if you download the file and change this
 	// to a local URL ("file:/path/testwords.txt") 
 	// or file on this project's classpath ("testwords.txt").
-	static final String URLNAME = "testwords.txt";
-//	static final String URLNAME = "http://se.cpe.ku.ac.th/testwords.txt";
+//	static final String URLNAME = "testwords.txt";
+	static final String URLNAME = "http://se.cpe.ku.ac.th/testwords.txt";
 		
 }
