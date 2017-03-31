@@ -1,16 +1,21 @@
+package readability;
 import java.net.URL;
 import java.util.*;
 import java.io.*;
 
 /**
- * Test the countSyllables method using some test words
- * read from a file.
+ * Some words with known syllable count,
+ * to check your countSyllables method.
+ * It reads words from a file containing a string
+ * and syllable count (one per line).  Lines beginning
+ * with '#' and blank lines are ignored.
  */
 public class WordCounterTest {
 	
-	/** Read lines from a file containing "word syllable_count"
+	/** 
+	 * Read lines from a file containing "word syllable_count"
 	 * and add them to map of words.
-	 * @param in IpputStream to read from
+	 * @param in InputStream to read from
 	 */
 	private static Map<String,Integer> loadWords(InputStream in) throws IOException {
 		Map<String,Integer> words = new HashMap<String,Integer>();
@@ -39,30 +44,61 @@ public class WordCounterTest {
 		return words;
 	}
 	
-	private static Map<String,Integer> loadWords(String urlname) throws IOException {
-		URL url = new URL(urlname);
-		InputStream in = url.openStream();
-		return loadWords(in);
+	private static InputStream getInputStream(String urlname) throws IOException {
+		if ( urlname.matches("\\w+:/.*") ) {
+			// open it as a URL0
+			URL url = new URL(urlname);
+			return url.openStream();
+		} 
+		else {
+			// treat it as a classpath resource
+			ClassLoader loader = Thread.currentThread().getContextClassLoader();
+			return loader.getResourceAsStream(urlname);
+		}
 	}
 	
 	
-	public static void main(String[] args) throws IOException {
-		Map<String,Integer> words = loadWords( URLNAME );
-		WordCounter counter = new WordCounter();
+	/**
+	 * Test the syllable counter using words from a file.
+	 * @param args not used
+	 * @throws IOException if file cannot be read
+	 */
+	public static void main(String[] args) {
+		Map<String,Integer> words = null;
+		try {
+			InputStream in = getInputStream( URLNAME );
+			words = loadWords( in );
+		} catch (IOException e) {
+			System.out.println("Exception reading wordlist file "+URLNAME);
+			System.out.println( e.getMessage() );
+			System.exit(1);
+		}
+		
+		SyllableCounter counter = new SimpleSyllableCounter();
 		int correct = 0;
 		int incorrect = 0;
 		for( String word : words.keySet() ) {
+			System.out.printf("%-24s",word);
 			int expect = words.get(word);
 			int actual = counter.countSyllables(word);
-			if (expect == actual) correct++;
+			System.out.print(actual);
+			if (expect == actual) {
+				correct++;
+				System.out.println(" Correct");
+			}
 			else {
 				incorrect++;
-				System.out.printf("incorrect: countSyllables(%s) = %d\n", word, actual);
+				System.out.printf(" Incorrect: should be %d\n", expect);
 			}
 		}
 		System.out.printf("Correct: %d  Incorrect: %d\n", correct, incorrect);
 	}
-		
-	static final String URLNAME = "http://se.cpe.ku.ac.th/testwords.txt";
+	
+	// URL of the file containing sample words.
+	// The test will be faster if you download the file and change this
+	// to a local URL ("file:/path/testwords.txt") 
+	// or file on this project's classpath ("testwords.txt").
+	static final String URLNAME = "testwords.txt";
+//	static final String URLNAME = "http://se.cpe.ku.ac.th/testwords.txt";
 		
 }

@@ -1,0 +1,39 @@
+# Words for testing the syllable counter
+# Each line contains a word and the correct syllable count
+I  1
+A  1
+a  1
+e  1
+E  1
+s  0
+yaeiuaeeeeeoo  1
+hoood  1
+hoard  1
+the    1
+tree   1
+trie   1
+move   1
+movie  2
+levee  2
+ewe    1
+Elf    1
+Elves  2
+layout 2
+beaueautifuuul 3
+arch-enemy  4
+uni-oo 3
+anti-  2
+anti-freeze 3
+-arch  0
+glxzh  0
+7-eleven 0
+silly  2
+xylophone 3
+yellyell 2
+jeckyl  2
+ABLE   1
+isn't  1
+glyph  1
+students' 2
+polymorphic-antivirus 8
+
