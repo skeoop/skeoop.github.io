@@ -21,17 +21,29 @@ The source repository and wiki have been updated many times, with a lot of revis
     # Git will create a subdirectory named "oop".
     cmd> cd someplace
     cmd> git clone --depth 1 git@bitbucket.org:skeoop/oop.git
+
 after that, you can update your clone anytime using ``git pull``.
 
-### Assignments on Github using Github for Education
+### Assignments using Github Classroom 
 
-For some assignments, quizzes, etc., we will create a repository for you and send you an "invitiation" containing the URL of your repo.
-For example, if the assignment was named "quiz123" you would have a repo with URL:
+Some assignments, quizzes, etc., use Github Classroom for distribution and submission.  In this you will receive a URL (link) to Github Classroom, which contains an "invitation" to do the assignment.  Visit the URL and "accept" the invitation.
+
+This creates a repository for you, which may contain starter code and instructions.  For example, if the assignment is named "quiz123" you would have a repo with URL:
 ```
 https://classroom.github.com/OOP2017/quiz123-yourname
 ```
-where ```yourname``` is your Github login name.
+where ```yourname``` is your Github login name.  You should `clone` this repository to your computer, complete the assignment, and then `push` your updated repo back to github.
 
 
 Ref:
 * [Github Classroom videos](https://classroom.github.com/videos)
+
+### Assignments using Your Own Account 
+
+Some assignments, such as labs, don't use Github Classroom.  In this case, create a remote repository in your Github account (the one you used to join our class) and push your work to there.  Please be careful to use the *exact name* specified on the assignment for the remote repo, including upper/lowercase of letters.  If you use the wrong name, we might not download your work (and as a result, you get no score).
+
+The remote repo name does not have to match the local project name on your computer.  You add a remote using the command:
+```
+cmd>  git remote add origin git@github.com:yourname/repo_name.git
+```
+where `repo_name` is the remote repository (which you must create on github.com).  So, it can be any name -- not necessarily your local project name.
