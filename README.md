@@ -1,8 +1,10 @@
 # Object-Oriented Programming
 
-This repository contains course materials for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
+This repository contains course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
 
-[Wiki](https://bitbucket.org/skeoop/oop/wiki) contains the [course description](https://bitbucket.org/skeoop/oop/wiki/About) and [weekly schedule](https://bitbucket.org/skeoop/oop/wiki/Home) with topics, homework, and links to the lab and programming assignments.
+**Schedule:** [Schedule on Github](Home), [on Bitbucket](https://bitbucket.org/skeoop/oop/wiki/Home) with weekly topics and assignments.  
+
+[Course description](https://bitbucket.org/skeoop/oop/wiki/About) including requirements, reading material, and grading scale.
 
 This [Source Repository](https://bitbucket.org/skeoop/oop/src/master) has lecture slides, assignments, and related material in subdirectories.
     [week1](https://bitbucket.org/skeoop/oop/src/master/week1) for week 1 material,
