@@ -1,4 +1,5 @@
 # File to not commit to git
 misc
+old/
 .*
 !.gitignore

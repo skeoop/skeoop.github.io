@@ -12,7 +12,7 @@ The JUnit tests used are in "results" folder: [ArrayIteratorTest.java](https://s
 
 ## Final Exam
 **Written Exam** Friday, 26 May 9:00-12:00 Room 204. Closed book.   
-**Lab Exam:** schedule TBA.  
+**Lab Exam:** Thursday, 18 May 13:00-18:00 Room 201.   
 Dress Code: "*dress like a programmer*" (wear anything you like).
 
 ---
