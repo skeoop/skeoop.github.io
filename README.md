@@ -2,14 +2,14 @@
 
 This repository contains course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
 
-**Schedule:** [Schedule on Github](Home), [on Bitbucket](https://bitbucket.org/skeoop/oop/wiki/Home) with weekly topics and assignments.  
+[Course description](About) has requirements, reading material, and grading scale.
 
-[Course description](https://bitbucket.org/skeoop/oop/wiki/About) including requirements, reading material, and grading scale.
+[Schedule](Home) has weekly topics, assignments, and results.
 
-This [Source Repository](https://bitbucket.org/skeoop/oop/src/master) has lecture slides, assignments, and related material in subdirectories.
-    [week1](https://bitbucket.org/skeoop/oop/src/master/week1) for week 1 material,
-    [week2](https://bitbucket.org/skeoop/oop/src/master/week2) for week 2 material,
-    and so on.
+The [Source Repository](https://www.github.com/skeoop/skeoop.github.io) contains all the material for the course as a Git repository, with weekly material in subdirectories.  There are 2 places to download it:
+* https://www.github.com/skeoop/skeoop/github.io 
+* https://bitbucket.org/skeoop/oop/src (old course location)
+* If you clone it using git, please *clone only the current version* using:  `git clone --depth 1 git_url`.  Avoid wasting bandwidth and disk space downloading lots of old, obsolete, and erroneous material.
 
 [Results & Feedback]( https://bitbucket.org/skeoop/oop/src/master/results): the [results](https://bitbucket.org/skeoop/oop/src/master/results) folder in the source repository contains results and feedback on programming assignments and labs.
 
@@ -25,6 +25,20 @@ The source repository and wiki have been updated many times, with a lot of revis
     cmd> git clone --depth 1 git@bitbucket.org:skeoop/oop.git
 
 after that, you can update your clone anytime using ``git pull``.
+
+### Old Course on Bitbucket
+Before 5 May 2017 the course material was on Bitbucket.  Its still there but may not be updated.
+
+Course Schedule: https://bitbucket/org/skeoop/oop (goes to https://bitbucket/org/skeoop/oop/wiki/Home)  
+Course Description: https://bitbucket/org/skeoop/oop/wiki/About   
+Course Repository: https://bitbucket/org/skeoop/oop/src has a folder for each week.
+
+
+### OOP Organization
+
+Students in the class please join the OOP2017 organization on Github.  We sent you invitiation by e-mail.
+
+You need to join and complete your profile with **at least** real name written correctly in English, and a photo that clearly shows your face.  You must join the organization in order to submit assignments or take programming quizzes using Github Classroom.
 
 ### Assignments using Github Classroom 
 
