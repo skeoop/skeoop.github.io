@@ -1,4 +1,4 @@
-Other pages: [About the Course](About). [Course Material](https://www.github.com/skeoop/). [Results and Feedback](http://www.github.com/skeoop/results/) on assignments.
+Other pages: [About the Course](About). [Course Material](https://www.github.com/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.
 
 ---
 ## [Results](http://www.github.com/skeoop/results)
