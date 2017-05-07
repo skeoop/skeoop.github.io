@@ -2,7 +2,7 @@
 
 This repository contains course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
 
-[Course description](About) has requirements, reading material, and grading scale.
+[Course description](https://skeoop.github.io/About) has requirements, reading material, and grading scale.
 
 [Schedule](Home) has weekly topics, assignments, and results.
 

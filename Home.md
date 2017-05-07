@@ -6,10 +6,12 @@ Other pages: [About the Course](About). [Course Material](https://bitbucket.org/
 PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
 [LabExam 1](https://skeoop.github.io/results/Labexam1-Results.pdf),
-[Quiz2 Common mistakes](https://skeoop.github.io/results/quiz2.md),
+[Quiz2 Feedback](https://skeoop.github.io/results/quiz2),
 [Quiz3](https://skeoop.github.io/results/quiz3-scores.pdf),
 [Quiz4](https://skeoop.github.io/results/quiz4-scores.pdf),
-[Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf)
+[Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf) and
+[Feedback](https://skeoop.github.io/results/quiz5)
+
 
 ## Final Exam
 **Lab Exam:** Thursday, 18 May 13:00-18:00 Room 201.   
