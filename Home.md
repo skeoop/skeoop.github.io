@@ -1,7 +1,7 @@
 Other pages: [About the Course](About). [Course Material](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.
 
 ---
-## [Results](http://www.github.com/skeoop/results)
+## [Results](http://www.github.com/skeoop/tree/master/results)
 [PA1](https://skeoop.github.io/results/PA1-Results.pdf)  were very good; some codes look too similar.
 PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
@@ -20,7 +20,7 @@ PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/Array
 Dress Code: "*dress like a programmer*" (wear anything you like).  
 
 ---
-## [Week 9](http://www.github.com/skeoop/skeoop.github.io/week9)
+## [Week 9](http://www.github.com/skeoop/skeoop.github.io/tree/master/week9)
 
 State machines - modeling components whose behavior depends on state.   
 UML State Machine Diagram   
@@ -41,17 +41,17 @@ Recursion
 State Machine the web: [UML State Machine](http://www.uml-diagrams.org/state-machine-diagrams.html); Wikipedia has pages about State Machine and [UML State Machine](https://en.wikipedia.org/wiki/UML_state_machine).   
 
 ---
-## [Week 10](http://www.github.com/skeoop/skeoop.github.io/week10)
+## [Week 10](http://www.github.com/skeoop/skeoop.github.io/tree/master/week10)
 No class this week due to holiday.   Lab cancelled, too.  
 Please start work on PA4.
 
 #### Assignment
 
 [PA4-Readability](https://skeoop.github.io/week10/PA4-Readability.pdf)  an app that measures the reading difficulty of text.  This is a useful application.  Due: April 30.  
-Test file: [Alice in Wonderland](http://www.github.com/skeoop/skeoop.github.io/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
+Test file: [Alice in Wonderland](http://skeoop.github.io/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
 
 ---
-## [Week 11](http://www.github.com/skeoop/skeoop.github.io/week11)
+## [Week 11](http://www.github.com/skeoop/skeoop.github.io/tree/master/week11)
 
 Testing with JUnit.  
 Observer Pattern, Observers in Java, Observers in Swing components.  
@@ -71,7 +71,7 @@ Download Stack.java (interface) and StackFactory.jar for testing.
 [PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:** one page proposal due in 2 weeks.
 
 ---
-## [Week 12](http://www.github.com/skeoop/skeoop.github.io/week12)
+## [Week 12](http://www.github.com/skeoop/skeoop.github.io/tree/master/week12)
 Announcements:   
 * Only 2 lab exams. 2nd lab exam during finals week.
 * Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
@@ -96,7 +96,7 @@ Threads in Swing
 
 
 ---
-## [Week 13](http://www.github.com/skeoop/skeoop.github.io/week13)
+## [Week 13](http://www.github.com/skeoop/skeoop.github.io/tree/master/week13)
 Review of Threads homework.   
 Threads in Swing (from last week) with demo. Slides in week12 folder.   
 New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Time classes.  
@@ -107,7 +107,7 @@ New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Ti
 * Methods with variable length args  
 * [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
     * [ocsf-231.zip](http://skeoop.github.io/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
-    * [demoserver.jar](http://www.github.com/skeoop/skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
+    * [demoserver.jar](http://skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
     * [Object-Client-Server-Framework.pdf](https://skeoop.github.io/week13/demoserver.jar) chapter about frameworks and OCSF from the book *Object-oriented Analysis & Design* by Lethbridge.  Chapter describes basics of creating a network connection in Java and how to use OCSF.
 
 #### Assignment
@@ -116,13 +116,13 @@ New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Ti
 **Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
-## [Week 14](https://www.github.com/skeoop/skeoop.github.io/week14)
+## [Week 14](https://www.github.com/skeoop/skeoop.github.io/tree/master/week14)
 
 Review bit operators: and, or, xor  
 Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Singleton
 (maybe) Generic types: Rules for parameterized classes and interfaces.  Generic methods (static methods with their own type parameter)
 
-[Design Patterns Practice](https://bytebucket.org/skeoop/oop/raw/master/patterns/Patterns-Exercises.pdf) in "patterns" folder
+[Design Patterns Practice](https://skeoop.github.io/patterns/Patterns-Exercises.pdf) in "patterns" folder.
 
 #### Lab
 
@@ -318,7 +318,7 @@ Creating objects using Factory Methods and Singleton (instead of "new ...")
 
 
 ----
-##  [Week 6](https://www.github.com/skeoop/skeoop.github.io/week6)
+##  [Week 6](https://www.github.com/skeoop/skeoop.github.io/tree/master/week6)
 Exceptions and Exception Handling   
 The Java IO Hierarchy   
 Inner classes   
@@ -339,7 +339,7 @@ Design Issues in Coin Purse
 * After you visit the link and "accept" the assignment, clone the repo to your computer and put your work in there.
 
 ---
-## [Week 7](https://www.github.com/skeoop/skeoop.github.io/week7)
+## [Week 7](https://www.github.com/skeoop/skeoop.github.io/tree/master/week7)
 Graphical User Interfaces (GUI) in Swing  
 Swing Components   
 Event listeners and the Observer Pattern  
@@ -360,7 +360,7 @@ How to write a simple GUI
 [PA3-UnitConverter](https://skeoop.github.io/week7/PA3-UnitConverter.pdf)  due 3 April.  Use the Github Classroom repository (invitation sent by email) and use git to commit -- don't use file upload.  Assignment URL is: https://goo.gl/XCp7NJ
 
 ---
-## [Week 8](https://www.github.com/skeoop/skeoop.github.io/week8)
+## [Week 8](https://www.github.com/skeoop/skeoop.github.io/tree/master/week8)
 
 Enum type   
 Actions - commands that encapsulate EventListeners  
