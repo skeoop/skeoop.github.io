@@ -1,32 +1,42 @@
-### Object-Oriented Programming 2 Course Description
+## Object-Oriented Programming II 
 
-This course covers object-oriented programming and design, including  3 subject areas:
+This course covers object-oriented programming and design, including 3 subject areas:
 
 1. Java programming language and its features
-2. Object-oriented concepts and design, including some design patterns
+2. Object-oriented concepts, design, and programming, including some design patterns
 3. Modeling using UML
 
-For a detailed list of topics, see the [weekly schedule](https://bitbucket.org/skeoop/wiki/Home) at https://bitbucket.org/skeoop/oop/.
+For a detailed list of topics, see the [weekly schedule](https://skeoop.github.io/Home)
 
 ### Course Material
 
-* Course material is online at: https://bitbucket.org/skeoop/oop/src.
-* [Weekly Schedule](https://bitbucket.org/skeoop/oop/wiki/Home) of topics and assignments is at https://bitbucket.org/skeoop/oop/wiki/Home. This page contains links to assignments and other material.
-* [Class Materials](https://bitbucket.org/skeoop/oop/src/master) organized by week are in the [source repository](https://bitbucket.org/skeoop/oop/src/master) at https://bitbucket.org/skeoop/oop/src/master.
+The [Source Repository](https://github.com/skeoop/skeoop.github.io) contains weekly material for the course as a Git repository, with subdirectories for each week and special topics.
+
+| Schedule and Links | https://skeoop.github.io/Home |
+| Material for week1 | https://skeoop.github.io/week1 |
+| Material for week2 | https://skeoop.github.io/week2 |
+| General Documents  | https://skeoop.github.io/docs  |
+| Design Patterns    | https://skeoop.github.io/patterns  |
+| Java Basics(1)     | https://skeoop.github.io/java-basics  |
+| Resources          | https://skeoop.github.io/Resources |
+| To view/copy anything | https://github.com/skeoop/skeoop.github.io/ |
+
+Note: when a file is updated on [github.com/skeoop/skeoop.github.io](https://github.com/skeoop/skeoop.github.io) it may take *many minutes* before the change appears on [skeoop.github.io](https://skeoop.github.io/). 
+
+(1) the [java-basics](https://skeoop.github.io/java-basics) is material you should already know from OOP1. We won't cover it in this course.
 
 ### Instructor and TAs
 
 The instructor is James Brucker.
 TAs are Taweerat C., Chinthiti W., and Kamontat C. (Net).  
 
-Emails are not posted to avoid spam, but this Java expression might help:
+To contact them, evaluate this Java expression:
 ```java
 final String DOMAIN = "ku.th";
 new StringBuilder(firstName).append('.').append(lastName.charAt(0)).append('@').append(DOMAIN).toString();
 // for foreign names use
 new StringBuilder(firstName.charAt(0)).append('.').append(lastName).append('@').append(DOMAIN).toString();
 ```
-
 
 ### Course work
 
@@ -50,20 +60,12 @@ It is OK to discuss design and problems you have, but not to share code.  If you
 
 ### Textbook and Readings
 
-Readings are assigned from several sources. The main ones are:
+The main sources for this course are:
 
 * Horstmann, *Big Java*, 5E or 4E.  The 4th and 5th editions are almost identical. The 4th edition is more concise and some chapters are better organized. 5E has better page layout. Both editions cover Java 7, but not the new features in Java 8.
-* Fowler, *UML Distilled*, 3E. (Optional)  Excellent, concise book about UML.  We will cover the Class, Sequence, and State Machine diagrams. You can find info on UML diagrams online, so this book is not required.
 * *The Java JDK Documentation*. You are required to install this on your computer and **bookmark** the API index in your web browser. This is a great source of knowledge about the Java platform.
 * *The Java Tutorial* from Oracle (Recommended).  I recommend you install this on your computer.  The "Really Big Index" page is the most efficient way to find things in the material, so bookmark it.
-
-Windows Users:
-* Please do **not** install IDE, JDK docs, etc. on the desktop! (the actual path will be long have have space)
-* Please use a **short path** without a **space** in the name.
-```
-Good path: C:\java\jdk8u20 and C:\java\jdk8\docs
-Bad path:  C:\Program Files\Java\JavaSDK 8u20
-```
+* Fowler, *UML Distilled*, 3E. (Optional)  Excellent, concise book about UML.  We will cover the Class, Sequence, and State Machine diagrams. You can find info on UML diagrams online, so this book is not required.
 
 ### Other Useful Resources
 
@@ -75,6 +77,14 @@ Listed in the file https://bitbucket.org/skeoop/oop/wiki/Resources.md
 2. **Java IDE**  Good ones are: Eclipse, Netbeans, and IntelliJ IDEA.  BlueJ is good for beginners and for trying out code.  In BlueJ, you can visualize code, interactively run code (without compiling), and inspect objects.  I use BlueJ in class.
 3. **Git command line tool.**  IDEs include a git tool but you still need the command line git program.  Download from: http://git-scm.org/download/.
 4. **UML editor is helpful.** Eclipse, Netbeans, and IDEA have UML extensions that can generate class diagram from Java code. [Violet](https://sourceforge.net/projects/violet/files/violetumleditor/) is a simple, easy-to-use UML editor written in Java. I use version 2.0.1 (not the newest) because it inserts less space.
+
+Windows Users:
+* Please do **not** install IDE, JDK docs, etc. on the desktop! (the actual path will be long have have space)
+* Please use a **short path** without a **space** in the name.
+```
+Good path: C:\java\jdk8u20 and C:\java\jdk8\docs
+Bad path:  C:\Program Files\Java\JavaSDK 8u20
+```
 
 ### Individual Feedback
 
@@ -100,7 +110,6 @@ Your grade is based on:
 * lab participation and lab work
 
 **Minimum Exam Scores to Pass:** To pass the course you must have: (a) average written exam score at least 50%, **and** (b) average lab exam score at least 50%.  
-
 If you achieve the minimum exam scores, then the following grading scale is used based on all your work (as listed above):
 
 | Overall | Grade |
@@ -111,6 +120,58 @@ If you achieve the minimum exam scores, then the following grading scale is used
 | 55-65   |   D   |
 |  < 55%  |   F   |
 
-### How to Clone the Course Repository
+### Join the OOP Organization on Github
 
-You can (optionally) clone the online course material as described in [README.md](https://bitbucket.org/skeoop/oop/src/master/README.md). Please follow the instructions and clone only the current version, by using `git clone --depth 1`.
+Students in this course please join the OOP2017 organization on Github.  We sent you invitiation by e-mail.
+
+You need to join and complete your profile with **at least** your real name spelled correctly in English, and a photo that clearly shows your face.  
+You must join the organization in order to submit assignments or take quizzes using Github Classroom.
+
+### Assignments using Github Classroom 
+
+Some assignments use Github Classroom to distribute and submit work. You will be given (or emailed) a URL (link) that contains an "invitation" to do the assignment.  Visit the URL and "accept" the invitation.
+
+Github Classroom then creates a repository for you, which may contain starter code and instructions.  For example, if the assignment is named "quiz9" you would have a repo with URL:
+```
+https://classroom.github.com/OOP2017/quiz9-yourname
+```
+where ```yourname``` is your Github login name.  You should `clone` this repository to your computer, complete the assignment, and then `push` your updated repo back to github.
+
+Ref: [Github Classroom videos](https://classroom.github.com/videos)
+
+### Assignments using Your Own Account 
+
+Lab work and some other assignments don't use Github Classroom.  In this case, create a repository in your Github account (the one you used to join our class) and push your work to it. Each assignment specifies the *exact repo name* to use to Github.  Please be careful to use name *exactly* as on the assignment (including upper/lowercase of letters). If you use the wrong name, we might not download your work (and as a result, you get no score).
+
+On your local computer, you can use any repo name you like. The local repo name does not have to be the same as the repo name on Github.
+A remote using the command:
+```
+cmd>  cd /path/to/local_repo
+cmd>  git remote add origin git@github.com:yourname/repo_name.git
+```
+where `repo_name` is the remote repository (which you must create on github.com).  So, it can be any name -- not necessarily your local project.
+
+
+### Cloning the Course Repository
+
+All the course material is stored in a Git repository on Github and Bitbucket.
+
+The source material has been updated many times, with a lot of revisions and deletions. To clone the entire history will waste time (to download) and disk space (for the history).  Clone only the current version by using ``git clone --depth 1`` as follows:
+
+    # Change to the directory where you want to copy course material to.
+    # Git will create a subdirectory named "oop".
+    cmd> cd someplace
+    cmd> git clone --depth 1 git@bitbucket.org:skeoop/oop.git
+
+after that, you can update your clone anytime using ``git pull``.
+The course material is currently in 2 repositories:
+* https://github.com/skeoop/skeoop.github.io
+* https://bitbucket.org/skeoop/oop/src (course location up to 5 May 2017)
+
+
+### Old Course on Bitbucket
+Before 5 May 2017 the course material was on Bitbucket.  Its still there but may not be updated.
+
+Course Schedule: https://bitbucket/org/skeoop/oop (goes to https://bitbucket/org/skeoop/oop/wiki/Home)  
+Course Description: https://bitbucket/org/skeoop/oop/wiki/About   
+Course Repository: https://bitbucket/org/skeoop/oop/src has a folder for each week.
