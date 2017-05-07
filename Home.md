@@ -370,15 +370,11 @@ Review
 [Practice Problems](https://skeoop.github.io/week8/Practice-Problems.pdf)  
 
 #### Lab
-
-[PracticeExam](https://skeoop.github.io/week8/PracticeExam.pdf), the project code is available as a Github classroom project. Check your email for invitation.
-
-The invitation link is:
-
-https://classroom.github.com/assignment-invitations/d7061f4cba270d7925e0a714d4e081b4
+[PracticeExam](https://skeoop.github.io/week8/PracticeExam.pdf), the project code is available as a Github classroom project. Check your email for invitation.  
+The invitation link is: https://classroom.github.com/assignment-invitations/d7061f4cba270d7925e0a714d4e081b4
 
 #### Assignment
-**Read:**  UMLD Chapter 4 on Sequence Diagram, Chapter 5 on Class Diagram "advanced" concepts.  
+**Read:**  UMLD Chapter 4 on Sequence Diagram, Chapter 5 on Class Diagram "advanced" concepts. 
 
 ---
 ## Midterm
@@ -386,11 +382,10 @@ https://classroom.github.com/assignment-invitations/d7061f4cba270d7925e0a714d4e0
 **Written exam** 24 Mar, 12:00-15:00 in room 204. Closed book.  
 Any material from lectures and reading assignments may be included on exam. Reading material may be included even if never discussed in class.  
 **Programming exam** 24 Mar 16:00-19:00 in room 201.  No internet, notes, slides, or code allowed.  Only an IDE, JDK, and Java API docs.   
-Dress code: _dress like a programmer_ (wear anything comfortable).
+**Dress code**: _dress like a programmer_ (wear anything comfortable).
 
 ---
 
-----
 ## References
 
 [BIGJ] Cay Horstmann, *Big Java*, 4E or 5E.  
