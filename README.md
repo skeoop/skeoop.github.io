@@ -1,9 +1,9 @@
-# Object-Oriented Programming
+# Object-Oriented Programming at [Kasetsart University](http://www.ku.th)
 
-This repository contains course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
+Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
 
 [Schedule](http://skeoop.github.io/Home) weekly topics and assignments.
 
-For more info about the course, see [Course Description](https://skeoop.github.io/About) ([About.md](About.md)).
+See [Course Description](https://skeoop.github.io/About) ([About.md](About.md)) for more info about this course.
 
-A friendler view of these pages is at [https://skeoop.skeoop.io](https://skeoop.skeoop.io)
+[https://skeoop.github.io](https://skeoop.github.io) is a friendler view of these pages.
