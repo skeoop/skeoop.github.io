@@ -1,7 +1,7 @@
-Other pages: [About the Course](About). [Course Material](https://bitbucket.org/skeoop/oop/src/master). [Results and Feedback](https://bitbucket.org/skeoop/oop/src/master/results/) on assignments.
+Other pages: [About the Course](About). [Course Material](https://www.github.com/skeoop/). [Results and Feedback](http://www.github.com/skeoop/results/) on assignments.
 
 ---
-## [Results](https://bitbucket.org/skeoop/oop/src/master/results)
+## [Results](http://www.github.com/skeoop/results)
 [PA1](https://skeoop.github.io/results/PA1-Results.pdf)  were very good; some codes look too similar.
 PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
@@ -20,7 +20,7 @@ PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/Array
 Dress Code: "*dress like a programmer*" (wear anything you like).  
 
 ---
-## [Week 9](https://bitbucket.org/skeoop/oop/src/master/week9)
+## [Week 9](http://www.github.com/skeoop.github.io/week9)
 
 State machines - modeling components whose behavior depends on state.   
 UML State Machine Diagram   
@@ -41,17 +41,17 @@ Recursion
 State Machine the web: [UML State Machine](http://www.uml-diagrams.org/state-machine-diagrams.html); Wikipedia has pages about State Machine and [UML State Machine](https://en.wikipedia.org/wiki/UML_state_machine).   
 
 ---
-## [Week 10](https://bitbucket.org/skeoop/oop/src/master/week10)
+## [Week 10](http://www.github.com/skeoop.github.io/week10)
 No class this week due to holiday.   Lab cancelled, too.  
 Please start work on PA4.
 
 #### Assignment
 
-[PA4-Readability](https://bitbucket.org/skeoop/oop/src/master/week10/PA4-Readability.pdf)  an app that measures the reading difficulty of text.  This is a useful application.  Due: April 30.  
-Test file: [Alice in Wonderland](https://bitbucket.org/skeoop/oop/src/master/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
+[PA4-Readability](https://skeoop.github.io/week10/PA4-Readability.pdf)  an app that measures the reading difficulty of text.  This is a useful application.  Due: April 30.  
+Test file: [Alice in Wonderland](http://www.github.com/skeoop/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
 
 ---
-## [Week 11](https://bitbucket.org/skeoop/oop/src/master/week11)
+## [Week 11](http://www.github.com/skeoop.github.io/week11)
 
 Testing with JUnit.  
 Observer Pattern, Observers in Java, Observers in Swing components.  
@@ -68,10 +68,10 @@ Download Stack.java (interface) and StackFactory.jar for testing.
 
 #### Assignment
 
-[PA6 Custom Project](https://bitbucket.org/skeoop/oop/src/master/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:** one page proposal due in 2 weeks.
+[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:** one page proposal due in 2 weeks.
 
 ---
-## [Week 12](https://bitbucket.org/skeoop/oop/src/master/week12)
+## [Week 12](http://www.github.com/skeoop.github.io/week12)
 Announcements:   
 * Only 2 lab exams. 2nd lab exam during finals week.
 * Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
@@ -91,12 +91,12 @@ Threads in Swing
 #### Assignment
 **Read:** 1) BIGJ Chapter 20 (Threads).   
 **Read:** 2) [Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html) and Swing Concurrency in the [Java Tutorial](https://docs.oracle.com/javase/tutorial/reallybigindex.html).  You are responsible for this material, including **synchronization**.  
-[PA6 Custom Project](https://bitbucket.org/skeoop/oop/src/master/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:**  May 5 (Friday)
+[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:**  May 5 (Friday)
 **Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture.  
 
 
 ---
-## [Week 13](https://bitbucket.org/skeoop/oop/src/master/week13)
+## [Week 13](http://www.github.com/skeoop.github.io/week13)
 Review of Threads homework.   
 Threads in Swing (from last week) with demo. Slides in week12 folder.   
 New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Time classes.  
@@ -105,18 +105,18 @@ New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Ti
 * Quiz on Recursion  
 * Discussion of JUnit tests for Withdraw Strategy - create a Purse (attribute) in setUp method and write methods to simplify coding of tests.
 * Methods with variable length args  
-* [Lab13 OCSF Framework](https://bitbucket.org/skeoop/oop/src/master/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
-    * [ocsf-231.zip](https://bitbucket.org/skeoop/oop/src/master/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
-    * [demoserver.jar](https://bitbucket.org/skeoop/oop/src/master/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
-    * [Object-Client-Server-Framework.pdf](https://bitbucket.org/skeoop/oop/src/master/week13/demoserver.jar) chapter about frameworks and OCSF from the book *Object-oriented Analysis & Design* by Lethbridge.  Chapter describes basics of creating a network connection in Java and how to use OCSF.
+* [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
+    * [ocsf-231.zip](http://www.github.com/skeoop/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
+    * [demoserver.jar](http://www.github.com/skeoop/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
+    * [Object-Client-Server-Framework.pdf](https://skeoop.github.io/week13/demoserver.jar) chapter about frameworks and OCSF from the book *Object-oriented Analysis & Design* by Lethbridge.  Chapter describes basics of creating a network connection in Java and how to use OCSF.
 
 #### Assignment
-[PA5 Multi-threaded Downloader](https://bitbucket.org/skeoop/oop/src/master/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
+[PA5 Multi-threaded Downloader](https://skeoop.github.io/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
 **Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.  
 **Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
-## [Week 14](https://bitbucket.org/skeoop/oop/src/master/week14)
+## [Week 14](https://www.github.com/skeoop.github.io/week14)
 
 Review bit operators: and, or, xor  
 Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Singleton
@@ -146,7 +146,7 @@ We can cover one topic (presentation and programming practice) on a Saturday:
 # First Half of the Course
 
 ---
-## [Week 1](https://bitbucket.org/skeoop/oop/src/master/week1)
+## [Week 1](https://www.github.com/skeoop.github.io/week1)
 
 0. Preliminaries.
 	* Introduction to course.   
@@ -192,24 +192,24 @@ We can cover one topic (presentation and programming practice) on a Saturday:
 
 There are 2 parts to the lab. The files are in the week1 folder.
 
-1. [Lab1-1-Git.md](https://bitbucket.org/skeoop/oop/src/master/week1/Lab1-1-Git.md) practice using git.
-2. [Lab1-3-Guessing-Game](https://bitbucket.org/skeoop/oop/src/master/week1/Lab1-3-Guessing-Game.pdf) write a Guessing Game in Java.  See the PDF for instructions.
+1. [Lab1-1-Git.md](https://skeoop.github.io/week1/Lab1-1-Git.md) practice using git.
+2. [Lab1-3-Guessing-Game](https://skeoop.github.io/week1/Lab1-3-Guessing-Game.pdf) write a Guessing Game in Java.  See the PDF for instructions.
     * In Lab: commit source code for a game that works, and README.md file.
     * "push" a copy of your repo to your Gtihub account as `GuessingGame` repo
 3. Due Tomorrow (Saturday):
     * write good Javadoc for classes and methods. Use `@param`, `@return`, `@author` tags.
     * fix any problems with your code.
     * format code to be easy to read.
-4. Tell us your Github account*. Complete this form: [https://goo.gl/Y6EMeq](https://goo.gl/Y6EMeq).
+4. Tell us your Github account. Complete this form: [https://goo.gl/Y6EMeq](https://goo.gl/Y6EMeq).
 
 
 #### Assignment
 **Read**: (1) Java Coding Standard, (2) Java Fundamental Methods  
 **Learn**: UML class diagram for a single class. Use the Internet or read UMLD Chapter 3 (Class Diagram).   
-**Homework**: [Homework 1](https://bitbucket.org/skeoop/oop/src/master/week1/Homework1.md) due next week
+**Homework**: [Homework 1](https://skeoop.github.io/week1/Homework1.md) due next week
 
 ----
-##  [Week 2](https://bitbucket.org/skeoop/oop/src/master/week2)
+##  [Week 2](https://www.github.com/skeoop.github.io/week2)
 
 Topics left from week1:
 
@@ -237,7 +237,7 @@ This week's topics:
 The Lab will be open (13:00-16:00) and you can get help/feedback from TAs.
 Alternatively, you can do this lab at home and submit to Github.
 
-* Lab2: Stopwatch in [Week 2](https://bitbucket.org/skeoop/oop/src/master/week2) folder.  
+* Lab2: Stopwatch in [Week 2](https://www.github.com/skeoop.github.io/week2) folder.  
 * Submit your Stopwatch and refactored tasks to Github as a project named ```stopwatch```.
 * Deadline: **2 Feb 2017 (Thursday)**, midnight
 * Code Review: TAs will review week1 lab for some students
@@ -253,12 +253,12 @@ Alternatively, you can do this lab at home and submit to Github.
 
 **Read**: [Let's Eliminate Duplicate Code](http://goo.gl/TGiUqC) (http://goo.gl/TGiUqC) by Thai, explains how to use interface to remove duplicate code.  Improves your code.  
 **Read**: Polymorphism and Interfaces in BIGJ 9.6 and 10.1-10.6.  
-**Programming Assignment**: [PA1-ArrayIterator](https://bitbucket.org/skeoop/oop/src/master/week2/PA1-ArrayIterator.pdf) available now.  **Due: 5 Feb 2017 (Sunday), midnight.**  
+**Programming Assignment**: [PA1-ArrayIterator](https://skeoop.github.io/week2/PA1-ArrayIterator.pdf) available now.  **Due: 5 Feb 2017 (Sunday), midnight.**  
 **Quiz After KU Fair**: Quiz on UML Class diagram, writing the Fundamental Methods, and Polymorphism
 
 
 ----
-##  [Week 3](https://bitbucket.org/skeoop/oop/src/master/week3)
+##  [Week 3](https://www.github.com/skeoop.github.io/week3)
 
 Collections, Lists, and ArrayList  
 Interfaces used to Sort Arrays and Lists   
@@ -273,13 +273,13 @@ UML class diagram, details. (By now you should have read the basics of class dia
 * Resolving conflicts in git. This happens when you edit a file on Github via web browser, then try to `push` code from your local repo.  Solution is to `pull` changes from Github before commiting your own changes.
 * Practice using List and ArrayList
 * Practice writing a Comparable and Comparator.
-* [Lab3-Coin Purse using List](https://bitbucket.org/skeoop/oop/src/master/week3/Lab3-CoinPurseWithList.pdf). There is sample code (purse-sample.zip) to get started, in  [week3](https://bitbucket.org/skeoop/oop/src/master/week3) folder.  
+* [Lab3-Coin Purse using List](https://skeoop.github.io/week3/Lab3-CoinPurseWithList.pdf). There is sample code (purse-sample.zip) to get started, in  [week3](https://www.github.com/skeoop.github.io/week3) folder.  
 
 #### Assignment
 **Read:** 1) BIGJ chapter 15 on Collections. 2) "for-each" loop is covered in BIGJ section 7.2. 3) Review week2 reading on Interfaces.
 
 ----
-##  [Week 4](https://bitbucket.org/skeoop/oop/src/master/week4)
+##  [Week 4](https://www.github.com/skeoop.github.io/week4)
 Inheritance - why use it?  
 Abstract Classes for common code in a class hierarchy.  
 More Collections: Map and Abstract collection classes.    
@@ -288,9 +288,9 @@ Using the Java API Docs
 
 #### Lab
 
-* Map Practice. Complete the code for [Dictcount.java](https://bitbucket.org/skeoop/oop/src/master/week4/Dictcount.java) in week4 folder.
-* Polymorphic Coin Purse, labsheet is in [week4](https://bitbucket.org/skeoop/oop/src/master/week4/) folder. Commit your work to same github project (coinpurse).
-* How to use Git **tags** [write-up by TA](https://bitbucket.org/skeoop/oop/wiki/Git-tag).
+* Map Practice. Complete the code for [Dictcount.java](https://skeoop.github.io/week4/Dictcount.java) in week4 folder.
+* Polymorphic Coin Purse, labsheet is in [week4](https://www.github.com/skeoop.github.io/week4/) folder. Commit your work to same github project (coinpurse).
+* How to use Git **tags** [write-up by TA](docs/git-tags)
 
 #### Assignment
 **Read:** Inheritance and Abstract classes in BIGJ chapter 9. Abstract classes also in OODP section 6.3.    
@@ -300,7 +300,7 @@ Study (know how to apply) my Inheritance-1-Basics slides. Tell me next week if i
 
 
 ----
-## [Week 5](https://bitbucket.org/skeoop/oop/src/master/week5)
+## [Week 5](https://www.github.com/skeoop.github.io/week5)
 
 Design using Interface and Abstract Superclass (from last week)  
 Java "final" modifier   
@@ -314,11 +314,11 @@ Creating objects using Factory Methods and Singleton (instead of "new ...")
 
 #### Assignment
 **Read:** BIGJ Chapter 9 (Inheritance) covers abstract class and "final". Factory methods are covered in OODP section 10.3, or search the web.   
-**Homework**: [Homework 2](https://bitbucket.org/skeoop/oop/src/master/week5/Homework2.pdf) Problems 1-4 due in class on Thursday, 2 March. Problem 5 due in Github, Friday, 3 March.  Any copying results in grade "F" for the course.
+**Homework**: [Homework 2](https://skeoop.github.io/week5/Homework2.pdf) Problems 1-4 due in class on Thursday, 2 March. Problem 5 due in Github, Friday, 3 March.  Any copying results in grade "F" for the course.
 
 
 ----
-##  [Week 6](https://bitbucket.org/skeoop/oop/src/master/week6)
+##  [Week 6](https://www.github.com/skeoop.github.io/week6)
 Exceptions and Exception Handling   
 The Java IO Hierarchy   
 Inner classes   
@@ -334,44 +334,44 @@ Design Issues in Coin Purse
 #### Assignment
 
 **Read**: _BIGJ_ Chapter 11 on Input/Output and Exception Handling. Exceptions also covered in the _Java Tutorial_ (JTUT).   
-**Programming Assignment 2**: [PA2-CSVReader](https://bitbucket.org/skeoop/oop/src/master/week6/PA2-CSVReader.pdf) assignment in week6 folder.  **Due:** Monday, 13 March, midnight.
+**Programming Assignment 2**: [PA2-CSVReader](https://skeoop.github.io/week6/PA2-CSVReader.pdf) assignment in week6 folder.  **Due:** Monday, 13 March, midnight.
 * Please use the Github Classroom link (sent to you via email) to create a repository for this assignment.  You don't need to request your own private repos.
 * After you visit the link and "accept" the assignment, clone the repo to your computer and put your work in there.
 
 ---
-## [Week 7](https://bitbucket.org/skeoop/oop/src/master/week7)
+## [Week 7](https://www.github.com/skeoop.github.io/week7)
 Graphical User Interfaces (GUI) in Swing  
 Swing Components   
 Event listeners and the Observer Pattern  
 How to write a simple GUI  
 
 #### Lab
-* [Graphics Component Practice](https://bitbucket.org/skeoop/oop/src/master/week7/Graphics-Components-Practice.pdf) complete the practice exercises for various GUI components.
+* [Graphics Component Practice](https://skeoop.github.io/week7/Graphics-Components-Practice.pdf) complete the practice exercises for various GUI components.
 * Write a GUI interface for Guessing Game.
 * How to Use Checkstyle: http://goo.gl/Jxw5x1  
-* Checkstyle rules file: [docs/ku-checkstyle.xml](https://bitbucket.org/skeoop/oop/src/master/docs/ku-checkstyle.xml)  
-* Postponed: [LengthConverter](https://bitbucket.org/skeoop/oop/src/master/week7/Lab7-LengthConverter.pdf)  
+* Checkstyle rules file: [docs/ku-checkstyle.xml](https://skeoop.github.io/docs/ku-checkstyle.xml)  
+* Postponed: [LengthConverter](https://skeoop.github.io/week7/Lab7-LengthConverter.pdf)  
 
 
 #### Assignment
 
 **Read**: _BIGJ_ Chapter 19 on Graphical UI; _OODP_ Chapter 4 on design patterns in Swing (recommended).  
 **Programming Assignment**
-[PA3-UnitConverter](https://bitbucket.org/skeoop/oop/src/master/week7/PA3-UnitConverter.pdf)  due 3 April.  Use the Github Classroom repository (invitation sent by email) and use git to commit -- don't use file upload.  Assignment URL is: https://goo.gl/XCp7NJ
+[PA3-UnitConverter](https://skeoop.github.io/week7/PA3-UnitConverter.pdf)  due 3 April.  Use the Github Classroom repository (invitation sent by email) and use git to commit -- don't use file upload.  Assignment URL is: https://goo.gl/XCp7NJ
 
 ---
-## [Week 8](https://bitbucket.org/skeoop/oop/src/master/week8)
+## [Week 8](https://www.github.com/skeoop.github.io/week8)
 
 Enum type   
 Actions - commands that encapsulate EventListeners  
 Model-View in Swing components  
 UML Sequence Diagram (if we have time)   
 Review   
-[Practice Problems](https://bitbucket.org/skeoop/oop/src/master/week8/Practice-Problems.pdf)  
+[Practice Problems](https://skeoop.github.io/week8/Practice-Problems.pdf)  
 
 #### Lab
 
-[PracticeExam](https://bitbucket.org/skeoop/oop/src/master/week8/PracticeExam.pdf), the project code is available as a Github classroom project. Check your email for invitation.
+[PracticeExam](https://skeoop.github.io/week8/PracticeExam.pdf), the project code is available as a Github classroom project. Check your email for invitation.
 
 The invitation link is:
 
