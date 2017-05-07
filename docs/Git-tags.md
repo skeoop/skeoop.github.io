@@ -1,10 +1,10 @@
-#Git Tag
+# Git Tag
 
-Git **tag** is used to bookmark (label) a particular commit in a git repository. Tags serve as a marker for a milestone or version of software, which is easier to refer to than a commit.
+Git **tag** is used to bookmark (label) a particular commit in a git repository. Tags serve as a marker for a milestone or version of software, which is easier to refer to than a commit number (a hashcode).
 
-##How to use tag
+## How to use tag
 
-- List tags in a repository
+List the tags in a repository:
 ```
 $ git tag
 v0.1
@@ -13,35 +13,35 @@ v1.1
 v2.0
 v1_bug_fix
 ```
-It also provide a option to list only interesting tags using a *pattern*, such as "v1.*".
+There is an option to list only interesting tags using a *pattern*, such as "v1.*":
 ```
 $ git tag -l 'v1.*'
 v1.0
 v1.1
 ```
 
-- Creating a tag
+## Creating a tag
 
 There are two types of tag. First is **annotated tag**, which contains additional information and a message. The second is **lightweight tag**, which doesn't contain additional information or message.  For tagging a release of software, you should use an annotated tag.
 
 ### Create an Annotated tag (with -a option)
+To create an annotated tag you must use `git tag -a` (the -a means annotated).
 ```
 $ git tag -a v1.0 -m 'released version 1.0'
 ```
 
--a -> annotate, value -> a tag
-
--m -> message, value -> message to note for this tag
+`-m` (message) is a description or note for this tag.
 
 ### Create a Lightweight tag
 ```
 $ git tag v1.0_light
 ```
-Lightweight tags can't use -a, -s, or -m.
+Lightweight tags don't use -a, -s, or -m.
 
 ### Showing tag information
+Use `git show tag_name` to print a description of a tag.
 
-Annotated tag:
+Annotated tags:
 ```
 $ git show v1.0
 tag v1.0
@@ -68,22 +68,24 @@ Date:   Mon Jan 12 18:47:09 2014 +0700
 ```
 
 ### Tag a previous commit 
-Suppose you've already committed some new work.  How can you add a tag to an older revision?  Use this:
+
+Suppose you've already committed some new work.  How can you add a tag to an older revision?  Specify the start of the commit checksum, like this:
 ```
 $ git tag -a v1.0 s09df79
 ```
-Specify the start of the commit checksum ("s09df79") as argument to `tag`.  You can view the checksums using: "git log --pretty=oneline" or Bitbucket Commits history.
+The start of the commit checksum is "s09df79".  You can view the checksums using "git log --pretty=oneline" or Bitbucket Commits history.
 
 ### Push a tag
 ```
 $ git push origin v1.0
 ```
-You need to specify the tag to push. Or you want to push all tag
+You need to specify the tag to push. To push all tags enter:
 ```
 $ git push origin --tags
 ```
 
 ### Checkout the code for a tag
+You can checkout the code for a particular tag to your working copy:
 ```
 $ git checkout v1.0
 ```
