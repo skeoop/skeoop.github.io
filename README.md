@@ -1,15 +1,19 @@
 # Object-Oriented Programming
 
+[Schedule](Home) weekly topics and assignments.
+
 This repository contains course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
 
 [Course description](https://skeoop.github.io/About) has requirements, reading material, and grading scale.
 
-[Schedule](Home) has weekly topics, assignments, and results.
+The [Source Repository](https://github.com/skeoop/skeoop.github.io) contains weekly material for the course as a Git repository, with subdirectories for each week and special topics. To view online go to:
+* https://skeoop.github.io/Home
+For (say) week10 material go to:
+* https://skeoop.github.io/week10
+To view or copy any files/folders go to the source at:
+* https://github.com/skeoop/skeoop.github.io/
 
-The [Source Repository](https://www.github.com/skeoop/skeoop.github.io) contains weekly material for the course as a Git repository, with subdirectories for each week and special topics. To view online go to:
-* https://skeoop.github.io/
-To see and copy any folders or files go to:
-* https://www.github.com/skeoop/skeoop.github.io/
+Note: when a file is updated on [github.com/skeoop/skeoop.github.io](https://github.com/skeoop/skeoop.github.io) it may take *many minutes* before the change appears on [skeoop.github.io](https://skeoop.github.io/). 
 
 
 ### Join the OOP Organization
@@ -57,7 +61,7 @@ The source material has been updated many times, with a lot of revisions and del
 
 after that, you can update your clone anytime using ``git pull``.
 The course material is currently in 2 repositories:
-* https://www.github.com/skeoop/skeoop.github.io
+* https://github.com/skeoop/skeoop.github.io
 * https://bitbucket.org/skeoop/oop/src (course location up to 5 May 2017)
 
 
