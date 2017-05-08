@@ -120,22 +120,22 @@ If you achieve the minimum exam scores, then the following grading scale is used
 | 55-65   |   D   |
 |  < 55%  |   F   |
 
-### Join the OOP Organization on Github
+### Join the OOP2017 Organization on Github
 
 Students in this course please join the OOP2017 organization on Github.  We sent you invitiation by e-mail.
 
-You need to join and complete your profile with **at least** your real name spelled correctly in English, and a photo that clearly shows your face.  
+You need to join and complete your profile with your **real name** spelled correctly in English and a **photo** that clearly shows your face.  
 You must join the organization in order to submit assignments or take quizzes using Github Classroom.
 
 ### Assignments using Github Classroom 
 
 Some assignments use Github Classroom to distribute and submit work. You will be given (or emailed) a URL (link) that contains an "invitation" to do the assignment.  Visit the URL and "accept" the invitation.
 
-Github Classroom then creates a repository for you, which may contain starter code and instructions.  For example, if the assignment is named "quiz9" you would have a repo with URL:
+Github Classroom then creates a repository for you, which may contain starter code and instructions.  For example, if the assignment is named "quiz9" you would get a repo with URL:
 ```
 https://classroom.github.com/OOP2017/quiz9-yourname
 ```
-where ```yourname``` is your Github login name.  You should `clone` this repository to your computer, complete the assignment, and then `push` your updated repo back to github.
+where ```yourname``` is your Github login name.  `clone` this repository to your computer, complete the assignment, and then `push` your updated repo back to github.
 
 Ref: [Github Classroom videos](https://classroom.github.com/videos)
 
