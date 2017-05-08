@@ -178,6 +178,12 @@ public static boolean isPalindrome(String phrase) {
 }
 ```
 
+You could rewrite this code so it contains only 1 recursive call
+to `isPalindrome` and make it be the last statement of the method.
+This is called "tail recursion" and compilers in some languages
+(but not Java) can use tail recursion to save stack space by
+overwriting the current stack frame for the recursive call.
+
 The textbook (chapter 13) solves isPalindrome by defining a helper method
 with first and last indices, so you don't need to use substring.
 
