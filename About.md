@@ -19,7 +19,7 @@ The [Source Repository](https://github.com/skeoop/skeoop.github.io) contains wee
 | Design Patterns    | https://skeoop.github.io/patterns  |
 | Java Basics(1)     | https://skeoop.github.io/java-basics  |
 | Resources          | https://skeoop.github.io/Resources |
-| To view/copy anything | https://github.com/skeoop/skeoop.github.io/ |
+| All files in repo  | https://github.com/skeoop/skeoop.github.io/ |
 
 Note: when a file is updated on [github.com/skeoop/skeoop.github.io](https://github.com/skeoop/skeoop.github.io) it may take *many minutes* before the change appears on [skeoop.github.io](https://skeoop.github.io/). 
 
