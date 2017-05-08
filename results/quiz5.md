@@ -3,13 +3,19 @@
 ## sumArray(double[] array)
 
 To use recursion, you need to make the problem smaller at each step.
-In this problems, make the problem smaller by adding a parameter
-for the last (or first) index of array to sum.
+In this problem, make the problem smaller by shrinking the array to sum.
+To do that (since you can't resize an array), we need to add a parameter
+for the last index (or first index) of the elements to sum.
 I chose the last index since it is simpler to check `lastIndex < 0`
 in the termination test.
 
 Define a helper method:  `sumArray(double[] array, int lastIndex)`
-that computes `a[0]+a[1]+...+a[lastIndex]` using recursion.
+that computes `a[0]+a[1]+...+a[lastIndex]` using recursion, like this:
+```
+sumArray(a, lastIndex) = a[lastIndex] + sumArray(a, lastIndex-1)
+                       = a[lastIndex] + a[lastIndex-1] + sumArray(a,lastIndex-2)
+                       = . . .
+```
 
 Then call the helper method like this:
 ```java
@@ -18,42 +24,43 @@ double sumArray(double[] array) {
 }
 ```
 
-**Base case:** should be `lastIndex < 0` and not `lastIndex == 0`.
-What if the original array is empty?  If you test using `lastIndex==0`
-your code will try to access a[0] and throw IndexOutOfBoundsException.
+**Base case:** termination test should be `lastIndex < 0` and not `lastIndex == 0`.
+What if the original array is empty?  Then lastIndex=-1.
 
-**Don't Use == in Termination Checks** its a general rule for defensive
+**Don't Use == in Bounds Tests** its a general rule for defensive
 programming to use `<=` or `>=` instead of `==` for bounds checks.
 
 **Recursion step:** to see the recursion step it might help to solve
 a small problem on paper.  For example: `sumArray(a,4)` on paper:
 ```
-sumArray(a,4)
+sumArray(a,3)
 to compute:  
     (a[0]+a[1]+a[2]) + a[3]
-the ( ) part needs:
+the (..............) part is:
     (a[0]+a[1]) + a[2]
-the ( ) part needs:
+the (.........) part is:
     (a[0]) + a[1]
 
 as method calls:
+sumArray(a,3) =
     sumArray(a,2) + a[3]
-which performs:
+sumArray(a,2) = 
     sumArray(a,1) + a[2]
-which performs:
+sumArray(a,1) =
     sumArray(a,0) + a[1]
-which performs:
+sumArray(a,0) = 
     sumArray(a,-1) +a[0]
-which returns:
-    0             + a[0]
+sumArray(a,-1) =
+    return 0
 ```
 
 
 ## isPalindrome(String phrase)
 
 Try to write simple code so that you can clearly see the logic.
-Here is an example of poorly written code, with instructions how to simplify.
-As we simplify, the logic errors become easy to spot.
+Some students wrote complex code that contains errors.
+Here is an example.
+As we simplify the code, the logic errors become easy to spot.
 ```java
 public static boolean isPalindrome(String phrase) {
     char first = phrase.charAt(0);
@@ -142,7 +149,7 @@ public static boolean isPalindrome(String phrase) {
 }
 ```
 
-5. Now a logic error is easy to see.  Forgot to convert `last` to lowercase before comparing it to `first`.
+5. Now a logic error is clear.  Forgot to convert `last` to lowercase before comparing it to `first`.
 ```java
     if (Character.toLowerCase(first) == Character.toLowerCase(last)) {
     	return isPalindrome(phrase.substring(1, length - 1));
@@ -150,16 +157,13 @@ public static boolean isPalindrome(String phrase) {
     return false;
 ```
 
-There is a mistake in the problem statement on quiz.  A phrase of length 1 
-is a palindrome *if it is a letter*.  For example, "?" is not a palindrome.
-Fixing that mistake, the final code is:
+The final code is:
 ```java
 public static boolean isPalindrome(String phrase) {
     int length = phrase.length();
-    if (length < 1) return true;
-    char first = phrase.charAt(0);
-    if (length == 1) return isLetter(first);
+    if (length <= 1) return true;
 
+    char first = phrase.charAt(0);
     if (!Character.isLetter(first)) { // skip non-letter
     	return isPalindrome(phrase.substring(1, length));
     }
@@ -174,33 +178,6 @@ public static boolean isPalindrome(String phrase) {
 }
 ```
 
-The code has 3 recursive calls to `isPalindrome` and they are
-almost the same.  We could reduce them to just 1 recursive call:
-```java
-public static boolean isPalindrome(String phrase) {
-    int length = phrase.length();
-    if (length < 1) return true;
-    char first = phrase.charAt(0);
-    if (length == 1) return isLetter(first);
-    
-    char last  = phrase.charAt(length-1);
-    if (!Character.isLetter(first)) { // skip non-letter
-    	phrase = phrase.substring(1, length);
-    }
-    else if (!Character.isLetter(last)) { // skip non-letter
-    	phrase = phrase.substring(0, length-1);
-    }
-    else {
-        // both first and last are letters, so compare them
-    	if (Character.toLowerCase(first) != Character.toLowerCase(last))
-            return false;
-    	phrase = phrase.substring(1, length-1);
-    }
-    return isPalindrome(phrase);
-}
-```
-which one is easier to understand?
-
 The textbook (chapter 13) solves isPalindrome by defining a helper method
-with first and last indices, so we don't need to use substring.
+with first and last indices, so you don't need to use substring.
 
