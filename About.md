@@ -33,8 +33,9 @@ TAs are Taweerat C., Chinthiti W., and Kamontat C. (Net).
 To contact them, evaluate this Java expression:
 ```java
 final String DOMAIN = "ku.th";
+// for Thai names
 new StringBuilder(firstName).append('.').append(lastName.charAt(0)).append('@').append(DOMAIN).toString();
-// for foreign names use
+// for foreign names
 new StringBuilder(firstName.charAt(0)).append('.').append(lastName).append('@').append(DOMAIN).toString();
 ```
 
