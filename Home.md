@@ -118,9 +118,12 @@ New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Ti
 ---
 ## [Week 14](https://www.github.com/skeoop/skeoop.github.io/tree/master/week14)
 
+Review homework on concurrency.  
 Review bit operators: and, or, xor  
+Generic types, type parameters, and generic methods.  
+Introduction to Streams.  
 Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Singleton
-(maybe) Generic types: Rules for parameterized classes and interfaces.  Generic methods (static methods with their own type parameter)
+(optional) URLs, JDBC for accessing a Database
 
 [Design Patterns Practice](https://skeoop.github.io/patterns/Patterns-Exercises.pdf) in "patterns" folder.
 
