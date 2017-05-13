@@ -14,9 +14,10 @@ PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/Array
 
 
 ## Final Exam
-**Lab Exam:** Thursday, 18 May 13:00-18:00 Room 201.   
-**Project Presentations**: TBA.   Presentation of PA6. Explain the interesting technology you used so everyone can learn!  
-**Written Exam** Friday, 26 May 9:00-12:00 Room 204. Closed book.   
+
+**Lab Exam:** Thursday, 18 May 13:00-18:00, Room 201.   
+**Project Presentations**: Friday, 26 May 16:00-18:00, Room 204. Explain interesting technology you used so everyone can learn!  
+**Written Exam** Friday, 26 May 9:00-12:00, Room 204. Closed book.   
 Dress Code: "*dress like a programmer*" (wear anything you like).  
 
 ---
@@ -128,8 +129,20 @@ Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Sing
 [Design Patterns Practice](https://skeoop.github.io/patterns/Patterns-Exercises.pdf) in "patterns" folder.
 
 #### Lab
+* Review Observer Pattern  
+* Programming Quiz on Observer in GUI
+* [Lab14 Generics and Streams](https://skeoop.github.io/week14/Lab14-Generics-and-Streams.pdf). Apply Generics and Streams to some methods in CoinUtil.
+* Work on projects.
 
 #### Assignment
+* Email me the URL for your project repo.  One repo per team (you should both commit to same repo).
+* Create good online documentation for your projects.
+* Document **at least** the following:
+    * What the project does.  
+    * Interesting code or technology you used, with a simple example and references so others can learn.
+    * Names of authors.  Use `@username` for Github references.
+* Consider using  Github Pages (not required but looks much nicer); Wiki for project docs or so others can contribute!
+
 
 ---
 ### Optional Topic
