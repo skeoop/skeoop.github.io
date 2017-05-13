@@ -77,13 +77,13 @@ Announcements:
 * Only 2 lab exams. 2nd lab exam during finals week.
 * Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
 
-Review Sequence Diagram from Last Week  
-Recursion and back-tracking  
-Coin Purse withdraw using recursion (and why)  
-Strategy Pattern  
+Review Sequence Diagram from Last Week   
+Recursion and back-tracking   
+Coin Purse withdraw using recursion (and why)   
+Strategy Pattern   
 Threads   
-Threads in Swing  
-(maybe) Intro to Lambda expression for anonymous objects  
+Threads in Swing   
+Intro to Lambda expressions  
 
 #### Lab
 * Quiz on using List (computer required)
@@ -100,7 +100,8 @@ Threads in Swing
 ## [Week 13](http://www.github.com/skeoop/skeoop.github.io/tree/master/week13)
 Review of Threads homework.   
 Threads in Swing (from last week) with demo. Slides in week12 folder.   
-New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Time classes.  
+New Features in Java 8:  
+Lambda Expressions, Interface new features, Immutable Date & Time classes.  
 
 #### Lab
 * Quiz on Recursion  
@@ -113,7 +114,8 @@ New Features in Java 8: Lambdas, Interface changes, Streams, immutable Date & Ti
 
 #### Assignment
 [PA5 Multi-threaded Downloader](https://skeoop.github.io/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
-**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.  
+**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.   
+[Java 8 Interfaces](https://skeoop.github.io/java8/) my write-up in the "java8" folder.  
 **Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
