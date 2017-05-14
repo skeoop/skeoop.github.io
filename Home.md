@@ -1,9 +1,6 @@
 Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.
 
----
-## [Results](http://www.github.com/skeoop/tree/master/results)
-[PA1](https://skeoop.github.io/results/PA1-Results.pdf)  were very good; some codes look too similar.
-PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
+[Results](http://www.github.com/skeoop/tree/master/results):
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
 [LabExam 1](https://skeoop.github.io/results/Labexam1-Results.pdf),
 [Quiz2 Feedback](https://skeoop.github.io/results/quiz2),
@@ -11,112 +8,16 @@ PA1 JUnit tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/Array
 [Quiz4](https://skeoop.github.io/results/quiz4-scores.pdf),
 [Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf) and
 [Feedback](https://skeoop.github.io/results/quiz5)
+[PA1](https://skeoop.github.io/results/PA1-Results.pdf)  were very good; some codes look too similar.
+PA1 Unit Tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
 
-
+---
 ## Final Exam
 
 **Lab Exam:** Thursday, 18 May 13:00-18:00, Room 201.   
 **Project Presentations**: Friday, 26 May 16:00-18:00, Room 204. Explain interesting technology you used so everyone can learn!  
 **Written Exam** Friday, 26 May 9:00-12:00, Room 204. Closed book.   
 Dress Code: "*dress like a programmer*" (wear anything you like).  
-
----
-## [Week 9](http://www.github.com/skeoop/skeoop.github.io/tree/master/week9)
-
-State machines - modeling components whose behavior depends on state.   
-UML State Machine Diagram   
-Programming a state machine   
-State Design Pattern (programming without "if")   
-Recursion   
-
-#### Lab
-* [Syllable counter using a state machine](https://skeoop.github.io/week9/Lab9-SyllableCounter.pdf) the lab problems.
-* [WordCounterTest](https://skeoop.github.io/week9/WordCounterTest.java) tests for syllable counter.
-* Dictionaries to count: http://se.cpe.ku.ac.th/dictionary and `scrable.txt` (week9 folder)
-* [Programming a State Machine](https://skeoop.github.io/week9/Programming%20a%20State%20Machine.pdf) write up explaining technique for implementating state machine behavior in Java.
-
-
-#### Assignment
-**Homework:** [Homework 3](https://skeoop.github.io/week9/Homework3.pdf) in week9 folder. Due next Friday (7 April).  
-**Read:** UMLD Chapter 10 (State Machine). _UML for Java Programmers_ Chapter 10, by Robert Martin, is also good and easy to read.  
-State Machine the web: [UML State Machine](http://www.uml-diagrams.org/state-machine-diagrams.html); Wikipedia has pages about State Machine and [UML State Machine](https://en.wikipedia.org/wiki/UML_state_machine).   
-
----
-## [Week 10](http://www.github.com/skeoop/skeoop.github.io/tree/master/week10)
-No class this week due to holiday.   Lab cancelled, too.  
-Please start work on PA4.
-
-#### Assignment
-
-[PA4-Readability](https://skeoop.github.io/week10/PA4-Readability.pdf)  an app that measures the reading difficulty of text.  This is a useful application.  Due: April 30.  
-Test file: [Alice in Wonderland](http://skeoop.github.io/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
-
----
-## [Week 11](http://www.github.com/skeoop/skeoop.github.io/tree/master/week11)
-
-Testing with JUnit.  
-Observer Pattern, Observers in Java, Observers in Swing components.  
-Using observers to notify UI of changes in app model.  
-Self-study:  Assertions and "programming by contract".  (see slides in week11 folder)
-
-#### Lab
-* **Quiz** on Git: add file, remove file, move file, clone, push to remote
-* Two programs in the lab this week.
-* [Lab11 StackTest](https://skeoop.github.io/week11/Lab11-StackTest.pdf) write JUnit tests for a Stack.  See lab sheet for stack specification.   
-Download Stack.java (interface) and StackFactory.jar for testing.  
-* [Observable Coin Purse with GUI](https://skeoop.github.io/week11/Lab11-Purse-with-Observers.pdf)  add a graphical user interface and observers to the coin purse.
-
-
-#### Assignment
-
-[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:** one page proposal due in 2 weeks.
-
----
-## [Week 12](http://www.github.com/skeoop/skeoop.github.io/tree/master/week12)
-Announcements:   
-* Only 2 lab exams. 2nd lab exam during finals week.
-* Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
-
-Review Sequence Diagram from Last Week   
-Recursion and back-tracking   
-Coin Purse withdraw using recursion (and why)   
-Strategy Pattern   
-Threads   
-Threads in Swing   
-Intro to Lambda expressions  
-
-#### Lab
-* Quiz on using List (computer required)
-* [Lab12 Purse with Withdraw Strategy](https://skeoop.github.io/week12/Lab12-Purse-with-Strategy-Pattern.pdf) using strategies for withdraw, including recursive withdraw.
-
-#### Assignment
-**Read:** 1) BIGJ Chapter 20 (Threads).   
-**Read:** 2) [Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html) and Swing Concurrency in the [Java Tutorial](https://docs.oracle.com/javase/tutorial/reallybigindex.html).  You are responsible for this material, including **synchronization**.  
-[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:**  May 5 (Friday)
-**Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture.  
-
-
----
-## [Week 13](http://www.github.com/skeoop/skeoop.github.io/tree/master/week13)
-Review of Threads homework.   
-Threads in Swing (from last week) with demo. Slides in week12 folder.   
-New Features in Java 8:  
-Lambda Expressions, Interface new features, Immutable Date & Time classes.  
-
-#### Lab
-* Quiz on Recursion  
-* Discussion of JUnit tests for Withdraw Strategy - create a Purse (attribute) in setUp method and write methods to simplify coding of tests.
-* Methods with variable length args  
-* [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
-    * [ocsf-231.zip](http://skeoop.github.io/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
-    * [demoserver.jar](http://skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
-    * [Object-Client-Server-Framework.pdf](https://skeoop.github.io/week13/demoserver.jar) chapter about frameworks and OCSF from the book *Object-oriented Analysis & Design* by Lethbridge.  Chapter describes basics of creating a network connection in Java and how to use OCSF.
-
-#### Assignment
-[PA5 Multi-threaded Downloader](https://skeoop.github.io/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
-**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.   
-[Java 8 Interfaces](https://skeoop.github.io/java8/) my write-up in the "java8" folder.  
-**Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
 ## [Week 14](https://www.github.com/skeoop/skeoop.github.io/tree/master/week14)
@@ -145,20 +46,121 @@ Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Sing
     * Names of authors.  Use `@username` for Github references.
 * Consider using  Github Pages (not required but looks much nicer); Wiki for project docs or so others can contribute!
 
+---
+## [Week 13](http://www.github.com/skeoop/skeoop.github.io/tree/master/week13)
+Review of Threads homework.   
+Threads in Swing (from last week) with demo. Slides in week12 folder.   
+New Features in Java 8:  
+Lambda Expressions, Interface new features, Immutable Date & Time classes.  
+
+#### Lab
+* Quiz on Recursion  
+* Discussion of JUnit tests for Withdraw Strategy - create a Purse (attribute) in setUp method and write methods to simplify coding of tests.
+* Methods with variable length args  
+* [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
+    * [ocsf-231.zip](http://skeoop.github.io/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
+    * [demoserver.jar](http://skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
+    * [Object-Client-Server-Framework.pdf](https://skeoop.github.io/week13/demoserver.jar) chapter about frameworks and OCSF from the book *Object-oriented Analysis & Design* by Lethbridge.  Chapter describes basics of creating a network connection in Java and how to use OCSF.
+
+#### Assignment
+[PA5 Multi-threaded Downloader](https://skeoop.github.io/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
+**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.   
+[Java 8 Interfaces](https://skeoop.github.io/java8/) my write-up in the "java8" folder.  
+**Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
-### Optional Topic
-Please tell me if you are interested in studying these topics.
-We can cover one topic (presentation and programming practice) on a Saturday:
+## [Week 12](http://www.github.com/skeoop/skeoop.github.io/tree/master/week12)
+Announcements:   
+* Only 2 lab exams. 2nd lab exam during finals week.
+* Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
 
-* Using a database in Java with JDBC.
-    * JDBC is the standard interface for using an SQL database in Java.  Its not very hard and uses several design patterns. Works with almost any database.
-    * Programming practice using a database of world country facts.
-* Object persistence using JPA.
-    * Java Persistence API (JPA) is a standard for saving, searching, and retrieving objects using a database.  JPA handles the low-level reading and writing of data for you.
-    * JPA is used in MVC frameworks, and much easier to use than JDBC.
-    * Not necessary to study JDBC before JPA, but both are useful to know.
+Review Sequence Diagram from Last Week   
+Recursion and back-tracking   
+Coin Purse withdraw using recursion (and why)   
+Strategy Pattern   
+Threads   
+Threads in Swing   
+Intro to Lambda expressions  
 
+#### Lab
+* Quiz on using List (computer required)
+* [Lab12 Purse with Withdraw Strategy](https://skeoop.github.io/week12/Lab12-Purse-with-Strategy-Pattern.pdf) using strategies for withdraw, including recursive withdraw.
+
+#### Assignment
+**Read:** 1) BIGJ Chapter 20 (Threads).   
+**Read:** 2) [Concurrency](https://docs.oracle.com/javase/tutorial/essential/concurrency/index.html) and Swing Concurrency in the [Java Tutorial](https://docs.oracle.com/javase/tutorial/reallybigindex.html).  You are responsible for this material, including **synchronization**.  
+[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:**  May 5 (Friday)
+**Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture.  
+
+---
+## [Week 11](http://www.github.com/skeoop/skeoop.github.io/tree/master/week11)
+
+Testing with JUnit.  
+Observer Pattern, Observers in Java, Observers in Swing components.  
+Using observers to notify UI of changes in app model.  
+Self-study:  Assertions and "programming by contract".  (see slides in week11 folder)
+
+#### Lab
+* **Quiz** on Git: add file, remove file, move file, clone, push to remote
+* Two programs in the lab this week.
+* [Lab11 StackTest](https://skeoop.github.io/week11/Lab11-StackTest.pdf) write JUnit tests for a Stack.  See lab sheet for stack specification.   
+Download Stack.java (interface) and StackFactory.jar for testing.  
+* [Observable Coin Purse with GUI](https://skeoop.github.io/week11/Lab11-Purse-with-Observers.pdf)  add a graphical user interface and observers to the coin purse.
+
+#### Assignment
+
+[PA6 Custom Project](https://skeoop.github.io/week12/PA6-Custom-Project.pdf)  Design your own programming project and submit a proposal. **Due:** one page proposal due in 2 weeks.
+
+---
+## [Week 10](http://www.github.com/skeoop/skeoop.github.io/tree/master/week10)
+No class this week due to holiday.   Lab cancelled, too.  
+Please start work on PA4.
+
+#### Assignment
+
+[PA4-Readability](https://skeoop.github.io/week10/PA4-Readability.pdf)  an app that measures the reading difficulty of text.  This is a useful application.  Due: April 30.  
+Test file: [Alice in Wonderland](http://skeoop.github.io/week10/Alice-in-Wonderland.txt) with simplified punctuation.  
+
+---
+## [Week 9](http://www.github.com/skeoop/skeoop.github.io/tree/master/week9)
+
+State machines - modeling components whose behavior depends on state.   
+UML State Machine Diagram   
+Programming a state machine   
+State Design Pattern (programming without "if")   
+Recursion   
+
+#### Lab
+* [Syllable counter using a state machine](https://skeoop.github.io/week9/Lab9-SyllableCounter.pdf) the lab problems.
+* [WordCounterTest](https://skeoop.github.io/week9/WordCounterTest.java) tests for syllable counter.
+* Dictionaries to count: http://se.cpe.ku.ac.th/dictionary and `scrable.txt` (week9 folder)
+* [Programming a State Machine](https://skeoop.github.io/week9/Programming%20a%20State%20Machine.pdf) write up explaining technique for implementating state machine behavior in Java.
+
+#### Assignment
+**Homework:** [Homework 3](https://skeoop.github.io/week9/Homework3.pdf) in week9 folder. Due next Friday (7 April).  
+**Read:** UMLD Chapter 10 (State Machine). _UML for Java Programmers_ Chapter 10, by Robert Martin, is also good and easy to read.  
+State Machine the web: [UML State Machine](http://www.uml-diagrams.org/state-machine-diagrams.html); Wikipedia has pages about State Machine and [UML State Machine](https://en.wikipedia.org/wiki/UML_state_machine).   
+
+---
+### Optional: Databases with JDBC and ORM
+
+We didn't have time to cover this. Its not core to OOP and some
+students have already learned it on their own.
+Since databases are a common part of apps, you might want to
+know some of the basic concepts.
+
+Fundamentals:
+
+* Some common databases, including client-server and embedded.
+* Uniform Resource Locators (URLs) used to identify resources such as databases
+* Simple SQL queries and commands.
+* The 4 basic operations: create, retreive, update, and delete (CRUD)
+
+Java Howto:
+
+* Using JDBC to access a database
+* Object-Relational Mapping (ORM) to save and retrieve objects in a database. Many apps are simpler if let an ORM framework do the work for you, instead of using JDBC yourself.  EBean and ORMLite are easy to use. 
+* For Java, the Java Persistence API (JPA) is the standard. EclipseLink is the reference JPA implementation. We won't cover JPA, but EBean uses much of the JPA API.
 
 ---
 # First Half of the Course
