@@ -67,9 +67,6 @@ Lambda Expressions, Interface new features, Immutable Date & Time classes.
 
 ---
 ## [Week 12](http://www.github.com/skeoop/skeoop.github.io/tree/master/week12)
-Announcements:   
-* Only 2 lab exams. 2nd lab exam during finals week.
-* Written Final Exam: 26 May, 9:00-12:00 in room 204. Any conflict?
 
 Review Sequence Diagram from Last Week   
 Recursion and back-tracking   
@@ -160,9 +157,9 @@ Java Howto:
 * For Java, the Java Persistence API (JPA) is the standard. EclipseLink is the reference JPA implementation. We won't cover JPA, but EBean uses much of the JPA API.
 
 ---
-# First Half of the Course
 
----
+## First Half of the Course
+
 ## [Week 1](https://www.github.com/skeoop/skeoop.github.io/week1)
 
 0. Preliminaries.
