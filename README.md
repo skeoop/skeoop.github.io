@@ -1,6 +1,6 @@
-# Object-Oriented Programming at [Kasetsart University](http://www.ku.th)
+## Object-Oriented Programming at Kasetsart University
 
-Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by James Brucker.
+Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by J. Brucker.
 
 [Schedule](http://skeoop.github.io/Home) weekly topics and assignments.
 
