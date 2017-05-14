@@ -1,15 +1,14 @@
-Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.
-
+Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.    
 [Results](http://www.github.com/skeoop/tree/master/results):
+[PA1](https://skeoop.github.io/results/PA1-Results.pdf),
+PA1 Unit Test [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
 [LabExam 1](https://skeoop.github.io/results/Labexam1-Results.pdf),
 [Quiz2 Feedback](https://skeoop.github.io/results/quiz2),
 [Quiz3](https://skeoop.github.io/results/quiz3-scores.pdf),
 [Quiz4](https://skeoop.github.io/results/quiz4-scores.pdf),
 [Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf) and
-[Feedback](https://skeoop.github.io/results/quiz5)
-[PA1](https://skeoop.github.io/results/PA1-Results.pdf)  were very good; some codes look too similar.
-PA1 Unit Tests: [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).    
+[Feedback](https://skeoop.github.io/results/quiz5)    
 
 ---
 ## Final Exam
@@ -26,14 +25,12 @@ Review homework on concurrency.
 Review bit operators: and, or, xor  
 Generic types, type parameters, and generic methods.  
 Introduction to Streams.  
-Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Singleton
-(optional) URLs, JDBC for accessing a Database
-
+Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Singleton   
 [Design Patterns Practice](https://skeoop.github.io/patterns/Patterns-Exercises.pdf) in "patterns" folder.
 
 #### Lab
 * Review Observer Pattern  
-* Programming Quiz on Observer in GUI
+* Programming Quiz on Observers in GUI
 * [Lab14 Generics and Streams](https://skeoop.github.io/week14/Lab14-Generics-and-Streams.pdf). Apply Generics and Streams to some methods in CoinUtil.
 * Work on projects.
 
@@ -55,8 +52,8 @@ Lambda Expressions, Interface new features, Immutable Date & Time classes.
 
 #### Lab
 * Quiz on Recursion  
-* Discussion of JUnit tests for Withdraw Strategy - create a Purse (attribute) in setUp method and write methods to simplify coding of tests.
-* Methods with variable length args  
+* Discuss JUnit tests for Withdraw Strategy - use a Purse attribute, setUp method, and utility methods to simplify tests.
+* Methods with variable length parameter list   
 * [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
     * [ocsf-231.zip](http://skeoop.github.io/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
     * [demoserver.jar](http://skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
@@ -64,8 +61,8 @@ Lambda Expressions, Interface new features, Immutable Date & Time classes.
 
 #### Assignment
 [PA5 Multi-threaded Downloader](https://skeoop.github.io/week13/PA5-Threaded-Downloader.pdf) using threads for faster file downloads, as done in FlashGet and Filezilla. **Optional** this isn't required, but you can use this project is place of some other PA you missed, or as your PA6 project.  
-**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).  Interfaces in Java 8 tutorial.   
-[Java 8 Interfaces](https://skeoop.github.io/java8/) my write-up in the "java8" folder.  
+**Read:** Lambda Expressions in Java 8 tutorial (new feature in Java 8).   
+**Read:** Interfaces in Java 8 tutorial.  [Java 8 Interfaces](https://skeoop.github.io/java8/) my write-up (optional).  
 **Homework**: [Homework 4](https://skeoop.github.io/week12/Homework4.pdf) due next week in lecture. (from last week)
 
 ---
