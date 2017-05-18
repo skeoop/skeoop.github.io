@@ -155,6 +155,7 @@ Java Howto:
 * Using JDBC to access a database
 * Object-Relational Mapping (ORM) to save and retrieve objects in a database. Many apps are simpler if let an ORM framework do the work for you, instead of using JDBC yourself.  EBean and ORMLite are easy to use. 
 * For Java, the Java Persistence API (JPA) is the standard. EclipseLink is the reference JPA implementation. We won't cover JPA, but EBean uses much of the JPA API.
+* Design: separate persistence from other classes in your app. Defining Data Access Objects (DAO) is one common design.
 
 ---
 
