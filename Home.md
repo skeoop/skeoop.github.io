@@ -10,7 +10,7 @@ PA1 Unit Test [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIte
 [Quiz4](https://skeoop.github.io/results/quiz4-scores.pdf),
 [Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf) and
 [Feedback](https://skeoop.github.io/results/quiz5)    
-[All Quiz](https://skeoop.github.io/results/quiz-scores.pdf)
+[All Quiz Scores](https://skeoop.github.io/results/quiz-scores.pdf)
 
 ---
 ## Final Exam
