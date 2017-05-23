@@ -3,12 +3,14 @@ Other pages: [About the Course](About). [Course Repository](https://www.github.c
 [PA1](https://skeoop.github.io/results/PA1-Results.pdf),
 PA1 Unit Test [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIteratorTest.java).
 [PA2](https://skeoop.github.io/results/PA2-Results.pdf),
+[PA4](https://skeoop.github.io/results/PA4-Results.pdf),
 [LabExam 1](https://skeoop.github.io/results/Labexam1-Results.pdf),
 [Quiz2 Feedback](https://skeoop.github.io/results/quiz2),
 [Quiz3](https://skeoop.github.io/results/quiz3-scores.pdf),
 [Quiz4](https://skeoop.github.io/results/quiz4-scores.pdf),
 [Quiz5](https://skeoop.github.io/results/quiz5-scores.pdf) and
 [Feedback](https://skeoop.github.io/results/quiz5)    
+[All Quiz](https://skeoop.github.io/results/quiz-scores.pdf)
 
 ---
 ## Final Exam
