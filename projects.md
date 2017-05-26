@@ -1,11 +1,11 @@
 # Projects
 
-| Name and Link | Members  |
-|---------------|----------|
+| Project Name          | Members  |
+|-----------------------|----------|
 | [Surasak Cow Farm](https://github.com/yotharit/OOP2-PA6-Surasak-Cow-Farm) | Tharit |
-| [Menu](https://github.com/csupisara/MenuProject) | Supisara |
+| [Menu](https://github.com/csupisara/MenuProject) | Supisara, Sathira |
 | [Chess Game](https://github.com/kwanwantku/chessgame) | Kwanwan |
-| [Visual Piano](https://github.com/Non9441/visual-piano) | Non and Varit |
+| [Visual Piano](https://github.com/Non9441/visual-piano) | Non, Varit |
 | [Chat Application](https://github.com/Gotsira/chatapplication) | Sirasath, Issaree |
 | [Simple Text-to-Speech](https://github.com/printto/Simple-Text-to-Speech) | Pappin |
 | [Taxi Fare Estimator](https://github.com/napnie/TaxiFareEstimateCalculator) | Nitith |
