@@ -15,8 +15,8 @@
 | [Surasak Cow Farm](https://github.com/yotharit/OOP2-PA6-Surasak-Cow-Farm) | Tharit |
 | [Taxi Fare Estimator](https://github.com/napnie/TaxiFareEstimateCalculator) | Nitith |
 | [Terrarium](https://github.com/JirayuL/Terrarium) | Jirayu, Wanchanapon |
-| [Visual Piano](https://github.com/Non9441/visual-piano) | Non, Varit |
 | [Typing Thrower](https://github.com/winChawakorn/TypingThrower) | Chawakorn, Vittunyuta |
+| [Visual Piano](https://github.com/Non9441/visual-piano) | Non, Varit |
 
 
 Every project should have documentation.
