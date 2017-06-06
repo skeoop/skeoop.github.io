@@ -10,7 +10,7 @@ I based the grade on these factors:
 
 ## The test files
 
-All three files are in the class [docs](http://github.com/skeoop/skeoop.github.io/docs) folder.
+All three files are in the class [docs](https://skeoop.github.io/docs/) folder.
 
 EasyTest.txt - file containing only one sentence and simple punctuation.  But it has blank lines, which confused some apps.  
 Alice-short.txt - short excerpt from Alice in Wonderland, with some punctuation simplified.  
