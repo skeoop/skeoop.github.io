@@ -55,7 +55,7 @@ Common Design Patterns: Observer, Factory Method, State, Strategy, Adapter, Sing
 Review of Threads homework.   
 Threads in Swing (from last week) with demo. Slides in week12 folder.   
 New Features in Java 8:  
-Lambda Expressions, Interface new features, Immutable Date & Time classes.  
+Lambda Expressions, Interface enhancements, Immutable Date & Time classes, Streams.  
 
 #### Lab
 * Quiz on Recursion  
