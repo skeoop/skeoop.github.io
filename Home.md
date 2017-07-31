@@ -23,7 +23,7 @@ PA1 Unit Test [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIte
 **Lab Exam:** Thursday, 18 May 13:00-18:00, Room 201.   
 **Project Presentations**: Friday, 26 May 16:00-18:00, Room 204. Explain interesting technology you used so everyone can learn!  
 **Written Exam** Friday, 26 May 9:00-12:00, Room 204. Closed book.   
-Dress Code: "*dress like a programmer*" (wear anything you like).  
+Dress Code: "*Dress like a programmer*" (wear anything you like).  
 
 ---
 ## [Week 14](https://www.github.com/skeoop/skeoop.github.io/tree/master/week14)
@@ -59,8 +59,8 @@ Lambda Expressions, Interface enhancements, Immutable Date & Time classes, Strea
 
 #### Lab
 * Quiz on Recursion  
-* Discuss JUnit tests for Withdraw Strategy - use a Purse attribute, setUp method, and utility methods to simplify tests.
-* Methods with variable length parameter list   
+* Discuss JUnit tests for Withdraw Strategy - simplify tests by using a `setUp` method and attribute for Purse, plus utility methods.
+* How to define methods with variable number of parameters (printf is example)
 * [Lab13 OCSF Framework](https://skeoop.github.io/week13/Lab13-OCSF-Framework.pdf). This is an introduction to frameworks.  Files for this lab:
     * [ocsf-231.zip](http://skeoop.github.io/week13/ocsf-231.zip) contains ocsf-2.31.jar, source code, and Javadoc.
     * [demoserver.jar](http://skeoop.github.io/week13/demoserver.jar) question server you can use to test your client.  Run it from command line using `java -jar demoserver.jar`.
