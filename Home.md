@@ -17,7 +17,6 @@ PA1 Unit Test [ArrayIteratorTest.java](https://skeoop.github.io/results/ArrayIte
 ---
 ## [Student Projects](https://skeoop.github.io/projects)
 
----
 ## Final Exam
 
 **Lab Exam:** Thursday, 18 May 13:00-18:00, Room 201.   
