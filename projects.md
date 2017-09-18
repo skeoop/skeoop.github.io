@@ -23,12 +23,12 @@
 
 Every project should have documentation.
 
-* README.md - first thing people see when they come to your project. It should contain:
+* README.md - first thing people see when they visit your Github project. It should contain:
     * Describe what the project does
     * Introduce interesting technology used
-    * Names of author[s]
-    * How to install or link to installation instructions
-    * Links to other files and references
+    * Names of author(s)
+    * How to install and run project, or link to installation instructions
+    * Links to other libraries you use, and references you mention
     * Link to your Github pages site (or other web home) if you have one
 * Installation instructions - either in README.md, or another file with a *link* in README.md
 * Source code should be commented, and written as best you can.
