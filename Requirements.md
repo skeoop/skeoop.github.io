@@ -1,4 +1,4 @@
-# Required Materials for OOP
+# Required Material for OOP
 
 ## Github Account
 
