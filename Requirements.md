@@ -15,6 +15,12 @@
 3. **Git command line client**.  You can use the IDE's built-in git feature, but you should also have the command-line git from https://git-scm.com
 4. **Integrated Development Environment** (IDE) for Java. Eclipse, Netbeans, or IntelliJ are OK.
 
+## Required Book
+
+Horstmann, *Big Java*, 5E.  Covers Java 7. The 4th edition can also be used; its almost identical and more concise but some section numbers differ.
+
+We'll describe you how to get the book in class.
+
 ### Windows Users: Where to Install Java
 
 * Install Java using a short directory path **without any spaces** in the path.
@@ -27,10 +33,6 @@ Also bad:  C:\Users\admin\Local Files\Desktop\Eclipse
 ```
 
 If you install Java software in a long path with spaces it is difficult to correctly add it to the PATH variable that is used in command windows.  It also makes it harder for you to find!
-
-## Required Book
-
-Horstmann, *Big Java*, 5E.  Covers Java 7. The 4th edition can also be used; its almost identical and more concise but some section numbers differ.
 
 ## Recommended
 
