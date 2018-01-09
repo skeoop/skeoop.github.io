@@ -5,7 +5,8 @@
 1. Create a Github account and complete your account profile.  Your profile should contain:
   * Your real name in English, at least first name. Use correct case of letters.
   * A photo that clearly shows your face.
-2. Complete this form: [https://goo.gl/forms/uJU4wOJl0CJsJYhf1](https://goo.gl/forms/uJU4wOJl0CJsJYhf1)
+2. 2nd-4th Year Students complete this form: [https://goo.gl/forms/uJU4wOJl0CJsJYhf1](https://goo.gl/forms/uJU4wOJl0CJsJYhf1).    
+1st Year Students: we already have your Github login from last semester.
 
 ## Required Software
 
