@@ -10,15 +10,10 @@
 
 ## Required Software
 
-1. **Java SDK Version 8**.  We will use Version 8 in this course.
+1. **Java SDK Version 8**.  We will use Version 8 in this course. Its OK if you *also* have Java 9 installed, but set Java 8 as the default in your IDE.
 2. **The Java JDK Documentation** including the Java API docs installed on your computer, and *bookmarked* in a web browser. This is a great source of knowledge.  If you don't install it, you will not be able to look-up the Java API during a quiz or exam.
 3. **Git command line client**.  You can use the IDE's built-in git feature, but you should also have the command-line git from https://git-scm.com
 4. **Integrated Development Environment** (IDE) for Java. Eclipse, Netbeans, or IntelliJ are OK.
-
-### Required Material
-
-3. **Java JDK 8**.  Even though Java 9 has been released, you will use Java 8 in this course.  Its OK to have both Java 8 and Java 9 installed, but make sure your IDE uses Java 8 by default.  If you submit code compiled with Java 9 it will fail testing.
-4. **Git command line tool** from http://git-scm.org/download.  You can also use your IDE's built-in Git tool or a GUI Git tool, provided you know how to use it (no help using Git on exams/quizzes).
 
 ### Windows Users: Where to Install Java
 
