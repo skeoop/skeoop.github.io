@@ -17,8 +17,15 @@ Other pages: [About the Course](About). [Course Repository](https://www.github.c
 <tr valign="top">
 <td align="center"> Week 1 (Jan 11)</td>
 <td markdown="span">
+Introduction to the course   
+Review of Object basics    
+UML Class Diagram    
+How to read the Java API    
+Using Git    
 </td>
 <td markdown="span">
+Install [Required software](Requirements)    
+Review [how to use Git](git/intro-git) and [Github](git/intro-github). There are also PPT in [git](git/index.html) folder.
 </td>
 </tr>
 <!-- week 2 -->
