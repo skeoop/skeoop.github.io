@@ -4,7 +4,7 @@ title: Schedule
 description: Index page
 ---
 
-Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.   
+Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
 
 <table border="1">
@@ -25,7 +25,9 @@ Using Git
 </td>
 <td markdown="span">
 Install [Required software](Requirements)    
-Review [how to use Git](git/intro-git) and [Github](git/intro-github). There are also PPT in [git](git/index.html) folder.
+Review [how to use Git](git/intro-git) and [Github](git/intro-github). There are also PPT in [git](git/) folder.    
+Join [Google Classroom](https://classroom.google.com) for this course. Use your KU Login and code **scpkk0**.   
+We use Github Classroom for programs, Google Classroom for written homework.
 </td>
 </tr>
 <!-- week 2 -->
