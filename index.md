@@ -28,7 +28,8 @@ Install [Required software](Requirements)
 Review [how to use Git](git/intro-git) and [Github](git/intro-github). There are also PPT in [git](git/) folder.    
 Join [Google Classroom](https://classroom.google.com) for this course. Use your KU Login and code **scpkk0**.   
 We use Github Classroom for programs, Google Classroom for written homework.   
-**Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf)   
+**Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf). Starter code: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).   
+
 </td>
 </tr>
 <!-- week 2 -->
