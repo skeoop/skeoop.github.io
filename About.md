@@ -31,25 +31,25 @@ See [Requirements](Requirements) for software and other items you need for this 
 
 ### Instructor and TAs
 
-Instructor:  James Brucker    
-TAs: Taweerat Chaiman, Chinthiti Wisetsombat, Kongpon Charanwattanakit, Thongrapee Panyapatiphan 
+**Instructor**:  James Brucker    
+**TAs**: Taweerat Chaiman, Chinthiti Wisetsombat, Kongpon Charanwattanakit, Thongrapee Panyapatiphan 
 
 To contact them, use this Java method:
 ```java
 /**
  * Get someone's KU Email address.
- * @param p a Person with firstName and lastName in English
+ *
  * @return the person's email
  */
-public String getEmail(Person p) {
+public String getEmail(String firstName, String lastName, boolean isThaiName) {
     final String DOMAIN = "ku.th";
     StringBuilder sb = new StringBuilder();
-    if (p.isThaiName()) 
+    if (isThaiName) 
        // for Thai names, but unreliable
-       sb.append(p.firstName).append('.').append(p.lastName.charAt(0)); 
+       sb.append(firstName).append('.').append(lastName.charAt(0)); 
     else 
        // foreign names
-       sb.append(p.firstName.charAt(0)).append('.').append(p.lastName); 
+       sb.append(firstName.charAt(0)).append('.').append(lastName); 
     return sb.append('@').append(DOMAIN).toString();
 }
 ```
