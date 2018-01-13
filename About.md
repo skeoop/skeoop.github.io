@@ -31,8 +31,8 @@ See [Requirements](Requirements) for software and other items you need for this 
 
 ### Instructor and TAs
 
-The instructor is James Brucker.
-TAs are Taweerat Chaiman, Chinthiti Wisetsombat, and Kongpon Charanwattanakit.
+Instructor:  James Brucker    
+TAs: Taweerat Chaiman, Chinthiti Wisetsombat, Kongpon Charanwattanakit, Thongrapee Panyapatiphan 
 
 To contact them, use this Java method:
 ```java
@@ -44,16 +44,12 @@ To contact them, use this Java method:
 public String getEmail(Person p) {
   final String DOMAIN = "ku.th";
   StringBuilder sb = new StringBuilder();
-  if (p.isThaiName())
-    // for Thai names
-    sb.append(p.firstName).append('.').append(p.lastName.charAt(0)).append('@').append(DOMAIN);
-  else
-    // for foreign names
-   sb.append(p.firstName.charAt(0)).append('.').append(p.lastName).append('@').append(DOMAIN);
-  return sb.toString();
+  if (p.isThaiName()) sb.append(p.firstName).append('.').append(p.lastName.charAt(0)); // for Thai names
+  else sb.append(p.firstName.charAt(0)).append('.').append(p.lastName); // foreign names
+  return sb.append('@').append(DOMAIN).toString();
 }
 ```
-Do you see any **duplicate code** that you could move out of the "if" statement?
+[StringBuilder](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) is a mutable object for building and editing strings. Its much more efficient than concatenating Strings.
 
 ### Course work
 
