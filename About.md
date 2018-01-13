@@ -42,11 +42,15 @@ To contact them, use this Java method:
  * @return the person's email
  */
 public String getEmail(Person p) {
-  final String DOMAIN = "ku.th";
-  StringBuilder sb = new StringBuilder();
-  if (p.isThaiName()) sb.append(p.firstName).append('.').append(p.lastName.charAt(0)); // for Thai names
-  else sb.append(p.firstName.charAt(0)).append('.').append(p.lastName); // foreign names
-  return sb.append('@').append(DOMAIN).toString();
+    final String DOMAIN = "ku.th";
+    StringBuilder sb = new StringBuilder();
+    if (p.isThaiName()) 
+       // for Thai names, but unreliable
+       sb.append(p.firstName).append('.').append(p.lastName.charAt(0)); 
+    else 
+       // foreign names
+       sb.append(p.firstName.charAt(0)).append('.').append(p.lastName); 
+    return sb.append('@').append(DOMAIN).toString();
 }
 ```
 [StringBuilder](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) is a mutable object for building and editing strings. Its much more efficient than concatenating Strings.
