@@ -6,7 +6,7 @@ description: Index page
 
 ## Schedule and Assignments 
 
-Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
+Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
 
 <table border="1">
