@@ -4,6 +4,8 @@ title: Schedule
 description: Index page
 ---
 
+## Schedule and Assignments 
+
 Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
 
@@ -15,18 +17,23 @@ Other pages: [About the Course](About). [Course Repository](https://www.github.c
 </tr>
 <!-- week 1 -->
 <tr valign="top">
-<td align="center"> Week 1 (Jan 11)</td>
+<td align="center" markdown="span"> 
+[Week 1](week1/) (Jan 11)
+</td>
 <td markdown="span">
-Introduction to the course   
-Review of Object basics    
-UML Class Diagram    
+[Introduction to the course](week1/0-Introduction-to-Course.pdf)   
+[Review of Object basics](week1/1-Review-of-Java.pdf)    
+[Java Coding Standard and Javadoc](week1/2-Coding-Standard-and-Javadoc.pdf)    
+[Intro to Objects](week1/3a-Introduction-to-Objects.pdf) and [Why OOP?](week1/3b-Why-Objects.pdf)    
+[Object References](week4/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
+[UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
 How to read the Java API    
-Using Git    
+Using [Git](git/intro-git) and [Github](git/intro-github) [slides](git/Using-Github.pdf)    
 </td>
 <td markdown="span">
 Install [Required software](Requirements)    
-Review [how to use Git](git/intro-git) and [Github](git/intro-github). There are also PPT in [git](git/) folder.    
-Join [Google Classroom](https://classroom.google.com) for this course. Use your KU Login and code **scpkk0**.   
+Review [how to use Git](git/intro-git) and [Github](git/intro-github). [PDF of slides.](git/)     
+Join [Google Classroom](https://classroom.google.com) for written assignments. Use your KU Login and code **scpkk0**.   
 We use Github Classroom for programs, Google Classroom for written homework.   
 **Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf). Starter code: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).  [Checklist and Hints](week1/Lab1-checklist.md). 
 
@@ -34,15 +41,17 @@ We use Github Classroom for programs, Google Classroom for written homework.
 </tr>
 <!-- week 2 -->
 <tr valign="top">
-<td align="center"> Week 2 (Jan 18)</td>
-<td markdown="span">
+<td align="center" markdown="span"> 
+[Week 2](week2/) (Jan 18)
 </td>
 <td markdown="span">
 </td>
 </tr>
 <!-- week 3 -->
 <tr valign="top">
-<td align="center"> Week 3 (Jan 25)</td>
+<td align="center" markdown="span"> 
+[Week 3](week3/) (Jan 25)
+</td>
 <td markdown="span">
 </td>
 <td markdown="span">
