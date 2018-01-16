@@ -46,10 +46,14 @@ We use Github Classroom for programs, Google Classroom for written homework.
 <td markdown="span">
 3 Characteristics of OOP    
 Polymorphism    
-Inheritance    
+Interfaces    
+UML class diagram and relationships    
+[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are required knowledge from Programming 1. Make sure you know it.
 </td>
 <td markdown="span">
-**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) Due: Feb 3, midnight. 
+**Read**: BIGJ Section 9.4 and Chapter 10.
+**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) Due: Feb 3, midnight.   
+
 </td>
 </tr>
 <!-- week 3 -->
