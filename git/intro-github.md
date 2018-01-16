@@ -118,9 +118,6 @@ Here are the usual steps for an individual project (you are the only one committ
    cmd> git push
    ```
 
-k
-     
-
 
 ### Learn Github
 
