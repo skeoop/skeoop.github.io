@@ -44,11 +44,11 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Week 2](week2/) (Jan 18)
 </td>
 <td markdown="span">
-3 Characteristics of OOP    
-Polymorphism    
-Interfaces    
-UML class diagram and relationships    
-[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are required knowledge from Programming 1. Make sure you know it.
+[3 Fundamentals of OOP](week2/OO-Fundamentals.pdf)    
+[Polymorphism](week2/1-Polymorphism.pdf)    
+[Interfaces](week2/2-Interfaces.pdf) a way to enable polymorphism     
+[Relationships in UML](week2/4-UML-Class-Diagram-2.pdf)    
+[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.
 </td>
 <td markdown="span">
 **Read**: BIGJ Section 9.4 and Chapter 10.
@@ -62,9 +62,11 @@ UML class diagram and relationships
 [Week 3](week3/) (Jan 25)
 </td>
 <td markdown="span">
+Inheritance (again)    
+Abstract class as superclass    
 </td>
 <td markdown="span">
-Lab this week?  (KU Fair starts friday.)
+Lab this week?  (KU Fair starts Friday.)
 </td>
 </tr>
 <!-- Kaset Fair 26 Jan - 03 Feb -->
