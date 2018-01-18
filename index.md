@@ -48,7 +48,8 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Polymorphism](week2/1-Polymorphism.pdf)    
 [Interfaces](week2/2-Interfaces.pdf) a way to enable polymorphism     
 [Relationships in UML](week2/4-UML-Class-Diagram-2.pdf)    
-[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.
+[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.    
+[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.
 </td>
 <td markdown="span">
 **Read**: BIGJ Section 9.4 and Chapter 10.
