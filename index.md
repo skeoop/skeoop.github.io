@@ -49,10 +49,13 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Interfaces](week2/2-Interfaces.pdf) a way to enable polymorphism     
 [Relationships in UML](week2/5-UML-Class-Diagram-2.pdf)    
 [Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.    
-[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.
+[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
+[UML Practice](week2/UML_practice)
 </td>
 <td markdown="span">
+[Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
+**UML**: Good summary is [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 **Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) Due: Feb 3, midnight.   
 
 </td>
