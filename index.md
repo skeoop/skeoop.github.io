@@ -56,7 +56,7 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
 **UML**: Good summary is [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
-**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) Due: Feb 3, midnight.   
+**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) **Due:** Feb 3, midnight. [JUnit Tests](week2/FractionTests.zip) for Fraction class.      
 
 </td>
 </tr>
