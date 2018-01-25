@@ -66,7 +66,7 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Week 3](week3/) (Jan 25)
 </td>
 <td markdown="span">
-[Review](week3/README) of last week & evolution of Coin Purse    
+[Review](week3/Overview) of last week & evolution of Coin Purse    
 [Inheritance Basics](week3/Inheritance-Basics.pdf) for self-study    
 [Abstract Class & Method](week3/Abstract-Class-and-Inheritance.pdf)     
 [Modeling with Inheritance](week3/Inheritance-in-Modeling.pdf)     
