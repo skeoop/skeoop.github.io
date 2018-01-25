@@ -56,7 +56,7 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
 **UML**: Good summaries: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
-**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight.
+**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight. Create Github Repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K) it is empty now. Add your own code, `README.md`, and `.gitignore`.
 
 </td>
 </tr>
@@ -74,7 +74,9 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study
 </td>
 <td markdown="span">
-No Lab meeting, but there is a lab to finish at home. (KU Fair starts Friday.)
+No Lab meeting, but there is a lab to finish at home. (KU Fair starts Friday.)    
+**PA1**: [PA1-Fraction](week2/PA1-Fraction.pdf) create repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K). Add your own `README.md`, `.gitignore`, and code.   
+For help, see [Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
 </td>
 </tr>
 <!-- Kaset Fair 26 Jan - 03 Feb -->
