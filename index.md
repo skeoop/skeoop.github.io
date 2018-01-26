@@ -70,11 +70,12 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Inheritance Basics](week3/Inheritance-Basics.pdf) for self-study    
 [Abstract Class & Method](week3/Abstract-Class-and-Inheritance.pdf)     
 [Modeling with Inheritance](week3/Inheritance-in-Modeling.pdf)     
-[Interfaces for Sorting](week3/Lexical-Order-and-Sorting.pdf)
-[Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study
+[Interfaces for Sorting](week3/Lexical-Order-and-Sorting.pdf)    
+[Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study    
 </td>
 <td markdown="span">
-No Lab meeting, but there is a lab to finish at home. (KU Fair starts Friday.)    
+[Lab 3: Polymorphic Purse](week3/Lab3-PolymorphicPurse.pdf) to this at home.  **Due:** Sat, Feb 3.    
+No Lab meeting due to Kaset Fair.  Please work on Lab3 individually.    
 **PA1**: [PA1-Fraction](week2/PA1-Fraction.pdf) create repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K). Add your own `README.md`, `.gitignore`, and code.   
 For help, see [Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
 </td>
