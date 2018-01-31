@@ -2,30 +2,31 @@
 
 Using Git on your local computer is a good habit, but...
 
-* What if the hard disk on your computer fails?
-* What if want to share a project with someone else?
+* What if your hard disk fails?
+* How can your share a project with someone else?
 
-you also need a **remote** copy of your project -- along with the project history and an easy way to update the remote copy.
+You also need a **remote** copy of your project that you can easily update.
 
-Git supports use of **remote** repositories.
+Git supports **remote** repositories.
 [Github](https://github.com) and [Bitbucket](https://bitbucket.org) are 2 well known project hosting sites for git.  Both places let you store projects for free.
 
-Using a git hosting site (such as Github) you can:
+Using a **remote** git hosting site (such as Github) you can:
 
-* synchronize your local repository with the remote. Only the changes are uploaded/downloaded, so its efficient and fast.
+* synchronize your local repository with the remote. Only the changes are updated, so its efficient and fast.
 * create a new local copy from the remote
-* view project activity, updates, and compare version of files in a browser
+* view project activity, updates, and compare changes to files
 * give read-only or read-write access to other people 
 * create a professional looking web site for your project (*Github pages*, which are shown on github.io)
 
 ### Two Ways to Use Github
 
-How you **start** a project with Github has 2 cases:
+There are 2 ways to start a project with Github.
+The choice depends on these cases: 
 
 **Case 1**: You already have code on your computer; you want to copy it to Github.   
-**Case 2**: A project exists on Github; you want to copy it to your computer.
+**Case 2**: A project already exists on Github; you want to copy it to your computer.
 
-The only thing that differs is how you create your local project repository and connect it with Github.  After that, your normal workflow is the same in both cases.
+The only thing that differs is how you create your local project repository and connect it with Github.  After that, the normal workflow is the same in both cases.
 
 ### Case 1: You already have code on your computer. Copy it to Github.
 
@@ -42,11 +43,11 @@ In this case, there are 3 steps
 2. On Github, create an **empty** repository for the project.
     a. on [github.com](https://github.com) click on the "+" icon at upper-right of your home page and choose "create a new repository".
     b. give the repository a name. It does **not** need to be the same as your local project name.  For Programming 1, use the name the instructor specifies.
-    c. don't put any files in the repo (no README or .gitignore)
-    d. copy the URL that Github shows you, for example `https://github.com/fatalaijon/assignment1.git`.  (this is the URL for the "https" protocol)
-3. Add Github as "remote".  On your local computer, do:
+    c. don't put any files in the new repo -- not even a README.md
+    d. copy the URL that Github shows you, for example `https://github.com/billgates/assignment1.git`.  (this is the URL for the "https" protocol)
+3. On your local computer, add Github as "remote" repository.  Suppose the repo you created in Step 2 has URL "https://github.com/billgates/assignment1.gif". Then you'd do:
    ```shell
-   cmd> git remote add origin https://github.com/fatalaijon/assignment1.git
+   cmd> git remote add origin https://github.com/billgates/assignment1.git
    cmd> git push -u origin master
    ```
    This adds the Github repo (assignment1) as a remote repository named "origin".  "origin" is the standard name for the default remote, but there is nothing special about the name "origin".  `git push` means to copy your local repository to the remote (github), `-u origin master` means to make "origin" the default target and "master" the default branch for a "push" command.
@@ -65,12 +66,12 @@ If the project already exists on Github then do:
     * There is a button to copy this URL directly to your clipboard 
 3. In the **parent directory** of where you want to clone the project, enter the `git clone` command:
     ```shell
-    cmd> git clone https://github.com/fatalaijon/someproject.git
+    cmd> git clone https://github.com/billgates/someproject.git
     ```
     This creates a local directory having the same name as remote repository ("someproject" in this example) and copies the Github repo into it.
 4. If you want to use a **different name** for your copy of the repository, then type:
     ```shell
-    cmd> git clone https://github.com/fatalaijon/someproject.git  myproject
+    cmd> git clone https://github.com/billgates/someproject.git  myproject
     ```
     in this case, git will create a directory named `myproject` and copy the project there.
 

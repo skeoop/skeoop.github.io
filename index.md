@@ -28,11 +28,11 @@ Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course
 [Object References](week4/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
 [UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
 How to read the Java API    
-Using [Git](git/intro-git) and [Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
+Using [Git](git/intro-git) and [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
 </td>
 <td markdown="span">
 Install [Required software](Requirements)    
-Review [how to use Git](git/intro-git) and [Github](git/intro-github). [PDF of slides.](git/)     
+Review [how to use Git](git/intro-git) and [Intro to Github](git/intro-github). [PDF of slides.](git/)     
 Join [Google Classroom](https://classroom.google.com) for written assignments. Use your KU Login and code **scpkk0**.   
 We use Github Classroom for programs, Google Classroom for written homework.   
 **Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf). Starter code: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).  [Checklist and Hints](week1/Lab1-checklist.md). 
@@ -77,7 +77,7 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Lab 3: Polymorphic Purse](week3/Lab3-PolymorphicPurse.pdf) to this at home.  **Due:** Sat, Feb 3.    
 No Lab meeting due to Kaset Fair.  Please work on Lab3 individually.    
 **PA1**: [PA1-Fraction](week2/PA1-Fraction.pdf) create repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K). Add your own `README.md`, `.gitignore`, and code.   
-For help, see [Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
+For help, see [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
 </td>
 </tr>
 <!-- Kaset Fair 26 Jan - 03 Feb -->
@@ -96,6 +96,7 @@ No Lab, but you still have assignment.
 <td markdown="span">
 </td>
 <td markdown="span">
+**Quiz**: programming quiz. Please bring computer to class.
 </td>
 </tr>
 <!-- week 5 -->

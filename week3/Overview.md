@@ -1,6 +1,6 @@
 ## Don't Use == To Check for End of a Range
 
-In the `Purse` class many people wrote code like this:
+In the `Purse` class some people wrote code like this:
 
 ```java
 public boolean isFull( ) {
@@ -8,10 +8,10 @@ public boolean isFull( ) {
     return false;
 }
 ```
-This is an example of a range check.  You want to check if the items
+This is an example of a **bounds check**.  You want to check if the items
 in the purse is within the allowed size.
 
-However, this is not a good check.  What the programmer means is:
+However, there is a better way.  What the programmer means is:
 
 |  Purse Not Full  |   Purse is Full   |
 |------------------|-------------------|
@@ -28,8 +28,14 @@ public boolean isFull( ) {
     return false;
 }
 ```
+and, for more concise (and still readable) code consider:
+```java
+public boolean isFull() {
+    return money.size() >= capacity;
+}
+```
 
-## More Important: Don't use == for Range Check When Using Floating Point
+## Important: Don't use == for Bounds Check With Floating Point Values
 
 What will be the output of this method:
 ```java
@@ -65,10 +71,16 @@ Can you explain why?
 
 If you don't see the reason, change the `printf` format to print 16 digits:
 ```java
-         System.out.printf("sum = %f\n", sum);
+         System.out.printf("sum = %.16f\n", sum);
 ```
 
-Now can you explain it?   Using a `double`, can you *really* store the value 0.1?
+Now can you explain it?   
+
+The answer is related to how computers store floating point values.  They are stored as a base-2 mantissa and base-2 exponental.  The decimal value 0.1 does not have an exact base-2 representation.
+```shell
+(decimal) 0.1 = (binary) 0.000110011001100110011 ...
+```
+so there is some error in storing 0.1.  
 
 ## Computed Properties
 

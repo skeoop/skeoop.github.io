@@ -69,7 +69,7 @@ There are programming assignments (PA) for you to do on your own, about one ever
 
 ### Requirement for Individual Work
 
-All assignments *must* be done individually, unless group work is explicitly alowed.  No copying is accepted, even a small part.
+All assignments *must* be done **individually**, unless group work is explicitly alowed.  No copying is accepted, even on a small part.
 
 It is OK to discuss design and problems you have, but not to share code.  If you need help, please ask the TAs or instructor rather than the other students (who may not give you the correct answer).
 
