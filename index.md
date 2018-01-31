@@ -69,7 +69,6 @@ We use Github Classroom for programs, Google Classroom for written homework.
 [Review](week3/Overview) of last week & evolution of Coin Purse    
 [Inheritance Basics](week3/Inheritance-Basics.pdf) for self-study    
 [Abstract Class & Method](week3/Abstract-Class-and-Inheritance.pdf)     
-[Modeling with Inheritance](week3/Inheritance-in-Modeling.pdf)     
 [Interfaces for Sorting](week3/Lexical-Order-and-Sorting.pdf)    
 [Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study    
 </td>
@@ -94,6 +93,8 @@ No Lab, but you still have assignment.
 <tr valign="top">
 <td align="center"> Week 4 (Feb 08)</td>
 <td markdown="span">
+[Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
+
 </td>
 <td markdown="span">
 **Quiz**: programming quiz. Please bring computer to class.
