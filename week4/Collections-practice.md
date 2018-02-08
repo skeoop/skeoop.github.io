@@ -53,6 +53,9 @@ Complete the `setExplorer` method:
    Iterator<String> iter = set.iterator();
    while( iter.hasNext() ) {
       // get the next element from iterator and print it
+      String element = iter.next();
+
+   }
    ```
    * You'll need to print the set again, so consider writing a method `print(set)` to do this.
    * `Collection` defines an `iterator()` method that returns a **new** Iterator over the collection.  For example:
