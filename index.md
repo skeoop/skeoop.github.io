@@ -91,16 +91,18 @@ No Lab, but you still have assignment.
 </tr>
 <!-- week 4 -->
 <tr valign="top">
-<td align="center"> [Week 4](week4/) (Feb 08)</td>
+<td align="center" markdown="span"> 
+[Week 4](week4/) (Feb 08)
+</td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
 [Collections](week4/Collections.pdf)   
 [Collections Practice](week4/Collections-practice) with starter code: [https://classroom.github.com/a/0F28sTB7](https://classroom.github.com/a/0F28sTB7).   
 [Iterators](week4/Iterators.pdf) a common design pattern
-
 </td>
 <td markdown="span">
-**Quiz**: programming quiz. Please bring computer to class.
+**Quiz**: programming quiz. Please bring computer to class.    
+**PA2**: will be added on Thursday. Due in 2 weeks.
 </td>
 </tr>
 <!-- week 5 -->
