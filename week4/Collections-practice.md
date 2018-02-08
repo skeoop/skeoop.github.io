@@ -15,17 +15,17 @@ A Set is collection with:
 
 In Java, `Set` is an interface that extends the `Collection` interface.  Set doesn't add any new methods, but changes the *semantics* of some methods defined in `Collection`.
 
-The Java SE defines 2 concrete classes that implement `Set`:
-* `HashSet` puts objects in "buckets" using the object's `hashCode`.
-* `TreeSet` maintains an ordered collection of Objects.  The ordering can be either:
-    (a) the natural order, for objects that implement *Comparable*
-    (b) order specified by a *Comparator* that is given as a parameter to the TreeSet constructor.  You used a Comparator in Lab 3.
+The Java SE defines 2 concrete classes that implement Set:
+* `HashSet` puts objects in "buckets" using the object's `hashCode`. 
+* `TreeSet` maintains an ordered collection of Objects.  The ordering can be either:   
+   (a) the natural order, for objects that implement *Comparable*
+   (b) order specified by a *Comparator* that is given as a parameter to the TreeSet constructor.  You used a *Comparator* in Lab 3.
       
 ## Set Practice
 
 Code: `SetExercise.java`
 
-Complete the setExplorer method:
+Complete the `setExplorer` method:
 
 1. Create a HashSet<String> object and add these strings: "dog", "ant", "bird", "elephant", "cat".  `Set` and `Collection` interfaces defines an `add` method for this:
    ```java

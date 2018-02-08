@@ -91,7 +91,7 @@ No Lab, but you still have assignment.
 </tr>
 <!-- week 4 -->
 <tr valign="top">
-<td align="center"> Week 4 (Feb 08)</td>
+<td align="center"> [Week 4](week4/) (Feb 08)</td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
 [Collections](week4/Collections.pdf)   
