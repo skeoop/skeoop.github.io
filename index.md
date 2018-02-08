@@ -94,6 +94,9 @@ No Lab, but you still have assignment.
 <td align="center"> Week 4 (Feb 08)</td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
+[Collections](week4/Collections.pdf)   
+[Collections Practice](week4/Collections-practice) with starter code.   
+[Iterators](week4/Iterators.pdf) a common design pattern
 
 </td>
 <td markdown="span">
