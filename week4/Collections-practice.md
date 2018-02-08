@@ -2,20 +2,22 @@
 
 These exercises demonstrate properties of some common collections.
 
-1. Clone the starter code from Github Classroom.
-2. Do the exercises.
+1. Clone the starter code from Github Classroom: https://classroom.github.com/a/0F28sTB7
+2. Do the exercises
 3. Write your findings in README.md
-4. Push the completed code to Github.
+4. Push the completed code to Github
 
 ## Set and Implementations
 
 A Set is collection with:
+
 * no duplicates
 * order of items is determined by the Set, not by the programmer
 
 In Java, `Set` is an interface that extends the `Collection` interface.  Set doesn't add any new methods, but changes the *semantics* of some methods defined in `Collection`.
 
 The Java SE defines 2 concrete classes that implement Set:
+
 * `HashSet` puts objects in "buckets" using the object's `hashCode`. 
 * `TreeSet` maintains an ordered collection of Objects.  The ordering can be either:   
    (a) the natural order, for objects that implement *Comparable*
