@@ -102,7 +102,9 @@ No Lab, but you still have assignment.
 </td>
 <td markdown="span">
 **Quiz**: programming quiz. Please bring computer to class.    
-**PA2**: will be added on Thursday. Due in 2 weeks.
+[Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf)    
+[Lab 4-2: Factory Method and Singleton](week4/Lab4-CoinPurse-Inheritance.pdf)    
+**PA2**: will be added soon. Due in 2 weeks.
 </td>
 </tr>
 <!-- week 5 -->

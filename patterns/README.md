@@ -38,12 +38,13 @@ The "king" of design patterns is Model-View-Controller (MVC), but its also a bit
 ## Files in this Folder
 
 * Design-Patterns-1 - introduction to design patterns
-* X Pattern - intro to specify design pattern (one pattern per file)
+* *Xxxxx* Pattern - intro to specific design pattern (one pattern per file)
 
 ## References to Learn More
 
 There's lots of design patterns material on the web.
-I prefer books, though.  Two good books for Java programmers are:
+
+For more in-depth explanation, two good books for Java programmers are:
 
 * _Design Patterns Explained_ by Shalloway and Trott.
 * _Head First Design Patterns_. Has memorable and entertaining examples, but the example code is too simple.
