@@ -103,7 +103,7 @@ No Lab, but you still have assignment.
 <td markdown="span">
 **Quiz**: programming quiz. Please bring computer to class.    
 [Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf)    
-[Lab 4-2: Factory Method and Singleton](week4/Lab4-CoinPurse-Inheritance.pdf)    
+[Homework1](week4/Homework1.pdf) - submit file or link to Google Classroom    
 **PA2**: will be added soon. Due in 2 weeks.
 </td>
 </tr>
@@ -113,6 +113,7 @@ No Lab, but you still have assignment.
 <td markdown="span">
 </td>
 <td markdown="span">
+[Lab 5-1: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
 *No holiday for Chinese New Year.* 
 </td>
 </tr>
