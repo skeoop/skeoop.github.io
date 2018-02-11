@@ -102,8 +102,8 @@ No Lab, but you still have assignment.
 </td>
 <td markdown="span">
 **Quiz**: programming quiz. Please bring computer to class.    
-[Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf)    
-[Homework1](week4/Homework1.pdf) - submit file or link to Google Classroom    
+[Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf) Due: 10 Feb (Saturday)     
+[Homework1](week4/Homework1.pdf) - submit file or link to [Google Classroom](https://classroom.google.com/u/1/c/NDE0NjQ0OTha/a/MTE0OTI4NTEwMzha/details)    
 **PA2**: will be added soon. Due in 2 weeks.
 </td>
 </tr>
