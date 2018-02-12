@@ -105,14 +105,17 @@ No Lab, but you still have assignment.
 [Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf) Due: 10 Feb (Saturday)     
 [Homework1](week4/Homework1.pdf) - submit file or link to [Google Classroom](https://classroom.google.com/u/1/c/NDE0NjQ0OTha/a/MTE0OTI4NTEwMzha/details)    
 **PA2**: Due Sunday, 25 Feb by 22:00.    
-**1st-year students:** [PA2-ArrayIterator](week4/PA2-ArrayIterator.pdf) Github Link: [https://classroom.github.com/a/g0EhuapO](https://classroom.github.com/a/g0EhuapO)    
-**2nd & 3rd year students:** [PA2-Stack](week4/PA2-Stack.pdf) Github Link: [https://classroom.github.com/a/16iWXFAP](https://classroom.github.com/a/16iWXFAP)   
+**1st-year Student:** [PA2-ArrayIterator](week4/PA2-ArrayIterator.pdf) Github Link: [https://classroom.github.com/a/g0EhuapO](https://classroom.github.com/a/g0EhuapO)    
+**2nd-4th year Student:** [PA2-Stack](week4/PA2-Stack.pdf) Github Link: [https://classroom.github.com/a/16iWXFAP](https://classroom.github.com/a/16iWXFAP)   
 </td>
 </tr>
 <!-- week 5 -->
 <tr valign="top">
 <td align="center"> Week 5 (Feb 15)</td>
 <td markdown="span">
+Factory Methods to Create Objects
+Review Homework    
+What causes NullPointerException?
 </td>
 <td markdown="span">
 [Lab 5-1: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
@@ -125,8 +128,8 @@ No Lab, but you still have assignment.
 <td markdown="span">
 </td>
 <td markdown="span">
-Strike Back! Rate or rant the course at https://eassess.ku.ac.th/.
-Instructors don't know who writes what (anonymized), so its OK to criticize.
+Strike Back! Rate or rant the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
+Ratings are anonymized, so its safe to criticize and make suggestions.
 </td>
 </tr>
 <!-- midterm (Feb 24 - Mar 04) -->
