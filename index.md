@@ -104,7 +104,9 @@ No Lab, but you still have assignment.
 **Quiz**: programming quiz. Please bring computer to class.    
 [Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf) Due: 10 Feb (Saturday)     
 [Homework1](week4/Homework1.pdf) - submit file or link to [Google Classroom](https://classroom.google.com/u/1/c/NDE0NjQ0OTha/a/MTE0OTI4NTEwMzha/details)    
-**PA2**: will be added soon. Due in 2 weeks.
+**PA2**: Due Sunday, 25 Feb by 22:00.    
+**1st-year students:** [PA2-ArrayIterator](week4/PA2-ArrayIterator.pdf) Github Link: [https://classroom.github.com/a/g0EhuapO](https://classroom.github.com/a/g0EhuapO)    
+**2nd & 3rd year students:** [PA2-Stack](week4/PA2-Stack.pdf) Github Link: [https://classroom.github.com/a/16iWXFAP](https://classroom.github.com/a/16iWXFAP)   
 </td>
 </tr>
 <!-- week 5 -->
