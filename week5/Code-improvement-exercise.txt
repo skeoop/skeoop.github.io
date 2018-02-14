@@ -9,6 +9,9 @@ Apply the advice:
 * program defensively: avoid input errors
 
 ```
+/**
+ * Order people by birthday.  If they have same birthday then
+ * order by name.
 public static Map<Character,Integer> frequencyCount(InputStream instream) {
     Map<Character,Integer> map = new HashMap<Character,Integer>();  
     Scanner input = new Scanner(instream);

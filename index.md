@@ -113,8 +113,9 @@ No Lab, but you still have assignment.
 <tr valign="top">
 <td align="center"> Week 5 (Feb 15)</td>
 <td markdown="span">
-Factory Methods to Create Objects
 Review Homework    
+Factory Methods to Create Objects   
+Exceptions    
 What causes NullPointerException?
 </td>
 <td markdown="span">
