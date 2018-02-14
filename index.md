@@ -114,9 +114,11 @@ No Lab, but you still have assignment.
 <td align="center"> Week 5 (Feb 15)</td>
 <td markdown="span">
 Review Homework    
-Factory Methods to Create Objects   
-Exceptions    
-What causes NullPointerException?
+[Exceptions](week5/Exceptions.pdf)     
+What causes NullPointerException?    
+[Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
+[Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
+Proerties and Properties file (for lab)
 </td>
 <td markdown="span">
 [Lab 5-1: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
@@ -127,6 +129,7 @@ What causes NullPointerException?
 <tr valign="top">
 <td align="center"> Week 6 (Feb 22)</td>
 <td markdown="span">
+Input-Output classes
 </td>
 <td markdown="span">
 Strike Back! Rate or rant the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
