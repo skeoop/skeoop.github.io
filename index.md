@@ -111,7 +111,9 @@ No Lab, but you still have assignment.
 </tr>
 <!-- week 5 -->
 <tr valign="top">
-<td align="center"> Week 5 (Feb 15)</td>
+<td align="center" markdown="span"> 
+[Week 5](week5/) (Feb 15)
+</td>
 <td markdown="span">
 Review Homework    
 [Exceptions](week5/Exceptions.pdf)     
