@@ -120,10 +120,10 @@ Review Homework
 What causes NullPointerException?    
 [Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
 [Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
-Proerties and Properties file (for lab)
+[Properties and Properties file](week5/Runtime-Application-Properties.pdf) (for lab)
 </td>
 <td markdown="span">
-[Lab 5-1: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
+[Lab 5: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
 *No holiday for Chinese New Year.* 
 </td>
 </tr>
