@@ -124,25 +124,30 @@ What causes NullPointerException?
 </td>
 <td markdown="span">
 [Lab 5: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
-*No holiday for Chinese New Year.* 
+[Answers to Exceptions Practice](week5/Exceptions=Practice-Answers.pdf)    
+*No holiday for Chinese New Year.*     
 </td>
 </tr>
 <!-- week 6 -->
 <tr valign="top">
-<td align="center"> Week 6 (Feb 22)</td>
-<td markdown="span">
-Input-Output classes
+<td align="center" markdown="span"> 
+[Week 6](week6/) (Feb 22)
 </td>
 <td markdown="span">
-Strike Back! Rate or rant the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
+Input-Output classes    
+</td>
+<td markdown="span">
+**Quiz** on week 5, esp. exceptions.    
+
+Strike Back! Critique the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
 Ratings are anonymized, so its safe to criticize and make suggestions.
 </td>
 </tr>
 <!-- midterm (Feb 24 - Mar 04) -->
 <tr valign="top">
-<td align="center"> Midterm (2/24-3/04)</td>
+<td align="center"> Midterm</td>
 <td markdown="span">
-Midterm exam, both written and programming.
+27 Feb (Tues) Written and Programming Exam. 8:00-11:00 and 12:00-15:00 rm 203.
 </td>
 <td markdown="span">
 </td>
