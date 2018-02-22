@@ -136,7 +136,7 @@ What causes NullPointerException?
 <td markdown="span">
 [Input-Output classes](week6/Input-Output.pdf)        
 [Mutable and Immutable Objects](week6/Mutable-Immutable.pdf)    
-[Practice](week6/Practice-week6.pdf)    
+[Practice](week6/Practice-week6.pdf) Solution: [https://goo.gl/b44PJe](https://goo.gl/b44PJe)      
 </td>
 <td markdown="span">
 **Quiz** on week 5, esp. exceptions.    
@@ -149,7 +149,9 @@ Ratings are anonymized, so its safe to criticize and make suggestions.
 <tr valign="top">
 <td align="center"> Midterm</td>
 <td markdown="span">
-27 Feb (Tues) Written and Programming Exam. 8:00-11:00 and 12:00-15:00 rm 203.
+27 Feb (Tues) Written and Programming Exam. 8:00-12:00 room 203.    
+Exam is closed book and closed Internet (except one project on Github).
+Dress code is *Dress Like a Programmer* (wear anything you like).   
 </td>
 <td markdown="span">
 </td>
