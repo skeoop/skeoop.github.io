@@ -134,7 +134,9 @@ What causes NullPointerException?
 [Week 6](week6/) (Feb 22)
 </td>
 <td markdown="span">
-Input-Output classes    
+[Input-Output classes](week6/Input-Output.pdf)        
+[Mutable and Immutable Objects](week6/Mutable-Immutable.pdf)    
+[Practice](week6/Practice-week6.pdf)    
 </td>
 <td markdown="span">
 **Quiz** on week 5, esp. exceptions.    
