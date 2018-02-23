@@ -140,7 +140,7 @@ What causes NullPointerException?
 </td>
 <td markdown="span">
 **Quiz** on week 5, esp. exceptions.    
-[Lab6-File reader and timer](week6/Lab6-TimerTask.pdf)    
+[Lab6-File reader and timer](week6/Lab6-TaskTimer.pdf)    
 Strike Back! Critique the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
 Ratings are anonymized, so its safe to criticize and make suggestions.
 </td>
