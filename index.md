@@ -150,34 +150,86 @@ Ratings are anonymized, so its safe to criticize and make suggestions.
 <td align="center"> Midterm</td>
 <td markdown="span">
 27 Feb (Tues) Written and Programming Exam. 8:00-12:00 room 203.    
-Exam is closed book and closed Internet (except one project on Github).
-Dress code is *Dress Like a Programmer* (wear anything you like).   
+Closed book and closed Internet (except one project on Github).    
+Dress code: *Dress Like a Programmer* (wear anything you like).   
 </td>
 <td markdown="span">
 </td>
 </tr>
+<!-- 2nd half of course -->
+<tr valign="top">
+<td align="center"> <b>Topics</b><br/>for 2nd Half</td>
+<td markdown="span">
+Graphical UI in Java    
+Event Listeners and Observer Pattern    
+Model-View-Controller Design    
+State Machines and "*Programming without If*"    
+Recursion    
+Strategy Pattern and Resursive Withdraw for Purse    
+Threads    
+Using Threads in Swing or JavaFX    
+Generics (type parameters)    
+</td>
+<td markdown="span">
+Enum types    
+UML Sequence Diagram    
+Checkstyle for Coding style    
+Unit Testing with JUnit    
+Lambda Expressions and Anonymous Classes    
+Stream Programming    
+Frameworks. The OCSF Framework    
+Using a Database with ORM (optional class)   
+</td>
+</tr>
 <!-- week 7 -->
 <tr valign="top">
-<td align="center"> Week 7 (Mar 08)</td>
+<td align="center" markdown="span"> 
+[Week 7](week7/) (Mar 08)
+</td>
 <td markdown="span">
+Graphical UI [JavaFX Intro](javafx/Introduction)       
+Events and Event Listeners    
+[Enum Type](week7/Enum.pdf)    
+</td>
+<td markdown="span">
+
+How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.
+</td>
+</tr>
+<!-- Swing -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Supplement:
+[Swing Graphics](swing/)
+</td>
+<td markdown="span">
+Material on using Swing
 </td>
 <td markdown="span">
 </td>
 </tr>
 <!-- week 8 -->
 <tr valign="top">
-<td align="center"> Week 8 (Mar 15)</td>
-<td markdown="span">
+<td align="center" markdown="span"> 
+[Week 8](week8/) (Mar 15)
 </td>
 <td markdown="span">
+Recursion
+</td>
+<td markdown="span">
+Recursion Homework for lab next week
 </td>
 </tr>
 <!-- week 9 -->
 <tr valign="top">
-<td align="center"> Week 9 (Mar 22)</td>
-<td markdown="span">
+<td align="center" markdown="span"> 
+[Week 9](week9/) (Mar 22)
 </td>
 <td markdown="span">
+Strategy Pattern
+</td>
+<td markdown="span">
+Purse with Recursive Withdraw Strategy
 </td>
 </tr>
 <!-- week 10 -->
