@@ -192,6 +192,7 @@ Events and Event Listeners
 [Enum Type](week7/Enum.pdf)    
 </td>
 <td markdown="span">
+[Lab7-LengthConverter](week7/Lab7-LengthConverter.pdf)    
 
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.
 </td>
