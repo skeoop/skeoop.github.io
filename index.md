@@ -192,7 +192,8 @@ Events and Event Listeners
 [Enum Type](week7/Enum.pdf)    
 </td>
 <td markdown="span">
-[Lab7-LengthConverter](week7/Lab7-LengthConverter.pdf)    
+[Lab7-LengthConverter](week7/Lab7-LengthConverter.pdf)   
+Lab7 Github Assignment: [https://goo.gl/snYfDC](https://goo.gl/snYfDC) this is a empty repo, so you don't need to clone it. Just "git add remote ...". 
 
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.
 </td>
