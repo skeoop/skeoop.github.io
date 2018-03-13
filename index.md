@@ -224,7 +224,7 @@ Review some points from Labexam
 </td>
 <td markdown="span">
 [Homework2](week8/Homework2.pdf) due next week and needed for lab.   
-[Patterns](patterns/README.md) material is in the [patterns](patterns/) directory.
+All [Patterns](patterns/README) material is in the [patterns](patterns/) directory.
 </td>
 </tr>
 <!-- week 9 -->
