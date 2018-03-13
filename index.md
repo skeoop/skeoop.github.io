@@ -216,10 +216,15 @@ Material on using Swing
 [Week 8](week8/) (Mar 15)
 </td>
 <td markdown="span">
-Recursion
+Review some points from Labexam    
+[Recursion](week8/Recursion.pdf)    
+[Intro to Design Patterns](patterns/Design-Patterns-Introduction.pdf)    
+[Observer Pattern](patterns/Observer-Pattern.pdf)    
+
 </td>
 <td markdown="span">
-Recursion Homework for lab next week
+[Homework2](week8/Homework2.pdf) due next week and needed for lab.   
+[Patterns](patterns/README.md) material is in the [patterns](patterns/) directory.
 </td>
 </tr>
 <!-- week 9 -->
