@@ -236,7 +236,8 @@ All [Patterns](patterns/README) material is in the [patterns](patterns/) directo
 Strategy Pattern
 </td>
 <td markdown="span">
-Purse with Recursive Withdraw Strategy
+**Quiz** on JavaFX components and Event handling.    
+Purse with Recursive Withdraw Strategy.    
 </td>
 </tr>
 <!-- week 10 -->
