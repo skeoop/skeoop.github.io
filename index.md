@@ -224,6 +224,7 @@ Review some points from Labexam
 </td>
 <td markdown="span">
 [Homework2](week8/Homework2.pdf) due next week and needed for lab.   
+[PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due Mar 18.    
 All [Patterns](patterns/README) material is in the [patterns](patterns/) directory.
 </td>
 </tr>
@@ -236,8 +237,8 @@ All [Patterns](patterns/README) material is in the [patterns](patterns/) directo
 Strategy Pattern
 </td>
 <td markdown="span">
-**Quiz** on JavaFX components and Event handling.    
-Purse with Recursive Withdraw Strategy.    
+**Quiz** on JavaFX components, Event handling, and recursion.   
+**Lab** Purse with Recursive Withdraw Strategy.    
 </td>
 </tr>
 <!-- week 10 -->
