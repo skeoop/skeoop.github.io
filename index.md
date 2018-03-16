@@ -224,8 +224,8 @@ Review some points from Labexam
 </td>
 <td markdown="span">
 [Lab 8: Observers](week8/Lab8-1-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
-[Homework2](week8/Homework2.pdf) due next week and needed for lab.   
-[PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due Mar 18.    
+[Homework2](week8/Homework2.pdf) due next week (22 Mar) and needed for lab.   
+[PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
 **Read**: Big Java, Ch. 13 *Recursion*    
 All [Patterns](patterns/README) material is in the [patterns](patterns/) directory.
 </td>
