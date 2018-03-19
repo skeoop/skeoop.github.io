@@ -1,5 +1,5 @@
 # Remove theme
-theme: minima
+#theme: minima
 title: Programming 2
 description: Object-Oriented Progamming in Java
 exclude: [bin, misc, Gemfile, Gemfile.lock]
