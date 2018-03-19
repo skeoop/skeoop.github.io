@@ -9,8 +9,8 @@ header {
 }
 
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color;
+//  color: $grey-color;
+//  border-left: 4px solid $grey-color;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.0);
   letter-spacing: 0px;
