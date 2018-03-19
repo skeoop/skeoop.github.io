@@ -167,7 +167,7 @@ State Machines and "*Programming without If*"
 Recursion    
 Strategy Pattern and Resursive Withdraw for Purse    
 Threads    
-Using Threads in Swing or JavaFX    
+Using Threads in JavaFX    
 Generics (type parameters)    
 </td>
 <td markdown="span">
@@ -187,7 +187,8 @@ Using a Database with ORM (optional class)
 [Week 7](week7/) (Mar 08)
 </td>
 <td markdown="span">
-Graphical UI [JavaFX Intro](javafx/Introduction)       
+Graphical UI [JavaFX Intro](javafx/Introduction)     
+[Steps to Writing a Graphical UI](week7/GUI-Step-by-Step.pdf)    
 Events and Event Listeners    
 [Enum Type](week7/Enum.pdf)    
 </td>
@@ -201,13 +202,19 @@ How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) an
 <!-- Swing -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Supplement:
-[Swing Graphics](swing/)
+Swing Graphics
 </td>
 <td markdown="span">
-Material on using Swing
+[Intro to Graphical UI](week7/Graphics-1.pdf)    
+[Layout Managers](week7/Graphics-2-Layouts.pdf)    
+[Event Handling](week7/Graphics-3-Event-Handling.pdf)    
+[Actions & Commands](week7/Graphics-5-Actions-and-Commands.pdf) encapsulate event handlers in their own object.    
+[Design Patterns](week7/Graphics-4-Patterns.pdf) that occur in Swing.   
+[JOptionPane](week7/Graphics-2-JOptionPane.df) a useful class for creating dialog boxes.    
 </td>
 <td markdown="span">
+For those interested in Swing, these slides provide some intro.    
+In this course we use JavaFX instead of Swing, but Swing is still useful for Java programmers.
 </td>
 </tr>
 <!-- week 8 -->
@@ -227,7 +234,7 @@ Review some points from Labexam
 [Homework2](week8/Homework2.pdf) due next week (22 Mar) and needed for lab.   
 [PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
 **Read**: Big Java, Ch. 13 *Recursion*    
-All [Patterns](patterns/README) material is in the [patterns](patterns/) directory.
+[Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.
 </td>
 </tr>
 <!-- week 9 -->
@@ -236,11 +243,13 @@ All [Patterns](patterns/README) material is in the [patterns](patterns/) directo
 [Week 9](week9/) (Mar 22)
 </td>
 <td markdown="span">
-Strategy Pattern
+[Strategy Pattern](patterns/Strategy-Pattern.pdf)        
+[Unit Testing](week9/UnitTesting.pdf) with JUnit
 </td>
 <td markdown="span">
 **Quiz** on JavaFX components, Event handling, and recursion.   
 **Lab** Purse with Recursive Withdraw Strategy.    
+**Assignment** Develop idea and proposal for final programming project.
 </td>
 </tr>
 <!-- week 10 -->
@@ -257,7 +266,7 @@ Strategy Pattern
 <td markdown="span">
 </td>
 <td markdown="span">
-6 Apr is "Chakri Day". Lab anyway?
+No lab due to holiday (Chakri Day).
 </td>
 </tr>
 <!-- week 12 -->
