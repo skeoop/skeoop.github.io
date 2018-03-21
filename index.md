@@ -244,10 +244,11 @@ Review some points from Labexam
 [Week 9](week9/) (Mar 22)
 </td>
 <td markdown="span">
-[UML Sequence Diagram](week9/UML-Sequence-and-Interaction.pdf)    
+[UML Sequence Diagram](week9/UML-Sequence-and-Interaction.pdf) and [Practice](week9/Sequence-Diagram-Practice.pdf)        
 [Anonymous Classes](week7/Anonymous-Class.pdf)    
 [Strategy Pattern](patterns/Strategy-Pattern.pdf)        
-[Unit Testing](week9/UnitTesting.pdf) with JUnit
+[Unit Testing](week9/UnitTesting.pdf) with JUnit.    
+Test Driven Development
 </td>
 <td markdown="span">
 **Quiz** on JavaFX components, Event handling, and recursion.   
