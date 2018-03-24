@@ -254,8 +254,10 @@ Events and Event Handling in JavaFX
 </td>
 <td markdown="span">
 **Quiz** on JavaFX components, Event handling, and recursion.   
-**Lab** Purse with Recursive Withdraw Strategy.    
-**Assignment** Develop idea and proposal for final programming project.
+[Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf), Due: Sunday   
+[JUnit Method Summary](week9/JUnitSummary.pdf)    
+**Assignment** Develop idea and proposal for final programming project.    
+[Currency Converter](currency_service) how to get currency exchange rates - for your UnitConverter.
 </td>
 </tr>
 <!-- week 10 -->
