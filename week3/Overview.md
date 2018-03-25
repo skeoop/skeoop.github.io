@@ -1,3 +1,9 @@
+---
+layout: page
+title: Java Syntax
+description: 
+---
+
 ## Don't Use == To Check for End of a Range
 
 In the `Purse` class some people wrote code like this:

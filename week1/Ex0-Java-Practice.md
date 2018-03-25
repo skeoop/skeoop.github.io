@@ -1,3 +1,9 @@
+---
+layout: page
+title: Assignment
+description: 
+---
+
 Complete and correct this code. Correct syntax, bad code style, omissions, and Javadoc comment errors.
 ```java
 /*

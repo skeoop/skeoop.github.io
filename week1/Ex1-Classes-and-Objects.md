@@ -1,3 +1,9 @@
+---
+layout: page
+title: Exercise
+description: 
+---
+
 ## Exercises on classes and objects. 
 
 ### 1. Three fundamentals of OOP (fill in the blanks)

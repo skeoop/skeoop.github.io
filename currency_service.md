@@ -1,3 +1,7 @@
+---
+layout: page
+title: Currency Converter
+---
 ## Create a Currency Converter
 
 You can define a kind of Unit in your Converter that converts currencies.  

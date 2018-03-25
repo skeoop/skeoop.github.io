@@ -1,3 +1,9 @@
+---
+layout: page
+title: Git Practice
+description: 
+---
+
 # Lab 1: Git Practice
 
 | Objective  | Practice the common git commands and workflow.  |

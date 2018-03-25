@@ -1,3 +1,9 @@
+---
+layout: page
+title: Requirements
+description: Required material for the course
+---
+
 # Required Material for OOP
 
 ## Github Account

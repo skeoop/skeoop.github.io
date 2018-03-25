@@ -1,3 +1,9 @@
+---
+layout: page
+title: index
+description: Index page
+---
+
 ## Object-Oriented Programming at Kasetsart University
 
 Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by J. Brucker.

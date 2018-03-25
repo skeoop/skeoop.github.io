@@ -1,3 +1,9 @@
+---
+layout: page
+title: Lab1
+description: 
+---
+
 ## Instructions for Lab1
 
 1. Go to this URL to accept assignment: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).

@@ -1,3 +1,9 @@
+---
+layout: page
+title: Exercise
+description: 
+---
+
 Exercises on object references
 
 ## Example: Person class

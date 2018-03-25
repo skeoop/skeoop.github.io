@@ -1,3 +1,9 @@
+---
+layout: page
+title: About
+description: About the Course
+---
+
 ## Object-Oriented Programming 2 
 
 This course covers object-oriented programming and design, including 3 subject areas:

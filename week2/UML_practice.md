@@ -1,3 +1,9 @@
+---
+layout: page
+title: UML Practice
+description: 
+---
+
 ## UML Practice
 
 Draw a UML class diagram of this code.

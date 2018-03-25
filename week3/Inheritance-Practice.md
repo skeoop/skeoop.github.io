@@ -1,3 +1,9 @@
+---
+layout: page
+title: Inheritance Practice
+description: 
+---
+
 ## Practice Problems for Design with Inheritance
 
 ## Guessing Game

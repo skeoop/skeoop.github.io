@@ -1,3 +1,9 @@
+---
+layout: page
+title: Intro to Map
+description: 
+---
+
 ## Introduction to Map
 
 A Map is a collection of key-value pairs.  The keys must be distinct.

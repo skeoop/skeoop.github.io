@@ -1,3 +1,9 @@
+---
+layout: page
+title: Schedule
+description: Old Schedule from 2017
+---
+
 Other pages: [About the Course](About). [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). [Results and Feedback](http://skeoop.github.io/results/) on assignments.    
 
 ## Schedule

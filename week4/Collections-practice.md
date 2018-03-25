@@ -1,3 +1,9 @@
+---
+layout: page
+title: Collections Practice
+description: 
+---
+
 # Collections Practice
 
 These exercises demonstrate properties of some common collections.
