@@ -233,7 +233,7 @@ Review some points from Labexam
 [Lab 8: Observers](week8/Lab8-1-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
 [Homework2](week8/Homework2.pdf) due next week (22 Mar) and needed for lab.   
 [PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
-**PA3 Assignmnet URL:** [https://goo.gl/U5wbau](https://goo.gl/U5wbau) to submit assignment.    
+**PA3 Assignmnet URL:** [https://goo.gl/U5wbau](https://goo.gl/U5wbau).    
 **Read**: Big Java, Ch. 13 *Recursion*    
 [Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.
 </td>
@@ -264,8 +264,14 @@ Events and Event Handling in JavaFX
 <tr valign="top">
 <td align="center"> Week 10 (Mar 29)</td>
 <td markdown="span">
+Event Handling in JavaFX    
+[Threads](week10/Threads.pdf) and Multi-threading    
 </td>
 <td markdown="span">
+[Homework3](week10/Homework3.pdf) - to be revised       
+**Read**: Big Java, ch. 20 [Multithreading](week10/Multithreading.pdf), [Dietel&Dietal slides](week10/Threads-Dietel.pdf)     
+**Learn**: How to use Worker threads in JavaFX?
+
 </td>
 </tr>
 <!-- week 11 -->
