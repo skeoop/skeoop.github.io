@@ -8,6 +8,7 @@ description: Index page
 
 Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
+[OOP 2017 Projects](projects2017)
 
 <table border="1">
 <tr valign="top">
