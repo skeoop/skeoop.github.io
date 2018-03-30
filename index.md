@@ -268,9 +268,9 @@ Event Handling in JavaFX
 [Threads](week10/Threads.pdf) and Multi-threading    
 </td>
 <td markdown="span">
-[Homework3](week10/Homework3.pdf) - to be revised       
+[Lab10: Threads](week10/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
 **Read**: Big Java, ch. 20 [Multithreading](week10/Multithreading.pdf), [Dietel&Dietal slides](week10/Threads-Dietel.pdf)     
-**Learn**: How to use Worker threads in JavaFX?
+**Learn**: How to use Worker threads in JavaFX.
 
 </td>
 </tr>
