@@ -13,13 +13,14 @@ Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course
 <table border="1">
 <tr valign="top">
   <th> Week  </th>
-  <th width="46%"> Topics </th>
-  <th width="46%"> Assignment </th>
+  <th width="45%"> Topics </th>
+  <th width="45%"> Assignment </th>
 </tr>
 <!-- week 1 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 1](week1/) (Jan 11)
+[Week 1](week1/)    
+Jan 11
 </td>
 <td markdown="span">
 [Introduction to the course](week1/0-Introduction-to-Course.pdf)   
@@ -42,7 +43,8 @@ We use Github Classroom for programs, Google Classroom for written homework.
 <!-- week 2 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 2](week2/) (Jan 18)
+[Week 2](week2/)    
+Jan 18
 </td>
 <td markdown="span">
 [3 Fundamentals of OOP](week2/OO-Fundamentals.pdf)    
@@ -58,13 +60,13 @@ We use Github Classroom for programs, Google Classroom for written homework.
 **Read**: BIGJ Section 9.4 and Chapter 10.    
 **UML**: Good summaries: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 **Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight. Create Github Repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K) it is empty now. Add your own code, `README.md`, and `.gitignore`.
-
 </td>
 </tr>
 <!-- week 3 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 3](week3/) (Jan 25)
+[Week 3](week3/)    
+Jan 25
 </td>
 <td markdown="span">
 [Review](week3/Overview) of last week & evolution of Coin Purse    
@@ -93,7 +95,8 @@ No Lab, but you still have assignment.
 <!-- week 4 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 4](week4/) (Feb 08)
+[Week 4](week4/)    
+Feb 08
 </td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
@@ -113,12 +116,12 @@ No Lab, but you still have assignment.
 <!-- week 5 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 5](week5/) (Feb 15)
+[Week 5](week5/)    
+Feb 15
 </td>
 <td markdown="span">
 Review Homework    
-[Exceptions](week5/Exceptions.pdf)     
-What causes NullPointerException?    
+[Exceptions](week5/Exceptions.pdf).  What causes NullPointerException?    
 [Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
 [Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
 [Properties and Properties file](week5/Runtime-Application-Properties.pdf) (for lab)
@@ -126,13 +129,13 @@ What causes NullPointerException?
 <td markdown="span">
 [Lab 5: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
 [Answers to Exceptions Practice](week5/Exceptions=Practice-Answers.pdf)    
-*No holiday for Chinese New Year.*     
 </td>
 </tr>
 <!-- week 6 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 6](week6/) (Feb 22)
+[Week 6](week6/)    
+Feb 22
 </td>
 <td markdown="span">
 [Input-Output classes](week6/Input-Output.pdf)        
@@ -150,9 +153,7 @@ Ratings are anonymized, so its safe to criticize and make suggestions.
 <tr valign="top">
 <td align="center"> Midterm</td>
 <td markdown="span">
-27 Feb (Tues) Written and Programming Exam. 8:00-12:00 room 203.    
-Closed book and closed Internet (except one project on Github).    
-Dress code: *Dress Like a Programmer* (wear anything you like).   
+Tues 27 Feb Written and Programming: 8:00-12:00 Room 203.    
 </td>
 <td markdown="span">
 </td>
@@ -161,31 +162,33 @@ Dress code: *Dress Like a Programmer* (wear anything you like).
 <tr valign="top">
 <td align="center"> <b>Topics</b><br/>for 2nd Half</td>
 <td markdown="span">
-Graphical UI in Java    
-Event Listeners and Observer Pattern    
+**Todo**    
 Model-View-Controller Design    
-State Machines and "*Programming without If*"    
-Recursion    
-Strategy Pattern and Resursive Withdraw for Purse    
-Threads    
-Using Threads in JavaFX    
-Generics (type parameters)    
-</td>
-<td markdown="span">
-Enum types    
-UML Sequence Diagram    
-Checkstyle for Coding style    
 Unit Testing with JUnit    
 Lambda Expressions and Anonymous Classes    
 Stream Programming    
 Frameworks. The OCSF Framework    
-Using a Database with ORM (optional class)   
+Using a Database with ORM
+Checkstyle for Coding style    
+Using Threads in JavaFX    
+Generics (type parameters)    
+</td>
+<td markdown="span">
+**Done**    
+Enum types    
+Event Listeners and Observer Pattern    
+Graphical UI using JavaFX    
+Recursion    
+Strategy Pattern and Resursive Withdraw for Purse    
+Threads    
+UML Sequence Diagram    
 </td>
 </tr>
 <!-- week 7 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 7](week7/) (Mar 08)
+[Week 7](week7/)    
+Mar 08
 </td>
 <td markdown="span">
 Graphical UI [JavaFX Intro](javafx/Introduction)     
@@ -195,33 +198,15 @@ Events and Event Listeners
 </td>
 <td markdown="span">
 [Lab7-LengthConverter](week7/Lab7-LengthConverter.pdf)   
-Lab7 Github Assignment: [https://goo.gl/snYfDC](https://goo.gl/snYfDC) this is a empty repo, so you don't need to clone it. Just "git add remote ...". 
-
+Lab7 Github Assignment: [https://goo.gl/snYfDC](https://goo.gl/snYfDC) this is a empty repo. To use it, just "git add remote ...".    
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.
-</td>
-</tr>
-<!-- Swing -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Swing Graphics
-</td>
-<td markdown="span">
-[Intro to Graphical UI](week7/Graphics-1.pdf)    
-[Layout Managers](week7/Graphics-2-Layouts.pdf)    
-[Event Handling](week7/Graphics-3-Event-Handling.pdf)    
-[Actions & Commands](week7/Graphics-5-Actions-and-Commands.pdf) encapsulate event handlers in their own object.    
-[Design Patterns](week7/Graphics-4-Patterns.pdf) that occur in Swing.   
-[JOptionPane](week7/Graphics-2-JOptionPane.df) a useful class for creating dialog boxes.    
-</td>
-<td markdown="span">
-For those interested in Swing, these slides provide some intro.    
-In this course we use JavaFX instead of Swing, but Swing is still useful for Java programmers.
 </td>
 </tr>
 <!-- week 8 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 8](week8/) (Mar 15)
+[Week 8](week8/)    
+Mar 15
 </td>
 <td markdown="span">
 Review some points from Labexam    
@@ -242,7 +227,8 @@ Review some points from Labexam
 <!-- week 9 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 9](week9/) (Mar 22)
+[Week 9](week9/)    
+Mar 22
 </td>
 <td markdown="span">
 Remarks on PA3 - use polymorphism    
@@ -251,51 +237,65 @@ Remarks on PA3 - use polymorphism
 [Strategy Pattern](patterns/Strategy-Pattern.pdf)        
 [Unit Testing](week9/UnitTesting.pdf) with JUnit.    
 Test Driven Development    
-Events and Event Handling in JavaFX    
+[Events and Event Handling](javafx/Event-Handling.pdf) in JavaFX     
 </td>
 <td markdown="span">
 **Quiz** on JavaFX components, Event handling, and recursion.   
 [Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf), Due: Sunday   
 [JUnit Method Summary](week9/JUnitSummary.pdf)    
 **Assignment** Develop idea and proposal for final programming project.    
-[Currency Converter](currency_service) how to get currency exchange rates - for your UnitConverter.
+[Currency Converter](currency_service) how to get currency exchange rates for your UnitConverter.
 </td>
 </tr>
 <!-- week 10 -->
 <tr valign="top">
-<td align="center"> Week 10 (Mar 29)</td>
+<td align="center" valign="top" markdown="span">
+[Week 10](week10/)    
+Mar 29
+</td>
 <td markdown="span">
-Event Handling in JavaFX    
+[Event Handling](javafx/Event-Handling.pdf) - how to handle events    
 [Threads](week10/Threads.pdf) and Multi-threading    
 </td>
 <td markdown="span">
 [Lab10: Threads](week10/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
 **Read**: Big Java, ch. 20 [Multithreading](week10/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](week10/Threads-Dietel.pdf)     
-**Learn**: How to use Worker threads in JavaFX.
+**Read**: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf), has most complete explanation of event handling.        
+**Homework**: (TBA) Submit a project proposal online. 
 
 </td>
 </tr>
 <!-- week 11 -->
 <tr valign="top">
-<td align="center"> Week 11 (Apr 05)</td>
+<td align="center" markdown="span"> 
+[Week 11](week11/)    
+Apr 05
+</td>
 <td markdown="span">
 </td>
 <td markdown="span">
-No lab due to holiday (Chakri Day).
+No lab due to Chakri Day holiday.
 </td>
 </tr>
 <!-- week 12 -->
 <tr valign="top">
-<td align="center"> Week 12 (Apr 12)</td>
+<td align="center" markdown="span"> 
+Week 12    
+Apr 12
+</td>
 <td markdown="span">
 </td>
 <td markdown="span">
-*Songkran*. No lab.
+*Songkran*. No lab.    
+Work on your final project.
 </td>
 </tr>
 <!-- week 13 -->
 <tr valign="top">
-<td align="center"> Week 13 (Apr 19)</td>
+<td align="center" markdown="span"> 
+Week 13    
+Apr 19
+</td>
 <td markdown="span">
 </td>
 <td markdown="span">
@@ -303,7 +303,10 @@ No lab due to holiday (Chakri Day).
 </tr>
 <!-- week 14 -->
 <tr valign="top">
-<td align="center"> Week 14 (Apr 26)</td>
+<td align="center" markdown="span"> 
+Week 14     
+Apr 26
+</td>
 <td markdown="span">
 </td>
 <td markdown="span">
@@ -311,11 +314,42 @@ No lab due to holiday (Chakri Day).
 </tr>
 <!-- final exam (5/7-5/18) -->
 <tr valign="top">
-<td align="center"> Final Exam </td>
-<td markdown="span">
+<td align="center"> 
+Final Exam 
 </td>
 <td markdown="span">
+16 May 09:00-midnight.    
+Written and brutal programming exam.    
+*Dress like a programmer.*
+</td>
+<td markdown="span">
+TBA: Presentation and demo of final projects.
 </td>
 </tr>
 </table>
 
+<table border="1">
+<tr valign="top">
+  <th width="100%">
+  Topics Not Covered in Class <br/>
+  These won't be on exam, but are useful to know.    
+  </th>
+</tr>
+<tr valign="top">
+<td markdown="span">
+State Machines and "*Programming without If*"    
+UML State Machine Diagram
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+<!-- Swing -->
+[Intro to Swing and AWT](week7/Graphics-1.pdf)    
+[Layout Managers](week7/Graphics-2-Layouts.pdf)    
+[Event Handling](week7/Graphics-3-Event-Handling.pdf)    
+[Actions & Commands](week7/Graphics-5-Actions-and-Commands.pdf) encapsulate event handlers in their own object.    
+[Design Patterns](week7/Graphics-4-Patterns.pdf) that occur in Swing.   
+[JOptionPane](week7/Graphics-2-JOptionPane.df) a useful class for creating dialog boxes.    
+</td>
+</tr>
+</table>

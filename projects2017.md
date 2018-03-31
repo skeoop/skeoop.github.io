@@ -1,11 +1,10 @@
-# Projects
+# OOP 2017 Projects
 
 | Project Name          | Members  | Web Page  |
 |-----------------------|----------|-----------|
 | [Typing Thrower](https://github.com/winChawakorn/TypingThrower) | Chawakorn, Vittunyuta | [https://winchawakorn.github.io/TypingThrower/](https://winchawakorn.github.io/TypingThrower) |
 | [Bookshelf](https://github.com/zepalz/Book-Shelf) | Archawin, Triwith | [https://zepalz.github.io/Book-Shelf/](https://zepalz.github.io/Book-Shelf/) |
 | [Chat Application](https://github.com/Gotsira/chatapplication) | Sirasath, Issaree | [https://gotsira.github.io/chatapplication/](https://gotsira.github.io/chatapplication/) |
-| [Chess Game](https://github.com/kwanwantku/chessgame) | Kwanwan | none |
 | [Course Feedback](https://github.com/guitarpawat/course-feedback) | Pawat, Noppawan | Excellent technology description in [Project README.md](https://github.com/guitarpawat/course-feedback/blob/master/README.md)  |
 | [Health Me](https://github.com/nottpty/healthme) | Patinya, Narut | Documentation in README.md |
 | [Menu](https://github.com/csupisara/MenuProject) | Supisara, Sathira | [https://csupisara.github.io/MenuProject/](https://csupisara.github.io/MenuProject/) |
