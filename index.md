@@ -272,6 +272,9 @@ Mar 29
 Apr 05
 </td>
 <td markdown="span">
+[Worker Threads](javafx/WorkerThreads.md) for running background tasks.    
+Starter code: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
+[Intro to Frameworks](frameworks/Frameworks.pdf) and ([Job Ad](https://www.blognone.com/node/77171))    
 </td>
 <td markdown="span">
 No lab due to Chakri Day holiday.
