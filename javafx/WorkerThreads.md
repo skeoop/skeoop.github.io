@@ -72,7 +72,7 @@ what they do.
 The main methods of **Task** are:
 
 <table border="1">
-<tr align="center">
+<tr>
 <td markdown="span" align="center">
 **Task&lt;V&gt;**
 </td>
@@ -96,16 +96,16 @@ value: V
 updateMessage(String message)     
 updateProgress(workdone, totalwork)    
 updateValue(V value)      
-**Controls**    
+**Controls:**    
 cancel()      
 run()    
 **Query Methods:**    
-isCancelled()    
-isRunning()     
 getMessage()        
 getProgress()    
 getState()     
 getValue()  
+isCancelled()    
+isRunning()     
 </td>
 </tr>
 </table>
@@ -115,13 +115,14 @@ subclass of **Task** and implement the **call()** method.
 The **call()** method can notify the UI of its progress
 by calling the *Service* methods `updateValue()`, `updateProgress()`, and `updateMessage()`.
 
-We will add a **CountUpTask** to the TimerController
-to count from 0 to a limit using a worker thread.
-You don't need to delete the existing code.
+### Do It
+
+Add a **CountUpTask** class to count from 0 to a limit using a worker thread.
+This can be an inner class, or top-level class (separate .java file).
 
 ```java
 /** A worker that counts slowly from 0 to a total count. */
-class CountUpTask extends Task<Integer> {
+public class CountUpTask extends Task<Integer> {
     private int totalcount;
     private int count;
 
@@ -169,21 +170,21 @@ public class TimerController {
     /** Call this method to start the task. */
     public void startWorker(ActionEvent event) {
         int count = Integer.parseInt(inputField.getText());
-		worker = new CountUpTask(count);
-		// automatically update the progressBar using worker's progress Property
-		progressBar.progressProperty().bind( worker.progressProperty() );
+        worker = new CountUpTask(count);
+        // automatically update the progressBar using worker's progress Property
+        progressBar.progressProperty().bind( worker.progressProperty() );
         // update the displayField whenever the value of worker changes:
-		ChangeListener<Integer> listener = new ChangeListener<Integer>() {
-			@Override
-			public void changed(ObservableValue<? extends Integer> observable,
-					Integer oldValue,
-					Integer newValue) {
-				displayField.setText(newValue.toString());
-			}
-		};
+        ChangeListener<Integer> listener = new ChangeListener<Integer>() {
+            @Override
+            public void changed(ObservableValue<? extends Integer> observable,
+                    Integer oldValue,
+                    Integer newValue) {
+                displayField.setText(newValue.toString());
+            }
+        };
         // add the observer (ChangeListener)
         worker.valueProperty().addListener( listener );
-		new Thread(worker).start();
+        new Thread(worker).start();
     }
 }
 ```
