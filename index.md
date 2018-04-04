@@ -243,6 +243,7 @@ Test Driven Development
 **Quiz** on JavaFX components, Event handling, and recursion.   
 [Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf), Due: Sunday   
 [JUnit Method Summary](week9/JUnitSummary.pdf)    
+**Read** [UML Distilled Chapter 4](docs/UML-Distilled-4-Sequence.pdf) on Sequence Diagrams.    
 **Assignment** Develop idea and proposal for final programming project.    
 [Currency Converter](currency_service) how to get currency exchange rates for your UnitConverter.
 </td>
@@ -274,7 +275,7 @@ Apr 05
 <td markdown="span">
 [Worker Threads](javafx/WorkerThreads.md) for running background tasks.    
 Starter code: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
-[Intro to Frameworks](frameworks/Frameworks.pdf) and ([Job Ad](https://www.blognone.com/node/77171))    
+[Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) mentioning frameworks     
 </td>
 <td markdown="span">
 No lab due to Chakri Day holiday.
