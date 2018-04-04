@@ -275,10 +275,12 @@ Apr 05
 <td markdown="span">
 [Worker Threads](javafx/WorkerThreads.md) for running background tasks.    
 Starter code: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
-[Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) mentioning frameworks     
+[Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) with frameworks     
+OCSF: [ocsf-231.jar](frameworks/ocsf-231.jar), [source](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf)    
+
 </td>
 <td markdown="span">
-No lab due to Chakri Day holiday.
+No lab due to Chakri Day holiday.    
 </td>
 </tr>
 <!-- week 12 -->
