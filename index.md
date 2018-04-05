@@ -281,6 +281,7 @@ OCSF: [ocsf-231.jar](frameworks/ocsf-231.jar), [source](frameworks/ocsf-231-src.
 </td>
 <td markdown="span">
 No lab due to Chakri Day holiday.    
+**Project Proposal** for [PA5-Final-Project](week11/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
 </td>
 </tr>
 <!-- week 12 -->
