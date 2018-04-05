@@ -276,7 +276,8 @@ Apr 05
 [Worker Threads](javafx/WorkerThreads.md) for running background tasks.    
 Starter code: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
 [Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) with frameworks     
-OCSF: [ocsf-231.jar](frameworks/ocsf-231.jar), [source](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf)    
+[OCSF Client Exercise](frameworks/Lab-OCSF-Framework.pdf)    
+Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf), [Math Server for exercise](frameworks/MathServer.jar)        
 
 </td>
 <td markdown="span">
