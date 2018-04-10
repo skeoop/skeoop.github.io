@@ -293,9 +293,13 @@ Week 12
 Apr 12
 </td>
 <td markdown="span">
+Class cancelled due to university holiday.    
+Please work on PA4 and your final project.
 </td>
 <td markdown="span">
 *Songkran*. No lab.    
+[PA4-Threaded URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.
+This assignment applies a lot of what you learned recently, but is not difficult. The app is useful, too.    
 Work on your final project.
 </td>
 </tr>
