@@ -283,7 +283,10 @@ Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-23
 </td>
 <td markdown="span">
 No lab due to Chakri Day holiday.    
-**Project Proposal** for [PA5-Final-Project](week11/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
+[PA4-Flashget URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.    
+Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
+A useful app that combines a lot of what you learned recently, but not too difficult.    
+[PA5 Project Proposal](week11/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
 </td>
 </tr>
 <!-- week 12 -->
@@ -298,9 +301,6 @@ Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
 </td>
 <td markdown="span">
 *Songkran*. No lab.    
-[PA4-Flashget URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.    
-Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
-A useful app that combines a lot of what you learned recently, but not too difficult.
 </td>
 </tr>
 <!-- week 13 -->
