@@ -305,7 +305,7 @@ This assignment applies a lot of what you learned recently, but is not difficult
 <!-- week 13 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Week 13    
+[Week 13](week13/)    
 Apr 19
 </td>
 <td markdown="span">
@@ -317,7 +317,7 @@ Generics, Lambda expressions, Streams.
 <!-- week 14 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Week 14     
+[Week 14](week13/)    
 Apr 26
 </td>
 <td markdown="span">
@@ -350,8 +350,18 @@ TBA: Presentation and demo of final projects.
 </tr>
 <tr valign="top">
 <td markdown="span">
-State Machines and "*Programming without If*"    
-UML State Machine Diagram
+[State Machines](topics/Programming a State Machine.pdf) and "*[programming without if](https://www.google.co.th/search?q=programming+without+if)*". [slides](topics/State-Machine.pdf)    
+[UML State Machine Diagram](topics/State-Machine-Diagram.pdf)    
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+[Assertions](topics/Assertions.pdf) a method should document its precondtions (requirements) and postconditions. The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditioins in code, with no runtime overhead in the final product.  Microsoft found that adding assertions during development greatly reduced bugs.
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+[Inner Classes](topics/Inner-Classes.pdf) rules for inner and nested classes.
 </td>
 </tr>
 <tr valign="top">
