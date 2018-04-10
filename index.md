@@ -298,8 +298,9 @@ Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
 </td>
 <td markdown="span">
 *Songkran*. No lab.    
-[PA4-Threaded URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.
-This assignment applies a lot of what you learned recently, but is not difficult. The app is useful, too.    
+[PA4-Flashget URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.    
+Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
+A useful app that combines a lot of what you learned recently, but not too difficult.
 </td>
 </tr>
 <!-- week 13 -->
