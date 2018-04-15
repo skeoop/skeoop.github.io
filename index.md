@@ -310,7 +310,9 @@ Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
 Apr 19
 </td>
 <td markdown="span">
-Generics, Lambda expressions, Streams.
+[Lambda Expressions](week13/Lambda-Expressions), [slides](week13/Java-8-Features.pdf)    
+[Method References](week13/Method-References)    
+Streams    
 </td>
 <td markdown="span">
 </td>
@@ -322,6 +324,7 @@ Generics, Lambda expressions, Streams.
 Apr 26
 </td>
 <td markdown="span">
+Generics
 </td>
 <td markdown="span">
 </td>
