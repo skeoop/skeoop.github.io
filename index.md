@@ -166,7 +166,7 @@ Tues 27 Feb Written and Programming: 8:00-12:00 Room 203.
 Model-View-Controller Design    
 Unit Testing with JUnit    
 Lambda Expressions and Anonymous Classes    
-Stream Programming    
+Streams Programming    
 Frameworks. The OCSF Framework    
 Using a Database with ORM
 Checkstyle for Coding style    
@@ -311,7 +311,7 @@ Apr 19
 </td>
 <td markdown="span">
 [Lambda Expressions](week13/Lambda-Expressions), [slides](week13/Java-8-Features.pdf)    
-[Method References](week13/Method-References)    
+[Method References](week13/Method-References) - see Java Tutorial for details       
 Streams    
 </td>
 <td markdown="span">
