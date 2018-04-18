@@ -8,7 +8,8 @@ description: Index page
 
 Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
-[OOP 2017 Projects](projects2017)
+[Project Proposals](https://goo.gl/C5m6Cb).  [OOP 2017 Projects](projects2017).
+
 
 <table border="1">
 <tr valign="top">
@@ -310,11 +311,13 @@ Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
 Apr 19
 </td>
 <td markdown="span">
+Discuss date of final exam and project presentation.    
 [Lambda Expressions](week13/Lambda-Expressions), [slides](week13/Java-8-Features.pdf)    
 [Method References](week13/Method-References) - see Java Tutorial for details       
 Streams    
 </td>
 <td markdown="span">
+**Read**: Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
 </td>
 </tr>
 <!-- week 14 -->
@@ -327,6 +330,7 @@ Apr 26
 Generics
 </td>
 <td markdown="span">
+**Read**: [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
 </td>
 </tr>
 <!-- final exam (5/7-5/18) -->
@@ -335,7 +339,7 @@ Generics
 Final Exam 
 </td>
 <td markdown="span">
-16 May 09:00 - 16:00++.    
+14 May 09:00 - 16:00++. (**May Reschedule due to Holiday**)    
 Written and brutal programming exam.    
 *Dress like a programmer.*
 </td>
