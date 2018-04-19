@@ -312,25 +312,31 @@ Apr 19
 </td>
 <td markdown="span">
 Discuss date of final exam and project presentation.    
-[Lambda Expressions](week13/Lambda-Expressions), [slides](week13/Java-8-Features.pdf)    
-[Method References](week13/Method-References) - see Java Tutorial for details       
-Streams    
+Discuss PA4.  Any problems?    
+[Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)    
+[Lambda Expressions](java8/Lambda-Expressions), one of 
+[Java 8 New Features](java8/Java-8-Features.pdf)    
+
+Intro to Database and Object-Relational Mapping using ORMLite.
+
 </td>
 <td markdown="span">
+**Exercise**: [OOP2018/contacts-lite](https://github.com/OOP2018/contacts-lite.git) Github project using ORMLite.    
+**Read**: [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
 **Read**: Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
 </td>
 </tr>
 <!-- week 14 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 14](week13/)    
+[Week 14](week14/)    
 Apr 26
 </td>
 <td markdown="span">
-Generics
+[Method References](java8/Method-References) - see Java Tutorial for details       
+[Streams](java8/Streams) and [slides](java8/Streams.pdf)        
 </td>
 <td markdown="span">
-**Read**: [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
 </td>
 </tr>
 <!-- final exam (5/7-5/18) -->
