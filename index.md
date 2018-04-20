@@ -390,4 +390,9 @@ TBA: Presentation and demo of final projects.
 [JOptionPane](week7/Graphics-2-JOptionPane.df) a useful class for creating dialog boxes.    
 </td>
 </tr>
+<tr valign="top">
+<td markdown="span">
+[Database](database/) directory contains some introductory slides.
+</td>
+</tr>
 </table>
