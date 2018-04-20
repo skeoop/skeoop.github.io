@@ -314,16 +314,15 @@ Apr 19
 Discuss date of final exam and project presentation.    
 Discuss PA4.  Any problems?    
 [Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)    
-[Lambda Expressions](java8/Lambda-Expressions), one of 
-[Java 8 New Features](java8/Java-8-Features.pdf)    
 
 Intro to Database and Object-Relational Mapping using ORMLite.
 
 </td>
 <td markdown="span">
 **Exercise**: [OOP2018/contacts-lite](https://github.com/OOP2018/contacts-lite.git) Github project using ORMLite.    
-**Read**: [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
-**Read**: Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
+[Lab 13: Generics](week13/Lab13-Generics.pdf) and improve code in MoneyUtil.java.    
+**Read**: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
+**Read** (for next week): Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
 </td>
 </tr>
 <!-- week 14 -->
@@ -333,6 +332,8 @@ Intro to Database and Object-Relational Mapping using ORMLite.
 Apr 26
 </td>
 <td markdown="span">
+[Lambda Expressions](java8/Lambda-Expressions), one of 
+[Java 8 New Features](java8/Java-8-Features.pdf)    
 [Method References](java8/Method-References) - see Java Tutorial for details       
 [Streams](java8/Streams) and [slides](java8/Streams.pdf)        
 </td>
