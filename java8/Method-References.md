@@ -41,13 +41,41 @@ The `setOnClick` method accepts a method reference `this::handleLogin` because t
 
 ### Example: Consumer
 
-Suppose we want a `Consumer` object that prints an object on System.out.
-We can write:
+`Consumer` is an interface with one method:
+```java
+// T is a type parameter of Consumer
+public void accept(T obj);
+```
+Consumer is used by many Streams methods.  Every `Collection` and `Iterable` has a `forEach(Consumer)` method which works like this:
+```java
+collection<T>.forEach( Consumer<T> consumer )
+```
+This is a short-cut for a "for-each" loop:
+```java
+for(T item: collection) {
+    consumer.accept( item );
+}
+```
+
+Suppose we want a `Consumer` that prints an Object on System.out.
+As an anonymous class:
+```java
+Consumer<Object> print = new Consumer<Object>() {
+    public void accept(Object x) {
+        System.out.println( x ); // invokes x.toString()
+    }
+}
+```
+As a **Lambda Expression** it is much shorter:
 ```java
 Consumer<Object> print = (x) -> System.out.println(x);
 ```
 
-or use a method reference to do the same thing:
+But this Lambda Expression just takes the parameter (x) and passes it to *another* method.  So, it would be must simpler to just write:
+```
+print = System.out.println   // this is not java syntax
+```
+That's the idea of a **method reference**.  You can write:
 ```java
 Consumer<Object> print = System.out::println;
 ```
@@ -62,5 +90,6 @@ is same as:
 // compare strings ignoring case of letters
 Comparator<String> comp =  String::compareToIgnoreCase;
 ```
-Because `compareToIgnoreCase` is an instance method, Java uses the first parameter (`a`) as the "this" String object.
+Because `compareToIgnoreCase` is an instance method, Java uses the first parameter (`a`) as the "this" object when it invokes `compareToIgnoreCase`.
+
 
