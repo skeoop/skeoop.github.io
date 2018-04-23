@@ -311,7 +311,6 @@ Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
 Apr 19
 </td>
 <td markdown="span">
-Discuss date of final exam and project presentation.    
 Discuss PA4.  Any problems?    
 [Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)    
 
@@ -346,12 +345,12 @@ Apr 26
 Final Exam 
 </td>
 <td markdown="span">
-14 May 09:00 - 16:00++. (**May Reschedule due to Holiday**)    
-Written and brutal programming exam.    
-*Dress like a programmer.*
+Monday, 14 May 09:00 - 16:00++.    
+Written and programming exam. *Dress like a programmer.*    
+Project Presentations after Exam.
 </td>
 <td markdown="span">
-TBA: Presentation and demo of final projects.
+In project demo, please prepare presentation of design and interesting technology.  Don't just show code in Eclipse (unreadable and not very educational).   
 </td>
 </tr>
 </table>
