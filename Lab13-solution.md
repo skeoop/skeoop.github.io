@@ -1,10 +1,12 @@
 ## Scoring
 
+*TAs please decide how to score.  Tell me and I'll revise this table.*
+
 | Item   | Score |
 |:-------|:-----------|
-| max    | 2 pt if correct, 1 pt if nearly correct. |
-| sortMoney | 2 pt if correct, 1 pt if nearly correct. |
-| filterByCurrency | 2 pt if correct, 1 pt if nearly correct. |
+| max    | 2 pt if correct, 1 - 1.5 if nearly correct. |
+| sortMoney | 2 pt if correct, 1 - 1.5 pt if nearly correct. |
+| filterByCurrency | 2 pt if correct, 1 - 1.5 pt if nearly correct. |
 | printValuables   | 1 pt if correct |
 | code quality, javadoc | 3 pt       | 
   
@@ -65,7 +67,7 @@ public static <E extends Valuable> List<E> filterByCurrency(
 ## 5. Did they review their code?
 
 Many students have a method like this.  It shows they didn't bother
-to test their own code.  Deduct points for this:
+to test their own code.  Deduct a point for this:
 
 ```java
 public static void printValuable(List<Valuable> valuables) {
