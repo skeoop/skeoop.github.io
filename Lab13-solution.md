@@ -34,7 +34,7 @@ public static <E extends Comparable<? super E>> E max(E ... args) {
 
 ## 3. sortMoney
 
-This should not be a *generic method* but should have a wildcard:
+This should not be a *generic method* but should have a wildcard ("?"):
 ```java
 public static void sortMoney( List<? extends Valuable> valuables) {
     Comparator<Valuable> byValue = 
@@ -62,7 +62,7 @@ public static <E extends Valuable> List<E> filterByCurrency(
 }
 ```
 
-## Did they review their code?
+## 5. Did they review their code?
 
 Many students have a method like this.  It shows they didn't bother
 to test their own code.  Deduct points for this:
@@ -80,7 +80,18 @@ public static void printValuable(List<? extends Valuable> valuables) {
 }
 ```
 
-## Did they clean up code?
+Another bad example. (a) "list of Coins" in Javadoc is misleading, (b) `\@param list` in Javadoc doesn't match actual parameter name, (c) no `@return` tag.
+```java
+/**
+ *  Filter money by a currency.
+ *  @param list is the list of Coins to sort
+ *  @param currency is name of currency to look for
+ */
+public static <E extends Valuable> List<E> filterByCurrency(
+       List<E> coins, final String currency ) {
+```
+
+## 6. Did they clean up code?
 
 A few students have large blocks of commented-out code in MoneyUtil.
 The lab sheet instructs to delete it.  In *Clean Code* Robert Martin
