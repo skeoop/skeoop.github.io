@@ -1,0 +1,95 @@
+## Scoring
+
+| Item   | Score |
+|:-------|:-----------|
+| max    | 2 pt if correct, 1 pt if nearly correct. |
+| sortMoney | 2 pt if correct, 1 pt if nearly correct. |
+| filterByCurrency | 2 pt if correct, 1 pt if nearly correct. |
+| printValuables   | 1 pt if correct |
+| code quality, javadoc | 3 pt       | 
+  
+## 1 and 2. max 
+
+The type parameter (E) must be "a type Comparable with some superclass of E".
+
+```java
+public static <E extends Comparable<? super E>> E max(E ... args) {
+    if (args.length == 0) throw new IllegalArgumentException(
+                 "At least one argument must be given.");
+    E max = args[0];
+    for(E arg: args) if (arg.compareTo(max)>0) max = arg;
+    return max;
+}
+```
+Or, using a Stream:
+```java
+public static <E extends Comparable<? super E>> E max(E ... args) {
+    if (args.length == 0) throw new IllegalArgumentException(
+                 "At least one argument must be given.");
+    Optional<E> result = Stream.of(args).max(E::compareTo);
+    if (result.isPresent()) return result.get(); // this is always true
+    return args[0];
+}
+```
+
+## 3. sortMoney
+
+This should not be a *generic method* but should have a wildcard:
+```java
+public static void sortMoney( List<? extends Valuable> valuables) {
+    Comparator<Valuable> byValue = 
+          (a,b) -> Double.compare(a.getValue(), b.getValue());
+    Collections.sort(valuables, byValue);
+    // or use the List own sort method:
+    valuables.sort( byValue );
+}
+```
+
+## 4. filterByCurrency
+
+This method needs a type parameter so it can filter `List<Coin>`,
+`List<Banknote>`, as well as `List<Valuable>`.
+
+```java
+public static <E extends Valuable> List<E> filterByCurrency(
+       List<E> money, final String currency ) {
+    // OK to use a loop for this, and return a new List
+    // but don't modify the parameter (money).
+    // Here is how to do it with a Stream and Filter:
+    return money.stream()
+                .filter( m -> currency.equals(m.getCurrency()) )
+                .collect( Collectors.toList() );
+}
+```
+
+## Did they review their code?
+
+Many students have a method like this.  It shows they didn't bother
+to test their own code.  Deduct points for this:
+
+```java
+public static void printValuable(List<Valuable> valuables) {
+    System.out.println( valuables );   // wrong
+}
+```
+
+Not required, but good to have a wildcard (?) like this:
+```java
+public static void printValuable(List<? extends Valuable> valuables) {
+    valuables.forEach( System.out::println );
+}
+```
+
+## Did they clean up code?
+
+A few students have large blocks of commented-out code in MoneyUtil.
+The lab sheet instructs to delete it.  In *Clean Code* Robert Martin
+recommends this. Dead code makes another programmer wonder why its
+their and what you were intending to do. 
+
+If you have a block of test code that you don't want to delete, 
+put the code in a private method (with explaining comment) instead
+of commenting it out.
+
+Don't deduct points for this, but put a remark in online spreadsheet.
+
