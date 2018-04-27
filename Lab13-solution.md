@@ -17,7 +17,7 @@ The type parameter (E) must be "a type Comparable with some superclass of E".
 ```java
 public static <E extends Comparable<? super E>> E max(E ... args) {
     if (args.length == 0) throw new IllegalArgumentException(
-                 "At least one argument must be given.");
+                          "At least one argument must be given.");
     E max = args[0];
     for(E arg: args) if (arg.compareTo(max)>0) max = arg;
     return max;
@@ -27,10 +27,11 @@ Or, using a Stream:
 ```java
 public static <E extends Comparable<? super E>> E max(E ... args) {
     if (args.length == 0) throw new IllegalArgumentException(
-                 "At least one argument must be given.");
-    Optional<E> result = Stream.of(args).max(E::compareTo);
-    if (result.isPresent()) return result.get(); // this is always true
-    return args[0];
+                          "At least one argument must be given.");
+    Comparator<E> byValue = (a,b) -> Double.compare(a.getValue(),b.getValue());
+    // max() returns an Optional<E>, but it always has a value
+    // because the Stream is not empty. So .get() returns the value.
+    return Stream.of(args).max( byValue ).get();
 }
 ```
 
@@ -64,9 +65,9 @@ public static <E extends Valuable> List<E> filterByCurrency(
 }
 ```
 
-## 5. Did they review their code?
+## 5. Did students review their code?
 
-Many students have a method like this.  It shows they didn't bother
+Some students have a method like this.  It shows they didn't
 to test their own code.  Deduct some credit for this:
 
 ```java
@@ -76,6 +77,7 @@ public static void printValuable(List<Valuable> valuables) {
 ```
 
 Not required, but good to have a wildcard (?) like this:
+
 ```java
 public static void printValuable(List<? extends Valuable> valuables) {
     // old way, using a loop
@@ -85,7 +87,7 @@ public static void printValuable(List<? extends Valuable> valuables) {
 }
 ```
 
-Another bad example. (a) "list of Coins" in Javadoc is misleading, (b) `@param list` in Javadoc doesn't match actual parameter name, (c) no `@return` tag.
+Poor coding: (a) "list of Coins" in Javadoc is misleading, (b) `@param list` in Javadoc doesn't match actual parameter name, (c) no `@return` tag.
 ```java
 /**
  *  Filter money by a currency.
@@ -96,16 +98,16 @@ public static <E extends Valuable> List<E> filterByCurrency(
        List<E> money, final String currency ) {
 ```
 
-## 6. Did they clean up code?
+## 6. Did student clean up his/her code?
 
 A few students have large blocks of commented-out code in MoneyUtil.
 The lab sheet instructs to delete it.  In *Clean Code* Robert Martin
 recommends this. Dead code makes another programmer wonder why its
 their and what you were intending to do. 
 
-If you have a block of test code that you don't want to delete, 
-put the code in a private method (with explaining comment) instead
-of commenting it out.
+If you have a block of test code that you want to keep,
+put the code in a private method (with a descriptive name or comment) 
+instead of commenting it out.
 
 Don't deduct points for this, but put a comment in online spreadsheet.
 
