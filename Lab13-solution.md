@@ -4,11 +4,11 @@
 
 | Item   | Score |
 |:-------|:-----------|
-| max    | 2 pt if correct, 1 - 1.5 if nearly correct. |
-| sortMoney | 2 pt if correct, 1 - 1.5 pt if nearly correct. |
-| filterByCurrency | 2 pt if correct, 1 - 1.5 pt if nearly correct. |
-| printValuables   | 1 pt if correct |
-| code quality, javadoc | 3 pt       | 
+| max    | 3 pt if correct, 1 - 2.5 if nearly correct. |
+| sortMoney | 3 pt if correct, 1 - 2.5 pt if nearly correct. |
+| filterByCurrency | 3 pt if correct, 1 - 2.5 pt if nearly correct. |
+| code quality, javadoc | 1 pt       | 
+| printValuables | -1 pt if doesn't print each item in list  | 
   
 ## 1 and 2. max 
 
@@ -28,10 +28,10 @@ Or, using a Stream:
 public static <E extends Comparable<? super E>> E max(E ... args) {
     if (args.length == 0) throw new IllegalArgumentException(
                           "At least one argument must be given.");
-    Comparator<E> byValue = (a,b) -> Double.compare(a.getValue(),b.getValue());
+    Comparator<E> compare = (a,b) -> a.compareTo(b);
     // max() returns an Optional<E>, but it always has a value
     // because the Stream is not empty. So .get() returns the value.
-    return Stream.of(args).max( byValue ).get();
+    return Stream.of(args).max( compare ).get();
 }
 ```
 
@@ -54,11 +54,18 @@ This method needs a type parameter so it can filter `List<Coin>`,
 `List<Banknote>`, as well as `List<Valuable>`.
 
 ```java
+/**
+ * Return a list of the items from the money List where the objects
+ * have the same currency as the currency parameter.
+ */
 public static <E extends Valuable> List<E> filterByCurrency(
        List<E> money, final String currency ) {
-    // OK to use a loop for this, and return a new List
-    // but don't modify the parameter (money).
-    // Here is how to do it with a Stream and Filter:
+    // Solution using a loop.
+    List<E> result = new ArrayList<E>();
+    for(E m: money) if (currency.equals(m.getCurrency()) result.add(m);
+    return result;
+
+    // Solution using a Stream and filter:
     return money.stream()
                 .filter( m -> currency.equals(m.getCurrency()) )
                 .collect( Collectors.toList() );
@@ -71,12 +78,15 @@ Some students have a method like this.  It shows they didn't
 to test their own code.  Deduct some credit for this:
 
 ```java
+/**
+ * Print all the items in the list.
+ */
 public static void printValuable(List<Valuable> valuables) {
     System.out.println( valuables );   // wrong
 }
 ```
 
-Not required, but good to have a wildcard (?) like this:
+Not required, but method is more flexible if it has a wildcard (?) like this:
 
 ```java
 public static void printValuable(List<? extends Valuable> valuables) {
