@@ -324,6 +324,16 @@ Intro to Database and Object-Relational Mapping using ORMLite.
 **Read** (for next week): Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
 </td>
 </tr>
+[Lambda Expressions](java8/Lambda-Expressions), one of 
+[Java 8 New Features](java8/Java-8-Features.pdf)    
+[Method References](java8/Method-References) - see Java Tutorial for details       
+[Streams](java8/Streams) and [slides](java8/Streams.pdf)     
+[Review Exercises](week14/Review-and-Practice.pdf)    
+</td>
+<td markdown="span">
+Work on projects.  Ask for help.
+</td>
+</tr>
 <!-- week 14 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -331,12 +341,9 @@ Intro to Database and Object-Relational Mapping using ORMLite.
 Apr 26
 </td>
 <td markdown="span">
-[Lambda Expressions](java8/Lambda-Expressions), one of 
-[Java 8 New Features](java8/Java-8-Features.pdf)    
-[Method References](java8/Method-References) - see Java Tutorial for details       
-[Streams](java8/Streams) and [slides](java8/Streams.pdf)        
 </td>
 <td markdown="span">
+[Sample Programming Problems](week15/Sample-Problems.pdf)
 </td>
 </tr>
 <!-- final exam (5/7-5/18) -->
