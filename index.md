@@ -348,7 +348,8 @@ May 03
 <td markdown="span">
 </td>
 <td markdown="span">
-[Sample Programming Problems](week15/Sample-Problems.pdf)
+[Project Github URL](https://goo.gl/K3E2BE) add your Github URL.    
+**Demo** demonstrate working code to TAs in Lab.    
 </td>
 </tr>
 <!-- final exam (5/7-5/18) -->
@@ -362,6 +363,7 @@ Written and programming exam. *Dress like a programmer.*
 Project Presentations after Exam.
 </td>
 <td markdown="span">
+[Sample Programming Problems](week15/Sample-Problems.pdf)    
 In project demo, please prepare presentation of design and interesting technology.  Don't just show code in Eclipse (unreadable and not very educational).   
 </td>
 </tr>
