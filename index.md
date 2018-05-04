@@ -408,4 +408,11 @@ In project demo, please prepare presentation of design and interesting technolog
 [Database](database/) directory contains some introductory slides.
 </td>
 </tr>
+<tr valign="top">
+<td markdown="span">
+**Password Encrypting** you should *never* store plain text password in a database, for security. Encrypt it!  When the user sets a new password you encrypt it using a one-way hash with salt.  The result is a String like "$a4$10$rb85CdE5982VrAZ873".
+After that, each time the user enters his password you encrypt it using the same algorithm and same salt, and compare it with the original encrypted password. A simple library for this is [JBCrypt](http://www.mindrot.org/projects/jBCrypt/).    
+* [JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) by Jim
+* [Pawan's (OOP2017) Explanation](https://github.com/guitarpawat/course-feedback/blob/master/README.md) from his OOP2017 project. You should write documentation like this!
+</td>
 </table>
