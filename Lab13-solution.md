@@ -1,4 +1,4 @@
-## Scoring
+## Lab 13 Solution and Scoring
 
 *TAs please decide how to score.  Tell me and I'll revise this table.*
 
@@ -97,7 +97,7 @@ public static void printValuable(List<? extends Valuable> valuables) {
 }
 ```
 
-Poor coding: (a) "list of Coins" in Javadoc is misleading, (b) `@param list` in Javadoc doesn't match actual parameter name, (c) no `@return` tag.
+**Example of Poor Coding**: In the Javadoc, (a) "list of Coins to sort" is misleading, (b) `@param list` doesn't match actual parameter name `money`, (c) no `@return` tag.
 ```java
 /**
  *  Filter money by a currency.
@@ -115,7 +115,7 @@ The lab sheet instructs to delete it.  In *Clean Code* Robert Martin
 recommends this. Dead code makes another programmer wonder why its
 their and what you were intending to do. 
 
-If you have a block of test code that you want to keep,
+When you have a block of test code that you want to keep,
 put the code in a private method (with a descriptive name or comment) 
 instead of commenting it out.
 
