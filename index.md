@@ -365,6 +365,8 @@ Project Presentations after Exam.
 <td markdown="span">
 [Sample Programming Problems](week15/Sample-Problems.pdf)    
 In project demo, please prepare presentation of design and interesting technology.  Don't just show code in Eclipse (unreadable and not very educational).   
+
+**Closed Internet** the exam is closed Internet. You can use the Java and JavaFX API docs **on your own computer** but not from the Internet.  Since beginning of the course, students were instructed to install Java API locally. Note that the JavaFX API docs are separate from the Java SE API.
 </td>
 </tr>
 </table>
