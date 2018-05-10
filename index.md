@@ -407,7 +407,13 @@ In project demo, please prepare presentation of design and interesting technolog
 </tr>
 <tr valign="top">
 <td markdown="span">
-[Database](database/) directory contains some introductory slides.
+[Database](database/) directory contains some introductory slides.     
+   [Introduction to Databases](database/1-Database-Introduction.pdf)    
+   [Database Software](database/2-Database-Software.pdf) included embedded and client-server databases    
+   [Using JDBC](database/3-Using-JDBC.pdf) this is **not** recommended, but for background knowledge. ORM is usually much better.    
+   [Persistence and ORM](database/4-Persistence-OR-Mapping.pdf) intro to object-relation mapping, which lets you save and retrieve *objects* rather than just fields    
+
+[ORMLite Example](https://github.com/OOP2018/contacts-lite.git) using ORMLite and H2 to save contacts to a database. README file explains concepts.
 </td>
 </tr>
 <tr valign="top">
