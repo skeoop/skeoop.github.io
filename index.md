@@ -356,8 +356,8 @@ May 03
 <tr valign="top">
 <td align="center"> 
 Final Exam     
-May 14    
-Monday
+May 14
+CPE Room 202   
 </td>
 <td markdown="span">
  9:00 - 12:00 Programming Exam     
