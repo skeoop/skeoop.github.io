@@ -8,15 +8,16 @@ should normally be run on a separate thread to avoid freezing the UI.
 This example shows what happens if you start a long-running
 task on the UI thread.
 
-Download this code:
+Clone this code:
+[https://github.com/jbrucker/worker-threads](https://github.com/jbrucker/worker-threads)
 
 The program counts from 0 to some limit, in milliseconds.
 
-<p align="center">
-![Countup Iimer](count-up-timer.png)
-</p>
 
-**Exercise:** Run the application. Type a number (e.g. 2000) and press "Start". Does the UI behave well?  Can you stop the counter?
+![Countup Iimer](count-up-timer.png)
+
+
+**Exercise:** Run the application. Type a number (like 2000) and press "Start". Does the UI behave well?  Can you stop the counter?
 
 You can see the count printed on console, but it is not updated in the window until the counter loop finishes.
 
@@ -38,9 +39,9 @@ Components in the UI are:
 
 ## Worker Threads and Services
 
-To avoid an unresponsive UI, long-running or compute-heavy tasks
-should be run in separate threads.
-These threads are called *worker* threads and appear to run in the background.  
+To avoid an unresponsive UI, you should run long-running tasks
+in separate *threads*.
+These threads are called **worker threads** and appear to run in the background.  
 
 Example of worker threads:
 * An app that downloads files. Each download is one or more worker threads.
@@ -51,7 +52,7 @@ There are some special problems with using *worker* threads:
 * How can you monitor the worker's progress?
 * How do you get and display the result?
 * How can the worker notify the UI thread of events?
-* How can tje application cancel the worker thread?
+* How can the application cancel the worker thread?
 
 GUI frameworks provide classes for worker threads.
 These classes manage communication between background threads and the UI or "Application" thread.
@@ -63,9 +64,9 @@ These classes manage communication between background threads and the UI or "App
 
 ## Using a JavaFX Task
 
-The JavaFX `Task` class implements the `Worker` interface. A `Task` is for a one-time job that you want to run in a worker thread.
+The JavaFX `Task` class is for a one-time job that you want to run in a worker thread.  The `Task` class handles communication between the JavaFX Application Thread (the UI thread) and the worker thread.
 
-The Worker interface and classes have many methods,
+The Worker interface and Task class have many methods,
 but they are easy to understand if you group them by
 what they do.
 
@@ -76,10 +77,12 @@ The main methods of **Task** are:
 <td markdown="span" align="center">
 **Task&lt;V&gt;**
 </td>
+<td markdown="span" align="center">
+Meaning
+</td>
 </tr>
 <tr align="left" valign="top">
 <td markdown="span" align="left">
-**Properties**    
 message: String       
 progress: double        
 running: boolean    
@@ -87,25 +90,81 @@ state: Worker.State
 totalWork: double    
 value: V    
 </td>
+<td markdown="span">
+**Properties** 
+that are observable. When their value changes the
+observers are notified.
+For each property xxx there is a method named `xxxProperty()`
+to get a reference to it, for example, `task.valueProperty()`
+
+Don't confuse the methods that return the property (`valueProperty()`)
+with the method that just returns the current value of the
+property, like `getValue()`.
+</td>
 </tr>
 <tr align="left" valign="top">
 <td markdown="span" align="left">
-**Required Callback Method:**    
  V call()     
-**Services:**     
+</td>
+<td markdown="span">
+**Required Method:** 
+Your Task subclass must override this method.   
+In the `call()` method your task does the actual work.
+
+While doing work your task can update `value`
+and `progress` so the UI is notified.  
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+cancel()      
+</td>
+<td markdown="span">
+A **control method**  to cancel the task.
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
 updateMessage(String message)     
 updateProgress(workdone, totalwork)    
 updateValue(V value)      
-**Controls:**    
-cancel()      
-run()    
-**Query Methods:**    
+</td>
+<td markdown="span">
+**Services:** 
+Call these methods from within your task's `call()` method to
+update the message, progress, and value properties.
+Listeners will be notified on the UI thread whenever a value changes.
+You can also directly **bind** a UI control to a property to
+automatically update the control, as shown in the code below. 
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
 getMessage()        
 getProgress()    
 getState()     
 getValue()  
 isCancelled()    
 isRunning()     
+</td>
+<td markdown="span">
+**Query Methods:**    
+Get the value of a property or test if the task is running or cancelled.
+
+`getValue()` returns the current "value" the the result.  If the task
+is still running, the "value" has the value set by `updateValue()`.
+If the task is finished, this is the value returned by `call()`.
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+messageProperty()    
+progressProperty()    
+valueProperty()     
+</td>
+<td markdown="span">
+Get a reference to a property. Use these methods to either add a 
+Listener or to bind the property to another property.
 </td>
 </tr>
 </table>
@@ -117,8 +176,9 @@ by calling the *Service* methods `updateValue()`, `updateProgress()`, and `updat
 
 ### Do It
 
-Add a **CountUpTask** class to count from 0 to a limit using a worker thread.
+Write a **CountUpTask** class to count from 0 to a limit using a worker thread.
 This can be an inner class, or top-level class (separate .java file).
+The value returned by the call() method will be the total count, which is an int value. So the type parameter is `Integer`.
 
 ```java
 /** A worker that counts slowly from 0 to a total count. */
@@ -135,19 +195,19 @@ public class CountUpTask extends Task<Integer> {
     public Integer call() {
         updateMessage("Starting");
         updateProgress(0, totalcount);
-        // how often to update the progressbar?
-        int increment = Math.max(totalcount/100, 2);
+       
         while(count < totalcount) {
             count += 1;
             System.out.println(count); // for testing
             // Notification services from the superclass
             updateValue(count);  
             updateMessage(Integer.toString(count));
-            if (count % increment == 0) updateProgress(count, totalcount);
+            updateProgress(count, totalcount);
             // wait for 1 millisecond (but not very accurate)
             try { Thread.sleep(1); }
             catch (InterruptedException ex) { break; }
         }
+        updateProgress(count,totalcount);
         // Return the result of the task
         return count;
     }  
@@ -159,8 +219,8 @@ periodically notifies the UI thread of its progress by calling `updateValue(coun
 
 ### Running a Worker Thread
 
-In JavaFX, you start worker threads using `Thread.start()`
-or a Java Executor or ExecutorService.
+In JavaFX, you create a Thread containing your backgound Task 
+and start it using `Thread.start()`, or a Java Executor or ExecutorService.
 In the controller class add this code:
 ```java
 public class TimerController {
@@ -189,7 +249,16 @@ public class TimerController {
 }
 ```
 
-We also need a way to stop the task.  Define a stopWorker method to cancel the worker:
+In this method we **bind** the CountUpTask's `progress` property
+to the `progress` property of a ProgressBar control. When the worker
+task calls updateProgress(), it will cause the ProgressBar to be updated.
+
+To show the count in a TextField we add a `ChangeListener` as observer
+of the `value` property.  Whenever the CountUpTask called `updateValue()`
+it will notify the ChangeListener (on the UI thread), and give it both
+the old and new values as parameters.
+
+We also need a way to stop the task.  Define a stopWorker method to cancel the CountUpTask:
 ```java
     /** Call this method when Stop button is pressed. */
     public void stopWorker(ActionEvent event) {
@@ -197,7 +266,7 @@ We also need a way to stop the task.  Define a stopWorker method to cancel the w
     }
 ```
 
-Finally, use `startWorker` and `stopWorker` as Event Handler methods for the start and stop buttons in the UI.
+Finally, add `startWorker` and `stopWorker` as Event Handler methods for the start and stop buttons in the UI.
 In the `initialize()` method change the code to:
 ```java
     @FXML
@@ -212,16 +281,16 @@ Run the application.  Is it more responsive?
 
 ## Properties
 
-JavaFX uses lots of observable **properties** for values.
+JavaFX uses observable **properties** for values.
 The Worker Task class `progress` attribute is an observable Integer Property, and the `value` is also an observable Property.
 JavaFX gives you 2 ways to access these fields:
 
 | Method               | What is does |
 |----------------------|--------------|
 | double getProgress() | get the current value of progress |
-| progressProperty()   | get observable property for progress |
-| Integer getValue()   | get current result of worker |
-| valueProperty()      | get observable property for value |
+| progressProperty()   | get observable Property for progress |
+| Integer getValue()   | get current value of worker |
+| valueProperty()      | get observable Property for value |
 
 
 To update the `displayField` whenever the worker updates the value property,
@@ -258,10 +327,10 @@ displayField.textProperty().bind( worker.messageProperty() );
 
 ## Using Hook Methods for Extra Functionality
 
-A **hook* method is an optional method used to add some additional
+A **hook** method is an optional method you can override to add additional
 functionality to existing code.  They are often used in frameworks.
 
-A Worker task or service is always in one of these states:
+A Worker task is always in one of these states:
 
 * State.READY - ready to be executed, but not yet run
 * State.SCHEDULED - scheduled for execution but not yet running
@@ -275,14 +344,23 @@ The Task class has "hook" methods that are called when the worker enters each of
 For example:
 ```java
 @Override
-preotected void running() {
+protected void running() {
     System.out.println("Worker is starting!");
     // This method is called on the application thread,
     // so it is safe to update UI components.
 }
 ```
 
+You can also add an EventHandler to be notified when the worker task enters a state.  To be notified when the task finishes successfully, write:
+```java
+worker.setOnSucceeded( new EventHandler<WorkerStateEvent>() {
+         public void handle(WorkerStateEvent event) {
+             // do something when worker finishes
+         }
+     } );
+
+```
 
 ## Reference
 
-*
+* JavaFX Tutorial has a section on Task and Service.

@@ -355,16 +355,21 @@ May 03
 <!-- final exam (5/7-5/18) -->
 <tr valign="top">
 <td align="center"> 
-Final Exam 
+Final Exam     
+May 14    
+Monday
 </td>
 <td markdown="span">
-Monday, 14 May 09:00 - 16:00++.    
-Written and programming exam. *Dress like a programmer.*    
-Project Presentations after Exam.
+ 9:00 - 12:00 Programming Exam     
+13:00 - 14:20 Written Exam    
+14:30 - done  Project Presentations    
+*Dress like a programmer* (wear whatever you like)    
 </td>
 <td markdown="span">
 [Sample Programming Problems](week15/Sample-Problems.pdf)    
 In project demo, please prepare presentation of design and interesting technology.  Don't just show code in Eclipse (unreadable and not very educational).   
+
+**JavaFX Tasks** and **Recursion** will be on the exam.
 
 **Closed Internet** the exam is closed Internet. You can use the Java and JavaFX API docs **on your own computer** but not from the Internet.  Since beginning of the course, students were instructed to install Java API locally. Note that the JavaFX API docs are separate from the Java SE API.
 </td>

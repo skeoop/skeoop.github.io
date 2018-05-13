@@ -8,7 +8,7 @@ However, this answer is interesting:
 
   Use the fx:root construct instead of fx:controller. It is explained in the Custom Components section of the FXML docs. I have used it in this example for my students if you want a bigger code example.
   
-  Using this approach, creating views and controllers will be a lot easier and flexible. You will be able to share data between and connect controllers like you would any other objects in your application (for example: by passing data via the constructor or setter methods).
+  Using this approach, creating views and controllers will be a lot easier and flexible. You will be able to share data between and connected controllers like you would any other objects in your application (for example: by passing data via the constructor or setter methods).
   
   If you're using SceneBuilder you'll simply need to remove the controller reference and check the box "Use fx:root". Then rework your code as shown in the examples.
 
