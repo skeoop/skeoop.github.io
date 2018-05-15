@@ -328,7 +328,7 @@ Intro to Database and Object-Relational Mapping using ORMLite.
 
 </td>
 <td markdown="span">
-**Exercise**: [OOP2018/contacts-lite](https://github.com/OOP2018/contacts-lite.git) Github project using ORMLite.    
+**Exercise**: [OOP2018/contacts-orm](https://github.com/OOP2018/contacts-orm.git) Github project using ORMLite.    
 [Lab 13: Generics](week13/Lab13-Generics.pdf) and improve code in MoneyUtil.java.    
 **Read**: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
 **Read** (for next week): Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
@@ -428,7 +428,7 @@ In project demo, please prepare presentation of design and interesting technolog
    [Using JDBC](database/3-Using-JDBC.pdf) this is **not** recommended, but for background knowledge. ORM is usually much better.    
    [Persistence and ORM](database/4-Persistence-OR-Mapping.pdf) intro to object-relation mapping, which lets you save and retrieve *objects* rather than just fields    
 
-[ORMLite Example](https://github.com/OOP2018/contacts-lite.git) using ORMLite and H2 to save contacts to a database. README file explains concepts.
+[ORMLite Example](https://github.com/OOP2018/contacts-orm.git) using ORMLite and H2 to save contacts to a database. README file explains concepts.
 </td>
 </tr>
 <tr valign="top">
