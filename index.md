@@ -6,19 +6,14 @@ description: Index page
 
 ## Projects
 
-[Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit)
-
-[Project Ratings](https://goo.gl/forms/vgZmx4ZVHjWtsSKX2)
+[Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit),
+[Project Ratings](https://goo.gl/forms/vgZmx4ZVHjWtsSKX2),
+[Project Proposals](https://goo.gl/C5m6Cb), [OOP 2017 Projects](projects2017).
 
 
 ## Schedule and Assignments 
 
 Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
-
-
-[Project Evaluation]
-
-[Project Proposals](https://goo.gl/C5m6Cb).  [OOP 2017 Projects](projects2017).
 
 
 <table border="1">
