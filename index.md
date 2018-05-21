@@ -225,10 +225,11 @@ Review some points from Labexam
 <td markdown="span">
 [Lab 8: Observers](week8/Lab8-1-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
 [Homework2](week8/Homework2.pdf) due next week (22 Mar) and needed for lab.   
+[Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.    
+**Read**: Big Java, Ch. 13 *Recursion*    
 [PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
 **PA3 Assignmnet URL:** [https://goo.gl/U5wbau](https://goo.gl/U5wbau).    
-**Read**: Big Java, Ch. 13 *Recursion*    
-[Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.
+[Currency Converter](currency_service) how to get currency exchange rates for your UnitConverter.     
 </td>
 </tr>
 <!-- week 9 -->
@@ -252,7 +253,6 @@ Test Driven Development
 [JUnit Method Summary](week9/JUnitSummary.pdf)    
 **Read** [UML Distilled Chapter 4](docs/UML-Distilled-4-Sequence.pdf) on Sequence Diagrams.    
 **Assignment** Develop idea and proposal for final programming project.    
-[Currency Converter](currency_service) how to get currency exchange rates for your UnitConverter.
 </td>
 </tr>
 <!-- week 10 -->
@@ -436,4 +436,5 @@ After that, each time the user enters his password you encrypt it using the same
 * [JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) by Jim
 * [Pawan's (OOP2017) Explanation](https://github.com/guitarpawat/course-feedback/blob/master/README.md) from his OOP2017 project. You should write documentation like this!
 </td>
+</tr>
 </table>
