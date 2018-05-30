@@ -97,10 +97,11 @@ You can try it out in a web browser.  Just type in the URL with query parameters
 ```
   http://apilayer.net/api/live?access_key=xxxxxxxxxxxxxxxxxxxx&currencies=THB
 ```
-You should get a reply like this but all on one line (web services are for *software programs* not *humans*):
+You should get a reply like this, but all on one line:
 ```
-{"success":true,"terms":"https:\/\/currencylayer.com\/terms",
- "privacy":"https:\/\/currencylayer.com\/privacy","timestamp":1521862158,
+{"success":true,"terms":"https://currencylayer.com/terms",
+ "privacy":"https://currencylayer.com/privacy",
+ "timestamp":1521862158,
  "source":"USD",
  "quotes":{"USDTHB":31.17037}
 }
@@ -108,18 +109,20 @@ You should get a reply like this but all on one line (web services are for *soft
 
 If you omit the `&currencies=THB` query parameter, the reply is:
 ```
-{"success":true,"terms":"https:\/\/currencylayer.com\/terms",
- "privacy":"https:\/\/currencylayer.com\/privacy","timestamp":1521947957,
+{"success":true,"terms":"https://currencylayer.com/terms",
+ "privacy":"https://currencylayer.com/privacy",
+ "timestamp":1521947957,
  "source":"USD",
  "quotes":{"USDAED":3.672504,"USDAFN":68.930404,"USDALL":104.800003,
- "USDAMD":479.670013,"USDANG":1.780403,"USDAOA":214.358994,
- ... (more exchange rates) }
+           "USDAMD":479.670013,"USDANG":1.780403,"USDAOA":214.358994,
+           ... (more exchange rates) }
 }
 ```
 
 If you send an invalid request, you'll either get an HTTP Response Code for the error (e.g. 404 for "not found") or a JSON reply like this:
 ```
-{"success":false,"error":{"code":105,
+{"success":false,
+ "error":{"code":105,
  "info":"Access Restricted - Your current Subscription Plan does not support Source Currency Switching."}}
 ```
 
