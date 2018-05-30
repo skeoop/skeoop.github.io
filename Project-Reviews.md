@@ -406,19 +406,19 @@ Lacks explanation of technology used. Just poorly formatted list of design patte
 No explanation how to build source code, and doesn't mention a dependency in iText library (not included with source).
 DatabaseManager hardcodes the jdbc username and password into code, even though there is a Properties file!
 ```
-	private ConfigFileManager cf = ConfigFileManager.getInstance();
-	private final String DATABASE = cf.getProperty("database.url");
+    private ConfigFileManager cf = ConfigFileManager.getInstance();
+    private final String DATABASE = cf.getProperty("database.url");
     private final String USERNAME = "jamp";
-	private final String PASSWORD = "jamp";
+    private final String PASSWORD = "jamp";
 ```
-and more hardcoded dependencies (this is bad *and* unnecessary):
+and more hardcoded dependencies (bad coding and *unnecessary*):
 ```
 public void connect() {
-	try {
-		Class.forName("com.mysql.jdbc.Driver");
+    try {
+        Class.forName("com.mysql.jdbc.Driver");
 ```
 
-Uses raw SQL for queries instead of PreparedStatement. Vulnerable to SQL injection.
+Uses raw SQL for queries instead of PreparedStatement. Building SQL statements from string is vulnerable to SQL injection, which your code doesn't check for.
 
 1. After searching for a room there is no way to cancel and go back to search page.  
 2. When click Search button the app opens 2 windows, one is blank.
@@ -597,7 +597,7 @@ public class DatabaseConnector {
 
 Problems with this code:
 
-1. hardcoding database URL into Java code
-2. using database "root" user
-3. not catching error and producing useful log message or error message (just auto-generated printStackTrace)
+1. hardcoding database URL into Java code. Should use properties file.
+2. using database "root" user. Should **never** use database root user in app.
+3. not producing (and looging) useful error messages -- just auto-generated printStackTrace.
 
