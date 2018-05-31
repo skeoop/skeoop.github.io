@@ -2,13 +2,20 @@
 
 Project scores are in the "Scores" tab of the Google Docs spreadsheet for projects.   [Google Projects Spreadsheet](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit#gid=1983300632)
 
+Below is feedback and suggestions from instructor and TAs.
+
+The projects that used JDBC directly mostly used
+some really bad coding for JDBC.
+Looks like students all copied the same bad ideas, instead of using ORM,
+Properties, and the things you learned in the course.
+
 ## 2048 Game
 
 Application is well done, but some deficiencies in code.
 
 Package names: AI, LIB, MODEL, Main, SERVER, UI, application are inconsistent naming.
 
-**Libraries misplaced:** there is a top-level `libs` directory but some required
+**Libraries are misplaced:** there is a top-level `libs` directory but some required
 library is in `src/LIB`.  The standard location is a top-level `lib/` directory (no "s").
 
 Documentation is good but very little explanation of *how* you
@@ -31,25 +38,23 @@ Technology applied: DreamLo online service for saving high scores.
 ## Call Me Bus
 
 Application idea and implementation are OK, but some parts are unrealistic.
-I can't see ticket price until click "Book ticket" and in my test it
+User can't see ticket price until clicks "Book ticket", and in my test it
 adds a huge 800 Bt "Additional Cost" on to a 200 Bt ticket.  This would
 never be acceptable.
 
 It does have "Cancel" button and navigation buttons (Home, Exit).
 
 All classes are in the default package (discouraged).  
-Lots of coupling between classes and JDBC, and using raw SQL for statements.
+Lots of coupling between classes and JDBC, and using raw SQL with user-input values, which is vulnerable to SQL injection.
 
-JDBC username, password, URL, and driver (which is not necessary!) are
-hardcoded into Jdbc_Manage class.  This project, like many other projects,
-uses some really bad coding for JDBC.
-Looks like students all copied the same bad ideas, instead of using ORM
-and Properties as suggested.
+JDBC username, password, URL, and driver class (which is not necessary!) are
+hardcoded into Jdbc_Manage class.  The code related to JDBC is poorly written.
+
 
 Online docs need improvement. Its mostly a bunch of screen shots of the game.
 Doesn't explain about design, interesting technology, or *how* you applied OO.
 Since you are using database with MySQL 
-your documentation should say what is required and how to create schema.
+your documentation should say what is required and how to create the schema.
 
 The code requires MySQL JDBC driver and iText JAR but these are **not** included
 in repository and no mention of these requirements in the documentation.
@@ -61,10 +66,11 @@ so any user can login with any password.
 ## Candy game
 
 App cannot be run unless database and tables already exist, and the application silently
-discards exceptions from ORMLite about this.  It hangs indefinitely when I try to create a user.
+discards exceptions thrown from ORMLite about this. 
+It hangs indefinitely when I try to create a user.
 The app hardcodes MySQL URL in code, so no way user can make it run by creating his own database.
 
-I changed database to h2 and added h2.jar to classpath, but project still doesn't work because app doesn't initialize tables.
+I changed database to h2 and added h2.jar to classpath, but project still doesn't work because app doesn't initialize tables. ORMLite can do this for you!
 
 MySQL driver JAR is in src/sql.  Should be in top level `lib/` directory and add lib to classpath.
 Typing error in style "teansparent" should be "transparent". 
@@ -75,14 +81,15 @@ Good points are uses ORM and ORMLite.  Design needs improvement `DataTable` is a
 Online docs list dependencies but no explanation of design or *how* you used 
 design patterns or technology.  Just listing them (as in docs) is not helpful.
 
-Reference to MySQL connector should refer to MySQL download site.
+Reference to MySQL connector should refer to MySQL download site, not someone's
+Github repo.
 
 ## Checker Game
 
-Game doesn't implement all the rules. a) can't jump multiple pieces, b) no sacrifice (lose a
+Game doesn't implement all the rules of checkers. a) can't jump multiple pieces, b) no sacrifice (lose a
 piece because you didn't jump an opponent piece when it was possible).  
 Since the app is not that complex, 
-I think you should completely implement the rules of game.
+I think you should completely implement the rules of the game.
 
 Documentation is OK but no explanation of technology or how you did it.
 
@@ -132,9 +139,9 @@ Classes in common:
 
 * GameObject- renamed `tick` method to `update` but many other methods identical
 * Game
-* Handler - many identical methods, even variable names same
+* Handler - many identical methods, even variable names are same
 * ObjectId (same as ID enum) - stupid enum syntax (`Player()` instead of `Player`) shows its a copy.
-* Player1 and Player2 are similar to Player (RealTutGML)
+* Player1 and Player2 are similar to Player class on RealTutGML. 
 
 Design Issues:
 
@@ -197,10 +204,14 @@ Assassin.png        assassin.png
 Bow_Master.png      Bow_master.png
 ```
 
-Did you test the JAR file?  Some versions of Windows are *case agnostic* for filenames
+Did you test the JAR file?  It throws exceptions about image files not found.
+Looks like you didn't test code.
+
+Some versions of Windows are *case agnostic* for filenames
 that fit into the old-style 8.3 size limit, but not for Bow_Master.png.
 To **avoid** this sort of problem use **consistent naming**, such as always
-name images in lowercase.  Your code has some names in lowercase, some with first letter in caps.
+name images in lowercase.  Your code has some names in lowercase, some with first letter in caps.  Even better: test your code on a different machine.
+
 
 ## It Came From Outer Space
 
