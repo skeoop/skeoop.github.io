@@ -312,9 +312,9 @@ Design and coding issues:
 
 * Project uses JDBC instead of ORM, and  does not define any DAO to encapsulate database part.
 * Hardcode database URL, user, and password into code (`jdbc.java`)
-* Uses "root" user and empty password to connect to MySQL database on Google cloud! This is really insecure --  anyone can login and do whatever they want.
-* Since all users are sharing same database on Google Cloud SQL, all their data will overlap.  So the app is not useful as a personal inceome/expense tracker.
-* Since this app is designed for an individual user, in would be better to use an embedded database like H2, HSQLDB, Derby, or Sqlite.  Then each user would have his own, local database and you wouldn't expose your Google SQL credentials. They would not need to install a database server, either.
+* Uses "root" user and empty password to connect to MySQL database on Google Cloud! This is really insecure -- anyone can login and do whatever they want.
+* Since all users are sharing same database on Google Cloud SQL, all their data is mixed together.  So the app is not useful as a personal inceome/expense tracker.
+* Since this app is designed for an individual user, in would be better to use an embedded database like H2, HSQLDB, Derby, or Sqlite and a local database.  Then each user would have his own, local database and you wouldn't expose your Google SQL credentials. They would not need to install a database server, either.
 * Code that can't possibly work:
 ```java
 public static void readFile() {
@@ -336,7 +336,7 @@ public static void readFile() {
 
 Project documentation lacks explanation of technology used, dependencies, how to build and run application.  Looks nice, but mostly advertising.
 
-If you make these modifications and make it easier to configure, it could be a useful app.  Suggest also add (editable) "categories" for income and expense. The Daily Expense 2 app on Google Play store is good example.
+If you make these modifications and make it easier to configure, it could be a useful app.  Also suggest you add (customizable) "categories" for income and expense. The Daily Expense 2 app on Google Play store is good example.
 
 ## Press Arrow Game
 
