@@ -224,24 +224,24 @@ of repo README.md content.
 ## Lion Villain
 
 Animated arithmetic game. Uses threads and a thread pool, ResourceBundle (undocumented) for
-configuration information. Uses Kryonet library for communication and ORMLite for persistence.
+configuration information. Shows good effort to make use of other frameworks: uses Kryonet library for communication and ORMLite for persistence.
 
 The Documentation lacks detail of how you used the technologies, and total lack of info
 of how to configure it.  The ServerLauncher.jar just prints "Server Start" with no info about
-the IP address or port it is listening on.
+the IP address or port it is listening on.  Would be helpful to display IP address and port.
 
 In One Player mode, the Game freezes forever after showing "Insert your name" screen
 if I type in my name.  Works if I click "Skip".  2-player mode works OK.
 
 ## Market Log
 
-Project idea is useful, and uses some knew knowledge and technology, such as ORMwith ORMlite, JavaFX Tables, jfoenix for charts, and iText for PDF.  
+Project idea is useful, and uses some knew knowledge and technology, such as ORMlite, JavaFX Tables, jfoenix for charts, and iText for PDF.  
 
 Required dependency JARs should all be in one directory (usually named `lib`) instead of 3 directories as in your code.
 
 The documentation needs improvement.  No explanation of technology used, how to configure or initialize the database, or how to get initial data into the database.  The app uses a properties file for database configuration values, but documentation doesn't mention it or how to config it.
 
-The JAR file won't run on anyone else's machine because of the URL, user, and password in configuration file.  Would be better to use H2 so it can auto-create the database.  If you *really* want to use MySQL then use the Localhost address (127.0.0.1) and tell users how to create database and edit configuration file.  ORMLite has utility classes that can create entity tables.
+The JAR file won't run on anyone else's machine because of the URL, user, and password in configuration file.  Would be better to use H2 so it can auto-create the database and table schema.  If you *really* want to use MySQL then use the Localhost address (127.0.0.1) and tell users how to create database and edit configuration file.  ORMLite has utility classes that can create entity tables.
 
 Error messages in DatabaseManager are misleading:
 
@@ -351,14 +351,14 @@ In the Score window, you just use a label with multiline text.  Better to use a 
 
 Good implementation and documentation.  Very entertaining demo.
 
-`GameSceneTeam` code looks very similar to `GameScene`.  Could it be a subclass and just override the parts that vary?
+`GameSceneTeam` code looks very similar to `GameScene`.  Could it be a subclass and just override the parts that differ?
 
 Then you could apply polymorphism in `GameWindow` so it could treat all game modes the same.
 
 ## Randomize
 
 
-Has JUnit test class, but the tests are poor.  Don't seriously test the code.
+Has JUnit test class, but the tests are poor.  Does not seriously test the code.
 
 The "core" class of this app appears to be `RandomNumber`, but that class is poorly written.
 
