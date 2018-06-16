@@ -140,8 +140,8 @@ Classes in common:
 * GameObject- renamed `tick` method to `update` but many other methods identical
 * Game
 * Handler - many identical methods, even variable names are same
-* ObjectId (same as ID enum) - stupid enum syntax (`Player()` instead of `Player`) shows its a copy.
-* Player1 and Player2 are similar to Player class on RealTutGML. 
+* ObjectId (same as ID enum) - weird enum syntax (enum members `Player()`, `Block()` instead of `Player`, `Block`) shows its a copy.
+* Player1 and Player2 are similar to Player class on RealTutGML.  See below, also.
 
 Design Issues:
 
