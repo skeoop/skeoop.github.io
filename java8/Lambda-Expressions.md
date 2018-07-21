@@ -12,7 +12,7 @@ The syntax of a lambda expression is:
 ```java
     (Datatype variable, ...) -> { statement block; }
 ```
-for example, a lambda that prints its argument to System.out is:
+For example, a lambda that prints its argument to System.out is:
 ```java
     (Object x) -> { System.out.println(x); }
 ```

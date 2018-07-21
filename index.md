@@ -171,26 +171,26 @@ Tues 27 Feb Written and Programming: 8:00-12:00 Room 203.
 <tr valign="top">
 <td align="center"> <b>Topics</b><br/>for 2nd Half</td>
 <td markdown="span">
-**Todo**    
-Model-View-Controller Design    
-Unit Testing with JUnit    
-Lambda Expressions and Anonymous Classes    
-Streams Programming    
-Frameworks. The OCSF Framework    
-Using a Database with ORM
-Checkstyle for Coding style    
-Using Threads in JavaFX    
-Generics (type parameters)    
-</td>
-<td markdown="span">
 **Done**    
 Enum types    
 Event Listeners and Observer Pattern    
+Frameworks. The OCSF Framework    
+Generics (type parameters)    
 Graphical UI using JavaFX    
+Lambda Expressions and Anonymous Classes    
 Recursion    
 Strategy Pattern and Resursive Withdraw for Purse    
 Threads    
 UML Sequence Diagram    
+Unit Testing with JUnit   
+Using Threads in JavaFX    
+</td>
+<td markdown="span">
+**Todo**    
+Model-View-Controller Design    
+Streams Programming    
+Using a Database with ORM    
+Checkstyle for Coding style    
 </td>
 </tr>
 <!-- week 7 -->
@@ -431,12 +431,12 @@ In project demo, please prepare presentation of design and interesting technolog
 </tr>
 <tr valign="top">
 <td markdown="span">
-**Password Encrypting** you should *never* store plain text password in a database, for security. Encrypt them!      
-When the user sets a new password you encrypt it using a one-way hash.  The result is a String like "$a4$10$rb85CdE5982VrAZ873".
-After that, each time the user enters his password you encrypt it using the same algorithm, and compare it with the original encrypted password. A simple library for this is [jBCrypt](http://www.mindrot.org/projects/jBCrypt/). 
-
-[JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) by Jim    
-[Excellent explanation in Pawan's Project Docs](https://github.com/guitarpawat/course-feedback/blob/master/README.md) from his OOP2017 project. You should write documentation like this!
+**Password Encrypting** you should *never* store passwords as plain text, for security. Encrypt passwords!      
+When the user sets a new password you encrypt it using a *one-way hash*.  The result is a String like "$a4$10$rb85CdE5982VrAZ873".
+After that, each time the user enters his password (again) you encrypt it using the same algorithm, and compare it with the original encrypted password. If the encrypted Strings match, the passwords match.   
+A popular, easy-to-use library for this is [jBCrypt](http://www.mindrot.org/projects/jBCrypt/).   
+There is a [JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) showing how to use JBCrytp.
+[Excellent explanation in Pawan's project docs](https://github.com/guitarpawat/course-feedback/blob/master/README.md) from the OOP2017 course. You should write documentation like this!
 </td>
 </tr>
 </table>
