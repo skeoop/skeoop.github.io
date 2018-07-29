@@ -27,13 +27,12 @@ instructions.
 ## Air Hockey
 
 Interesting game using C# and Unity. Created separate executable for Windows,
-Linux, and Mac.
+Linux, and Mac: very nice.  App creates an online list of high scores using DreamLo service.
 
 Online doc needs improvement.  Doesn't explain about design
 or how you used OO and technology.  The brief bullet items are insufficient.
 No build instructions or list of dependencies.
 
-Technology applied: DreamLo online service for saving high scores.
 
 ## Call Me Bus
 
@@ -45,19 +44,19 @@ never be acceptable.
 It does have "Cancel" button and navigation buttons (Home, Exit).
 
 All classes are in the default package (discouraged).  
-Lots of coupling between classes and JDBC, and using raw SQL with user-input values, which is vulnerable to SQL injection.
+Lots of coupling between classes and JDBC, and using raw SQL with user-input values, which is vulnerable to SQL injection.  Better to use ORM with ORMlite or JPA.
 
-JDBC username, password, URL, and driver class (which is not necessary!) are
-hardcoded into Jdbc_Manage class.  The code related to JDBC is poorly written.
-
+JDBC username, password, URL, and driver class (specifying the driver class is not necessary) are
+hardcoded into Jdbc_Manage class.  The code related to JDBC needs improvement.
 
 Online docs need improvement. Its mostly a bunch of screen shots of the game.
 Doesn't explain about design, interesting technology, or *how* you applied OO.
 Since you are using database with MySQL 
 your documentation should say what is required and how to create the schema.
 
-The code requires MySQL JDBC driver and iText JAR but these are **not** included
+The code requires MySQL JDBC driver and iText JAR but these are not included
 in repository and no mention of these requirements in the documentation.
+You should document external dependencies and where someone can get them.
 
 Passwords are stored in **plain text** in file passwords.properties, but no
 associated username.  All passwords are stored in a list (but no usernames),
@@ -68,37 +67,37 @@ so any user can login with any password.
 App cannot be run unless database and tables already exist, and the application silently
 discards exceptions thrown from ORMLite about this. 
 It hangs indefinitely when I try to create a user.
-The app hardcodes MySQL URL in code, so no way user can make it run by creating his own database.
+The app hardcodes MySQL URL in code, so no way a user can run it by creating his own database.
 
-I changed database to h2 and added h2.jar to classpath, but project still doesn't work because app doesn't initialize tables. ORMLite can do this for you!
+I changed database to h2 and added h2.jar to classpath, and eliminated hardcoded user/password, but project still doesn't work because it doesn't initialize tables. ORMLite can do this for you!
 
-MySQL driver JAR is in src/sql.  Should be in top level `lib/` directory and add lib to classpath.
+MySQL driver JAR is in src/sql.  It should be in top level `lib/` directory and add lib to classpath.
 Typing error in style "teansparent" should be "transparent". 
 This prints many messages on the console, so why didn't you fix it?
+This shows the team didn't test their code much.
 
-Good points are uses ORM and ORMLite.  Design needs improvement `DataTable` is actually user data, and it looks like it stores passwords in plain text. Should never store passwords in plain text; use something like jBCrypt to encrypt them.
+Good points are the use of ORM and ORMLite.  Design needs improvement `DataTable` is actually user data, and it looks like it stores passwords in plain text. Should **always** encrypt passwords before storig them (see jBCrypt on class homepage) -- never store passwords in plain text.
 
 Online docs list dependencies but no explanation of design or *how* you used 
-design patterns or technology.  Just listing them (as in docs) is not helpful.
+design patterns or technology.  Just listing pattern names is not helpful.
 
-Reference to MySQL connector should refer to MySQL download site, not someone's
-Github repo.
+Reference to MySQL connector should refer to MySQL download site, not someone else's Github repo.
 
 ## Checker Game
 
 Game doesn't implement all the rules of checkers. a) can't jump multiple pieces, b) no sacrifice (lose a
 piece because you didn't jump an opponent piece when it was possible).  
 Since the app is not that complex, 
-I think you should completely implement the rules of the game.
+I think you should implement all the rules of the game.
 
 Documentation is OK but no explanation of technology or how you did it.
 
 ## Clicker Game
 
 Game source is hard to clone due to many large MP3 files.
-Even just the JAR is 92.5MB.  Better to remove or compress some music.  Or store music files outside the repo and download on first use.
+The runnable JAR file is 92.5MB.  Better to remove or compress some music.  Or store music files outside the repo and download them on first use.
 
-Inconsistent package naming: Alert, Register, application, monsterANDmoney, picture, uiANDcontroller, unitANDhero.  Inconsistent class naming: `htwUIcontroller.java`.
+Inconsistent package naming: Alert, Register, application, monsterANDmoney, picture, uiANDcontroller, unitANDhero.  Inconsistent class naming: `htwUIcontroller.java`. Use the Java naming convention.
 
 Database name, URL, and location hardcoded in Java code.  Schema creation "CREATE TABLE ..." also
 hardcoded in Java.  getMember() has a lot of unused assignments.
@@ -118,18 +117,18 @@ try {
 and doesn't bother to close statements at end of methods, so may have resource leaks.
 
 
-README is OK but would be better if explained more about *how* you used technology.
+README is OK but would be better if you explained more about *how* you used technology.
 App requires SQLite, but you don't document it or list as dependency.
 
 ## Deadshot
 
-Project gets a low score due to (a) lots of code copied from RealTutsGML or the web site https://codingmakesimple.com, and (b) poor code that isn't OO style programming.  Low score for Executable because JAR throws exception due to image files not found, even though I suggested to the team about wrong case for image names.
+Project gets a low score due to (a) lots of code copied from RealTutsGML or the web site https://codingmakesimple.com, and (b) poor code that isn't OO style programming.  Low score for Executable because JAR throws exception due to image files not found, even though I notified the team about wrong case for image names.
 
 Not much work by Napasai.  Most of his 22 commits were updates to README.md,
 and all of them between May 8-14.  2,773 lines written by Dechabol, 347 by Napasai
 and a large part of Napasai contribs are to README.md.
 
-Several parts of the code are very similar to game created in RealTutGML Youtube tutorial videos.  See:
+Several parts of the code are very similar to the game created in RealTutGML Youtube tutorial videos.  See:
 
 * https://www.youtube.com/user/RealTutsGML/featured
 * https://github.com/danielmacho72/spacegame based on RealTutGML
@@ -235,13 +234,14 @@ if I type in my name.  Works if I click "Skip".  2-player mode works OK.
 
 ## Market Log
 
-Project idea is useful, and uses some knew knowledge and technology, such as ORMlite, JavaFX Tables, jfoenix for charts, and iText for PDF.  
+Project idea is useful, and uses some new knowledge and technology, such as ORMlite, JavaFX Tables, jfoenix for charts, and iText for PDF.  
 
 Required dependency JARs should all be in one directory (usually named `lib`) instead of 3 directories as in your code.
 
-The documentation needs improvement.  No explanation of technology used, how to configure or initialize the database, or how to get initial data into the database.  The app uses a properties file for database configuration values, but documentation doesn't mention it or how to config it.
+The documentation needs improvement.  No explanation of technology used, how to configure or initialize the database, or how to get initial data into the database.  The app uses a properties file for database configuration values (good), but documentation doesn't mention it or how to customize it.
 
-The JAR file won't run on anyone else's machine because of the URL, user, and password in configuration file.  Would be better to use H2 so it can auto-create the database and table schema.  If you *really* want to use MySQL then use the Localhost address (127.0.0.1) and tell users how to create database and edit configuration file.  ORMLite has utility classes that can create entity tables.
+The JAR file won't run on anyone else's machine because of the URL, user, and password in configuration file. Its good that you have extenalized these (not hardcoded in Java), but should have installation instructions that tell user to edit the configuration file.
+Would be better to use H2 so it can auto-create the database and table schema.  If you *really* want to use MySQL then use the Localhost address (127.0.0.1) and tell users how to create database and edit configuration file.  ORMLite has utility classes that can create entity tables.
 
 Error messages in DatabaseManager are misleading:
 
@@ -250,8 +250,8 @@ Error messages in DatabaseManager are misleading:
     System.out.println("Cannot connect to OrderDao");
 }
 ```
-you can't "connect" to a DAO, you create it.  The real source of the
-error would be either a) connection is null, b) database doesn't have
+the code doesn't "connect" to a DAO, it creates it.  The real source of the
+error is either a) connection is null, b) database doesn't have
 an Order table or schema is wrong, c) connection refused.
 
 You should write code for ORMLite to create tables, so a new installation doesn't have to.  The `TableUtils` class has many useful methods for database management, including `TableUtils.createTableIfNotExists()`.

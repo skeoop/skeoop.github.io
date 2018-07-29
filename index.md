@@ -432,7 +432,7 @@ In project demo, please prepare presentation of design and interesting technolog
 <tr valign="top">
 <td markdown="span">
 **Password Encrypting** you should *never* store passwords as plain text, for security. Encrypt passwords!      
-When the user sets a new password you encrypt it using a *one-way hash*.  The result is a String like "$a4$10$rb85CdE5982VrAZ873".
+When the user sets a new password you encrypt it using a *one-way hash*.  The result is a String such as "$a4$10$rb85CdE5982VrAZ873".
 After that, each time the user enters his password (again) you encrypt it using the same algorithm, and compare it with the original encrypted password. If the encrypted Strings match, the passwords match.   
 A popular, easy-to-use library for this is [jBCrypt](http://www.mindrot.org/projects/jBCrypt/).   
 There is a [JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) showing how to use JBCrytp.

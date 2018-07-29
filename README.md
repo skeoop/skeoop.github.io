@@ -1,17 +1,11 @@
----
-layout: page
-title: index
-description: Index page
----
-
 ## Object-Oriented Programming at Kasetsart University
 
 Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by J. Brucker.
 
-[Home](http://skeoop.github.io/Home) schedule of weekly topics and assignments.
+[Home](http://skeoop.github.io/) weekly schedule of topics and assignments.
 
-[Projects](http://skeoop.github.io/projects) links to student projects.
+[Projects](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/) links to student projects.
 
-See [Course Description](https://skeoop.github.io/About) ([About.md](About.md)) for more info about this course.
+See [Course Description](https://skeoop.github.io/About) (About.md) for more info about this course.
 
-[https://skeoop.github.io](https://skeoop.github.io) is a friendly view of these pages. You can also download or clone material from the [Github repository](https://github.com/skeoop/skeoop.github.io/). To save bandwidth and your disk space, if you clone it please use `git clone --depth 1`, to clone just the current version.
+[https://skeoop.github.io](https://skeoop.github.io) is a friendly view of these pages. You can also download or clone material from the [Github repository](https://github.com/skeoop/skeoop.github.io/). To save bandwidth and your disk space, please use `git clone --depth 1` to clone just the current version.
