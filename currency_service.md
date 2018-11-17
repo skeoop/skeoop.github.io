@@ -15,9 +15,11 @@ To do this, you need:
 
 ## What's a Web Service?
 
-A web service is a network service that uses the standard HTTP or HTTPS protocol of the web, but is designed to be used from within a program instead of from a web browser.  Web services return data in a format that's useful for software instead of web pages (HTML).
+A web service is a network service that uses the standard HTTP or HTTPS protocol of the web, but is designed to handle requests from a software program other than a a web browser.  
+A web browser expects content in a format (HTML, images) that it can display to a human.
+Web services exchange data in a format that's useful to other software.
 
-The common data formats returned by web services are:
+The common data formats used by web services are:
 
 * plain text, such as:
   ```
@@ -51,10 +53,14 @@ http://apilayer.net/api/live?access_key=xxxxxxx&currencies=THB,JPY
 
 ## Free Currency Exchange Rate Services
 
-There are a few free exchange rate services on the net. If you find another one, please tell me.  Two are:
+There are web services that provide currency exchange rates.
+
+Here are a few free exchange rate services that are free: 
 
 1. [CurrencyLayer.com](https://currencylayer.com) has a limited free currency conversion. The "source" currency is always USD in the free service, but you can convert to as many other currencies as you want.  Limit 1,000 queries per month.
 2. [Bank of Thailand API](https://iapi.bot.or.th/Developer) has daily average exchange rate between Thai Baht (THB) and other currencies.
+
+If you find another free service, please tell me.
 
 ## How to Use a Web Service
 
@@ -95,7 +101,7 @@ The [Documentation][Documentation] page tells us the following:
 
 You can try it out in a web browser.  Just type in the URL with query parameters:
 ```
-  http://apilayer.net/api/live?access_key=xxxxxxxxxxxxxxxxxxxx&currencies=THB
+  http://apilayer.net/api/live?access_key=your-access-key-here&currencies=THB
 ```
 You should get a reply like this, but all on one line:
 ```
@@ -107,7 +113,7 @@ You should get a reply like this, but all on one line:
 }
 ```
 
-If you omit the `&currencies=THB` query parameter, the reply is:
+If you omit the `&currencies=THB` query parameter then it returns exchange rates for all currencies. The reply is:
 ```
 {"success":true,"terms":"https://currencylayer.com/terms",
  "privacy":"https://currencylayer.com/privacy",
@@ -115,7 +121,8 @@ If you omit the `&currencies=THB` query parameter, the reply is:
  "source":"USD",
  "quotes":{"USDAED":3.672504,"USDAFN":68.930404,"USDALL":104.800003,
            "USDAMD":479.670013,"USDANG":1.780403,"USDAOA":214.358994,
-           ... (more exchange rates) }
+           ... (more exchange rates) 
+          }
 }
 ```
 
@@ -130,9 +137,9 @@ If you send an invalid request, you'll either get an HTTP Response Code for the 
 
 The CurrencyLayer.com [Documentation][Documentation] page has a Java example using the popular Apache [HTTP Client](https://hc.apache.org/httpcomponents-client-ga/index.html) library that is part of [HTTPComponents](https://hc.apache.org/).  But the code is long for such a simple task.
 
-You can do the same thing using the JDK's URL and HttpURLConnection classes (see references below), and the code is shorter. But still a lot longer than Python, which would require only about 3 lines of code.
+You can do the same thing using the JDK's URL and HttpURLConnection classes (see references below), and the code is much shorter. But still a lot longer than Python, which would require only about 3 lines of code.
 
-You also need to *parse* the Http response to get the exchange rates. A simple, reliable way to do this is using a *regular expression* and the Java Matcher class. 
+You also need to *parse* the Http response to get the exchange rates. A simple, reliable way to do this is using a *regular expression* and the Java Matcher class.  The sample code explains how to do this.
 
 ## Java Sample Code
 

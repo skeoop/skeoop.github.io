@@ -40,10 +40,10 @@ See [Requirements](Requirements) for software and other items you need for this 
 **Instructor**:  James Brucker    
 **TAs**: Taweerat Chaiman, Chinthiti Wisetsombat, Kongpon Charanwattanakit, Thongrapee Panyapatiphan 
 
-To contact them, use this Java method:
+To get their email address, use this Java method:
 ```java
 /**
- * Get someone's KU Email address.
+ * Compute someone's KU Email address based on real name.
  *
  * @return the person's email
  */
@@ -51,7 +51,7 @@ public String getEmail(String firstName, String lastName, boolean isThaiName) {
     final String DOMAIN = "ku.th";
     StringBuilder sb = new StringBuilder();
     if (isThaiName) 
-       // for Thai names, but unreliable
+       // for Thai names, but not reliable due to name collisions
        sb.append(firstName).append('.').append(lastName.charAt(0)); 
     else 
        // foreign names
@@ -63,13 +63,17 @@ public String getEmail(String firstName, String lastName, boolean isThaiName) {
 
 ### Course work
 
-This course has lectures, labs, and individual assignments.  In lecture we discuss material, do exercises, and quizzes. The lecture does **not**  teach you all the material!  You have to *read* and *practice* on your own for a complete understanding. In labs you will do hands-on programming and learn new skills, such as using git and refactoring code in an IDE.
+This course has lectures, labs, and individual assignments.  
 
-Individual homework and programming assignments are to improve your understanding.
+In lecture we discuss material, do exercises, and quizzes. The lecture does **not**  teach you all the material!  You have to *read* and *practice* on your own for a complete understanding. 
+
+In labs we do hands-on programming and learn new skills, such as using git and refactoring code in an IDE.
+
+Individual homework and programming assignments are to improve your understanding and programming skill.
 
 ### Programming Assignments
 
-There are programming assignments (PA) for you to do on your own, about one every 2 weeks.  These assignments are longer than the labs and require more design effort. The purpose is to help you improve your design and coding skill in depth, and let you practice writing **good quality code**.
+There are programming assignments (PA) for you to do on your own, about one every 2 weeks.  These assignments are longer than the labs and may require some design effort. The purpose is to help you improve your design and coding skill in depth, and let you practice writing **good quality code**.
 
 *Design Your Own Project*: In the second half of the course, you will choose your own topic for one PA. Some student projects from past years are: network-based games, a chat application, a guitar tuner, and an image processor.
 
@@ -79,7 +83,9 @@ All assignments *must* be done **individually**, unless group work is explicitly
 
 It is OK to discuss design and problems you have, but not to share code.  If you need help, please ask the TAs or instructor rather than the other students (who may not give you the correct answer).
 
-**Copying == Fail**  Anyone who submits copied work will receive grade "F" and be reported to Faculty of Engineering for disciplinary action.
+### Copying == Fail
+
+Anyone who submits copied work will receive grade "F" and be reported to Faculty of Engineering for disciplinary action.
 
 ### Grading
 
@@ -152,8 +158,8 @@ where `repo_name` is the remote repository (which you must create on github.com)
 
 You need to know:
 
-1. How to write and compile Java, including creating and using objects.
-  * Everything that was covered in Programming 1, including methods, loops, conditional expressions, arrays and ArrayList, defining classes, and creating objects. 
+1. Everything that was covered in Programming 1, including methods, loops, conditional expressions, arrays and ArrayList, defining classes, and creating objects. 
+  * How to write and compile Java, including creating and using objects.
 2. How to use the command line on your computer, including these commands:
   * How to display name of the current directory.
   * How to change directory.
