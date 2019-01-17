@@ -135,9 +135,9 @@ If you send an invalid request, you'll either get an HTTP Response Code for the 
 
 ## Sending an Http Request using Java
 
-The CurrencyLayer.com [Documentation][Documentation] page has a Java example using the popular Apache [HTTP Client](https://hc.apache.org/httpcomponents-client-ga/index.html) library that is part of [HTTPComponents](https://hc.apache.org/).  But the code is long for such a simple task.
+The CurrencyLayer.com [Documentation][Documentation] page has a Java example using the popular Apache [HTTP Client](https://hc.apache.org/httpcomponents-client-ga/index.html) library that is part of [HTTPComponents](https://hc.apache.org/).  But the code is too long for such a simple task.
 
-You can do the same thing using the JDK's URL and HttpURLConnection classes (see references below), and the code is much shorter. But still a lot longer than Python, which would require only about 3 lines of code.
+We can do the same thing with a lot less code by using the JDK's URL and HttpURLConnection classes. But it's still a lot longer than Python, which would require only about 3 lines of code!
 
 You also need to *parse* the Http response to get the exchange rates. A simple, reliable way to do this is using a *regular expression* and the Java Matcher class.  The sample code explains how to do this.
 
