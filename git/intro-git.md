@@ -162,7 +162,7 @@ Git uses 4 storage areas:
 
 1. **Working Copy** is the files in your project directory (and its subdirectories). These are the files you edit during your work; it includes **tracked** files (files you have added to repo using *git add*) and **untracked** files.  
 2. **Staging Area** of files waiting to be committed to the repository. `git add` adds files to the staging area.
-3. Local **Repository** contains all revisions of all files "added" and "committed" to the repository, along with dates and log messages.  When a file is updated, only the changes are stored, so a repository does not require much space.
+3. **Local Repository** contains all revisions of all files "added" and "committed" to the repository, along with dates and log messages.  When a file is updated, only the changes are stored, so a repository does not require much space.
 4. **Remote Repository** (optional) is a git repository on another host, like Github.  You can synchronize your local repository with the remote repository.
 
 A **Revision** is one snapshot of a project, created using "git commit".  Each revision is identified by a code like 58eb09c. This code (the revision id) is based on a hashcode of the committed files.
@@ -173,7 +173,7 @@ A **Revision** is one snapshot of a project, created using "git commit".  Each r
 
 **Tracked files** refers to files that you have committed to the repository. Git constantly checks for changes to these files, every time you run `git status` or other commands.
 
-### Files You Should Save in Git
+### What to Save in Git
 
 For a programming project, save the files needed to build and run your project, plus documentation.  This includes Java source code (`*.java`), configuration files, and icons.  But, you **do not** need to save files that can be recreated, such as compiler output (`*.class` files).
 
@@ -181,12 +181,14 @@ Here is a common list of files and directories to save (commit) in a Git reposit
 
 <table align="center">
 <tr valign="top">
-<th width="50%" markdown="span"> Files to Save in Git Repository </th>
-<th wdith="50%" markdown="span"> Files to <u>Not</u> Save in Git Repository </th>
+<th width="50%" markdown="span"> Files to Save in Git </th>
+<th wdith="50%" markdown="span"> Files <u>Not</u> to Save </th>
 </tr>
 <tr valign="top">
 <td markdown="span"> 
-<em>Anything needed to build the project</em>
+<em>Files needed to build the project</em>
+<br>
+<em>Documentation</em>
 </td>
 <td markdown="span">
 <em>Anything that can be recreated from other files</em>
@@ -194,14 +196,22 @@ Here is a common list of files and directories to save (commit) in a Git reposit
 </tr>
 <tr valign="top">
 <td markdown="span"> 
-Source code in `src/` dir      
-`*.java`    
+Source code      
+`*.java` or `*.py`    
 icons and config files    
 `README.md` and other documentation
 </td>
 <td markdown="span"> 
-Compiler output in `bin` or `build` dir    
+Compiler output (`bin` or `build` dir)    
 `*.class`    
+`__pycache__`
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+`requirements.txt` (Python)
+</td>
+<td markdown="span">
 IDE Project files (see below)
 </td>
 </tr>
@@ -209,9 +219,9 @@ IDE Project files (see below)
 
 ### What are IDE Project Files?
 
-When you create a "project" using Eclipse, Netbeans, Intellij, etc (IDEs) these programs create some files that describe the project configuration.  Programmers usually don't save these files in the repository because a) they can be easily recreated by the IDE, and b) for a *team* project, your IDE settings might conflict with another team member's settings.
+When you create a "project" using Eclipse, Netbeans, IntelliJ, etc (IDEs) these programs create files that describe the project configuration.  Programmers usually don't save these files in the repository because a) they can be easily recreated by the IDE, and b) for a *team* project, your IDE settings might conflict with another team member's settings.
 
-Here are the project files created by common IDEs:
+Project files created by common IDEs are:
 
 * Eclipse
     ```
@@ -225,13 +235,17 @@ Here are the project files created by common IDEs:
     nbdist/
     nb-configuration.xml
     ```
-* IntelliJ
+* IntelliJ and PyCharm
     ```
     .idea/
     out/
     *.iml
     *.iws
     *.ipr
+    ```
+* Visual Studio Code (vscode)
+    ```
+    .vscode/
     ```
 
 ### The README.md File
@@ -247,10 +261,11 @@ Here is a simple example of README.md:
 # Bus Ticket Counter
 by Bill Gates
 
-Counts the number of tickets sold for a collection of buses.
+Counts the number of tickets sold for a fleet of buses.
 Written in Java and requires Java version 8 or newer.
 Based on my [elab](https://elab.cpe.ku.ac.th) program.
 ```
+
 Markdown is widely used to create web pages and the syntax is simple.  Learn Markdown here:
 
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) on Github explains Markdown in one page
@@ -259,6 +274,7 @@ Markdown is widely used to create web pages and the syntax is simple.  Learn Mar
 ### How to Create README.md?
 
 You can use any text editor to create it, *or* use your IDE.  In Eclipse, choose New -> File and enter the name (README.md). Be sure to put it in the top directory of your project, _not_ inside the src/ dir.
+
 
 Some good, free text editors are:
 * [Atom](https://atom.io) editor that understands syntax of many languages. Has Markdown preview.

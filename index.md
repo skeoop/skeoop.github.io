@@ -6,12 +6,13 @@ description: Index page
 
 ## Projects
 
-[Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit),
-[Project Ratings](https://goo.gl/8PFAse),
-**[Review and Comments](Project-Reviews)** by instructor and TAs.
+2018 [Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit),
+[Student Ratings](https://goo.gl/8PFAse),
+**[Review and Comments](Project-Reviews)** by instructor and TAs,
+and [Project Proposals](https://goo.gl/C5m6Cb).
 
 <!-- [Rating Form](https://goo.gl/forms/vgZmx4ZVHjWtsSKX2), -->
-[Project Proposals](https://goo.gl/C5m6Cb), [OOP 2017 Projects](projects2017).
+[OOP 2017 Projects](projects2017).
 
 
 ## Schedule and Assignments 
@@ -160,11 +161,14 @@ Ratings are anonymized, so its safe to criticize and make suggestions.
 </tr>
 <!-- midterm (Feb 24 - Mar 04) -->
 <tr valign="top">
-<td align="center"> Midterm</td>
-<td markdown="span">
-Tues 27 Feb Written and Programming: 8:00-12:00 Room 203.    
+<td align="center"> Midterm    
+Tues 27 Feb 
 </td>
 <td markdown="span">
+Written and Programming: 8:00-12:00 Room 203.    
+</td>
+<td markdown="span">
+*Dress like a programmer* (wear whatever you like)
 </td>
 </tr>
 <!-- 2nd half of course -->
