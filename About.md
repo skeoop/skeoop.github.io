@@ -8,28 +8,69 @@ description: About the Course
 
 This course covers object-oriented programming and design, including 3 subject areas:
 
-1. Java programming language and its features
-2. Object-oriented concepts, principles, and design, including some design patterns
+1. Object-oriented concepts, principles, and design, including some design patterns
+2. Java programming language and its features
 3. Modeling using UML
 
 For a detailed list of topics, see the [weekly schedule](https://skeoop.github.io/index)
 
-### Course Material
+### Topics
+
+The course will try to cover these topics, but depending on time some may be left for individual study.
+
+* Object basics - what are objects, how they defined, what do they contain?
+* Object references
+* Fundamental characteristics of OOP: Encapsulation, Polymorphism, and Inheritance
+* Java Coding Standard. Using a style checker.
+* How to use Javadoc
+* How to use Git and Github
+* UML Class Diagram for showing structure and relationships
+* UML Sequence Diagram for showing behavior
+* UML State Chart Diagram for state-dependent behavior
+* Inheritance and how to use it
+* Abstract classes - base classes for inheritance
+* Polymorphism and how to use it
+* Interfaces - separate specification from implementation; an enabler for polymorphism
+* Interface "new" features in Java 8 and beyond
+* Collections types and classes
+* Sorting and Comparators (an example of the Strategy Pattern)
+* Iterators and the Iterator design pattern
+* Mutable and immutable objects
+* Unit testing with JUnit
+* Input-Output classes and their hierarchy
+* Graphical UI using JavaFX
+* Events and Event Handling
+* Anonymous classes - a shortcut for classes used only once
+* Threads for multi-tasking
+* Worker threads for background processing
+* Using Frameworks - networking framework as example
+* Intro to Databases and Object-Relational Mapping (ORM)
+* Generics and Generic Types (already used in Collections and Interfaces) 
+* Lambda Expressions and Method References 
+* Streams and stream programming
+* Design Patterns concept and how to read a design pattern.  Patterns are covered as part of other topics.  Patterns often seen are:
+    * Command
+    * Decorator
+    * Factory Method 
+    * Iterator
+    * Obverser
+    * Singleton 
+    * State 
+    * Strategy
+
+
+### Online Course Material and Resources
 
 The [Source Repository](https://github.com/skeoop/skeoop.github.io) contains weekly material for the course as a Git repository, with subdirectories for each week and special topics.
 
-| Schedule and Links | https://skeoop.github.io/index |
-| Material for week1 | https://skeoop.github.io/week1 |
-| Material for week2 | https://skeoop.github.io/week2 |
-| General Documents  | https://skeoop.github.io/docs  |
-| Design Patterns    | https://skeoop.github.io/patterns  |
-| Java Basics(1)     | https://skeoop.github.io/java-basics  |
-| Resources          | https://skeoop.github.io/Resources |
-| All files in repo  | https://github.com/skeoop/skeoop.github.io/ |
+| [skeoop.github.io][skeoop.github.io] | course material, slides, handouts |
+| [Resources][resources]               | places to learn more              |
+| [Google Classroom][google-classroom] | assignments and online exercises  |
+| [OOP2018 Github Org][github-oop2018] | where to submit work, programming quizzes|
+| All files in repo          | https://github.com/skeoop/skeoop.github.io/ |
 
 Note: when a file is updated on [github.com/skeoop/skeoop.github.io](https://github.com/skeoop/skeoop.github.io) it may take *many minutes* before the change appears on [skeoop.github.io](https://skeoop.github.io/). 
 
-(1) the [java-basics](https://skeoop.github.io/java-basics) is material you should already know. We won't cover it in this course.
 
 ### Required Material
 
@@ -176,3 +217,10 @@ You need to know:
   * Add Github as a "remote" repository
   * Copy your local repository to Github ("push")
   * Create a local repository as a "clone" of a Github repository
+
+---
+[skeoop.github.io]: https://skeoop.github.io
+[google-classroom]: https://classroom.google.com
+[resources]: https://skeoop.github.io/Resources
+[github-oop2018]: https://github.com/OOP2018
+[github-classroom]: https://classroom.github.com/classrooms/32051939-ske-programming-2
