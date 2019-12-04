@@ -14,9 +14,25 @@ This course covers object-oriented programming and design, including 3 subject a
 
 For a detailed list of topics, see the [weekly schedule](https://skeoop.github.io/index)
 
+### Course Objectives (What You Will Hopefully Learn)
+
+You will learn how to design and implement applications that involve many classes and source code divided among many files, and how to use libraries or frameworks in your application so you can build on existing code.  You should be able to manage your code and project documents using a version control system; in particular, be able to use git and Github for version control.
+
+You should gain a good understanding of essential programming elements such as data types, interfaces, variables and their scope, fundamental characteristics of OOP, classes, object creation and structure, exception handling, and event handling.  You will also learn how to design and write unit-tests for your own code.  You should become familiar with threads and multi-tasking, and the basics of graphical user interfaces.
+
+You will learn to apply basic object-oriented design principles and design patterns to your own application, and recognize them in code you use.  You should be able to perform basic *refactoring* operations to improve the design of existing code, too.
+
+You should be able to understand API documents from libraries and frameworks and find information in them, and not rely on searching for solutions on StackOverflow.  You should also be able to write good documentation for your own code, using a standard format that enables tools to generate documentation from your code.  
+
+### Requirements for Students 
+
+The above is essential knowledge for any software developer.  It requires individual study and much practice in designing, writing, and testing code.  Everyone in the course will need to commit several hours per week to read, study, and do assignments on their own.
+
+Everyone is required to do the assigned work themselves.  Please do not ask other students to "teach" you or attempt to copy any work from anyone else.
+
 ### Topics
 
-The course will try to cover these topics, but depending on time some may be left for individual study.
+The course will try to cover these topics; depending on time some topics may be left for individual study.
 
 * Object basics - what are objects, how they defined, what do they contain?
 * Object references
@@ -36,7 +52,7 @@ The course will try to cover these topics, but depending on time some may be lef
 * Sorting and Comparators (an example of the Strategy Pattern)
 * Iterators and the Iterator design pattern
 * Mutable and immutable objects
-* Unit testing with JUnit
+* Unit testing and unit testing frameworks
 * Input-Output classes and their hierarchy
 * Graphical UI using JavaFX
 * Events and Event Handling
