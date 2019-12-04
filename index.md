@@ -37,7 +37,7 @@ Jan 11
 [Review of Object basics](week1/1-Review-of-Java.pdf)    
 [Java Coding Standard and Javadoc](week1/2-Coding-Standard-and-Javadoc.pdf)    
 [Intro to Objects](week1/3a-Introduction-to-Objects.pdf) and [Why OOP?](week1/3b-Why-Objects.pdf)    
-[Object References](week4/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
+[Object References](week1/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
 [UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
 How to read the Java API    
 Using [Git](git/intro-git) and [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
@@ -138,7 +138,7 @@ Review Homework
 </td>
 <td markdown="span">
 [Lab 5: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
-[Answers to Exceptions Practice](week5/Exceptions=Practice-Answers.pdf)    
+[Answers to Exceptions Practice](week5/Exceptions-Practice-Answers.pdf)    
 </td>
 </tr>
 <!-- week 6 -->
@@ -419,7 +419,7 @@ In project demo, please prepare presentation of design and interesting technolog
 [Event Handling](week7/Graphics-3-Event-Handling.pdf)    
 [Actions & Commands](week7/Graphics-5-Actions-and-Commands.pdf) encapsulate event handlers in their own object.    
 [Design Patterns](week7/Graphics-4-Patterns.pdf) that occur in Swing.   
-[JOptionPane](week7/Graphics-2-JOptionPane.df) a useful class for creating dialog boxes.    
+[JOptionPane](week7/Graphics-6-JOptionPane.pdf) a useful class for creating dialog boxes.    
 </td>
 </tr>
 <tr valign="top">
