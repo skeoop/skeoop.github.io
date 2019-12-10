@@ -17,7 +17,7 @@ and [Project Proposals](https://goo.gl/C5m6Cb).
 
 ## Schedule and Assignments 
 
-Other pages: [About the Course](About). [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
+Other pages: [About the Course](About), [Contact Us](Contact), [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
 
 
 <table border="1">

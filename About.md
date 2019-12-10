@@ -92,32 +92,6 @@ Note: when a file is updated on [github.com/skeoop/skeoop.github.io](https://git
 
 See [Requirements](Requirements) for software and other items you need for this course.
 
-### Instructor and TAs
-
-**Instructor**:  James Brucker    
-**TAs**: Taweerat Chaiman, Chinthiti Wisetsombat, Kongpon Charanwattanakit, Thongrapee Panyapatiphan 
-
-To get their email address, use this Java method:
-```java
-/**
- * Compute someone's KU Email address based on real name.
- *
- * @return the person's email
- */
-public String getEmail(String firstName, String lastName, boolean isThaiName) {
-    final String DOMAIN = "ku.th";
-    StringBuilder sb = new StringBuilder();
-    if (isThaiName) 
-       // for Thai names, but not reliable due to name collisions
-       sb.append(firstName).append('.').append(lastName.charAt(0)); 
-    else 
-       // foreign names
-       sb.append(firstName.charAt(0)).append('.').append(lastName); 
-    return sb.append('@').append(DOMAIN).toString();
-}
-```
-[StringBuilder](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) is a mutable object for building and editing strings. Its much more efficient than concatenating Strings.
-
 ### Course work
 
 This course has lectures, labs, and individual assignments.  
@@ -200,15 +174,23 @@ Ref: [Github Classroom videos](https://classroom.github.com/videos)
 
 ### Assignments using Your Own Account 
 
-Lab work and some other assignments don't use Github Classroom.  In this case, create a repository in your Github account (the one you used to join our class) and push your work to it. Each assignment specifies the *exact repo name* to use to Github.  Please be careful to use name *exactly* as on the assignment (including upper/lowercase of letters). If you use the wrong name, we might not download your work (and as a result, you get no score).
+Some assignments don't use Github Classroom.  In this case, create a repository in your Github account (the one you used to join our class) and push your work to it. 
+Each assignment specifies the **exact repo name** to use to Github.  Please be careful to use name *exactly* as on the assignment, including upper/lowercase of letters. If you use the wrong name, you might not get credit.
 
 On your local computer, you can use any repo name you like. The local repo name does not have to be the same as the repo name on Github.
-A remote using the command:
+Add a "remote" using the command:
 ```
 cmd>  cd /path/to/local_repo
+# Create repository if necessary
+cmd>  git init
+cmd>  git add file1 file2 ..
+cmd>  git commit -m "Add finished work"
+# Add github repository (already created on Github) as a "remote"
 cmd>  git remote add origin git@github.com:yourname/repo_name.git
+# The first time you 'push' you must specify the remote and branch to use
+cmd>  git push -u origin master
 ```
-where `repo_name` is the remote repository (which you must create on github.com).  So, it can be any name -- not necessarily your local project.
+where `repo_name` is the remote repository (which you must create on github.com).
 
 
 ## Prerequisite Knowledge
