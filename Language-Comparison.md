@@ -49,7 +49,90 @@ If you know Java, they are easy to learn.
 
 ### My View
 
-As a *primary language* only Java and Kotlin are serious choices, due to their mainstream applicability. Java has more complex syntax and some blemishes like primitive types and checked exceptions, which complicate learning.  But, Java also is more widely used and has much more learning material.  If you know Java, learning Kotlin is easy (and educational); going from Kotlin to Java is harder, I think.
+As a *primary language* Java, Kotlin, and Python are serious choices, due to their mainstream applicability. Java has more complex syntax and some blemishes like primitive types and checked exceptions, which complicate learning.  But, Java also is more widely used and has much more learning material.  If you know Java, learning Kotlin is easy (and educational); going from Kotlin to Java is harder, I think.
+
+Comparing Java and Python
+
+| Java                             | Python                                |
+|:---------------------------------|:--------------------------------------|
+| Statically typed                 | Dynamic typing, "*duck typing*"       |
+| Compile before run               | No pre-compile, uses JIT compilation  |
+| Compiler checks for syntax errors| Errors found at run-time; use type    |
+|                                  | hints and mypy to find type errors    |
+| Platform independent             | Platform independent                  |
+| All code is in classes           | Code in classes, top-level functions, or scripts |
+| Verbose syntax                   | Very concise syntax                   |
+| Great API documentation          | Very good API documentation           |
+
+### "Hello, Nerd" Application
+
+Ask a person for his name and say hello.
+In Python:
+```python
+"""
+Ask a person for his/her name and greet the person.
+This code uses type hints to demonstrate their use.
+"""
+
+def greet(name: str) -> None:
+    """Greet a person by name.
+
+    Args:
+       name - the person's name.
+    """
+    print("Hello,", name)
+
+if __name__ == "__main__":
+    name = input("What's your name? ")
+    greet(name)
+```
+
+In Java:
+```java
+import java.util.Scanner;
+/**
+ * Ask a person his/her name and greet the person.
+ */
+public class Greeter {
+    /**
+     * Greet a person by name.
+     * @param name is the person's name
+     */
+    public static void greet(String name) {
+        System.out.println("Hello, "+name);
+    }
+
+    public static void main(String[] args) {
+        // Scanner is used to read input, parse it, and return values
+        Scanner console = new Scanner(System.in);
+        System.out.print("What's your name? ");
+        String name = console.nextLine();
+        greet(name);
+    }
+}
+```
+In Kotlin (written as a singleton object, for comparison with Java):
+```kotlin
+/**
+ * Ask a person his/her name and greet the person.
+ */
+object Greetme {
+    /**
+     * Greet a person by name.
+     * @param name is the person's name
+     */
+    fun greet(name: String) {
+        println("Hello, " + name)
+    }
+
+    @JvmStatic
+    fun main(args: Array<String>) {
+        print("What's your name? ")
+        val name = readLine()
+        greet(name)
+    }
+}
+```
 
 
 [Tiobe Index]: https://www.tiobe.com/tiobe-index/
