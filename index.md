@@ -43,7 +43,7 @@ How to read the Java API
 Using [Git](git/intro-git) and [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
 </td>
 <td markdown="span">
-Install [Required software](Requirements)    
+Install [Required software](Software)    
 Review [how to use Git](git/intro-git) and [Intro to Github](git/intro-github). [PDF of slides.](git/)     
 Join [Google Classroom](https://classroom.google.com) for written assignments. Use your KU Login and code **scpkk0**.   
 We use Github Classroom for programs, Google Classroom for written homework.   
