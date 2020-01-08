@@ -34,11 +34,23 @@ We want:
 * [Programming Languages used in Popular Websites][web-sites-wikipedia] - both Python and Java are widely used.
 
 
-### Java Alternatives
+### Top Choices: Java, Python, Kotlin
 
-Java is a common choice for OOP courses. But there are other languages based on Java that maybe better.  These languages compile to Java byte code, and run on the JVM.  
+Java and Python are both widely used in professional programming.
+Java is a top choice for server-side applications and for Android apps.
+Python is the language of choice for AI and Machine Learning, and also used on server-side web apps.
+microPython can be used on micro-controllers.
 
-If you know Java, they are easy to learn.
+Kotlin is based on Java with a simpler syntax. It uses type inference and emphasizes some good
+design practices such as immutable data and nullable object references.  Google has declared that
+Kotlin is the preferred language for new Android app development.
+
+A downside of Kotlin is: a) not as much tool support or learning material as Java and Python,
+b) less demand in job market (but growing), c) adds some conceptual complexity for beginners.
+
+
+Java is a common choice for OOP courses. Kotlin, Scala, and Groovy are all based on Java
+and run on the JVM.  If you know Java, they are easy to learn.
 
 * [Kotlin][] is based on Java but with simpler syntax and type system. There are tools to translate Java source into Kotlin.
     - Google has made Kotlin the [primary language for Android apps][kotlin-for-android]; DZone calls it [the future of Android][].  Google offers some free courses:
@@ -47,9 +59,18 @@ If you know Java, they are easy to learn.
 * [Scala][] is a functional, object-oriented language based on Java. The Play, Akka, and Spark frameworks are written in Scala.
 * [Groovy][] is similar to Kotlin. Its used by the Grails web framework and the [Spock][] testing framework. Groovy's popularity has been stable (not growing) for a few years.
 
+
 ### My View
 
-As a *primary language* Java, Kotlin, and Python are serious choices, due to their mainstream applicability. Java has more complex syntax and some blemishes like primitive types and checked exceptions, which complicate learning.  But, Java also is more widely used and has much more learning material.  If you know Java, learning Kotlin is easy (and educational); going from Kotlin to Java is harder, I think.
+As a *primary language* Java, Kotlin, and Python are all serious choices for OOP. 
+Java has more complex syntax and some complexities like primitive types and checked exceptions.
+But, Java also is more widely used and has much more learning material.  
+
+Python is much easier to learn and more productive to code.
+Since Python is very flexible and dynamic, the programmer must obey *conventions* to write good code,
+such as not directly accessing object attributes from other classes,
+using type hints, and using O-O constructs as they were intended.
+
 
 Comparing Java and Python
 
@@ -62,11 +83,14 @@ Comparing Java and Python
 | Platform independent             | Platform independent                  |
 | All code is in classes           | Code in classes, top-level functions, or scripts |
 | Verbose syntax                   | Very concise syntax                   |
+| Primitive types are value types  | All data types are objects            |
+| Data & code can be private       | Everything is public                  |
 | Great API documentation          | Very good API documentation           |
 
 ### "Hello, Nerd" Application
 
 Ask a person for his name and say hello.
+
 In Python:
 ```python
 """
@@ -78,7 +102,7 @@ def greet(name: str) -> None:
     """Greet a person by name.
 
     Args:
-       name - the person's name.
+       name - the person's name
     """
     print("Hello,", name)
 

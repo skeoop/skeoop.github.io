@@ -14,9 +14,15 @@
     The courses are OK but don't cover very much.
 
 [Coursera][] has some series courses using Java.  I haven't reviewed them thoroughly.  Interesting are:
-    * [Java Programming: Solving Problems with Software][duke-java-programming] (Duke University)
+    * [Object-Oriented Programming in Java Specialization](duke-oop-java) 4-course series
+    * 1: [Java Programming: Solving Problems with Software][duke-java-programming] (Duke University)
         - has online resources page http://www.dukelearntoprogram.com/course2/index.php
         - uses BlueJ, Apache CSV, other open source
+        - interesting projects
+
+[edX](https://edx.org) some other good courses on edX are:
+    * Java Programming Fundamentals by Galileo University
+
 
 [Java Code Geeks][] a lot of Java learning material, some very advanced.  Not a good place to start learning Java, but useful when you want to know something in depth.
 
@@ -61,3 +67,4 @@ Interactive Java course in IntelliJ.  The course is repetitive and boring, spend
 [Coursera]: https://coursera.org
 
 [duke-java-programming]: https://www.coursera.org/learn/java-programming
+[duke-oop-java]: https://www.coursera.org/specializations/object-oriented-programming

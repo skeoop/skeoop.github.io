@@ -1,0 +1,74 @@
+Object-oriented Programming in Java series on Coursera
+by Duke University
+https://www.coursera.org/specializations/object-oriented-programming
+
+
+1. Solving Problems with Software  https://www.coursera.org/learn/java-programming
+
+   * week 1 is fluff
+   * week 2: fundamental Java Syntax and Semantics
+       - Why use Java?
+       - Using BlueJ
+       - Shapes: collection of Points 
+       - Why Semantics? Motivation to Read Code
+       - Variables
+       - Math operators
+       - Conditions
+       - Classes
+       - new
+       - Methods
+       - Types
+       - For Each Loops
+       - Solving Problems: A Seven Step Approach
+       - Seven steps: develop an algorithm
+       - Seven steps: testing the algorithm
+       - Seven steps: translating into code
+       - Reading: Learning Outcomes
+       - Reading: Install BlueJ
+       - Reading: Let's learn some Java syntax
+       - Reading: Calculating the perimeter of a shape
+   * week 2: Strings
+       - What is a String?
+       - Understanding Strings
+       - Developing an Algorithm
+       - Positions in Strings
+       - Translating into Code
+       - Java Math
+       - Conceptual Understanding
+       - While Loops
+       - 3 Stop Conditions
+       - Coding 3 Stop Conditions
+       - Logical And / Or
+       - finding multiple genes
+       - Separation of Concerns
+       - StorageResource Class (their class)
+    * week 3: CSV Files and Basic Statistics 
+       - CSV Data Format
+       - Using a CSV Library (Apache)
+       - Which countries export ...? Develop an Algorithm
+       - Which countries export ...? Translate into Code
+       - CSVExport summary
+       - Hottest day in a year: CSV
+       - Converting Strings to Numbers
+       - Max Temperature: Develop an Algorithm
+       - Max Temperature: Translate into Code
+       - Max Temperature: Testing the Code
+       - Max Temperature using Multiple Datasets
+       - Max Temperature Refactored
+    * week 4: MiniProject: Baby Names
+       - Baby Names project
+       - Batch Grayscale
+       - Image Iterable in Blue: Grayscale
+       -
+       -
+       -
+       -
+       -
+       -
+       -
+       -
+       -
+       -
+       -
+
+
