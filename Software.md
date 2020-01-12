@@ -16,6 +16,15 @@ description: Required software for the course
 3. Enter your Github ID in this form: 
 [https://goo.gl/forms/uJU4wOJl0CJsJYhf1](https://goo.gl/forms/uJU4wOJl0CJsJYhf1).    
 4. Check your e-mail for an invitation to join "OOP2020" on Github, and accept the invitation.
+5. After you join "OOP2020" on Github, you are also added to the Github classroom for the course.
+    * The Github Classroom is https://classroom.github.com/classrooms/59547058-ske-programming-2
+    * This is different from "Google Classroom"
+
+## Join Google Classroom
+
+We will use Google Classroom for some assignments. 
+
+Goto [Google Classroom](https://classroom.google.com) and use class code **umaxt4s** to join.
 
 
 ## Java Software and Documentation

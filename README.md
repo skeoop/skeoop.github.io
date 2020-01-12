@@ -1,8 +1,10 @@
 ## Object-Oriented Programming at Kasetsart University
 
-Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th), taught by J. Brucker.
+Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th).
 
-[Home](http://skeoop.github.io/) weekly schedule of topics and assignments.
+[Home](http://skeoop.github.io/) schedule of topics, learning material, and assignments.
+
+[Github Classroom](https://classroom.github.com/classrooms/59547058-ske-programming-2) login to Github and accept invitation. Invitation will also be sent to your KU Email.
 
 [Projects](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/) links to student projects.
 

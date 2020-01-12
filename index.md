@@ -1,44 +1,39 @@
 ---
 layout: page
-title: Schedule
+title: Topics and Assignments
 description: Index page
 ---
 
-## Projects
-
+<!--
 2018 [Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit),
 [Student Ratings](https://goo.gl/8PFAse),
 **[Review and Comments](Project-Reviews)** by instructor and TAs,
 and [Project Proposals](https://goo.gl/C5m6Cb).
-
-<!-- [Rating Form](https://goo.gl/forms/vgZmx4ZVHjWtsSKX2), -->
 [OOP 2017 Projects](projects2017).
+-->
 
+## Topics and Assignments 
 
-## Schedule and Assignments 
+Other pages: [About the Course](About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
 
-Other pages: [About the Course](About), [Contact Us](Contact), [Scores](https://goo.gl/ixNDm6), [Course Repository](https://www.github.com/skeoop/skeoop.github.io/). 
-
+### Basics
 
 <table border="1">
 <tr valign="top">
-  <th> Week  </th>
-  <th width="45%"> Topics </th>
+  <th> Topic </th>
+  <th width="45%"> Material </th>
   <th width="45%"> Assignment </th>
 </tr>
-<!-- week 1 -->
+<!-- introduction -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 1](week1/)    
-Jan 11
+[Introduction](intro/)    
 </td>
 <td markdown="span">
-[Introduction to the course](week1/0-Introduction-to-Course.pdf)   
-[Review of Object basics](week1/1-Review-of-Java.pdf)    
-[Java Coding Standard and Javadoc](week1/2-Coding-Standard-and-Javadoc.pdf)    
-[Intro to Objects](week1/3a-Introduction-to-Objects.pdf) and [Why OOP?](week1/3b-Why-Objects.pdf)    
-[Object References](week1/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
-[UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
+[Introduction to the course](intro/Introduction-to-Course.pdf)   
+[Intro to Objects](intro/Introduction-to-Objects.pdf) 
+[Review of Object basics](intro/1-Review-of-Java.pdf)    
+[Java Coding Standard and Javadoc](week1/Coding-Standard-and-Javadoc.pdf)    
 How to read the Java API    
 Using [Git](git/intro-git) and [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
 </td>
@@ -50,7 +45,7 @@ We use Github Classroom for programs, Google Classroom for written homework.
 **Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf). Starter code: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).  [Checklist and Hints](week1/Lab1-checklist.md). 
 </td>
 </tr>
-<!-- week 2 -->
+<!-- intro objects -->
 <tr valign="top">
 <td align="center" markdown="span"> 
 [Week 2](week2/)    
@@ -58,18 +53,31 @@ Jan 18
 </td>
 <td markdown="span">
 [3 Fundamentals of OOP](week2/OO-Fundamentals.pdf)    
+[Why OOP?](week1/3b-Why-Objects.pdf)    
+[Object References](week1/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
 [Polymorphism](week2/1-Polymorphism.pdf)    
 [Interfaces](week2/2-Interfaces.pdf) a way to enable polymorphism     
-[Relationships in UML](week2/5-UML-Class-Diagram-2.pdf)    
 [Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.    
 [Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
-[UML Practice](week2/UML_practice)
 </td>
 <td markdown="span">
 [Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
 **UML**: Good summaries: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 **Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight. Create Github Repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K) it is empty now. Add your own code, `README.md`, and `.gitignore`.
+</td>
+</tr>
+<!-- uml -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[UML Class Diag](uml/)    
+</td>
+<td markdown="span">
+[UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
+[Relationships in UML](week2/5-UML-Class-Diagram-2.pdf)    
+</td>
+<td markdown="span">
+[UML Practice](week2/UML_practice)
 </td>
 </tr>
 <!-- week 3 -->
@@ -92,7 +100,7 @@ No Lab meeting due to Kaset Fair.  Please work on Lab3 individually.
 For help, see [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
 </td>
 </tr>
-<!-- Kaset Fair 26 Jan - 03 Feb -->
+<!-- Kaset Fair 31 Jan - 08 Feb -->
 <tr valign="top">
 <td align="center"> Feb 01</td>
 <td markdown="span">
