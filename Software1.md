@@ -26,7 +26,15 @@ We will use Google Classroom for some assignments.
 
 Goto [Google Classroom](https://classroom.google.com) and use class code **umaxt4s** to join.
 
-## 3. BlueJ IDE
+## 3. Install Git Command Line Client
+
+We will use Git for assignments.  The git command line tool is best for
+learning git.
+You can also use Git tools integrated into an IDE, but the command line is still needed when something goes wrong. 
+
+Download from [https://git-scm.com](https://git-scm.com)
+
+## 4. BlueJ IDE
 
 You can use any IDE you like for programming, but to get started in Java please try the BlueJ Integrated Development Environment (IDE).  Its easy to use so you can concentrate on Java instead of learning the IDE. BlueJ has some useful tools for exploring objects.
 
@@ -52,13 +60,6 @@ Both OpenJDK and Oracle Java SE JDK are functionally identical.
 OpenJDK gives you a choice of Java Virtual Machine (JVM):
     - HotSpot JVM (same as Oracle JDK) has better CPU performance (about 18%)
     - Eclipse OpenJ9 has fast startup and much lower memory usage
-
-## 4. Install Git Command Line Client
-
-We will use Git for assignments.  Most IDE's include a built-in Git feature
-but you should also have the command-line git.  Its easier to learn and use.
-
-Download from [https://git-scm.com](https://git-scm.com)
 
 ## Required Book
 
