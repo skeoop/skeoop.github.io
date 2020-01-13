@@ -5,8 +5,7 @@ title: Introduction to Git
 
 ## About Git
 
-Git is a version control system.  It keeps a history and archive of all changes 
-to a collection of files, such as files in a project.
+Git is a version control system.  It keeps a repository of files and a history of all changes ("commits") to the repository.  You can go back in time and recover any prior version of files in the repository.
 
 Git records every change to a collection of files, along with who made the change and why. Git lets you view changes and recover any previous version of any file (even deleted files!).  This is similar to the way Google Docs keeps a history of changes to a Google Doc,
 except git operates on a collection of files rather than just individual files.
@@ -48,8 +47,8 @@ A git **repository** stores the files for **one project**.  To create a git repo
 1. Open a **command line window** where you can type commands:
     * MS Windows: its called a "command prompt" (cmd) or "bash shell".
     * Mac OSX: open a "terminal". Just type "term" in the search box.
-    * Linux: open a "terminal". Sometimes also called Xterm.
-2. Change to the directory containing the project:
+    * Linux: open a "terminal" window.
+2. Change to a directory containing your project, or create a new directory.  Linux/MacOS: `cd directory`, Windows: `chdir directory`.
 ```shell
 cmd> cd workspace/myproject
 ```
@@ -60,79 +59,88 @@ cmd> git init
 This creates a subdirectory named `.git` for the repository. Don't edit files in that directory! Let git manage it.  Now your project will look something like:
 ```shell
 myproject/
-      .git/  (git local repository)
-      bin/   (directory for compiler output. May be "build/" or "out/")
-      src/   (your project source code)
-      other project files
+      .git/   (git local repository - don't modify this)
+    
 ```
 4. The new git repository is empty. You must add files, as described below.
 
 ### Add files to the Repository and Check Status
 
-You tell git which files it should save in the repository using the `git add` command.  Suppose your project has a file README.md containing this text:
+You tell git which files it should save in the repository using the `git add` command.  Use a text editor to create a file file named README.md containing some text:
 <blockquote>
 <pre>
     # My Project  
-    by Bill Gates  
-    Every project should have a README.md that describes the project
+    by Bill Gates  (use your own name)  
+    
+    This README.md that describes the project. In contains formatting using Markdown syntax.
 </pre>
 </blockquote>
 
-Add this file to the repository using:
+Tell Git that you want to add this file to the repository using:
 ```shell
 cmd> git add README.md
 ```
-You can add as many files as you want. Add some source code files:
-```shell
-cmd> git add src/Problem1.java  src/Problem2.java
-```
+Note: you can add many files on one line this way, just list them all.
 
-`git add` marks the files for adding to the repository, but does not actually put them in the repository.  You can check the status using:
+
+`git add` marks the files for adding to the repository, but does not actually copy them in the repository.  You can check the status using:
 ```shell
 cmd> git status
   Changes to be commited:
      new file:  README.md
-     new file:  src/Problem1.java
-     new file:  src/Problem2.java
 ```
-The `git status` command shows that there are 3 new files waiting to be added to the repository.
+The `git status` command shows that there is 1 new files waiting to be added to the repository.
 
-To save the files to the repository use `git commit`.  You must write a log message (-m) with a short explanation:
+To save the file(s) to the repository use `git commit`.  You must write a log message (-m) with a short explanation:
 ```shell
 cmd> git commit -m "Initial code checkin"
-  3 files changed, 3 insertions, 0 deletions
+  1 file changed, 1 insertions, 0 deletions
 cmd> git status
   nothing to commit, working directory clean
 ```
-Now your repository contains 3 files (called **tracked files**).
+Now your repository contains 1 file (called **tracked files**).
 
 ## Adding a Directory to the Repository
 
-You can use `git add` to add a directory and all its contents.  Git will add **everything** in the directory and its subdirectories -- so be careful.
+You can use `git add` to add a directory and all its contents.  Git will add **everything** in the directory and its subdirectories -- so be careful!
 
-If you want to add **everything** in the project `src` directory to git, use:
+Create a directory named `demo` and a source file `person.py`:
 ```shell
-cmd> git add src
+cmd> mkdir demo
+cmd> cd demo
+cmd> edit person.py  (use your favorite editor to edit the file)
+# change back to project directory
+cmd> cd ..
 ```
 
-To save the directory and its contents to the repository, run `git commit`:
+To add **everything** in the project `demo` directory to git, use:
 ```shell
-cmd> git commit -m "add source code dir"
+cmd> git add demo
 ```
 
-**Note**:  **After** you add the `src` dir to git, if you later create a new file in the "src" directory then you must add that file to git yourself. Its not automatic.
+Check the git status:
+```shell
+cmd> git status
+```
+
+Save the directory and its contents to the repository:
+```shell
+cmd> git commit -m "add source code"
+```
+
+**Note**:  **After** you add the `demo` dir to git, if you later create a new file in the "demo" directory then you must add that file to git yourself. It is **not** automatic.
 
 ### View History
 
-View the history of all commits (revisions) to a repository by typing `git history` or `git log --oneline` (the "--oneline" is optional).
+View the history of all commits (revisions) to a repository by typing `git history` or `git log1` or `git log --oneline` 
 For the example above:
 ```shell
-cmd> git history
+cmd> git log --oneline
 git history
-* 992a0c5 - (2 minutes ago) add source code dir  - fatalaijon (HEAD -> master)
+* 992a0c5 - (2 minutes ago) add source code - fatalaijon (HEAD -> master)
 * 5d1ab24 - (5 minutes ago) initial code checkin - fatalaijon 
 ```
-This shows there were 2 commits. The most recent commit has revision code 992a0c5 and message "add source code dir". It is also the HEAD revision on the master branch.
+This shows there were 2 commits. The most recent commit has revision code 992a0c5 and message "add source code". It is also the HEAD revision on the master branch.
 
 ### Updating Files in the Repository
 
@@ -141,20 +149,10 @@ When you make changes to a previously commited file (called a **tracked file**),
 cmd>  git status
 On branch master
 Changes not staged for commit:
-   modified:   src/Problem1.java
+   modified:   demo/Problem1.py
    modified:   README.md
 ```
-This shows that `src/Problem1.java` and `README.md` have been modified since the last commit. To update the repository, enter:
-```shell
-cmd>  git add src/Problem1.java README.md
-cmd>  git commit -m "fixed bugs in Problem 1"
-  [master 7cb3e90] fixed bugs in Problem1
-  2 files changed, 35 insertions(+), 11 deletions(-)
-```
-**Shortcut**: if you want to commit all modifications to tracked files, you can skip "git add" and use `git commit -am` ("-a" means "all"):
-```shell
-cmd>  git commit -am "fixed bugs in Problem 1"
-```
+This shows that `demo/Problem1.py` and `README.md` have been modified since the last commit. 
 
 ### Important Git Concepts
 
