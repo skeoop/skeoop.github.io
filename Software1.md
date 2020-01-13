@@ -11,7 +11,7 @@ description: Required Materials for the Course
 1. Create a Github account, if you don't already have one.  
   * Suggest you choose a Github ID that is *not too long*. Many people use their name or some abbreviation of their name, in lowercase or TitleCase.
       - Example [contributors to Visual Studio Code](https://github.com/microsoft/vscode/graphs/contributors) on Github 
-2. Complete your Github account profile.  You should include *at least*:
+2. Complete your Github account **profile**.  You should include *at least*:
   * Your **real name in English** with correct capitalization. OK to use just first name, or first and last name.
   * A **photo** that clearly shows your face. Face should be at least 40% of vertical size.
 3. Enter your Github ID in this form: 
@@ -43,20 +43,21 @@ You can use any IDE you like for programming, but to get started in Java please 
 For MacOS and Windows, BlueJ includes the Java Development Kit (JDK).  You don't need to install a separate JDK (for now).
 
 Version to use:
-    - BlueJ 4.2.2 requires **Java 11**
-    - BlueJ 4.1.4 requires **Java 8** or newer
+    - **BlueJ 4.2.2** requires **Java 11**
+    - **BlueJ 4.1.4** requires **Java 8** or newer
 
 Linux Users:
 
 You should install either Java 11 or Java 8, since these are "Long Term Support"
 releases.  Java 8 has all the features we need and somewhat simpler to use.
 
-For Linux, download and install the JDK separately from either:
+For Linux, download and install the JDK from either of these:
     - [Adopt OpenJDK](https://adoptopenjdk.net), or
     - [Oracle JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
     - Choose the correct JDK version for BlueJ: either JDK 8 or JDK 11 
 
-Both OpenJDK and Oracle Java SE JDK are functionally identical.    
+Both OpenJDK and Oracle Java SE JDK are functionally identical, but the license is different.    
+
 OpenJDK gives you a choice of Java Virtual Machine (JVM):
     - HotSpot JVM (same as Oracle JDK) has better CPU performance (about 18%)
     - Eclipse OpenJ9 has fast startup and much lower memory usage
@@ -79,7 +80,9 @@ For the new features in Java 8 you need the 6th edition, but for everything else
 ## Suggested Books
 
 * *Head First Java*, 2E. Entertaining, visual, and very memorable, but long.
-* Wampler, *The Essence of Object-Oriented Programming with Java* (2001). Old, but really good explanation of O-O concepts.
-* *Starting Out with Java*, 5E by Tony Gaddis.  Covers the same material as *Big Java* but more focused presentation. Also covers JavaFX.
+* *Modern Java in Action*, 2E (2019). A very good book includes lambdas, streams, and reactive programming.  Part of the Manning "*In Action*" series.
+* [Introduction to Programming in Java][eck-java] by David Eck, free online books covers Java and JavaFX. Updated regularly.
 * Horstmann, *Object-Oriented Design and Patterns*, 2E (2006). Condensed from "Big Java" with more emphasis on OO concepts and design.  Many SKE graduates say this is the **best book**.  OOP students can borrow my copy.
-* Horstmann, *Core Java for the Impatient*. Same material as the famous *Core Java* series, but more concise and more example code. Includes new Java features.
+* Wampler, *The Essence of Object-Oriented Programming with Java* (2001). Old, but very good explanation of O-O concepts.
+
+[eck-java]: http://math.hws.edu/javanotes/
