@@ -16,7 +16,7 @@ and [Project Proposals](https://goo.gl/C5m6Cb).
 
 Other pages: [About the Course](About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
 
-### Basics
+---
 
 <table border="1">
 <tr valign="top">
@@ -24,6 +24,7 @@ Other pages: [About the Course](About), [Google Classroom](https://classroom.goo
   <th width="45%"> Material </th>
   <th width="45%"> Assignment </th>
 </tr>
+
 <!-- introduction -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -32,24 +33,19 @@ Other pages: [About the Course](About), [Google Classroom](https://classroom.goo
 <td markdown="span">
 [Introduction to the course](intro/Introduction-to-Course.pdf)   
 [Intro to Objects](intro/Introduction-to-Objects.pdf) 
-[Review of Object basics](intro/1-Review-of-Java.pdf)    
-[Java Coding Standard and Javadoc](week1/Coding-Standard-and-Javadoc.pdf)    
-How to read the Java API    
-Using [Git](git/intro-git) and [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)]    
 </td>
 <td markdown="span">
-Install [Required software](Software)    
-Review [how to use Git](git/intro-git) and [Intro to Github](git/intro-github). [PDF of slides.](git/)     
-Join [Google Classroom](https://classroom.google.com) for written assignments. Use your KU Login and code **scpkk0**.   
-We use Github Classroom for programs, Google Classroom for written homework.   
-**Lab**: [Guessing Game](week1/Lab1-Guessing-Game.pdf). Starter code: [https://goo.gl/iXjYm7](https://goo.gl/iXjYm7).  [Checklist and Hints](week1/Lab1-checklist.md). 
+Install [Required software](Software1)    
+Join [Google Classroom](https://classroom.google.com) for written assignments.
+We use Github Classroom for programs, Google Classroom for other assignments.  
+
 </td>
 </tr>
-<!-- intro objects -->
+
+<!-- Intro OOP -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 2](week2/)    
-Jan 18
+[Intro to OOP](intro/)    
 </td>
 <td markdown="span">
 [3 Fundamentals of OOP](week2/OO-Fundamentals.pdf)    
@@ -67,6 +63,42 @@ Jan 18
 **Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight. Create Github Repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K) it is empty now. Add your own code, `README.md`, and `.gitignore`.
 </td>
 </tr>
+
+<!-- Git -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Git](git/)    
+</td>
+<td markdown="span">
+[Intro to Git](git/intro-git) and [slides](git/Git-Basics.pdf).     
+[Intro to Github](git/intro-github) and [slides](git/Using-Github.pdf)    
+</td>
+<td markdown="span">
+[Getting Started](git/git-get-started)    
+[Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
+</td>
+</tr>
+<!-- More Git -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+More [Git](git/)    
+</td>
+<td markdown="span">
+Using [branches][git-branching] (online Git book).    
+[Aliases](git/aliases) how to create aliases for git commands.
+[Branching and Merging][git-book-branching-and-merging] in online Git Book.   
+Using [Github Flow](git/index#github-flow).    
+[Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
+[Pull Request slides](git/Pull-Requests.pdf)    
+[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples of providing feedback.    
+[Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (optional).
+</td>
+<td markdown="span">
+[Assignment for Github Flow & Pull Requests](assignment/week2/github-flow)    
+A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)     
+</td>
+</tr>
+
 <!-- uml -->
 <tr valign="top">
 <td align="center" markdown="span"> 
