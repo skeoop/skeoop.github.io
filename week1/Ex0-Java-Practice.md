@@ -4,95 +4,76 @@ title: Assignment
 description: 
 ---
 
-Complete and correct this code. Correct syntax, bad code style, omissions, and Javadoc comment errors.
+Complete and correct this code. Correct syntax, bad coding style, omissions, and Javadoc comment errors.
 ```java
 /*
- * a coin
+ * money with a value and currency
  * @Bill Gates
  */
-public     Coin {
+public Class Money {
     private int value;
+    private String currency;
 
-    public Coin(int value) {
-        ______________
+    public Money(double value, String currency) {
+        ____________________
+        ____________________
     }
 
     /**
-     * Get the value of this coin.
-     * @return value of this coin
+     * Get the value of this money, ignoring currency.
+     * @return value of this money
      */
     public int getValue(int value) {
          return value;
     }
 
     public String toString() {
-        System.out.print(value+"-Baht coin");
+        System.out.print(value+"-Baht");
     }
 
-//TODO Write an `equals` method for `Coin` class.
-//Use the standard template in the *Java Fundamental Methods* doc.
-//Comments tell you what to do.
+    /**
+     * Two money objects are equal if they have the same
+     * value and same currency.
+     * @param other is another Money object to compare to this
+     * @return true if they have same value and currency
+     */
+    public boolean equals(Object other) {
 
-/** Two coins are equal if they have the same value.
- * @param obj reference to compare to this Coin.
- * @return true if obj is a Coin with same value as this coin.
- */
-public boolean equals(Object obj) {
-    // 1. test if parameter is null
+       //TODO Write an `equals` method, using the template
+       //     in the *Java Fundamental Methods* doc.
+       // These comments outline what you need to do.
+
+       // 1. test if parameter is null
     
-    // 2. test if param belongs to same class as "this", using `.getClass()`
+       // 2. test if param belongs to same class as "this"
+       //    use this.getClass() and other.getClass()
 
-    // 3. **cast** the param to a Coin object reference
-    Coin other = 
-    // 4. compare the values of "this" and the cast. Return true/false
-
+       // 3. **cast** the param to a Money object reference
+       Money m = (Money)___________ 
+       // 4. compare the values and currencies of the two things.
+       //  Return true or false.
 
 }
 ```
 
-Write 3 different ways to get an `int` value from a `String`.
+Write 2 different ways to get an `int` value from a `String`.
+Look at the Java API of the Integer class.
 ```java
 String s = "1234";
-// write 3 ways to get an int from String s.
+// write 2 ways to get an int from String s.
 int n1 = __________________________;
 int n2 = __________________________;
-__________________________________; // create an object to parse s
-int n3 = __________________________;
+```
+Another way is to use `Scanner`.  We usually use Scanner to read
+from an InputStream or File, but it can also parse a String.
+See the API for Scanner: is there a **constructor** that has a
+String parameter?
+
+Write code to use a Scanner to parse an `int` value from a String.
+(Even though the above solutions would be faster.)
+```java
+String s = "1234";
+__________________________________; 
+int n = __________________________;  // get the value 1234
 ```
 
-## Exercises on classes and objects. 
-
-### 1. Three fundamentals of OOP (fill in the blanks)
-
-__________________ means that an object contains both data (state) and methods that operate on the data.
-
-__________________ conceptually means that one type of object can be substituted for another type as long
-as both types of object provide the same behavior.
-
-__________________ allows one class to reuse all the behavior from another class. In can optionally redefine (override) some methods and add new methods.
-
-__________________ in code, this means we can invoke a method of an object reference without knowing (or caring) the actual class of the object that performs it.  `System.out.println(object)` is an example.  `println` invokes `object.toString()` for any object.
-
-
-### 2. Data Hiding
-
-OO programs usually *hide* the attributes of an object by declaring them to be **private**.
-We provide `get` and `set` methods to access the values.
-This is called **data hiding**.
-
-Advantages of data hiding include: (a) protect integrity of an object's own data, 
-(b) we can change how an objects stores its state (change its attributes) without affecting the rest of the program.
-
-1. Data Hiding uses which one of the 3 fundamentals of OOP?
-
-2. Give an example of a class you wrote in OOP1 where you can use data hiding to change
-the way the class is implemented without changing the external interface.
-
-
-### 3. Which fundamental characteristic of OOP is used in each of these situations?
-
-1. A BankAccount class knows its balance and has methods for deposit, withdraw, and get the balance.
-
-2. A bank application has a SavingAccount and CheckingAccount class.  Most of the code is exactly the same for both SavingAccount and CheckingAccount; for example, deposit, withdraw, getBalance, getOwner, and many other methods.  How can we avoid making 2 copies of the same methods?
-
-3. Give your own example of an application you wrote that uses encapsulation, polymorphism, or inheritance.
