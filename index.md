@@ -4,14 +4,6 @@ title: Topics and Assignments
 description: Index page
 ---
 
-<!--
-2018 [Project List](https://docs.google.com/spreadsheets/d/11-joJYZuYxOrpMTxqrV3P-CTy2bUFd_qV4MTmMRj4Mc/edit),
-[Student Ratings](https://goo.gl/8PFAse),
-**[Review and Comments](Project-Reviews)** by instructor and TAs,
-and [Project Proposals](https://goo.gl/C5m6Cb).
-[OOP 2017 Projects](projects2017).
--->
-
 ## Topics and Assignments 
 
 Other pages: [About the Course](About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
@@ -32,13 +24,12 @@ Other pages: [About the Course](About), [Google Classroom](https://classroom.goo
 </td>
 <td markdown="span">
 [Introduction to the course](intro/Introduction-to-Course.pdf)   
-[Intro to Objects](intro/Introduction-to-Objects.pdf) 
+[Intro to Classes & Objects](intro/Introduction-to-Objects.pdf) 
 </td>
 <td markdown="span">
-Install [Required software](Software1)    
-Join [Google Classroom](https://classroom.google.com) for written assignments.
-We use Github Classroom for programs, Google Classroom for other assignments.  
-
+Get the [Required software and sign-up](Software1)    
+Join [Google Classroom](https://classroom.google.com) using code **umaxt4s**.    
+We use Github Classroom for programs, Google Classroom for other assignments.   
 </td>
 </tr>
 
