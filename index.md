@@ -24,7 +24,8 @@ Other pages: [About the Course](About), [Google Classroom](https://classroom.goo
 </td>
 <td markdown="span">
 [Introduction to the course](intro/Introduction-to-Course.pdf)   
-[Intro to Classes & Objects](intro/Introduction-to-Objects.pdf) 
+[Intro to Classes & Objects](intro/Introduction-to-Objects.pdf)    
+[Which Programming Language to Learn?](intro/Language-Comparison)
 </td>
 <td markdown="span">
 Get the [Required software and sign-up](Software1)    
@@ -33,19 +34,35 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 </td>
 </tr>
 
+<!-- Intro Java -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Intro to Java](java-basics/)    
+</td>
+<td markdown="span">
+[Intro to Java](java-basics/00-Intro-to-Java.pdf)    
+[Java Class Structure](java-basics/01-Program-Structure.pdf)    
+[Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)
+</td>
+<td markdown="span">
+[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
+[Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
+general [Coding Guidelines](docs/Coding-Guidelines).
+</td>
+</tr>
+
 <!-- Intro OOP -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Intro to OOP](intro/)    
+[Intro to OOP](oop/)    
 </td>
 <td markdown="span">
-[3 Fundamentals of OOP](week2/OO-Fundamentals.pdf)    
-[Why OOP?](week1/3b-Why-Objects.pdf)    
-[Object References](week1/4-Object-References.pdf) and [Reference is like a "Remote Control"](week1/5-Reference-as-Remote-Control.pdf)    
-[Polymorphism](week2/1-Polymorphism.pdf)    
-[Interfaces](week2/2-Interfaces.pdf) a way to enable polymorphism     
+[3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
+(and [Why OOP?](oop/3b-Why-Objects.pdf))    
+[Object References](oop/Object-References.pdf) and [Reference is like a "Remote Control"](oop/Reference-as-Remote-Control.pdf)    
+[Polymorphism](oop/1-Polymorphism.pdf)    
+[Interfaces](oop/2-Interfaces.pdf) a way to enable polymorphism     
 [Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.    
-[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
 </td>
 <td markdown="span">
 [Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        

@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Exercise
-description: 
+title: Java Reference Exercise
+description: Questions about Java References
 ---
 
 Exercises on object references
 
-## Example: Person class
+### Example: Person class
 
 We will use this class in these exercises:
-```
+```java
 /**
  * A person with a name.
  * @author KU Registrar
@@ -34,10 +34,10 @@ public class Person {
 }
 ```
 
-## Question 1: Copying Person?
+### Question 1: Copying Person?
 
 What is printed when we execute this code:
-```
+```java
 Person a = new Person("Bill");
 Person b = new Person("Sally");
 b = a;
@@ -48,7 +48,7 @@ System.out.println( b ); // what is printed?
 
 What happened to Sally?
 
-## Question 2: An equals( ) method
+### Question 2: An equals( ) method
 
 You should **not** write an equals method like this.
 You'll see why.
@@ -80,13 +80,13 @@ a.equals(c)   // true or false?
 c.equals(a)   // true of false?
 ```
 
-
-
-## Question 3: What are the classes and attributes in this problem?
+### Question 3: What are the classes and attributes in this problem?
 
 A board game is played by 2 players on an 8x8 board.  Each player has a number of pieces on the board. Each player's pieces have different color (can be any color but not the same color). The players take turns moving a piece, like in chess.  There are three types of pieces: A, B, and C.  Each piece moves differently.  A pieces can capture any piece (A, B, C), B and C can capture each other.
 
 * What classes would you use to write code for this game?
+
 * What are some attributes of the classes?
+
 * What are some methods of the classes?
 
