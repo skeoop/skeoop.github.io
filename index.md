@@ -24,7 +24,7 @@ Other pages: [About the Course](About), [Google Classroom](https://classroom.goo
 </td>
 <td markdown="span">
 [Introduction to the course](intro/Introduction-to-Course.pdf)   
-[Intro to Classes & Objects](intro/Introduction-to-Objects.pdf)    
+[Intro to Classes & Objects](intro/Intro-Classes-and-Objects.pdf)    
 [Which Programming Language to Learn?](intro/Language-Comparison)
 </td>
 <td markdown="span">
@@ -48,6 +48,7 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 [Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
 [Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
 general [Coding Guidelines](docs/Coding-Guidelines).
+
 </td>
 </tr>
 
@@ -59,16 +60,14 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 <td markdown="span">
 [3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
 (and [Why OOP?](oop/3b-Why-Objects.pdf))    
-[Object References](oop/Object-References.pdf) and [Reference is like a "Remote Control"](oop/Reference-as-Remote-Control.pdf)    
+[Object References](oop/Object-References.pdf) and [Reference is like a Remote Control](oop/Reference-as-Remote-Control.pdf)    
 [Polymorphism](oop/1-Polymorphism.pdf)    
 [Interfaces](oop/2-Interfaces.pdf) a way to enable polymorphism     
-[Solution to Assessment Quiz](week1/quiz0solution.pdf) - Questions 1-6 are knowledge from Programming 1. Make sure you know them.    
 </td>
 <td markdown="span">
 [Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
-**UML**: Good summaries: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [IBM Dev Works](https://www.ibm.com/developerworks/rational/library/content/RationalEdge/sep04/bell/) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
-**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). **Due:** Feb 3, midnight. Create Github Repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K) it is empty now. Add your own code, `README.md`, and `.gitignore`.
+**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). 
 </td>
 </tr>
 
@@ -118,6 +117,7 @@ A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)
 </td>
 <td markdown="span">
 [UML Practice](week2/UML_practice)
+Good summary: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 </td>
 </tr>
 <!-- week 3 -->
@@ -457,17 +457,6 @@ In project demo, please prepare presentation of design and interesting technolog
 <tr valign="top">
 <td markdown="span">
 [Inner Classes](topics/Inner-Classes.pdf) rules for inner and nested classes.
-</td>
-</tr>
-<tr valign="top">
-<td markdown="span">
-<!-- Swing -->
-[Intro to Swing and AWT](week7/Graphics-1.pdf)    
-[Layout Managers](week7/Graphics-2-Layouts.pdf)    
-[Event Handling](week7/Graphics-3-Event-Handling.pdf)    
-[Actions & Commands](week7/Graphics-5-Actions-and-Commands.pdf) encapsulate event handlers in their own object.    
-[Design Patterns](week7/Graphics-4-Patterns.pdf) that occur in Swing.   
-[JOptionPane](week7/Graphics-6-JOptionPane.pdf) a useful class for creating dialog boxes.    
 </td>
 </tr>
 <tr valign="top">

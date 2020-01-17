@@ -24,7 +24,7 @@ We want:
     | Javascript|  2.09% |
 
 2. [IEEE 2019 Language Survey][ieee-language-survey-article] has [interactive rankings][ieee-language-interactive] where you can customize criteria for rankings, e.g. number of jobs, number of apps, kind of applications.    
-   ![IEEE Language Rankings](images/ieee-language-rankings.png)
+   ![IEEE Language Rankings](../images/ieee-language-rankings.png)
 
 ### Interesting Cases
 
@@ -41,41 +41,40 @@ Java is a top choice for server-side applications and for Android apps.
 Python is the language of choice for AI and Machine Learning, and also used on server-side web apps.
 microPython can be used on micro-controllers.
 
-Kotlin is based on Java with a simpler syntax. It uses type inference and emphasizes some good
-design practices such as immutable data and nullable object references.  Google has declared that
-Kotlin is the preferred language for new Android app development.
+Kotlin is based on Java with a simpler syntax. 
+Kotlin uses type inference, mutable/immutable data and object references,
+and treats primitive types like objects (a nuisance in Java).
+Google has adopted Kotlin as the preferred language for Android development (but Java can still be used).
 
 A downside of Kotlin is: a) not as much tool support or learning material as Java and Python,
-b) less demand in job market (but growing), c) adds some conceptual complexity for beginners.
+b) less demand in the job market, c) adds some conceptual complexity for beginners.
 
+Java is a common choice for OOP courses. 
+Kotlin, Scala, and Groovy are all based on Java and run on the JVM.  
+If you know Java, then Kotlin, Scala, and Groovy are easy to learn. 
 
-Java is a common choice for OOP courses. Kotlin, Scala, and Groovy are all based on Java
-and run on the JVM.  If you know Java, they are easy to learn.
+Google offers some free courses:
 
-* [Kotlin][] is based on Java but with simpler syntax and type system. There are tools to translate Java source into Kotlin.
-    - Google has made Kotlin the [primary language for Android apps][kotlin-for-android]; DZone calls it [the future of Android][].  Google offers some free courses:
-    - [Kotlin Bootcamp Course][]
-    - [Kotlin Android Fundamentals][]
-* [Scala][] is a functional, object-oriented language based on Java. The Play, Akka, and Spark frameworks are written in Scala.
-* [Groovy][] is similar to Kotlin. Its used by the Grails web framework and the [Spock][] testing framework. Groovy's popularity has been stable (not growing) for a few years.
-
+* [Kotlin Bootcamp Course][]
+* [Kotlin Android Fundamentals][]
 
 ### My View
 
 Java, Kotlin, and Python are all serious choices for OOP. 
-Java has more complex syntax and some complexities like primitive types and checked exceptions.
-But, Java also is more widely used and has much more learning material.  
+Java has more complex syntax and some nuisances like primitive types and checked exceptions.
+But, Java also is more widely used and has much more learning material.
+The syntax is very similar to C# and somewhat similar to C++.  
 
-Python is much easier to learn and more productive to code.
-Since Python is very flexible and dynamic, the programmer must obey *conventions* to write good code,
+Python is much easier to learn and more productive to code in.
+Since Python is very flexible and dynamic, 
+the programmer must understand what he's doing obey *conventions* to write good code,
 such as not directly accessing object attributes from other classes,
 using type hints, and using O-O constructs as they were intended.
-Python doesn't have some O-O constructs like data hiding (private or protected access) and interfaces.
 
 Kotlin has everything that Java has, but omits some blemishes.
-Primitive types are handled like object references for consistency with other types,
+Primitive types are handled like object references for consistency,
 but internally stored as primitives for efficiency.  
-All exceptions are unchecked, so you aren't forced to use "try - catch" (like Python).
+All exceptions are unchecked, so you are never forced to use "try - catch" (like Python).
 Kotlin has nullable objects and forces the progranmer to recognize where they occur.
 Kotlin code can be written as top-level functions (no class or object wrapper), like Python.
 
