@@ -60,20 +60,22 @@ Write 2 different ways to get an `int` value from a `String`.
 Look at the Java API of the Integer class.
 ```java
 String s = "1234";
-// write 2 ways to get an int from String s.
+// write 2 ways to get the value of String s.
 int n1 = __________________________;
 int n2 = __________________________;
 ```
 Another way is to use `Scanner`.  We usually use Scanner to read
-from an InputStream or File, but it can also parse a String.
-See the API for Scanner: is there a **constructor** that has a
-String parameter?
-
-Write code to use a Scanner to parse an `int` value from a String.
-(Even though the above solutions would be faster.)
+from an InputStream or File, but it can also parse a String. The Java API for `Scanner` includes this constructor:
 ```java
-String s = "1234";
-__________________________________; 
-int n = __________________________;  // get the value 1234
+Scanner(String source)
+  Constructs a new Scanner that produces values scanned from the source String.
 ```
 
+Write code to use a Scanner to parse 2 `int` values from this String. (Note: Scanner is *slower* than other ways of parsing input.)
+
+```java
+String s = "123 456";
+_______________________________; 
+int m = _______________________;  // get first value
+int n = _______________________;  // second value
+```
