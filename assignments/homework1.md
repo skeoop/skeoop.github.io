@@ -40,7 +40,7 @@ You should become familiar with basics of using a command or terminal window:
 
 ### 4. Complete the Guessing Game Lab
 
-Instructions: [Lab1-Guessing-Game](https://skeoop.github.io/assignments/Lab1-Guessing-Game.pdf)
+Instructions: [Lab1-Guessing-Game](https://skeoop.github.io/labs/Lab1-Guessing-Game.pdf)
 
 You will use **git** to submit your code to Github Classroom.
 Follow these steps:
