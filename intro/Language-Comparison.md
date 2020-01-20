@@ -152,7 +152,7 @@ object Greetme {
      * Greet a person by name.
      * @param name is the person's name
      */
-    fun greet(name: String) {
+    fun greet(name: String?) {
         println("Hello, " + name)
     }
 

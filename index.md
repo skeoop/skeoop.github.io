@@ -6,7 +6,7 @@ description: Index page
 
 ## Topics and Assignments 
 
-Other pages: [About the Course](About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
+Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
 
 ---
 
@@ -283,7 +283,7 @@ Review some points from Labexam
 **Read**: Big Java, Ch. 13 *Recursion*    
 [PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
 **PA3 Assignmnet URL:** [https://goo.gl/U5wbau](https://goo.gl/U5wbau).    
-[Currency Converter](currency_service) how to get currency exchange rates for your UnitConverter.     
+[Currency Converter](docs/currency_service) how to get currency exchange rates for your UnitConverter.     
 </td>
 </tr>
 <!-- week 9 -->

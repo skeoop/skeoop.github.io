@@ -75,7 +75,7 @@ System.out.println( a.equals( (Person)b ) );
 
 // create a new reference to the same person:
 Person c = (Object) b;
-c == b;       // is true.  This shows b & c refer to SAME object
+c == b;       // is true.  This means b & c refer to the SAME object
 a.equals(c)   // true or false?
 c.equals(a)   // true of false?
 ```

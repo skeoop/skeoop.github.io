@@ -12,14 +12,16 @@ If there is some part you don't understand then learn more about it at one of th
 * [Oracle Java Tutorials](https://docs.oracle.com/javase/tutorial/)
 * [Think Java][ThinkJava] similar to the "Think Python" book in Programming 1
 * [Big Java][OOBOOKS] by Cay Horstmann
-* Any Java book you like. There are many Java books in Thai, too.
+* Any Java book you like. There are many good Java books in Thai, too.
 
 or search Google, and let me know any good sources you find!
 
 
 ### 2. Answer These Questions about Java
 
-(To be Added this weekend)
+[https://forms.gle/jZaDUYpx1Y7MQUrh6](https://forms.gle/jZaDUYpx1Y7MQUrh6) - a Google Form. Use your KU ID to login.
+
+Questions file: https://skeoop.github.io/assignments/java-basic-questions
 
 ### 3. Learn to Use the Command Line on Your Computer
 

@@ -10,7 +10,7 @@ Q1. Which of the following are True statements about the Java Virtual Machine?
 Q2. Which of the following are `static` methods? Check all static methods:
 * [ ] Math.sqrt(5)
 * [ ] "Hello Hacker".length()
-* [ ] java.time.LocalDate.now( ) // java.time is a *package*, Localtime is a class
+* [ ] java.time.LocalDate.now( ) // java.time is a *package*, LocalDate is a class
 * [ ] System.out.println("Hi")   // println() is the method
 * [ ] System.currentTimeMillis() // time in millisec since midnight 1 Jan 1970
 
