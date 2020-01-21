@@ -61,13 +61,12 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 [3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
 (and [Why OOP?](oop/3b-Why-Objects.pdf))    
 [Object References](oop/Object-References.pdf) and [Reference is like a Remote Control](oop/Reference-as-Remote-Control.pdf)    
-[Polymorphism](oop/1-Polymorphism.pdf)    
-[Interfaces](oop/2-Interfaces.pdf) a way to enable polymorphism     
+[Inheritance](oop/Inheritance-Basics.pdf)     
+[Polymorphism](oop/Polymorphism.pdf)    
+[Interfaces](oop/Interfaces.pdf) a way to enable polymorphism     
 </td>
 <td markdown="span">
-[Lab2: CoinPurse](week2/Lab2-CoinPurse.pdf) on Github Classroom [https://classroom.github.com/a/9jwVjFId](https://classroom.github.com/a/9jwVjFId)        
 **Read**: BIGJ Section 9.4 and Chapter 10.    
-**Assignment**: [PA1-Fraction](week2/PA1-Fraction.pdf) and [JUnit Tests](week2/FractionTests.zip). 
 </td>
 </tr>
 
@@ -120,11 +119,23 @@ A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)
 Good summary: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 </td>
 </tr>
+</table>
+
+
+---
+
+## This Material is Being Reorganized
+
+<table border="1">
+<tr valign="top">
+  <th> Topic </th>
+  <th width="45%"> Material </th>
+  <th width="45%"> Assignment </th>
+</tr>
 <!-- week 3 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
 [Week 3](week3/)    
-Jan 25
 </td>
 <td markdown="span">
 [Review](week3/Overview) of last week & evolution of Coin Purse    
@@ -137,14 +148,14 @@ Jan 25
 [Lab 3: Polymorphic Purse](week3/Lab3-PolymorphicPurse.pdf) to this at home.  **Due:** Sat, Feb 3.    
 No Lab meeting due to Kaset Fair.  Please work on Lab3 individually.    
 **PA1**: [PA1-Fraction](week2/PA1-Fraction.pdf) create repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K). Add your own `README.md`, `.gitignore`, and code.   
-For help, see [Intro to Github](git/intro-github) [[PPT](git/Using-Github.pdf)].    
+For help, see [Intro to Github](git/intro-github) [PPT](git/Using-Github.pdf). 
 </td>
 </tr>
 <!-- Kaset Fair 31 Jan - 08 Feb -->
 <tr valign="top">
-<td align="center"> Feb 01</td>
+<td align="center">KU Fair</td>
 <td markdown="span">
-Kaset Fair 27 Jan - 03 Feb. No class.
+Kaset Fair 31 Jan - 08 Feb. No class.
 </td>
 <td markdown="span">
 No Lab, but you still have assignment.
@@ -154,7 +165,6 @@ No Lab, but you still have assignment.
 <tr valign="top">
 <td align="center" markdown="span"> 
 [Week 4](week4/)    
-Feb 08
 </td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     

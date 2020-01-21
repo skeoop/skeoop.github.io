@@ -108,34 +108,4 @@ int person.getAge()
 ```
 Should Person have an "age" attribute?  No way!  His age changes with time. Better to have a `birthdate` attribute (LocalDate) and *compute* his age each time `getAge()` is called.  Age is a *computed property* not an actual attribute.
 
-## Query Methods Should Be Harmless (No Unexpected Side Effects)
-
-A couple of students wrote a `getCount()` method like this:
-
-```java
-public class MyGuessingGame extends NumberGame {
-    private int count = 0;
-
-    public int getCount() {
-        return count++;
-    }
-
-    public void guess(int number) {
-        getCount();  // count this guess
-        // evaluate the guess
-        if (guess == secret) {
-            setMessage("Right!");
-            return true;
-        ...
-    }
-```
-
-What is the problem with `getCount()`?
-
-The user of this code won't know that getCount increments the counter, so he might call it at different points in his code.
-
-A general rule is that "get" methods should not change the attributes of a class, or change its state.
-
-This is part of the **Command - Query Separation Principle** which states that you should have separate methods for "queries" and "commands". Commands tell an object to do something, queries just ask an object a question.
-
    
