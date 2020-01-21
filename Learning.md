@@ -1,5 +1,13 @@
 ## Learning Java
 
+### Java Tutorials
+
+[The Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) a very extensive collection of tutorials covering the Java language.
+ * [Download](https://www.oracle.com/technetwork/java/javase/java-tutorial-downloads-2005894.html) the full tutorial and run on your computer, for easy access.
+ * The *Really Big Index* is best place to find things. Bookmark it.
+
+[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) many short sections covering syntax, with interactive code examples. You can run code in the browser window.  The W3schools tutorial has less reading than Oracle's Java Tutorial.
+
 ### Online Courses
 
 [Codecademy Learn Java][] partially free course covers Java basics. Has a nice interactive coding editor where you can enter Java code and have it evaluated.
@@ -33,21 +41,12 @@
     * Contacts (nightmare)
 
 
-### Oracle Java Tutorial
-
-[The Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) a very extensive collection of tutorials covering the Java language.
- * [Download](https://www.oracle.com/technetwork/java/javase/java-tutorial-downloads-2005894.html) the full tutorial and run on your computer, for easy access.
- * The *Really Big Index* is best place to find things. Bookmark it.
-
-### W3Schools Java Tutorial
-
-[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) has many short sections covering syntax, with lots of interactive examples. You can run code in the browser window.  The W3schools tutorial has less reading than Oracle's Java Tutorial.
-
 ### Books
 
 *Big Java* by Cay Horstmann. An easy to read book by professor who has written many Java books, including *Core Java*.  Sixth edition includes Java 8 streams, lambdas, and other features, but Fifth edition is good, too.
 
-*Object-oriented Design and Patterns*, 2E by Cay Horstmann. Chapter 1 is a *Crash Course in Java*. If you learn to code quickly, this is great.
+*Object-oriented Design and Patterns*, 2E by Cay Horstmann.
+[Chapter 1](docs/OODP-Chapter1.pdf) is a *Crash Course in Java*. If you learn to code quickly, this is great.
 
 *Core Java for the Impatient* by Cay Horstmann.  More concise book on Java for people who know basic programming. Covers only the Java language, not O-O or programming concepts.  Useful as reference.
 
@@ -76,3 +75,5 @@ Interactive Java course in IntelliJ.  The course is repetitive and boring, spend
 
 [duke-java-programming]: https://www.coursera.org/learn/java-programming
 [duke-oop-java]: https://www.coursera.org/specializations/object-oriented-programming
+
+[OODP-Ch1]: docs/OODP-Chapter1.pdf

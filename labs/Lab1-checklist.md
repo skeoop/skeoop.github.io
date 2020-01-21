@@ -18,12 +18,12 @@ description: Lab1 Checklist for Correct Submission
 For testing software, always test a variety of cases, including "edge cases". Test these cases:
 
 * Game with upperBound 1.
-* Game with upperBound 2. Need to play several times.
-* Game with upperbound 4. Need to play several times.
+* Game with upperBound 2. Need to play several times to test secret = 1 and 2.
+* Game with upperbound 4. Need to play several times to test different secrets.
 * Game with upperBound 101.
 * Game with upperBound 2,000,000,000 or Integer.MAX_VALUE (see below for why this is tricky)
 
-## Push and Verify
+## Push to Github and Verify
 
 1. Verify that you have committed your code locally:
     ```shell
@@ -47,7 +47,7 @@ For testing software, always test a variety of cases, including "edge cases". Te
 
 ## Hint for GameSolver using Bisection
 
-The common way to solve a problem like the guessing game is the **Bisection Algorithm**, also called Binary Search.  At each step you divide the search interval in half, so that the solution is always somewhere in the search interval.
+The common way to solve a problem like the guessing game is the **Bisection Algorithm**, also called **Binary Search**.  At each step you divide the search interval in half, so that the solution is always somewhere in the search interval.
 
 Suppose `min` in the lower end of the interval and `max` is the upper end of the interval where the solution is.  Using Bisection we would guess:
 ```java
@@ -56,9 +56,9 @@ guess = min + (max - min)/2;
 
 There are **two tricky points** to be careful of.
 
-1. The interval **must get smaller at each step**.    
+1. The search interval **must get smaller at each step**.    
 For example, `min=1`, `max=100`, and `guess=50`.  If guess is "too large", what should the new `max` be?    
-   * It should be `max=49` (max=guess-1). **Not** max=50.  This guarantees that the interval is getting smaller at each step.    
+   * It should be `max=49` (max=guess-1). **Not** max=50.  This guarantees that the interval is getting smaller.
    * If you don't do this you might end up with `min=2`, `max=3`, but your program keeps guessing 2 forever!
 
 2. Avoid **integer overflow**.   What is the difference between these two formulas:
@@ -111,12 +111,20 @@ public class GuessingGame {
 What is the problem with `getCount()`?
 
 The user of this code **won't know** that `getCount` increments the counter, 
-so he might call it at many places in his code.
+so he might call `getCount()` many times in his code.
 
 A general rule is that "get" methods should **not change** the attributes 
 of an object or its state.
 
-This is part of the **Command - Query Separation Principle** which states that you should have separate methods for "queries" and "commands". Commands tell an object to do something, queries just ask an object a question.
+This is part of the **Command - Query Separation Principle** which states that you should have separate methods for "commands" and "queries". Commands tell an object to do something, queries just ask a question.  `get` methods are queries.
+
+## Don't Rely on String Values
+
+The specification for GuessingGame states that the "hints" will contain "too small" or "too large" when the guess is incorrect, but it does not promise exactly what the string will be!
+
+You should write code to check if the string **contains** "too small" or "too large".  Don't test for string equality (exact matching string).  It is good it **ignore case**, too.
+
+Look at the API for the String class -- it has the method you need!
 
 
 ## Look on Github for "Issues" and Fix Them
