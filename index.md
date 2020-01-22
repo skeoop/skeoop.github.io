@@ -6,9 +6,7 @@ description: Index page
 
 ## Topics and Assignments 
 
-Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
-
----
+Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
 
 <table border="1">
 <tr valign="top">
@@ -45,6 +43,7 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 [Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)
 </td>
 <td markdown="span">
+Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) and [these good sources](
 [Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
 [Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
 general [Coding Guidelines](docs/Coding-Guidelines).
@@ -80,7 +79,7 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 [Intro to Github](git/intro-github) and [slides](git/Using-Github.pdf)    
 </td>
 <td markdown="span">
-[Getting Started](git/git-get-started)    
+[Getting Started](git/Git-get-started)    
 [Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
 </td>
 </tr>
@@ -108,7 +107,7 @@ A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)
 <!-- uml -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[UML Class Diag](uml/)    
+[UML](uml/)    
 </td>
 <td markdown="span">
 [UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
