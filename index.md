@@ -6,7 +6,7 @@ description: Index page
 
 ## Topics and Assignments 
 
-Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) Code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact Us](Contact) 
+Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact](Contact) 
 
 <table border="1">
 <tr valign="top">
@@ -39,12 +39,12 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 </td>
 <td markdown="span">
 [Intro to Java](java-basics/00-Intro-to-Java.pdf)    
-[Java Class Structure](java-basics/01-Program-Structure.pdf)    
-[Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)
+[Java Class Structure](java-basics/01-Program-Structure.pdf) includes packages    
+[Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)    
 </td>
 <td markdown="span">
-Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) and [these good sources](
-[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write in their sleep.    
+Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good sources](Learning)    
+[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write.    
 [Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
 general [Coding Guidelines](docs/Coding-Guidelines).
 

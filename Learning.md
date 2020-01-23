@@ -6,42 +6,42 @@
  * [Download](https://www.oracle.com/technetwork/java/javase/java-tutorial-downloads-2005894.html) the full tutorial and run on your computer, for easy access.
  * The *Really Big Index* is best place to find things. Bookmark it.
 
-[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) many short sections covering syntax, with interactive code examples. You can run code in the browser window.  The W3schools tutorial has less reading than Oracle's Java Tutorial.
+[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) many short sections, with interactive code examples you can run in the browser window. This tutorial has less reading than Oracle's Java Tutorial.
 
 ### Online Courses
 
-[Codecademy Learn Java][] partially free course covers Java basics. Has a nice interactive coding editor where you can enter Java code and have it evaluated.
-
-[Udemy](https://udemy.com) has many Java courses, including some free ones.
-
-[Complete Java Developer Course][] on Udemy is highly-rated, in-depth course that covers Java and OOP. Looks like the best Udemy Java course but not free. Price 300 Bt (sale).
+[Complete Java Developer Course][] on [Udemy][] is highly-rated, in-depth course that covers Java and OOP. Looks like the best Udemy Java course but not free. Savle Price 300 Bt.
+ * [Udemy][] has many Java courses, including some free ones.
 
 [Coursera][] has some series courses using Java.  Interesting ones are:    
-    * [Object-Oriented Programming in Java Specialization](duke-oop-java) 4-course series (Duke University), first one is:
-    * [Java Programming: Solving Problems with Software][duke-java-programming] (Duke University)
-        - has online resources page http://www.dukelearntoprogram.com/course2/index.php
-        - uses BlueJ, Apache CSV, other open source
-        - interesting projects
+ * [Object-Oriented Programming in Java Specialization](duke-oop-java) 4-course series (Duke University), first one is:
+ * [Java Programming: Solving Problems with Software][duke-java-programming] (Duke University)
+   - has online resources page http://www.dukelearntoprogram.com/course2/index.php
+   - uses BlueJ, Apache CSV, other open source
+   - interesting projects
 
-[Microsoft Java Courses on edX][]. Microsoft has 3 free courses on edX:    
-    * Learn to Program in Java
-    * Object-Oriented Programming in Java.
-    * Data Structures
-    The courses are OK but don't cover very much.
+*Java Programming Fundamentals* by Galileo University on [edX](https://edx.org) is a good course.
 
-[edX](https://edx.org) another good course is *Java Programming Fundamentals* by Galileo University
+[Microsoft Java Courses on edX][]. Microsoft Java courses on edX are OK but don't cover much:    
+  * Learn to Program in Java
+  * Object-Oriented Programming in Java.
+  * Data Structures
 
 [Java Code Geeks][] a lot of Java learning material, some very advanced.  Not a good place to start learning Java, but useful when you want to know something in depth.
 
+[Codecademy Learn Java][] partially free course covers Java basics. Has a nice interactive coding editor where you can enter Java code and have it evaluated.
+
 [Hyperskill.org](https://hyperskill.org) by IntelliJ has interactive Java lessons and programming problems, rated by difficulty.  Some interesting problems:
-    * Smart Calculator (medium)
-    * Linear Equation Solver (medium)
-    * Readability (hard)
+ * Smart Calculator (medium)
+ * Linear Equation Solver (medium)
+ * Readability (hard)
     * Blockchain (nightmare)
     * Contacts (nightmare)
 
 
 ### Books
+
+[Think Java][] free online and downloadable book. Covers basic Java syntax, not much OO or advanced features. Many code examples.
 
 *Big Java* by Cay Horstmann. An easy to read book by professor who has written many Java books, including *Core Java*.  Sixth edition includes Java 8 streams, lambdas, and other features, but Fifth edition is good, too.
 
@@ -73,7 +73,11 @@ Interactive Java course in IntelliJ.  The course is repetitive and boring, spend
 
 [Coursera]: https://coursera.org
 
+[Udemy]: https://udemy.com
+
 [duke-java-programming]: https://www.coursera.org/learn/java-programming
 [duke-oop-java]: https://www.coursera.org/specializations/object-oriented-programming
 
 [OODP-Ch1]: docs/OODP-Chapter1.pdf
+
+[Think Java]: https://greenteapress.com/wp/think-java/
