@@ -9,14 +9,13 @@ Apply the advice:
 * program defensively: avoid input errors
 
 ```
-/**
- * Order people by birthday.  If they have same birthday then
- * order by name.
+/** Count the frequency of first letter for words in an input stream */
 public static Map<Character,Integer> frequencyCount(InputStream instream) {
     Map<Character,Integer> map = new HashMap<Character,Integer>();  
     Scanner input = new Scanner(instream);
     while(input.hasNext()){
-        String word = input.nextLine();
+        String word = input.next();
+        // check for first character in the map and add 1 to the count.
         if(map.containsKey(word.charAt(0))){
         	map.put(word.charAt(0),map.get(word.charAt(0))+1);
         }

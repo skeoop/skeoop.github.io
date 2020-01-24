@@ -54,18 +54,42 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 <!-- Intro OOP -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Intro to OOP](oop/)    
+[OO Fundamentals](oop/)    
 </td>
 <td markdown="span">
 [3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
 (and [Why OOP?](oop/3b-Why-Objects.pdf))    
 [Object References](oop/Object-References.pdf) and [Reference is like a Remote Control](oop/Reference-as-Remote-Control.pdf)    
-[Inheritance](oop/Inheritance-Basics.pdf)     
-[Polymorphism](oop/Polymorphism.pdf)    
-[Interfaces](oop/Interfaces.pdf) a way to enable polymorphism     
 </td>
 <td markdown="span">
-**Read**: BIGJ Section 9.4 and Chapter 10.    
+&nbsp;
+</td>
+</tr>
+<!-- Inheritance -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Inheritance
+</td>
+<td markdown="span">
+[Inheritance](oop/Inheritance-Basics.pdf)     
+Using Inheritance &amp; Liskov Substitution Principle
+</td>
+<td markdown="span">
+**Read**: Read *BIG Java*, Chapter 9.
+</td>
+</tr>
+<!-- Polymorphism -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Polymorphism &amp;    
+Interfaces
+</td>
+<td markdown="span">
+[Polymorphism](oop/Polymorphism.pdf)    
+[Interfaces](oop/Interfaces.pdf) 
+</td>
+<td markdown="span">
+Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
 </td>
 </tr>
 
@@ -75,13 +99,40 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 [Git](git/)    
 </td>
 <td markdown="span">
-[Intro to Git](git/intro-git) and [slides](git/Git-Basics.pdf).     
-[Intro to Github](git/intro-github) and [slides](git/Using-Github.pdf)    
+[Intro to Git](git/Intro-git) and [slides](git/Git-Basics.pdf).     
+[Intro to Github](git/Intro-Github) and [slides](git/Using-Github.pdf)    
 </td>
 <td markdown="span">
 [Getting Started](git/Git-get-started)    
 [Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
 </td>
+</tr>
+
+<!-- uml -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[UML](uml/)    
+</td>
+<td markdown="span">
+[UML Class Diagram](uml/UML-Class-Diagram.pdf)    
+[Relationships in UML](uml/UML-Class-Diagram-2.pdf)    
+</td>
+<td markdown="span">
+[UML Practice](uml/UML_practice)    
+Read: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
+</td>
+</tr>
+</table>
+
+---
+
+## Optional Material
+
+<table border="1">
+<tr valign="top">
+  <th> Topic </th>
+  <th width="45%"> Material </th>
+  <th width="45%"> Assignment </th>
 </tr>
 <!-- More Git -->
 <tr valign="top">
@@ -95,7 +146,7 @@ Using [branches][git-branching] (online Git book).
 Using [Github Flow](git/index#github-flow).    
 [Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
 [Pull Request slides](git/Pull-Requests.pdf)    
-[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples of providing feedback.    
+[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples.
 [Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (optional).
 </td>
 <td markdown="span">
@@ -104,21 +155,8 @@ A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)
 </td>
 </tr>
 
-<!-- uml -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[UML](uml/)    
-</td>
-<td markdown="span">
-[UML Class Diagram](week2/4-UML-Class-Diagram.pdf)    
-[Relationships in UML](week2/5-UML-Class-Diagram-2.pdf)    
-</td>
-<td markdown="span">
-[UML Practice](week2/UML_practice)
-Good summary: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
-</td>
-</tr>
 </table>
+
 
 
 ---
@@ -138,7 +176,6 @@ Good summary: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diag
 </td>
 <td markdown="span">
 [Review](week3/Overview) of last week & evolution of Coin Purse    
-[Inheritance Basics](week3/Inheritance-Basics.pdf) for self-study    
 [Abstract Class & Method](week3/Abstract-Class-and-Inheritance.pdf)     
 [Interfaces for Sorting](week3/Lexical-Order-and-Sorting.pdf)    
 [Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study    
