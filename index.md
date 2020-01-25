@@ -47,10 +47,24 @@ Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good sources](Learning)
 [Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write.    
 [Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
 general [Coding Guidelines](docs/Coding-Guidelines).
-
 </td>
 </tr>
-
+<!-- Java Basics -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Java Basics    
+</td>
+<td markdown="span">
+[Arrays](java-basics/17-Arrays.pdf)     
+[ArrayList](java-basics/20-ArrayList.pdf)    
+[Packages](java-basics/21-Packages.pdf)    
+[Static Methods](java-basics/15-Static-Methods.pdf)    
+</td>
+<td markdown="span">
+Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or *Big Java* for Java language.    
+See [Learning Java](Learning) for more good sources.
+</td>
+</tr>
 <!-- Intro OOP -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -75,14 +89,13 @@ Inheritance
 Using Inheritance &amp; Liskov Substitution Principle
 </td>
 <td markdown="span">
-**Read**: Read *BIG Java*, Chapter 9.
+Read *BIG Java*, Chapter 9.
 </td>
 </tr>
 <!-- Polymorphism -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Polymorphism &amp;    
-Interfaces
+Polymorphism &amp; Interfaces
 </td>
 <td markdown="span">
 [Polymorphism](oop/Polymorphism.pdf)    

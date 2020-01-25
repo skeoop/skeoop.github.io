@@ -1,6 +1,7 @@
 # File to not commit to git
 bin/
 misc/
+quiz/
 old/
 _site/
 .*

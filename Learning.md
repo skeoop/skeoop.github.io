@@ -35,18 +35,19 @@
  * Smart Calculator (medium)
  * Linear Equation Solver (medium)
  * Readability (hard)
-    * Blockchain (nightmare)
-    * Contacts (nightmare)
-
+ * Blockchain (very hard)
+ * Contacts (hard)
 
 ### Books
 
-[Think Java][] free online and downloadable book. Covers basic Java syntax, not much OO or advanced features. Many code examples.
+**Required:**
+*Big Java* by Cay Horstmann. Easy to read book by professor who has written many Java books, including *Core Java*.  Sixth edition includes Java 8 streams, lambdas, and other features, but Fifth edition is OK for this course.
 
-*Big Java* by Cay Horstmann. An easy to read book by professor who has written many Java books, including *Core Java*.  Sixth edition includes Java 8 streams, lambdas, and other features, but Fifth edition is good, too.
-
-*Object-oriented Design and Patterns*, 2E by Cay Horstmann.
+**Recommended:**
+*Object-oriented Design and Patterns*, 2E by Cay Horstmann.    
 [Chapter 1](docs/OODP-Chapter1.pdf) is a *Crash Course in Java*. If you learn to code quickly, this is great.
+
+[Think Java][] free online and downloadable book. Covers basic Java syntax, not much OO or advanced features. Many code examples.
 
 *Core Java for the Impatient* by Cay Horstmann.  More concise book on Java for people who know basic programming. Covers only the Java language, not O-O or programming concepts.  Useful as reference.
 
