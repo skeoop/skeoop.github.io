@@ -185,12 +185,12 @@ A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)
 <!-- week 3 -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 3](week3/)    
+Week 3    
 </td>
 <td markdown="span">
 [Review](week3/Overview) of last week & evolution of Coin Purse    
-[Abstract Class & Method](week3/Abstract-Class-and-Inheritance.pdf)     
-[Interfaces for Sorting](week3/Lexical-Order-and-Sorting.pdf)    
+[Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
+[Interfaces for Sorting](java-intermed/Lexical-Order-and-Sorting.pdf)    
 [Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study    
 </td>
 <td markdown="span">
@@ -510,12 +510,12 @@ In project demo, please prepare presentation of design and interesting technolog
 </tr>
 <tr valign="top">
 <td markdown="span">
-[Assertions](topics/Assertions.pdf) a method should document its precondtions (requirements) and postconditions. The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditioins in code, with no runtime overhead in the final product.  Microsoft found that adding assertions during development greatly reduced bugs.
+[Assertions](java-intermed/Assertions.pdf) a method should document its precondtions (requirements) and postconditions. The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditioins in code, with no runtime overhead in the final product.  Microsoft found that adding assertions during development greatly reduced bugs.
 </td>
 </tr>
 <tr valign="top">
 <td markdown="span">
-[Inner Classes](topics/Inner-Classes.pdf) rules for inner and nested classes.
+[Inner Classes](java-intermed/Inner-Classes.pdf) rules for inner and nested classes.
 </td>
 </tr>
 <tr valign="top">
