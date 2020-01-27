@@ -102,7 +102,8 @@ Polymorphism &amp; Interfaces
 [Interfaces](oop/Interfaces.pdf) 
 </td>
 <td markdown="span">
-Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
+Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).    
+[Let's Remove Duplicate Code](http://bit.ly/lets-remove-duplicate-code) how to rewrite Stopwatch tasks.
 </td>
 </tr>
 
