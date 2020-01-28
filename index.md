@@ -121,6 +121,21 @@ Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
 [Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
 </td>
 </tr>
+<!-- Checkstyle -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Checkstyle
+</td>
+<td markdown="span">
+Checkstyle is a program to help spot
+problems in code. Works in any IDE,
+including BlueJ.
+</td>
+<td markdown="span">
+KU Checkstyle Rules:
+[ku-checkstyle.xml](docs/ku-checkstyle.xml)
+</td>
+</tr>
 
 <!-- uml -->
 <tr valign="top">
