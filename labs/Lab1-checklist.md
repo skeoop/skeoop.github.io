@@ -6,7 +6,7 @@ description: Lab1 Checklist for Correct Submission
 
 ## Review Your Code
 
-1. Do classes have good Javadoc with `\@author` tag and your real name?
+1. Do classes have good Javadoc with `@author` tag and your real name?
 2. Does the class Javadoc describe the purpose of the class, as whole sentences?
 3. Can your `GameConsole` play someone else's Guessing Game?
 4. Can other students' code play *Your* `GuessingGame` in **their** GameConsole?
@@ -116,16 +116,19 @@ so he might call `getCount()` many times in his code.
 A general rule is that "get" methods should **not change** the attributes 
 of an object or its state.
 
-This is part of the **Command - Query Separation Principle** which states that you should have separate methods for "commands" and "queries". Commands tell an object to do something, queries just ask a question.  `get` methods are queries.
+The **Command - Query Separation Principle** states that you should have separate methods for "commands" and "queries". Commands tell an object to do something, queries just ask a question.  `get` methods are queries.    
+Queries should not change the state of another object.
 
 ## Don't Rely on String Values
 
 The specification for GuessingGame states that the "hints" will contain "too small" or "too large" when the guess is incorrect, but it does not promise exactly what the string will be!
 
-You should write code to check if the string **contains** "too small" or "too large".  Don't test for string equality (exact matching string).  It is good it **ignore case**, too.
+You should write code to check if the string **contains** "too small" or "too large".  
+
+* Don't test for exact string match! (`hints.equals("Too large.")`).  Only look for `"too large"` contained in hint.
+* Don't rely on upper/lowercase.  Convert the hint to lowercase, or use case-insentive methods.
 
 Look at the API for the String class -- it has the method you need!
-
 
 ## Look on Github for "Issues" and Fix Them
 
@@ -135,3 +138,30 @@ If anything needs to be fixed, we post an **issue** in your Github repository.
 
 You should **fix** all issues **quickly**, then **test** and **close** each issue.
 
+## Program Defensively (Be Paranoid)
+
+What if the hints from GuessingGame do not contain "too large" or "too small"?
+
+What if the game has no solution?
+
+It is good practice to make sure your "loop" for solving the game always terminates.  Here are some techniques:
+```python
+# Python (almost)
+hint = game.getMessage().lower()
+
+if hint contains "too small":
+    min = guess + 1
+elif hint contains "too large":
+    max = guess - 1
+else:
+    # hint doesn't contain either string!
+    # Return a special value to indicate no solution.
+    return -1
+```
+
+What about a buggy game?  
+
+**If** your GameSolver increases the lowerbound (`min`) or decrease the upperbound (`max`) at **every** iteration    
+**then** eventually you must find the solution or have `min > max`.
+
+If `min > max` then there is no solution.
