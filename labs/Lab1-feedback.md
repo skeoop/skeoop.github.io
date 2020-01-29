@@ -18,6 +18,12 @@ See [Java Coding Standard](https://skeoop.github.io/docs/Java-Coding-Standard.pd
 
 ## Coding Errors
 
+**GameSolver** should **not print** anything.  This was specified in lab sheet.
+The only allowed exception is if the game cannot be solved.  In that case, a better solution is to return -1 to indicate no solution (instead of printing).
+
+**GuessingGame** does **not have** a `setCount()` method.  Its not in the API,
+and only `GuessingGame` inself should update the guess counter.
+
 ```java
 // In GameSolver class:
 
@@ -32,7 +38,7 @@ public static int play(GuessingGame game){
 ```
 1. Method is not `static`.
 2. Its not supposed to **print anything**.
-3. The upper bound might not be 100!  you should ask the game.
+3. The upper bound might not be 100!  you should ask the game for the upper bound.
 4. The `GuessingGame` is supposed to count the guesses. **Don't** count guesses in GameSolver.
 
 ```java
@@ -111,18 +117,5 @@ else if (game.getMessage() == "WAY too large" || game.getMessage() == "Too large
 
 2 and 4: Redundant Method Call: `game.getMessage()` is called 4 times when the result will be the same.  You should assign result to a local variable and use local variable instead of repeated method calls.
 
-1: You can save work by checking immediately if `status` is true and break from the loop.
-
-```java
-public static int play(GuessingGame game){
-    System.out.println("Guess a secret number. ");
-    System.out.println("I'm thinking of a number between 1 and 100");
-    /** counting number */
-    int count = 0;
-    /** the lowerbound of this range */
-    int min = 1;
-    /** the upperbound of this range */
-    int max = 100;
-    /** the first number for guessing */
-    int your_number = min + (max - min)/2;
+1: It is more efficient to check immediately if `status` is true and break from the loop.
 
