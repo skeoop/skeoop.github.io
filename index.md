@@ -86,7 +86,7 @@ Inheritance
 </td>
 <td markdown="span">
 [Inheritance](oop/Inheritance-Basics.pdf)     
-Using Inheritance &amp; Liskov Substitution Principle
+[Using Inheritance](oop/Using-Inheritance.pdf) &amp; Liskov Substitution Principle
 </td>
 <td markdown="span">
 Read *BIG Java*, Chapter 9.
