@@ -55,10 +55,11 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 Java Basics    
 </td>
 <td markdown="span">
-[Arrays](java-basics/17-Arrays.pdf)     
+[Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays)     
 [ArrayList](java-basics/20-ArrayList.pdf)    
 [Packages](java-basics/21-Packages.pdf)    
 [Static Methods](java-basics/15-Static-Methods.pdf)    
+[Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
 </td>
 <td markdown="span">
 Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or *Big Java* for Java language.    

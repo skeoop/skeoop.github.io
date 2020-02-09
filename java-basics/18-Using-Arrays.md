@@ -3,7 +3,7 @@ layout: page
 title: Using Arrays
 description: Idioms and methods for array
 ---
-### Loops for Processing Array Elements
+## Loops for Processing Array Elements
 
 You often want to process every element in an array.
 The typical logic is:
@@ -19,7 +19,7 @@ process the result
 ```
 Here are 3 kinds of loops for arrays.
 
-#### 1. "for" loop with index
+### 1. "for" loop with index
 
 This loop is useful if you need to know the index of the array element,
 or you don't want to process every element.  The syntax is:
@@ -28,6 +28,7 @@ for(int index=start; test_condition; increment_operation) {
    statements for loop
 }
 ```
+
 **Example**: print each array value with its index. 
 ```java
 double[] array = new double[] { 10.0, 20.0, 5.0 };
@@ -36,40 +37,27 @@ for(int k=0; k<array.length; k++) {
 }
 ```
 
-**Example**: Sum the values and squares of values in an array.
+**Example**: Find the index of the largest value in array.
+
 ```java
-double[] x = new double[] { 10.0, 20.0, 5.0, 99.0 };
+double[] x = new double[] { 10.0, 20.0, 99.0, 5.0 };
 // initialization:
-double sum = 0;
-double sumSquares = 0;
-for(int k=0; k<x.length; k++) {
-    sum = sum + x[k];
-    sumSquares += x[k]*x[k];
+double max = x[0];
+int maxIndex = 0;
+// loop (skip first element since we already processed it)
+for(int k=1; k<x.length; k++) {
+    if (x[k] > max) {
+       max = x[k];
+       maxIndex = k;
+    }
 }
-// Now you can compute average.
-double average = sum/(x.length);
+return maxIndex;
 ```
 
-**Example**: evaluate this polynomial
-![a_{n}x^{n}+a_{n-1}x^{n-1}+...+a_{0}](https://latex.codecogs.com/gif.latex?a_{n}x^{n}&plus;a_{n-1}x^{n-1}&plus;...&plus;a_{0})
-where the array `a[]` contains coefficients of a polynomial. `a[]={5,10}` means the polynomial 5*x + 10.
 
-The efficient way to compute this is **not** to compute powers of x.
-Compute the polynomial like this:
-```java
-(((a[n]*x + a[n-1])*x + ... + a[1])*x + a[0]
-```
-A "for" loop that computes this starts from the last element of `a[]`:
-```java
-double poly = 0;
-for(int k=a.length-1; k>=0; k--) 
-    poly = poly*x + a[k];
-```
-This shows how a "for" loop can iterate from high value (n) to low value (0).
+### 2. for-each loop
 
-#### 2. for-each loop
-
-If you want to process all the elements in an array and don't need
+If you want to process all the elements in an array and do not need
 to know the *index* of each element, use a for-each loop.
 The syntax is:
 ```
@@ -86,9 +74,10 @@ for( double x: array ) {
     sumSquares += x*x;
 }
 ```
-The for-each loop is much cleaner and easier to read than indexed for-loop.
+A for-each loop is much cleaner and easier to read than indexed for-loop.
 
 **Example:** print each element in an array of names.
+
 ```java
 String[] animals = {"Cat", "Bird", "Horse" };
 // "for-each who in names"
@@ -97,7 +86,7 @@ for( String who: animals ) {
 }
 ```
 
-#### 3. while loop or do-while loop
+### 3. while loop or do-while loop
 
 These can also be used with arrays, of course.
 
@@ -112,9 +101,10 @@ while( k < array.length ) {
 }
 ```
 ---
-### Filtering out some Elements
 
-Use `continue` to skip some iteration of a loop.
+### Skipping Some Elements
+
+Use `continue` to skip some iteration of a loop. `continue` immediately goes to the bottom of the loop block and tests for next iteration. You can use `continue` in any `for` or `while` loop.
 
 **Example:** Print the **positive** values in an array.
 ```java
@@ -122,6 +112,23 @@ double[] x = { 10.0, 0, 3.0, -2, -5, 7.0};
 for( double value: x ) {
     if (value <= 0) continue; // skip it!
     System.out.println( value );
+}
+```
+
+`continue` is useful when there is some complex work or testing in a loop. Its much cleaner than a big `if (...){...}` block inside the loop.
+
+### Exiting a Loop Early
+
+You can "break out" (exit) a loop at any point using a `break` statement.
+
+**Example**: Add elements of an array until you see a negative value in the array (called a *sentinal*).
+
+```java
+double[] x = { 10.0, 0, 3.0, -2, 12, -7.0};
+double sum = 0.0;
+for( double value: x ) {
+    if (value <= 0) break; // stop processing!
+    sum = sum + value;
 }
 ```
 
