@@ -56,7 +56,6 @@ Java Basics
 </td>
 <td markdown="span">
 [Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays)     
-[ArrayList](java-basics/20-ArrayList.pdf)    
 [Packages](java-basics/21-Packages.pdf)    
 [Static Methods](java-basics/15-Static-Methods.pdf)    
 [Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
@@ -135,6 +134,36 @@ including BlueJ.
 <td markdown="span">
 KU Checkstyle Rules:
 [ku-checkstyle.xml](docs/ku-checkstyle.xml)
+</td>
+</tr>
+
+<!-- collections -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Collections
+</td>
+<td align="center" markdown="span"> 
+[ArrayList](collections/ArrayList.pdf)    
+[Collections](collections/Collections.pdf)    
+[Iterators](collections/Iterators.pdf) a common design pattern
+</td>
+<td>
+[Collections Practice](collections/Collections-practice) 
+<!-- wth starter code: [https://classroom.github.com/a/0F28sTB7](https://classroom.github.com/a/0F28sTB7).   
+  -->
+</td>
+</tr>
+
+<!-- interfaces -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Interfaces
+</td>
+<td align="center" markdown="span"> 
+[Interface](interface/Interfaces.pdf)    
+</td>
+<td>
+&nbsp;
 </td>
 </tr>
 
@@ -234,9 +263,6 @@ No Lab, but you still have assignment.
 </td>
 <td markdown="span">
 [Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
-[Collections](week4/Collections.pdf)   
-[Collections Practice](week4/Collections-practice) with starter code: [https://classroom.github.com/a/0F28sTB7](https://classroom.github.com/a/0F28sTB7).   
-[Iterators](week4/Iterators.pdf) a common design pattern
 </td>
 <td markdown="span">
 **Quiz**: programming quiz. Please bring computer to class.    
