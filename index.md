@@ -106,7 +106,6 @@ Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
 [Let's Remove Duplicate Code](http://bit.ly/lets-remove-duplicate-code) how to rewrite Stopwatch tasks.
 </td>
 </tr>
-
 <!-- Git -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -127,13 +126,14 @@ Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
 Checkstyle
 </td>
 <td markdown="span">
-Checkstyle is a program to help spot
-problems in code. Works in any IDE,
-including BlueJ.
+[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
+problems in code. Works in most IDEs, including BlueJ.
 </td>
 <td markdown="span">
 KU Checkstyle Rules:
-[ku-checkstyle.xml](docs/ku-checkstyle.xml)
+[ku-checkstyle.xml](docs/ku-checkstyle.xml)    
+[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
+
 </td>
 </tr>
 
@@ -142,12 +142,12 @@ KU Checkstyle Rules:
 <td align="center" markdown="span"> 
 Collections
 </td>
-<td align="center" markdown="span"> 
+<td align="left" markdown="span"> 
 [ArrayList](collections/ArrayList.pdf)    
 [Collections](collections/Collections.pdf)    
 [Iterators](collections/Iterators.pdf) a common design pattern
 </td>
-<td>
+<td align="left" markdown="span"> 
 [Collections Practice](collections/Collections-practice) 
 <!-- wth starter code: [https://classroom.github.com/a/0F28sTB7](https://classroom.github.com/a/0F28sTB7).   
   -->
@@ -156,7 +156,7 @@ Collections
 
 <!-- interfaces -->
 <tr valign="top">
-<td align="center" markdown="span"> 
+<td align="left" markdown="span"> 
 Interfaces
 </td>
 <td align="center" markdown="span"> 
