@@ -1,0 +1,53 @@
+<html>
+ <head></head>
+ <body>
+  <h1 style="text-align: center;">The boolean type</h1> 
+  <p>The <strong>boolean</strong> is a primitive data type that has only two possible values: <strong>false</strong> or <strong>true</strong>. The default value for this type is <strong>false</strong>.</p> 
+  <pre><code class="language-java">boolean t = true; // t is true
+    boolean f = false; // f is false
+    boolean defaultValue; // defaultValue is false</code></pre> 
+  <p><strong>Note</strong>: Remember, you cannot assign an integer value to a boolean variable. In Java, 0 is not equal to <strong>false</strong>. </p> 
+  <h2 style="text-align: center;">Logical operators</h2> 
+  <p>There are four logical operators <strong>NOT</strong>, <strong>AND</strong>, <strong>OR</strong> and <strong>XOR </strong>which allow us to build <strong>logical expressions</strong>.</p> 
+  <p>The <strong>NOT</strong> operator is a unary operator that reverses the boolean value. It is written as !.</p> 
+  <pre><code class="language-java">boolean f = false; // f is false
+    boolean t = !f; // t is true</code></pre> 
+  <p>The <strong>AND</strong> operator is a binary operator that returns <strong>true</strong> if both operands are <strong>true</strong>, otherwise, it is <strong>false</strong>. The operator can be written as &amp;&amp; and &amp;. </p> 
+  <pre><code class="language-java">boolean b1 = false &amp;&amp; false; // false
+    boolean b2 = false &amp;&amp; true; // false
+    boolean b3 = true &amp;&amp; false; // false
+    boolean b4 = true &amp;&amp; true; // true</code></pre> 
+  <p>The <strong>OR</strong> operator is a binary operator that returns <strong>true</strong> if at least one operand is <strong>true</strong>, otherwise, it returns <strong>false</strong>. The operator can be written as ||and |.</p> 
+  <pre><code class="language-java">boolean b1 = false || false; // false
+    boolean b2 = false || true; // true
+    boolean b3 = true || false; // true
+    boolean b4 = true || true; // true</code></pre> 
+  <p>The <strong>XOR</strong> (<strong>exclusive OR</strong>) operator is a binary operator that returns <strong>true</strong> if boolean operands have different values, otherwise, it is <strong>false</strong>. The operator is written as ^ and can be used Instead of the relation operator != (<strong>NOT EQUAL TO</strong>).</p> 
+  <pre><code class="language-java">boolean b1 = false ^ false; // false
+    boolean b2 = false ^ true; // true
+    boolean b3 = true ^ false; // true
+    boolean b4 = true ^ true; // false</code></pre> 
+  <h2 style="text-align: center;">Short-circuit operators</h2> 
+  <p>The <strong>AND</strong> and <strong>OR</strong> operators have two forms: <strong>AND</strong> ( &amp;, &amp;&amp;), <strong>OR</strong> ( |, ||).</p> 
+  <p>There are some differences:</p> 
+  <ul> 
+   <li>the &amp; and | operators are also used as bitwise operators for integer types;</li> 
+   <li>the &amp;&amp; and || operator perform <strong>Conditional-AND </strong>and <strong>Conditional-OR </strong>operations on two boolean expressions. These operators are called <strong>"short-circuit"</strong> operators, which means that the second operand is evaluated only when it is needed (when the first argument doesn't suffice to determine the value of the expression). </li> 
+  </ul> 
+  <p>In the following example, the second operand a&gt;5 will not be evaluated because the result is determined by the first operand (a==10 is <strong>false</strong>):</p> 
+  <pre><code class="language-java">int a = 20;
+    boolean result = (a == 10) &amp;&amp; (a &gt; 5); // the second expressions can't be evaluated</code></pre> 
+  <h2 style="text-align: center;">The precedence of logical operators</h2> 
+  <p>Below the logical operations are sorted in order of their priority in expressions:</p> 
+  <ul> 
+   <li>! - NOT</li> 
+   <li>&amp; - AND</li> 
+   <li>^ - XOR</li> 
+   <li>| - OR</li> 
+   <li>&amp;&amp; - conditional AND</li> 
+   <li>|| - conditional OR</li> 
+  </ul> 
+  <p>So, the following statement is <strong>true</strong>:</p> 
+  <pre><code class="language-java">boolean b = true &amp;&amp; !false; // true, because !false is evaluated first</code></pre>
+ </body>
+</html>
