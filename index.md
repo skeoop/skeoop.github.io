@@ -99,7 +99,7 @@ Polymorphism &amp; Interfaces
 </td>
 <td markdown="span">
 [Polymorphism](oop/Polymorphism.pdf)    
-[Interfaces](oop/Interfaces.pdf) 
+[Interfaces](interface/Interfaces.pdf) 
 </td>
 <td markdown="span">
 Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).    
@@ -148,7 +148,8 @@ Collections
 [Iterators](collections/Iterators.pdf) a common design pattern
 </td>
 <td align="left" markdown="span"> 
-[Collections Practice](collections/Collections-practice) 
+[Collections Practice](collections/Collections-practice)    
+[Collections Summary](collections/Collections-Summary.pdf)
 <!-- wth starter code: [https://classroom.github.com/a/0F28sTB7](https://classroom.github.com/a/0F28sTB7).   
   -->
 </td>
@@ -159,7 +160,7 @@ Collections
 <td align="left" markdown="span"> 
 Interfaces
 </td>
-<td align="center" markdown="span"> 
+<td markdown="span"> 
 [Interface](interface/Interfaces.pdf)    
 </td>
 <td>
