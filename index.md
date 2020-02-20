@@ -95,15 +95,14 @@ Read *BIG Java*, Chapter 9.
 <!-- Polymorphism -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Polymorphism &amp; Interfaces
+Polymorphism
 </td>
 <td markdown="span">
 [Polymorphism](oop/Polymorphism.pdf)    
-[Interfaces](interface/Interfaces.pdf) 
 </td>
 <td markdown="span">
-Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).    
-[Let's Remove Duplicate Code](http://bit.ly/lets-remove-duplicate-code) how to rewrite Stopwatch tasks.
+Read *BIGJ*, section 9.4 (Polymorphism).
+[Let's Remove Duplicate Code](http://bit.ly/lets-remove-duplicate-code) - rewrite Stopwatch tasks to use polymorphism.
 </td>
 </tr>
 <!-- Git -->
@@ -118,22 +117,6 @@ Read *BIGJ*, section 9.4 (Polymorphism) and Chapter 10 (Interfaces).
 <td markdown="span">
 [Getting Started](git/Git-get-started)    
 [Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
-</td>
-</tr>
-<!-- Checkstyle -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Checkstyle
-</td>
-<td markdown="span">
-[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
-problems in code. Works in most IDEs, including BlueJ.
-</td>
-<td markdown="span">
-KU Checkstyle Rules:
-[ku-checkstyle.xml](docs/ku-checkstyle.xml)    
-[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
-
 </td>
 </tr>
 
@@ -154,17 +137,17 @@ Collections
   -->
 </td>
 </tr>
-
 <!-- interfaces -->
 <tr valign="top">
-<td align="left" markdown="span"> 
+<td align="center" markdown="span"> 
 Interfaces
 </td>
 <td markdown="span"> 
 [Interface](interface/Interfaces.pdf)    
 </td>
 <td>
-&nbsp;
+Read *BIGJ* Chapter 10 (Interfaces).    
+[Common Interfaces](interface/Common-Interfaces.pdf)
 </td>
 </tr>
 
@@ -182,6 +165,20 @@ Interfaces
 Read: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
 </td>
 </tr>
+
+<!-- review -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Review
+</td>
+<td markdown="span">
+Some basic self review.
+</td>
+<td markdown="span">
+[Fundamentals Practice](assignments/Fundamentals-Practice) - you should be able to do this without any errors.
+</td>
+</tr>
+
 </table>
 
 ---
@@ -194,6 +191,7 @@ Read: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-ove
   <th width="45%"> Material </th>
   <th width="45%"> Assignment </th>
 </tr>
+
 <!-- More Git -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -210,8 +208,23 @@ Using [Github Flow](git/index#github-flow).
 [Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (optional).
 </td>
 <td markdown="span">
-[Assignment for Github Flow & Pull Requests](assignment/week2/github-flow)    
-A real [pull request in jQuery repo](https://github.com/jquery/jquery/pull/1051)     
+A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) shows how pull request invokes a serious discussion.     
+</td>
+</tr>
+
+<!-- Checkstyle -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Checkstyle
+</td>
+<td markdown="span">
+[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
+problems in code. Works in most IDEs, including BlueJ.
+</td>
+<td markdown="span">
+KU Checkstyle Rules:
+[ku-checkstyle.xml](docs/ku-checkstyle.xml)    
+[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
 </td>
 </tr>
 
