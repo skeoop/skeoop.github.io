@@ -18,3 +18,5 @@ header.md
 # ignore all subdirectories
 labs/*-start/
 labs/*/
+# programming assignments - subdirs contain starter code
+assignments/pa*/
