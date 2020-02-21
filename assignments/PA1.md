@@ -17,7 +17,13 @@ Implement one of these programs.  You can submit either one, but not both.
 
 ### Assignment URL
 
+Create a repository for your code by accepting this assignment:
+
 [https://classroom.github.com/a/B0fIuHE6](https://classroom.github.com/a/B0fIuHE6) 
+
+### Individual Work
+
+This is an individual assignment. Do not ask other students for help or share code.  Please ask TAs or instructor if you need help.
 
 ### Test Code
 
