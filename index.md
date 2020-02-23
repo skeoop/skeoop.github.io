@@ -147,7 +147,7 @@ Interfaces
 [Interfaces for Sorting](interface/Lexical-Order-and-Sorting.pdf)    
 [Design using Interfaces](interface/Design-using-Interfaces.pdf)     
 </td>
-<td>
+<td markdown="span">
 Read *BIGJ* Chapter 10 (Interfaces).    
 [Common Interfaces](interface/Common-Interfaces.pdf)
 </td>
@@ -343,28 +343,16 @@ Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx
 [Frameworks](frameworks/)    
 </td>
 <td markdown="span">
-[Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) with frameworks     
+[Intro to Frameworks](frameworks/Frameworks.pdf) for doing more with less code.    
+[Job Post](https://www.blognone.com/node/77171) with frameworks.    
+</td>
+<td markdown="span">
 [OCSF Client Exercise](frameworks/Lab-OCSF-Framework.pdf)    
 Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf).    
 [TaskServer](frameworks/TaskServer.jar) for OCSF exercise. Its a runnable jar file. Type `java -jar TaskServer.jar port` where `port` is the port number the server should listen on.          
-</td>
-<td markdown="span">
 [PA4-Flashget URL Downloader](assignments/PA4-Threaded-Downloader.pdf)
 Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
 A useful app that combines a lot of what you learned recently, but not too difficult.    
-</td>
-</tr>
-<!-- final project -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Final Project
-</td>
-<td markdown="span">
-The last programming assignment is an application of your own design.   
-</td>
-<td>
-1. Submit a well-written [Project Proposal](assignments/PA5-Final-Project.pdf), in Google Docs.    
-2. Schedule at least one TA review of your work in progress during semester. 
 </td>
 </tr>
 <!-- lambda & streams -->
@@ -384,6 +372,19 @@ Look at the basic *Functional Interfaces* used in Streams (java.util.function pa
 Lab: Streams
 </td>
 </tr>
+<!-- final project -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Final Project
+</td>
+<td markdown="span">
+The last programming assignment is an application of your own design.   
+</td>
+<td markdown="span">
+1. Submit a well-written [Project Proposal](assignments/PA5-Final-Project.pdf), in Google Docs.    
+2. Schedule at least one TA review of your work in progress during semester.  Don't wait until the end!
+</td>
+</tr>
 </table>
 
 ### Optional Topics
@@ -401,6 +402,18 @@ If some people are interested we can schedule an extra lab session to learn and 
   Description
   </th>
 </tr>
+<!-- Checkstyle -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Checkstyle
+</td>
+<td markdown="span">
+[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
+problems in code. Works in most IDEs, including BlueJ.    
+KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)    
+[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
+</td>
+</tr>
 <!-- More Git -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -417,18 +430,6 @@ Using [Github Flow](git/index#github-flow).
 [Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (recommended).
 
 A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) shows how pull request invokes a serious discussion.     
-</td>
-</tr>
-<!-- Checkstyle -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Checkstyle
-</td>
-<td markdown="span">
-[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
-problems in code. Works in most IDEs, including BlueJ.    
-KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)    
-[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
 </td>
 </tr>
 <!-- state machines -->
