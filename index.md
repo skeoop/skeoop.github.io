@@ -86,7 +86,7 @@ Inheritance
 </td>
 <td markdown="span">
 [Inheritance](oop/Inheritance-Basics.pdf)     
-[Using Inheritance](oop/Using-Inheritance.pdf) &amp; Liskov Substitution Principle
+[Using Inheritance](oop/Using-Inheritance.pdf) &amp; Liskov Substitution Principle    
 </td>
 <td markdown="span">
 Read *BIG Java*, Chapter 9.
@@ -144,6 +144,8 @@ Interfaces
 </td>
 <td markdown="span"> 
 [Interface](interface/Interfaces.pdf)    
+[Interfaces for Sorting](interface/Lexical-Order-and-Sorting.pdf)    
+[Design using Interfaces](interface/Design-using-Interfaces.pdf)     
 </td>
 <td>
 Read *BIGJ* Chapter 10 (Interfaces).    
@@ -162,7 +164,40 @@ Read *BIGJ* Chapter 10 (Interfaces).
 </td>
 <td markdown="span">
 [UML Practice](uml/UML_practice)    
-Read: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart.com](https://www.lucidchart.com/pages/uml-class-diagram)    
+Read: *UML Distilled* [Chapter 3: Class Diagram](docs/UML-Distilled-Class-Diagram.pdf)       
+Read: [https://uml-diagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) and [Lucidchart Class Diagram Tutorial](https://www.lucidchart.com/pages/uml-class-diagram).    
+[Lucidchart](https://lucidchart.com) offers online diagramming software.    
+</td>
+</tr>
+<tr valign="top">
+<td align="center" markdown="span"> 
+Sequence Diagram
+</td>
+<td markdown="span">
+[UML Sequence Diagram](uml/UML-Sequence-and-Interaction.pdf)
+</td>
+<td markdown="span">
+Read: [UML Distilled Chapter 4: Sequence Diagram](docs/UML-Distilled-4-Sequence.pdf)    
+[Practice](uml/Sequence-Diagram-Practice.pdf)      
+<!-- exceptions -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Exceptions    
+</td>
+<td markdown="span">
+[Exceptions](exceptions/Exceptions.pdf)
+</td>
+<td markdown="span">
+[Exceptions Practice](exceptions/Exceptions-Practice.pdf)
+</td>
+</tr>
+<!-- Input/Output -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Input-Output](io/)
+</td>
+<td markdown="span">
+[Input-Output classes](io/Input-Output.pdf)        
 </td>
 </tr>
 
@@ -178,7 +213,6 @@ Some basic self review.
 [Fundamentals Practice](assignments/Fundamentals-Practice) - you should be able to do this without any errors.
 </td>
 </tr>
-
 </table>
 
 ---
@@ -230,336 +264,215 @@ KU Checkstyle Rules:
 
 </table>
 
-
-
 ---
 
 ## This Material is Being Reorganized
 
 <table border="1">
 <tr valign="top">
-  <th> Topic </th>
+  <th width="10%"> Topic </th>
   <th width="45%"> Material </th>
   <th width="45%"> Assignment </th>
 </tr>
-<!-- week 3 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Week 3    
-</td>
-<td markdown="span">
-[Review](week3/Overview) of last week & evolution of Coin Purse    
-[Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
-[Interfaces for Sorting](java-intermed/Lexical-Order-and-Sorting.pdf)    
-[Review OO Concepts and UML](week3/R3-Review-OO-Concepts.pdf) for self-study    
-</td>
-<td markdown="span">
-[Lab 3: Polymorphic Purse](week3/Lab3-PolymorphicPurse.pdf) to this at home.  **Due:** Sat, Feb 3.    
-No Lab meeting due to Kaset Fair.  Please work on Lab3 individually.    
-**PA1**: [PA1-Fraction](week2/PA1-Fraction.pdf) create repo here: [https://classroom.github.com/a/TsvUlc6K](https://classroom.github.com/a/TsvUlc6K). Add your own `README.md`, `.gitignore`, and code.   
-For help, see [Intro to Github](git/intro-github) [PPT](git/Using-Github.pdf). 
-</td>
-</tr>
-<!-- Kaset Fair 31 Jan - 08 Feb -->
-<tr valign="top">
-<td align="center">KU Fair</td>
-<td markdown="span">
-Kaset Fair 31 Jan - 08 Feb. No class.
-</td>
-<td markdown="span">
-No Lab, but you still have assignment.
-</td>
-</tr>
-<!-- week 4 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 4](week4/)    
-</td>
-<td markdown="span">
-[Modeling with Inheritance](week4/Inheritance-in-Modeling.pdf)     
-</td>
-<td markdown="span">
-**Quiz**: programming quiz. Please bring computer to class.    
-[Lab 4: Purse with Inheritance](week4/Lab4-CoinPurse-Inheritance.pdf) Due: 10 Feb (Saturday)     
-[Homework1](week4/Homework1.pdf) - submit file or link to [Google Classroom](https://classroom.google.com/u/1/c/NDE0NjQ0OTha/a/MTE0OTI4NTEwMzha/details)    
-**PA2**: Due Sunday, 25 Feb by 22:00.    
-**1st-year Student:** [PA2-ArrayIterator](week4/PA2-ArrayIterator.pdf) Github Link: [https://classroom.github.com/a/g0EhuapO](https://classroom.github.com/a/g0EhuapO)    
-**2nd-4th year Student:** [PA2-Stack](week4/PA2-Stack.pdf) Github Link: [https://classroom.github.com/a/16iWXFAP](https://classroom.github.com/a/16iWXFAP)   
-</td>
-</tr>
-<!-- week 5 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 5](week5/)    
-Feb 15
-</td>
-<td markdown="span">
-Review Homework    
-[Exceptions](week5/Exceptions.pdf).  What causes NullPointerException?    
-[Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
-[Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
-[Properties and Properties file](week5/Runtime-Application-Properties.pdf) (for lab)
-</td>
-<td markdown="span">
-[Lab 5: Factory Method, Singleton, and Properties](week5/Lab5-Money-Factory-and-Singleton.pdf)    
-[Answers to Exceptions Practice](week5/Exceptions-Practice-Answers.pdf)    
-</td>
-</tr>
-<!-- week 6 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 6](week6/)    
-Feb 22
-</td>
-<td markdown="span">
-[Input-Output classes](week6/Input-Output.pdf)        
-[Mutable and Immutable Objects](week6/Mutable-Immutable.pdf)    
-[Practice](week6/Practice-week6.pdf) Solution: [https://goo.gl/b44PJe](https://goo.gl/b44PJe)      
-</td>
-<td markdown="span">
-**Quiz** on week 5, esp. exceptions.    
-[Lab6-File reader and timer](week6/Lab6-TaskTimer.pdf)    
-Strike Back! Critique the course at [https://eassess.ku.ac.th/](https://eassess.ku.ac.th/).
-Ratings are anonymized, so its safe to criticize and make suggestions.
-</td>
-</tr>
-<!-- midterm (Feb 24 - Mar 04) -->
-<tr valign="top">
-<td align="center"> Midterm    
-Tues 27 Feb 
-</td>
-<td markdown="span">
-Written and Programming: 8:00-12:00 Room 203.    
-</td>
-<td markdown="span">
-*Dress like a programmer* (wear whatever you like)
-</td>
-</tr>
 <!-- 2nd half of course -->
 <tr valign="top">
-<td align="center"> <b>Topics</b><br/>for 2nd Half</td>
+<td align="center"> Topics for 2nd Half</td>
 <td markdown="span">
-**Done**    
+Unit Testing with JUnit   
 Enum types    
+Graphical UI using JavaFX    
 Event Listeners and Observer Pattern    
 Frameworks. The OCSF Framework    
 Generics (type parameters)    
-Graphical UI using JavaFX    
 Lambda Expressions and Anonymous Classes    
 Recursion    
-Strategy Pattern and Resursive Withdraw for Purse    
 Threads    
 UML Sequence Diagram    
-Unit Testing with JUnit   
 Using Threads in JavaFX    
-</td>
-<td markdown="span">
-**Todo**    
+Design Patterns - Concept
+Design Patterns: Factory Method, Observer, Strategy, Singleton
+Strategy Pattern and Resursive Withdraw for Purse    
 Model-View-Controller Design    
 Streams Programming    
 Using a Database with ORM    
-Checkstyle for Coding style    
-</td>
-</tr>
-<!-- week 7 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 7](week7/)    
-Mar 08
 </td>
 <td markdown="span">
-Graphical UI [JavaFX Intro](javafx/Introduction)     
-[Steps to Writing a Graphical UI](week7/GUI-Step-by-Step.pdf)    
+</td>
+</tr>
+<!-- unit testing -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Unit Testing
+</td>
+<td markdown="span">
+[Unit Testing](unittesting/UnitTesting.pdf) with JUnit.    
+</td>
+<td>
+[JUnit Method Summary](unittesting/JUnitSummary.pdf)    
+</td>
+</tr>
+<!-- misc java stuff -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Java Intermediate  
+</td>
+[Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
+[Mutable and Immutable Objects](oop/Mutable-Immutable.pdf)    
+[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)
+[Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)       
+</td>
+<td markdown="span">
+Read: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.    
+[Lab 13: Generics](labs/Lab13-Generics.pdf) and improve code in MoneyUtil.java.
+</td>
+</tr>
+<!-- graphics -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Graphical UI
+</td>
+<td markdown="span">
+[JavaFX Intro](javafx/Introduction)     
+[Steps to Writing a Graphical UI](graphics/GUI-Step-by-Step.pdf)    
 Events and Event Listeners    
-[Enum Type](week7/Enum.pdf)    
 </td>
 <td markdown="span">
-[Lab7-LengthConverter](week7/Lab7-LengthConverter.pdf)   
+[Lab7-LengthConverter](labs/Lab7-LengthConverter.pdf)   
 Lab7 Github Assignment: [https://goo.gl/snYfDC](https://goo.gl/snYfDC) this is a empty repo. To use it, just "git add remote ...".    
-How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.
+How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.   
+[PA3-Unit Converter](assignments/PA3-UnitConverter.pdf).    
+[Currency Converter](docs/currency_service) how to get currency exchange rates for your UnitConverter.    
 </td>
 </tr>
-<!-- week 8 -->
+<!-- recursion -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 8](week8/)    
-Mar 15
+Recursion
 </td>
 <td markdown="span">
-Review some points from Labexam    
-[Recursion](week8/Recursion.pdf)    
+[Recursion](recursion/Recursion.pdf)    
+</td>
+<td markdown="span">
+Homework: do some specific recursion problems on coding bat.    
+Lab: add a recursive withdraw strategy to coin purse.  Requires you fist rewrite withdraw to use Strategy Pattern.    
+Read: Big Java, Ch. 13 *Recursion*    
+</td>
+</tr>
+<!-- design patterns -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Design Patterns](patterns/)
+</td>
+<td markdown="span">
 [Intro to Design Patterns](patterns/Design-Patterns-Introduction.pdf)    
 [Observer Pattern](patterns/Observer-Pattern.pdf)    
-
+[Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
+[Strategy Pattern](patterns/Strategy-Pattern.pdf)        
+[Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
+All [Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.    
 </td>
 <td markdown="span">
-[Lab 8: Observers](week8/Lab8-1-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
-[Homework2](week8/Homework2.pdf) due next week (22 Mar) and needed for lab.   
-[Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.    
-**Read**: Big Java, Ch. 13 *Recursion*    
-[PA3-Unit Converter](week8/PA3-UnitConverter.pdf) due 25 Mar (Sunday).    
-**PA3 Assignmnet URL:** [https://goo.gl/U5wbau](https://goo.gl/U5wbau).    
-[Currency Converter](docs/currency_service) how to get currency exchange rates for your UnitConverter.     
+[Lab 8: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
+[Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf),
 </td>
 </tr>
-<!-- week 9 -->
+<!-- events & anonymous classes -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 9](week9/)    
-Mar 22
+Event Handling
 </td>
 <td markdown="span">
-Remarks on PA3 - use polymorphism    
-[UML Sequence Diagram](week9/UML-Sequence-and-Interaction.pdf) and [Practice](week9/Sequence-Diagram-Practice.pdf)        
-[Anonymous Classes](week7/Anonymous-Class.pdf)    
-[Strategy Pattern](patterns/Strategy-Pattern.pdf)        
-[Unit Testing](week9/UnitTesting.pdf) with JUnit.    
-Test Driven Development    
 [Events and Event Handling](javafx/Event-Handling.pdf) in JavaFX     
+[Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
 </td>
 <td markdown="span">
-**Quiz** on JavaFX components, Event handling, and recursion.   
-[Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf), Due: Sunday   
-[JUnit Method Summary](week9/JUnitSummary.pdf)    
-**Read** [UML Distilled Chapter 4](docs/UML-Distilled-4-Sequence.pdf) on Sequence Diagrams.    
-**Assignment** Develop idea and proposal for final programming project.    
+Quiz on JavaFX components, Event handling, and recursion.   
 </td>
 </tr>
-<!-- week 10 -->
+<!-- threads -->
 <tr valign="top">
 <td align="center" valign="top" markdown="span">
-[Week 10](week10/)    
-Mar 29
+Threads &amp;
+Multitasking
 </td>
 <td markdown="span">
-[Event Handling](javafx/Event-Handling.pdf) - how to handle events    
-[Threads](week10/Threads.pdf) and Multi-threading    
+[Threads](threads/Threads.pdf) and Multi-threading    
+[Worker Threads](javafx/WorkerThreads.md) for background tasks.    
 </td>
 <td markdown="span">
-[Lab10: Threads](week10/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
-**Read**: Big Java, ch. 20 [Multithreading](week10/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](week10/Threads-Dietel.pdf)     
-**Read**: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf), has most complete explanation of event handling.        
-**Homework**: (TBA) Submit a project proposal online. 
-
+Starter code for Worker Threads Exercise: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
+[Lab10: Threads](threads/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
+Read: Big Java, ch. 20 [Multithreading](threads/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](threads/Threads-Dietel.pdf)     
+Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf), has most complete explanation of event handling.        
 </td>
 </tr>
-<!-- week 11 -->
+<!-- frameworks -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 11](week11/)    
-Apr 05
+[Frameworks](frameworks/)    
 </td>
 <td markdown="span">
-[Worker Threads](javafx/WorkerThreads.md) for running background tasks.    
-Starter code: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
 [Intro to Frameworks](frameworks/Frameworks.pdf) and [Job Post](https://www.blognone.com/node/77171) with frameworks     
 [OCSF Client Exercise](frameworks/Lab-OCSF-Framework.pdf)    
 Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf).    
 [TaskServer](frameworks/TaskServer.jar) for OCSF exercise. Its a runnable jar file. Type `java -jar TaskServer.jar port` where `port` is the port number the server should listen on.          
-
 </td>
 <td markdown="span">
-No lab due to Chakri Day holiday.    
-[PA4-Flashget URL Downloader](week11/PA4-Threaded-Downloader.pdf) due April 22.    
+[PA4-Flashget URL Downloader](assignments/PA4-Threaded-Downloader.pdf)
 Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
 A useful app that combines a lot of what you learned recently, but not too difficult.    
-[PA5 Project Proposal](week11/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
 </td>
 </tr>
-<!-- week 12 -->
+<!-- final project -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Week 12    
-Apr 12
+Final Project
 </td>
 <td markdown="span">
-*Class cancelled due to university holiday.*    
-Please work on [PA4](week11/PA4-Threaded-Downloader.pdf) and your final project.
+[Project Proposal](assignments/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
 </td>
-<td markdown="span">
-*Songkran*. No lab.    
+<td>
+&nbsp;
 </td>
 </tr>
-<!-- week 13 -->
+<!-- lambda & streams -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Week 13](week13/)    
-Apr 19
-</td>
-<td markdown="span">
-Discuss PA4.  Any problems?    
-[Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)    
-
-Intro to Database and Object-Relational Mapping using ORMLite.
-
-</td>
-<td markdown="span">
-**Exercise**: [OOP2018/contacts-orm](https://github.com/OOP2018/contacts-orm.git) Github project using ORMLite.    
-[Lab 13: Generics](week13/Lab13-Generics.pdf) and improve code in MoneyUtil.java.    
-**Read**: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.
-**Read** (for next week): Java Tutorial on Lambdas, Method References, and Streams. Learn the basic *Functional Interfaces* used in Streams (java.util.function package).
-</td>
-</tr>
-<!-- week 14 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 14](week14/)    
-Apr 26
+Lambdas &amp; Streams
 </td>
 <td markdown="span">
 [Lambda Expressions](java8/Lambda-Expressions), one of 
 [Java 8 New Features](java8/Java-8-Features.pdf)    
-[Method References](java8/Method-References) - see Java Tutorial for details       
+[Method References](java8/Method-References)    
 [Streams](java8/Streams) and [slides](java8/Streams.pdf)        
 </td>
 <td markdown="span">
-</td>
-</tr>
-<!-- week 15 -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Week 15](week15/)    
-May 03
-</td>
-<td markdown="span">
-</td>
-<td markdown="span">
-[Project Github URL](https://goo.gl/K3E2BE) add your Github URL.    
-**Demo** demonstrate working code to TAs in Lab.    
-</td>
-</tr>
-<!-- final exam (5/7-5/18) -->
-<tr valign="top">
-<td align="center"> 
-Final Exam     
-May 14
-CPE Room 202   
-</td>
-<td markdown="span">
- 9:00 - 12:00 Programming Exam     
-13:00 - 14:20 Written Exam    
-14:30 - done  Project Presentations    
-*Dress like a programmer* (wear whatever you like)    
-</td>
-<td markdown="span">
-[Sample Programming Problems](week15/Sample-Problems.pdf)    
-In project demo, please prepare presentation of design and interesting technology.  Don't just show code in Eclipse (unreadable and not very educational).   
-
-**JavaFX Tasks** and **Recursion** will be on the exam.
-
-**Closed Internet** the exam is closed Internet. You can use the Java and JavaFX API docs **on your own computer** but not from the Internet.  Since beginning of the course, students were instructed to install Java API locally. Note that the JavaFX API docs are separate from the Java SE API.
+Read: Java Tutorial for Lambdas, Method References, and Streams.      
+Look at the basic *Functional Interfaces* used in Streams (java.util.function package).    
+Lab: Streams
 </td>
 </tr>
 </table>
 
+### Optional Topics
+
+This material is not covered in the regular class, but is useful to know.
+
+If some students are interested we can schedule an extra lab session to learn and practice them.
+
 <table border="1">
 <tr valign="top">
-  <th width="100%">
-  Topics Not Covered in Class <br/>
-  These won't be on exam, but are useful to know.    
+  <th width="10%">
+  Topic   
+  </th>
+  <th>
+  Description
   </th>
 </tr>
 <tr valign="top">
+<td markdown="span">
+State Machines
+</td>
 <td markdown="span">
 [State Machines](topics/Programming a State Machine.pdf) and "*[programming without if](https://www.google.co.th/search?q=programming+without+if)*". [slides](topics/State-Machine.pdf)    
 [UML State Machine Diagram](topics/State-Machine-Diagram.pdf)    
@@ -567,34 +480,47 @@ In project demo, please prepare presentation of design and interesting technolog
 </tr>
 <tr valign="top">
 <td markdown="span">
-[Assertions](java-intermed/Assertions.pdf) a method should document its precondtions (requirements) and postconditions. The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditioins in code, with no runtime overhead in the final product.  Microsoft found that adding assertions during development greatly reduced bugs.
+Assertions
 </td>
-</tr>
-<tr valign="top">
 <td markdown="span">
-[Inner Classes](java-intermed/Inner-Classes.pdf) rules for inner and nested classes.
-</td>
-</tr>
-<tr valign="top">
-<td markdown="span">
-[Database](database/) directory contains some introductory slides.     
-   [Introduction to Databases](database/1-Database-Introduction.pdf)    
-   [Database Software](database/2-Database-Software.pdf) included embedded and client-server databases    
-   [Using JDBC](database/3-Using-JDBC.pdf) this is **not** recommended, but for background knowledge. ORM is usually much better.    
-   [Persistence and ORM](database/4-Persistence-OR-Mapping.pdf) intro to object-relation mapping, which lets you save and retrieve *objects* rather than just fields    
+[Assertions](java-intermed/Assertions.pdf) are builtin to Java and Python. They let you specify conditions that *should* be true and help catch errors during development.  Microsoft found that adding assertions during development greatly reduced bugs.
 
-[ORMLite Example](https://github.com/OOP2018/contacts-orm.git) using ORMLite and H2 to save contacts to a database. README file explains concepts.
+The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditions in code, with no runtime overhead in the final product.  
 </td>
 </tr>
 <tr valign="top">
 <td markdown="span">
-**Password Encrypting** you should *never* store passwords as plain text, for security. Encrypt passwords!
+Inner Classes
+</td>
+<td markdown="span">
+[Inner Classes](java-intermed/Inner-Classes.pdf) and nested classes let you define one class inside another one.
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+Database &amp; ORM
+</td>
+<td markdown="span">
+Introduction to relational databases and how to use them in Java.  For object-oriented programs, instead of directly accessing the database using an API (JDBC in Java) it is **much** better to use a framework that automatically maps objects to database elements, called Object-Relational Mapping (ORM).
 
-* When the user sets a new password you encrypt it using a *one-way hash*.  The result is a String such as "$a4$10$rb85CdE5982VrAZ873". Store the encrypted string (instead of the original password).
-* Each time the user enters his password you encrypt it (again) using the same algorithm, and compare it with the original encrypted string. If the encrypted Strings match, the passwords match.   
-* A popular, easy-to-use library for this is [jBCrypt](http://www.mindrot.org/projects/jBCrypt/).   
-There is a [JBCrypt Demo Project](https://github.com/jbrucker/jbcrypt-demo) showing how to use JBCrypt.
-[Excellent explanation in Pawan's OOP2017 project docs](https://github.com/guitarpawat/course-feedback/blob/master/README.md). You should write documentation like this!
+ORMLite is an easy to use framework. Many OOP students have used it in their projects.
+
+[Database](database/) directory contains lots of introductory slides.     
+[Introduction to Databases](database/1-Database-Introduction.pdf)    
+[Database Software](database/2-Database-Software.pdf) included embedded and client-server databases    
+[Using JDBC](database/3-Using-JDBC.pdf) this is **not** recommended, but for background knowledge. ORM is usually much better.    
+[Persistence and ORM](database/4-Persistence-OR-Mapping.pdf) intro to object-relation mapping, which lets you save and retrieve *objects* rather than just fields    
+[ORMLite Example](https://github.com/OOP2018/contacts-orm.git) uses ORMLite and H2 to save contacts to a database. README file explains concepts.   
+</td>
+</tr>
+<tr valign="top">
+<td markdown="span">
+Encrypting Password
+</td>
+<td markdown="span">
+You should *never* store users' passwords as plain text, and don't send them over the Internet. Encrypt passwords!    
+[Password Encryption](encryption/password-encryption) describes how.    
+[Excellent explanation in Pawat's OOP2017 project docs](https://github.com/guitarpawat/course-feedback/blob/master/README.md). You should write documentation like this!
 </td>
 </tr>
 </table>
