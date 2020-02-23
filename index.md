@@ -219,57 +219,9 @@ Some basic self review.
 
 ---
 
-## Optional Material
-
-<table border="1">
-<tr valign="top">
-  <th> Topic </th>
-  <th width="45%"> Material </th>
-  <th width="45%"> Assignment </th>
-</tr>
-
-<!-- More Git -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-More [Git](git/)    
-</td>
-<td markdown="span">
-Using [branches][git-branching] (online Git book).    
-[Aliases](git/aliases) how to create aliases for git commands.
-[Branching and Merging][git-book-branching-and-merging] in online Git Book.   
-Using [Github Flow](git/index#github-flow).    
-[Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
-[Pull Request slides](git/Pull-Requests.pdf)    
-[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples.
-[Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (optional).
-</td>
-<td markdown="span">
-A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) shows how pull request invokes a serious discussion.     
-</td>
-</tr>
-
-<!-- Checkstyle -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Checkstyle
-</td>
-<td markdown="span">
-[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
-problems in code. Works in most IDEs, including BlueJ.
-</td>
-<td markdown="span">
-KU Checkstyle Rules:
-[ku-checkstyle.xml](docs/ku-checkstyle.xml)    
-[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
-</td>
-</tr>
-</table>
-
----
-
 ## Topics for Second Half of Course
 
-Not covered in this order.  We may not be able to cover all this. If you want to be a Java programmer these are all important to know.
+Not covered in this order.  We may not be able to cover all this. If you want to be a Java programmer these are all good to know.
 
 <table border="1">
 <tr valign="top">
@@ -348,7 +300,7 @@ Read: Big Java, Ch. 13 *Recursion*
 [Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
 [Strategy Pattern](patterns/Strategy-Pattern.pdf)        
 [Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
-All [Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.    
+All [Design Patterns](patterns/Introduction) material is in the [patterns](patterns/) directory.    
 </td>
 <td markdown="span">
 [Lab: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
@@ -408,10 +360,11 @@ A useful app that combines a lot of what you learned recently, but not too diffi
 Final Project
 </td>
 <td markdown="span">
-[Project Proposal](assignments/PA5-Final-Project.pdf) due next week, both on paper and online (Google Docs).    
+The last programming assignment is an application of your own design.   
 </td>
 <td>
-&nbsp;
+1. Submit a well-written [Project Proposal](assignments/PA5-Final-Project.pdf), in Google Docs.    
+2. Schedule at least one TA review of your work in progress during semester. 
 </td>
 </tr>
 <!-- lambda & streams -->
@@ -437,7 +390,7 @@ Lab: Streams
 
 This material is not covered in the regular class, but is useful to know.
 
-If some students are interested we can schedule an extra lab session to learn and practice them.
+If some people are interested we can schedule an extra lab session to learn and practice them.
 
 <table border="1">
 <tr valign="top">
@@ -448,6 +401,37 @@ If some students are interested we can schedule an extra lab session to learn an
   Description
   </th>
 </tr>
+<!-- More Git -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Git](git/) branches and more    
+</td>
+<td markdown="span">
+[Aliases](git/aliases) how to create aliases for git commands.   
+Using [branches][git-branching] (online Git book).    
+[Branching and Merging][git-book-branching-and-merging] in online Git Book.   
+Using [Github Flow](git/index#github-flow).    
+[Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
+[Pull Request slides](git/Pull-Requests.pdf)    
+[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples.    
+[Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (recommended).
+
+A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) shows how pull request invokes a serious discussion.     
+</td>
+</tr>
+<!-- Checkstyle -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Checkstyle
+</td>
+<td markdown="span">
+[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
+problems in code. Works in most IDEs, including BlueJ.    
+KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)    
+[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
+</td>
+</tr>
+<!-- state machines -->
 <tr valign="top">
 <td markdown="span">
 State Machines

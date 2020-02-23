@@ -38,7 +38,7 @@ The "king" of design patterns is Model-View-Controller (MVC), but its also a bit
 ## Files in this Folder
 
 * Design-Patterns-1 - introduction to design patterns
-* *Xxxxx* Pattern - intro to specific design pattern (one pattern per file)
+* *Xxxxx* Pattern.pdf - intro to a specific pattern (one pattern per file)
 
 ## References to Learn More
 
