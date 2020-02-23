@@ -179,6 +179,8 @@ Sequence Diagram
 <td markdown="span">
 Read: [UML Distilled Chapter 4: Sequence Diagram](docs/UML-Distilled-4-Sequence.pdf)    
 [Practice](uml/Sequence-Diagram-Practice.pdf)      
+</td>
+</tr>
 <!-- exceptions -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -261,43 +263,19 @@ KU Checkstyle Rules:
 [Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
 </td>
 </tr>
-
 </table>
 
 ---
 
-## This Material is Being Reorganized
+## Topics for Second Half of Course
+
+Not covered in this order.  We may not be able to cover all this. If you want to be a Java programmer these are all important to know.
 
 <table border="1">
 <tr valign="top">
-  <th width="10%"> Topic </th>
-  <th width="45%"> Material </th>
-  <th width="45%"> Assignment </th>
-</tr>
-<!-- 2nd half of course -->
-<tr valign="top">
-<td align="center"> Topics for 2nd Half</td>
-<td markdown="span">
-Unit Testing with JUnit   
-Enum types    
-Graphical UI using JavaFX    
-Event Listeners and Observer Pattern    
-Frameworks. The OCSF Framework    
-Generics (type parameters)    
-Lambda Expressions and Anonymous Classes    
-Recursion    
-Threads    
-UML Sequence Diagram    
-Using Threads in JavaFX    
-Design Patterns - Concept
-Design Patterns: Factory Method, Observer, Strategy, Singleton
-Strategy Pattern and Resursive Withdraw for Purse    
-Model-View-Controller Design    
-Streams Programming    
-Using a Database with ORM    
-</td>
-<td markdown="span">
-</td>
+  <th width="10%">Topic</th>
+  <th width="45%">Material</th>
+  <th width="45%">Assignment</th>
 </tr>
 <!-- unit testing -->
 <tr valign="top">
@@ -307,19 +285,21 @@ Unit Testing
 <td markdown="span">
 [Unit Testing](unittesting/UnitTesting.pdf) with JUnit.    
 </td>
-<td>
+<td markdown="span">
 [JUnit Method Summary](unittesting/JUnitSummary.pdf)    
 </td>
 </tr>
 <!-- misc java stuff -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Java Intermediate  
+Intermediate Java
 </td>
+<td markdown="span">
 [Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
 [Mutable and Immutable Objects](oop/Mutable-Immutable.pdf)    
-[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)
-[Generics](week13/Generics.pdf) and [Generic Types](week13/Generic-Types.pdf)       
+[Enum type](java-basics/22-Enumeration.pdf) and [intro slides](java-basics/Enum.pdf)    
+[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
+[Generics](java-intermed/Generics.pdf) and [Generic Types](java-intermed/Generic-Types.pdf)   
 </td>
 <td markdown="span">
 Read: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.    
@@ -334,11 +314,10 @@ Graphical UI
 <td markdown="span">
 [JavaFX Intro](javafx/Introduction)     
 [Steps to Writing a Graphical UI](graphics/GUI-Step-by-Step.pdf)    
-Events and Event Listeners    
+[Events](javafx/Events) and [Event Listeners](javafx/Event-Handling.pdf)    
 </td>
 <td markdown="span">
-[Lab7-LengthConverter](labs/Lab7-LengthConverter.pdf)   
-Lab7 Github Assignment: [https://goo.gl/snYfDC](https://goo.gl/snYfDC) this is a empty repo. To use it, just "git add remote ...".    
+[Lab-LengthConverter](labs/Lab7-LengthConverter.pdf)   
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.   
 [PA3-Unit Converter](assignments/PA3-UnitConverter.pdf).    
 [Currency Converter](docs/currency_service) how to get currency exchange rates for your UnitConverter.    
@@ -372,8 +351,8 @@ Read: Big Java, Ch. 13 *Recursion*
 All [Design Patterns](patterns/README) material is in the [patterns](patterns/) directory.    
 </td>
 <td markdown="span">
-[Lab 8: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
-[Lab9 Purse with Withdraw Strategy](week9/Lab9-Purse-with-Strategy-Pattern.pdf),
+[Lab: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
+[Lab: Purse with Withdraw Strategy](coinpurse/Lab9-Purse-with-Strategy-Pattern.pdf),
 </td>
 </tr>
 <!-- events & anonymous classes -->
@@ -474,7 +453,7 @@ If some students are interested we can schedule an extra lab session to learn an
 State Machines
 </td>
 <td markdown="span">
-[State Machines](topics/Programming a State Machine.pdf) and "*[programming without if](https://www.google.co.th/search?q=programming+without+if)*". [slides](topics/State-Machine.pdf)    
+[State Machines](topics/State-Machine.pdf) and "[programming without if](https://www.google.co.th/search?q=programming+without+if)". [Programming a state machine](topics/Programming a State Machine.pdf)    
 [UML State Machine Diagram](topics/State-Machine-Diagram.pdf)    
 </td>
 </tr>
@@ -483,9 +462,9 @@ State Machines
 Assertions
 </td>
 <td markdown="span">
-[Assertions](java-intermed/Assertions.pdf) are builtin to Java and Python. They let you specify conditions that *should* be true and help catch errors during development.  Microsoft found that adding assertions during development greatly reduced bugs.
+[Assertions](java-intermed/Assertions.pdf) are builtin to Java and Python. They let you specify conditions that *should* be true and catch errors during development.  Microsoft found that adding assertions to code during development greatly reduced bugs.
 
-The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you test preconditions in code, with no runtime overhead in the final product.  
+The Java [assert](https://docs.oracle.com/javase/8/docs/technotes/guides/language/assert.html) command lets you write assertions in code. You can selectively enable or disable them at runtime (without editing the code), so there is no runtime overhead in the final product.
 </td>
 </tr>
 <tr valign="top">
