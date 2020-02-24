@@ -187,7 +187,8 @@ Read: [UML Distilled Chapter 4: Sequence Diagram](docs/UML-Distilled-4-Sequence.
 Exceptions    
 </td>
 <td markdown="span">
-[Exceptions](exceptions/Exceptions.pdf)
+[Exceptions](exceptions/Exceptions.pdf)    
+[Throwing Exceptions](exceptions/Throwing-Exceptions.pdf)
 </td>
 <td markdown="span">
 [Exceptions Practice](exceptions/Exceptions-Practice.pdf)
@@ -251,11 +252,11 @@ Intermediate Java
 [Mutable and Immutable Objects](oop/Mutable-Immutable.pdf)    
 [Enum type](java-basics/22-Enumeration.pdf) and [intro slides](java-basics/Enum.pdf)    
 [Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
-[Generics](java-intermed/Generics.pdf) and [Generic Types](java-intermed/Generic-Types.pdf)   
+[Generics](java-intermed/Generics.pdf) and rules for [Generic Types](java-intermed/Generic-Types.pdf)   
 </td>
 <td markdown="span">
 Read: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.    
-[Lab 13: Generics](labs/Lab13-Generics.pdf) and improve code in MoneyUtil.java.
+[Lab: Generics](labs/Lab13-Generics.pdf)
 </td>
 </tr>
 <!-- graphics -->
@@ -272,7 +273,7 @@ Graphical UI
 [Lab-LengthConverter](labs/Lab7-LengthConverter.pdf)   
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.   
 [PA3-Unit Converter](assignments/PA3-UnitConverter.pdf).    
-[Currency Converter](docs/currency_service) how to get currency exchange rates for your UnitConverter.    
+[Currency Converter](docs/currency_service) how to get current exchange rates for your UnitConverter.    
 </td>
 </tr>
 <!-- recursion -->
@@ -284,27 +285,27 @@ Recursion
 [Recursion](recursion/Recursion.pdf)    
 </td>
 <td markdown="span">
-Homework: do some specific recursion problems on coding bat.    
-Lab: add a recursive withdraw strategy to coin purse.  Requires you fist rewrite withdraw to use Strategy Pattern.    
 Read: Big Java, Ch. 13 *Recursion*    
+Homework: do some specific recursion problems on Codingbat.    
+Lab: add a recursive withdraw strategy to coin purse.  Requires you first rewrite withdraw to use Strategy Pattern.    
 </td>
 </tr>
 <!-- design patterns -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Design Patterns](patterns/)
+[Design Patterns](patterns/Introduction)
 </td>
 <td markdown="span">
 [Intro to Design Patterns](patterns/Design-Patterns-Introduction.pdf)    
 [Observer Pattern](patterns/Observer-Pattern.pdf)    
-[Factory Methods](patterns/Factory-Methods.pdf) to Create Objects   
+[Factory Methods](patterns/Factory-Methods.pdf) to create objects   
 [Strategy Pattern](patterns/Strategy-Pattern.pdf)        
 [Singleton](patterns/Singleton-Pattern.pdf) a class with only 1 instance   
 All [Design Patterns](patterns/Introduction) material is in the [patterns](patterns/) directory.    
 </td>
 <td markdown="span">
 [Lab: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
-[Lab: Purse with Withdraw Strategy](coinpurse/Lab9-Purse-with-Strategy-Pattern.pdf),
+[Lab: Purse with Withdraw Strategy](coinpurse/Lab9-Purse-with-Strategy-Pattern.pdf)
 </td>
 </tr>
 <!-- events & anonymous classes -->
@@ -317,7 +318,7 @@ Event Handling
 [Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
 </td>
 <td markdown="span">
-Quiz on JavaFX components, Event handling, and recursion.   
+Exercise/quiz on JavaFX components and Event handling.
 </td>
 </tr>
 <!-- threads -->
@@ -327,14 +328,14 @@ Threads &amp;
 Multitasking
 </td>
 <td markdown="span">
-[Threads](threads/Threads.pdf) and Multi-threading    
-[Worker Threads](javafx/WorkerThreads.md) for background tasks.    
+[Threads](threads/Threads.pdf) and multitasking   
+[Worker Threads](javafx/WorkerThreads.md) for background tasks    
 </td>
 <td markdown="span">
+Read: Big Java, Ch 20 [Multithreading](threads/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](threads/Threads-Dietel.pdf)     
+Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf) has most complete explanation of event handling.        
 Starter code for Worker Threads Exercise: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
 [Lab10: Threads](threads/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
-Read: Big Java, ch. 20 [Multithreading](threads/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](threads/Threads-Dietel.pdf)     
-Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf), has most complete explanation of event handling.        
 </td>
 </tr>
 <!-- frameworks -->
@@ -343,7 +344,7 @@ Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx
 [Frameworks](frameworks/)    
 </td>
 <td markdown="span">
-[Intro to Frameworks](frameworks/Frameworks.pdf) for doing more with less code.    
+[Intro to Frameworks](frameworks/Frameworks.pdf) - do more with less code.    
 [Job Post](https://www.blognone.com/node/77171) with frameworks.    
 </td>
 <td markdown="span">
@@ -367,8 +368,8 @@ Lambdas &amp; Streams
 [Streams](java8/Streams) and [slides](java8/Streams.pdf)        
 </td>
 <td markdown="span">
-Read: Java Tutorial for Lambdas, Method References, and Streams.      
-Look at the basic *Functional Interfaces* used in Streams (java.util.function package).    
+Read: [Java Tutorial][java-tutorial] for [Lambdas][lambda-tutorial], Method References, and Streams. Short [lambda tutorial][lambda-geek-tutorial] on Geeks site.      
+Look at the *Functional Interfaces* ([java.util.function][java.util.function]) used in Streams. Try a few!  
 Lab: Streams
 </td>
 </tr>
@@ -488,3 +489,8 @@ You should *never* store users' passwords as plain text, and don't send them ove
 </td>
 </tr>
 </table>
+
+[java-tutorial]: https://docs.oracle.com/javase/tutorial/reallybigindex.html
+[lambda-tutorial]: https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+[lambda-geek-tutorial]: https://www.geeksforgeeks.org/lambda-expressions-java-8/
+[java.util.function]: https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
