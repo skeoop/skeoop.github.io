@@ -210,10 +210,10 @@ Exceptions
 Review
 </td>
 <td markdown="span">
-Some basic self review.
+Some basic review.
 </td>
 <td markdown="span">
-[Fundamentals Practice](assignments/Fundamentals-Practice) - you should be able to do this without any errors.
+[Fundamentals Practice](assignments/Fundamentals-Practice.pdf) - you should be able to do this without any errors.
 </td>
 </tr>
 </table>
@@ -240,6 +240,7 @@ Unit Testing
 </td>
 <td markdown="span">
 [JUnit Method Summary](unittesting/JUnitSummary.pdf)    
+[Unit Testing in Python](unittesting/PythonUnitTesting.pdf)
 </td>
 </tr>
 <!-- misc java stuff -->
