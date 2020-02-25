@@ -6,7 +6,8 @@ description:
 
 ## UML Practice
 
-1. Draw a UML class diagram of this code.  Show relationships between classes and multiplicity of association.
+Problem 1. Draw a UML class diagram of this code.  Show relationships between classes and multiplicity of association.
+
 ```java
 class Person {
     private String name;
@@ -31,7 +32,7 @@ public class Enrollment {
 }
 ```
 
-2. Add add some detail for grades, including an Enum for grades.
+Problem 2. Add add some detail for grades, including an Enum for grades.
     * The example on [UMLDiagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) shows how to draw an enum.  
     * OK to write `<<enum>>` instead of `<<enumeration>>`.
 
@@ -39,6 +40,7 @@ public class Enrollment {
 ```java
 public class Enrollment {
     private Course course;
+    private Student student;
     private Grade grade;
 
     public Enrollment(Course course) ...;
@@ -72,7 +74,7 @@ public enum Grade {
 } 
 ```
 
-3. Difference between *association* and *dependency* (uses).  This is one of the most **common errors** made by students.
+Problem 3. Difference between *association* and *dependency* (uses).  This is one of the most **common errors** made by students.
 
 What are the relationships between Main, Game, and GameConsole?
 
@@ -103,3 +105,27 @@ public class Main {
 }
 ```
 
+Problem 4. Factory method. The `Registrar` class is a Factory for creating enrollments.
+
+```java
+public class Registrar {
+
+    // prevent creating new instances
+    private Registrar() { }
+
+    /** Get a singleton instance */
+    public static Registrar getInstance() {
+        // return a singleton instance of registrar.
+        // See "Singleton" design pattern slides for how to
+        return instance;
+    }
+
+    /** Get an enrollment for student.
+     *  @throws EnrollmentException if can't enroll is course
+     */
+    public Enrollment makeEnrollment(Student s, Course course) {
+        // details omitted
+    }
+}
+```
+ 
