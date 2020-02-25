@@ -33,9 +33,15 @@ public class Enrollment {
 ```
 
 Problem 2. Add add some detail for grades, including an Enum for grades.
-    * The example on [UMLDiagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) shows how to draw an enum.  
-    * OK to write `<<enum>>` instead of `<<enumeration>>`.
 
+    * The example on [UMLDiagrams.org](https://www.uml-diagrams.org/class-diagrams-overview.html) shows how to draw an enum (enumeration type).  
+    * In UML class diagram, OK to write `<<enum>>` instead of `<<enumeration>>`.
+
+> An Enum (enumeration) is a type with a fixed set of static members.
+> You access them using Grade.A, Grade.B, etc.
+> The members have type Grade and are public, but you can't create new objects from an enum.
+> You can use enum type in assignments and as parameters, e.g.:    
+> `Grade g = Grade.A;`
     
 ```java
 public class Enrollment {
@@ -54,11 +60,6 @@ public class Course {
     private int credits;
     private String title;
 }
-
-// An Enum (enumeration) is a type with a fixed set of static members.
-// You access them using Grade.A, Grade.B, etc.
-// The members have type Grade and are public, 
-// but you can't create new objects from an enum.
 
 public enum Grade {
     // static members of the enum
