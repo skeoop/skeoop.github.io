@@ -1,25 +1,24 @@
 ## Lab 7
 
-There are 4 problems for this lab.
+Today's lab is due at **noon today**.  Its short, so everyone should finish.
+Ask TA to check problem 1.
 
 1. Modify GameConsole.java in Lab1 so that the program never crashes or throws exception.
    * If user inputs an invalid guess, print "Please input an integer", discard the current input line, and wait for new input.
-   * Whenever the user inputs a guess, after you read the number discard the rest of the input line.  This avoids synchronization problems.
    * If there is no more input (user press CTRL-D or CTRL-Z on Windows) then just exit -- no exception thrown.
+   * Whenever the user inputs a guess, after you read the number discard the rest of the input line.  This avoids synchronization problems.
 
-2. Test someone else's GameConsole after they have modified it.  Try to make it crash or throw exception.
-   * If you make it crash or throw exception, then open an issue in their Github repo describing how to reproduce the problem.
+2. Ask someone else to test your GameConsole after you modify it.   The tester should try to make it crash and print an exception.
 
-3. Modify the money classes in CoinPurse so that they throw IllegalArgumentException, with a helpful message in the exception, if a parameter vallue is invalid.  
+3. Modify the money classes in CoinPurse so that they throw IllegalArgumentException, with a helpful message in the exception, if a parameter value is invalid.  
    * Coin and Banknote must have a positive value.
-   * Currency may not be null or empty string or white-space only.
+   * Currency may not be null or an empty string or white-space only.
    * In the constructor Javadoc you should document that value must be positive and add a `@throws IllegalArgumentException`.
 
-4. Stack?
-
- 
 
 ### Documenting Requirements and Exceptions
+
+Example of how to document requirements for parameters and exceptions.
 
 ```java
 public class Person {
@@ -35,3 +34,4 @@ public class Person {
         this.name = name;
     }
 ```
+
