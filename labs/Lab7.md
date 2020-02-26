@@ -4,9 +4,9 @@ Today's lab is due at **noon today**.  Its short, so everyone should finish.
 Ask TA to check problem 1.
 
 1. Modify GameConsole.java in Lab1 so that the program never crashes or throws exception.
-   * If user inputs an invalid guess, print "Please input an integer", discard the current input line, and wait for new input.
+   * If user inputs an invalid guess, print "Please input an integer", discard the current input line, and prompt user for new input.
    * If there is no more input (user press CTRL-D or CTRL-Z on Windows) then just exit -- no exception thrown.
-   * Whenever the user inputs a guess, after you read the number discard the rest of the input line.  This avoids synchronization problems.
+   * Hint: how to discard the remainder of current input line?  Look at the Scanner API for a method that reads everything on the current line.
 
 2. Ask someone else to test your GameConsole after you modify it.   The tester should try to make it crash and print an exception.
 
