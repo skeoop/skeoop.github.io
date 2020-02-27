@@ -55,10 +55,13 @@ general [Coding Guidelines](docs/Coding-Guidelines).
 Java Basics    
 </td>
 <td markdown="span">
-[Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays)     
+[Variables](java-basics/02-Variables.pdf), [Primitive Types](java-basics/03-Primitive-Datatypes.pdf) and [Operations](java-basics/04-Primitive-Operations.pdf)       
+[String Types](java-basics/05-Strings-and-Chars.pdf), [Math Functions](java-basics/06-Math-Functions.pdf), [Basic Input/Output](java-basics/07-Basic-Input-Output.pdf)    
+[Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
+[Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays), [Multi-dimension Arrays](java-basics/19-Arrays-2D.pdf)         
+[Loops](java-basics/11-Loops.pdf), [Methods](java-basics/12-Methods.pdf), [Method Params](java-basics/12-Method-Parameters.pdf)    
 [Packages](java-basics/21-Packages.pdf)    
 [Static Methods](java-basics/15-Static-Methods.pdf)    
-[Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
 </td>
 <td markdown="span">
 Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or *Big Java* for Java language.    
@@ -194,15 +197,6 @@ Exceptions
 [Exceptions Practice](exceptions/Exceptions-Practice.pdf)
 </td>
 </tr>
-<!-- Input/Output -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Input-Output](io/)
-</td>
-<td markdown="span">
-[Input-Output classes](io/Input-Output.pdf)        
-</td>
-</tr>
 
 <!-- review -->
 <tr valign="top">
@@ -243,6 +237,16 @@ Unit Testing
 [Unit Testing in Python](unittesting/PythonUnitTesting.pdf)
 </td>
 </tr>
+<!-- Input-Output -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Input-Output](io/)
+</td>
+<td markdown="span">
+[Input-Output classes](io/Input-Output.pdf)     
+[Using I-O classes](io/Using-Input-Output.pdf)     
+</td>
+</tr>
 <!-- misc java stuff -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -251,7 +255,7 @@ Intermediate Java
 <td markdown="span">
 [Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
 [Mutable and Immutable Objects](oop/Mutable-Immutable.pdf)    
-[Enum type](java-basics/22-Enumeration.pdf) and [intro slides](java-basics/Enum.pdf)    
+[Enum type](java-basics/22-Enumeration.pdf)      
 [Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
 [Generics](java-intermed/Generics.pdf) and rules for [Generic Types](java-intermed/Generic-Types.pdf)   
 </td>
