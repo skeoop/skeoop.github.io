@@ -60,12 +60,14 @@ Java Basics
 [Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
 [Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays), [Multi-dimension Arrays](java-basics/19-Arrays-2D.pdf)         
 [Loops](java-basics/11-Loops.pdf), [Methods](java-basics/12-Methods.pdf), [Method Params](java-basics/12-Method-Parameters.pdf)    
-[Packages](java-basics/21-Packages.pdf)    
-[Static Methods](java-basics/15-Static-Methods.pdf)    
+[Static Methods](java-basics/15-Static-Methods.pdf), [Packages](java-basics/21-Packages.pdf)    
 </td>
 <td markdown="span">
 Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or *Big Java* for Java language.    
-See [Learning Java](Learning) for more good sources.
+See [Learning Java](Learning) for excellent learning sources.     
+
+Everyone should know the Java basics. Slides are posted for review,
+but you should learn Java more deeply than that.
 </td>
 </tr>
 <!-- Intro OOP -->
