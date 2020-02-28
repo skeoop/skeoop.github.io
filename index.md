@@ -43,10 +43,10 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 [Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)    
 </td>
 <td markdown="span">
-Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good sources](Learning)    
-[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write.    
-[Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code and
-general [Coding Guidelines](docs/Coding-Guidelines).
+Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning)    
+[Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write    
+[Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code    
+[Coding Guidelines](docs/Coding-Guidelines)
 </td>
 </tr>
 <!-- Java Basics -->
@@ -232,11 +232,11 @@ Not covered in this order.  We may not be able to cover all this. If you want to
 Unit Testing
 </td>
 <td markdown="span">
-[Unit Testing](unittesting/UnitTesting.pdf) with JUnit.    
+[Unit Testing with JUnit](unittesting/UnitTesting.pdf)    
+[Unit Testing in Python](unittesting/PythonUnitTesting.pdf)
 </td>
 <td markdown="span">
 [JUnit Method Summary](unittesting/JUnitSummary.pdf)    
-[Unit Testing in Python](unittesting/PythonUnitTesting.pdf)
 </td>
 </tr>
 <!-- Input-Output -->
@@ -359,8 +359,8 @@ Starter code for Worker Threads Exercise: [https://github.com/jbrucker/worker-th
 Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-231-src.zip), [document](frameworks/OCSF-Framework.pdf).    
 [TaskServer](frameworks/TaskServer.jar) for OCSF exercise. Its a runnable jar file. Type `java -jar TaskServer.jar port` where `port` is the port number the server should listen on.          
 [PA4-Flashget URL Downloader](assignments/PA4-Threaded-Downloader.pdf)
-Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL)    
-A useful app that combines a lot of what you learned recently, but not too difficult.    
+A useful app that combines what you learned recently, but not too difficult.    
+<!-- Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL) --> 
 </td>
 </tr>
 <!-- lambda & streams -->
@@ -376,7 +376,7 @@ Lambdas &amp; Streams
 </td>
 <td markdown="span">
 Read: [Java Tutorial][java-tutorial] for [Lambdas][lambda-tutorial], Method References, and Streams. Short [lambda tutorial][lambda-geek-tutorial] on Geeks site.      
-Look at the *Functional Interfaces* ([java.util.function][java.util.function]) used in Streams. Try a few!  
+Look at the *Functional Interfaces* in [java.util.function][java.util.function] used for Streams. Try using them!  
 Lab: Streams
 </td>
 </tr>
