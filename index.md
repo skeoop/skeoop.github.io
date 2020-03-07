@@ -6,7 +6,7 @@ description: Index page
 
 ## Topics and Assignments 
 
-Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact](Contact) 
+Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact](Contact), [Room202](docs/Room202.pdf), [Seating](docs/SeatingChart.pdf) 
 
 <table border="1">
 <tr valign="top">
