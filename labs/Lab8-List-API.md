@@ -50,7 +50,7 @@ What happens this time?
 **Problem 5** Write another method that uses an indexed "for" loop to scan the list.
 ```java
 void removeShortWords(List<String> list) {
-    for(int k=0; k<list.length(); k++) {
+    for(int k=0; k<list.size(); k++) {
         if (list.get(k).length() < 3) {
             System.out.println("Removing "+list.get(k));
             list.remove(k);
