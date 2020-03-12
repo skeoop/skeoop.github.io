@@ -237,6 +237,7 @@ Unit Testing
 </td>
 <td markdown="span">
 [JUnit Method Summary](unittesting/JUnitSummary.pdf)    
+[Using Parameterized Tests](unittesting/Parameterized-Tests)
 </td>
 </tr>
 <!-- Input-Output -->
