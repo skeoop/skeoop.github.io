@@ -55,7 +55,7 @@ Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning
 Java Basics    
 </td>
 <td markdown="span">
-[Variables](java-basics/02-Variables.pdf), [Primitive Types](java-basics/03-Primitive-Datatypes.pdf) and [Operations](java-basics/04-Primitive-Operations.pdf)       
+[Primitive Types](java-basics/03-Primitive-Datatypes.pdf) and [Operations](java-basics/04-Primitive-Operations.pdf)       
 [String Types](java-basics/05-Strings-and-Chars.pdf), [Math Functions](java-basics/06-Math-Functions.pdf), [Basic Input/Output](java-basics/07-Basic-Input-Output.pdf)    
 [Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
 [Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays), [Multi-dimension Arrays](java-basics/19-Arrays-2D.pdf)         
@@ -70,6 +70,23 @@ Everyone should know the Java basics. Slides are posted for review,
 but you should learn Java more deeply than that.
 </td>
 </tr>
+<!-- Variables -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Variables
+&amp; References
+</td>
+<td markdown="span">
+[Variables](java-basics/02-Variables.pdf)    
+[Object References](oop/Object-References.pdf) and
+[Reference as a Remote Control](oop/Reference-as-Remote-Control.pdf)    
+</td>
+<td markdown="span">
+You need to clearly understand the different between local variables
+and attributes, and difference between attributes of an object
+and static variables.
+</td>
+</tr>
 <!-- Intro OOP -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -78,7 +95,7 @@ but you should learn Java more deeply than that.
 <td markdown="span">
 [3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
 (and [Why OOP?](oop/3b-Why-Objects.pdf))    
-[Object References](oop/Object-References.pdf) and [Reference is like a Remote Control](oop/Reference-as-Remote-Control.pdf)    
+[Reference as a Remote Control](oop/Reference-as-Remote-Control.pdf)    
 </td>
 <td markdown="span">
 &nbsp;
