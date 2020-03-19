@@ -6,13 +6,13 @@ description: Index page
 
 ## Topics and Assignments 
 
-Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Contact](Contact)
+Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Assignments](Assignments), [Contact](Contact)
 
 <table border="1">
 <tr valign="top">
   <th> Topic </th>
   <th width="45%"> Material </th>
-  <th width="45%"> Assignment </th>
+  <th width="45%"> [Assignment](Assignments) </th>
 </tr>
 
 <!-- introduction -->
