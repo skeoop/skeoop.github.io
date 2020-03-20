@@ -1,10 +1,8 @@
 ## Programming Assignment 2 - Encryption
 
-Due: **Saturday, 28 Mar, midnight**
+Due: **Sunday, 29 Mar, midnight**
 
 Write a program that performs encryption and decryption as described below.
-
-The main class should be named Crypt.
 
 This assignment is based on the Encryption-Decryption problem at
 [Hyperskill.org](https://hyperskill.org).  Hyperskill has step-by-step
@@ -20,6 +18,11 @@ but you can still go back and study them at any time.
 
 In Stage 6, they explain some useful design patterns for this application.
 
+The main class should be named `Crypt` in the default package,
+but other code should be in package `encryptdecrypt` as in the Hyperskill
+project.
+For consistency with the Hyperskill project, the `Crypt` main method
+can simply call `encryptdecrypt.Main.main(args)`.
 
 
 ### Problem Description
@@ -123,9 +126,6 @@ A more typical (and useful) default would be to read from System.in and encrypt 
 
 If you do this, I suggest you add a boolean constant to your code to enable the feature, so you can *disable* it when testing your code on Hyperskill's site.
 
-### Assignment URL
-
-To be added.
 
 ### Unicode
 

@@ -12,7 +12,7 @@ Other pages: [About the Course](intro/About), [Google Classroom](https://classro
 <tr valign="top">
   <th> Topic </th>
   <th width="45%"> Material </th>
-  <th width="45%"> [Assignment](Assignments) </th>
+  <th width="45%" markdown="span"> [Assignment](Assignments) </th>
 </tr>
 
 <!-- introduction -->

@@ -10,7 +10,7 @@ description: Links to labs and assignments
    * [ArrayIterator](assignments/PA1-Arrayiterator.pdf)
    * [CSV Reader](assignments/PA1-CSVReader.pdf)
 
-[PA2](assignments/PA2) - Encryption/Description app based on a project at Hyperskill.org
+[PA2](assignments/PA2-Encryption) - File Encryption and Decryption based on a project at Hyperskill.org
 
 ## Labs
 
