@@ -1,0 +1,15 @@
+Kazam
+
+Open Broadcast Studio
+
+recordMyDesktop
+
+SimpleScreenRecorder - for PS4 games? 
+   Video & audio synchronize properly.
+   If you pause recording, before/after video is split into 2 files.
+
+
+https://helpdeskgeek.com/linux-tips/10-best-screen-recorders-for-linux/
+https://itsfoss.com/best-linux-screen-recorders/
+
+flipgrid.com - add video with questions to google classroom

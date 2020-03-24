@@ -321,7 +321,7 @@ Lab: add a recursive withdraw strategy to coin purse.  Requires you first rewrit
 [Design Patterns](patterns/Introduction)
 </td>
 <td markdown="span">
-[Intro to Design Patterns](patterns/Design-Patterns-Introduction.pdf)    
+[Intro to Design Patterns](patterns/Intro-Design-Patterns.pdf)    
 [Observer Pattern](patterns/Observer-Pattern.pdf)    
 [Factory Methods](patterns/Factory-Methods.pdf) to create objects   
 [Strategy Pattern](patterns/Strategy-Pattern.pdf)        

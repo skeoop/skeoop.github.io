@@ -1,16 +1,18 @@
 # Design Patterns
 
-*Design Patterns* are reusable designs for a common situations. Each pattern consists of:
+*Design Patterns* are reusable designs for a common situations. 
+
+Each design pattern consists of:
 
 * Context - a situation where a design solution is needed
 * Forces (or Motivation) - motivation or "needs" of the situation
-* Solution - the design that solves the problem
+* Solution - a design that solves the problem
 * Applicability - when the pattern applies.  There may be many solutions to a particular context; the applicability can help.
 * Consequences - good and back effects of this solution
 * Example - each pattern has at least one example of its use
 
 Design Patterns are motivated by some Design Goals and Principles.
-Software in general is plagued by:
+Software is plagued by:
 
 * change - requirements change, technology changes, the environment where software is used changes
 * bugs (errors)
@@ -31,20 +33,19 @@ Design Patterns we will study in this course are:
 * Observer - also called Publish - Subscribe
 * Singleton - ensure that only one instance of a class is created
 * State - change an object's behavior depending on state (without using "if")
-* Strategy 
+* Strategy - an interchangeable set of algorithms for performing some task
  
 The "king" of design patterns is Model-View-Controller (MVC), but its also a bit hard to grasp at first.  We may study it if time permits.
 
 ## Files in this Folder
 
-* Design-Patterns-1 - introduction to design patterns
-* *Xxxxx* Pattern.pdf - intro to a specific pattern (one pattern per file)
+* *Xxxxx*-Pattern.pdf - intro to a specific pattern (one pattern per file)
 
 ## References to Learn More
 
 There's lots of design patterns material on the web.
 
-For more in-depth explanation, two good books for Java programmers are:
+For an in-depth explanation, two good books for Java programmers are:
 
 * _Design Patterns Explained_ by Shalloway and Trott.
 * _Head First Design Patterns_. Has memorable and entertaining examples, but the example code is too simple.
