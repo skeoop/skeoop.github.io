@@ -27,3 +27,5 @@ description: Links to labs and assignments
 * [Lab8 Unit test of Auction](labs/Lab8-AuctionTest.pdf)
 * [Lab8 List API Problems](labs/Lab8-List-API.md)
 * [Lab9 File Input/Output](labs/Lab9-IO.pdf)
+* [Lab10 Part 1- Recursion](labs/Lab10)
+* [Lab10 Part 2- Strategy]() - to be added
