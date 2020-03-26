@@ -1,0 +1,21 @@
+Famous Programming Quotes
+
+1. Don't repeat yourself.
+
+2. Program to an interface,   not to an implementation.
+
+3. Prefer composition over inheritance.
+
+4. Separate that which varies from  
+   that which stays the same.
+
+5. Classes should be open for extension,
+   but closed for modification.
+
+6. A class should have only one reason to change.
+   (Single Responsibility Principle)
+
+7. A method should do just one thing.  And be short.
+
+8. Query methods should have no side effects, aka,
+   separate commands and queries.

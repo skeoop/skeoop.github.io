@@ -31,15 +31,15 @@ stringClean
 In the **Recursion-2** group, solve these problems:
 
 ```
-groupSum  - this is similar to what you will use in the Coin Purse!
-groupSum6
+groupSum    - this is similar to what you will use in the Coin Purse!
+groupSum6   - like groupSum but harder since you need to examine all elements
 groupNoAdj
 splitArray
 ```
 
 The Recursion-2 problems use backtracking, which is important.
 
-Solution Help: [codingbat][codingbat] has explanations of Java, solution logic, and code examples to help solve the problems.  
+Solution Help: [codingbat](https://codingbat.com) has explanations of Java, solution logic, and code examples to help solve the problems.  
 
 ### Problem 2: List Utilities using Recursion
 
