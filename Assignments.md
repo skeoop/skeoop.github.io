@@ -23,9 +23,11 @@ description: Links to labs and assignments
 * [Lab4 Coding Practice](labs/Lab4-coding.md)
 * [Lab5 Coin Purse](labs/Lab5-CoinPurse.pdf)
 * [Lab6 Polymorphic Purse](labs/Lab6-PolymorphicPurse.pdf)
-* Lab7 Additions to Polymorphic Purse
+* [Lab7 Exception Handling](labs/Lab7)
 * [Lab8 Unit test of Auction](labs/Lab8-AuctionTest.pdf)
 * [Lab8 List API Problems](labs/Lab8-List-API.md)
 * [Lab9 File Input/Output](labs/Lab9-IO.pdf)
 * [Lab10 Part 1- Recursion](labs/Lab10)
-* [Lab10 Part 2- Strategy]() - to be added
+* [Lab10 Part 2- Withdraw Strategy for Purse](labs/Lab10-Purse-with-Strategy.pdf)
+* [Lab 11 Recursive Withdraw Strategy)(labs/Lab11-Recursive-Withdraw-Strategy.pdf)
+
