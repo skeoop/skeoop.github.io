@@ -1,4 +1,6 @@
-## Problem 2: CopyFile
+## Feedback on Lab 9
+
+## CopyFile (Problem 2)
 
 Problem 2 requires only 3-4 lines of code.   
 And its easy to check if your code works correctly or not.
@@ -64,6 +66,56 @@ I tested using the following comparisons:
 To check your code, compare your program output to the `cmp` command
 (Linux, MacOS, and GNU/Bash shell) or `fc /b` (Windows).
 
+## Compare Using BufferedInputStream
+
+Many students wrote compare that reads an array of bytes from each file 
+and compares the arrays byte-by-byte.  That's good.  Its much faster
+than reading 1 byte.  But the logic of `compare` is more complex.
+
+Another way to achieve fast input is using a `BufferedInputStream`.
+Then you can just read 1 byte at a time and let BufferedInputStream
+take care of "buffering" the input for you.
+
+BufferedInputStream "wraps" another InputStream and does buffered reads.
+Since its a subclass of InputStream, you can use it the same as InputStream.
+There is a constructor with default buffer size or you can specify a
+buffer size:
+```java
+InputStream in = new BufferedInputStream( new FileInputStream(file) );
+```
+
+See the [Javadoc for BufferedInputStream](https://docs.oracle.com/javase/8/docs/api/java/io/BufferedInputStream.html).
+
+```java
+private static void compare(String filename1, String filename2) {
+    final int BUFFSIZE = 4096;
+    File file1 = openFile( filename1 ); // checks file existence, etc.
+    File file2 = openFile( filename2 ); // checks file existence, etc.
+
+    try (
+        // Buffered input streams add buffering to InputStream
+        InputStream in1 = 
+                new BufferedInputStream(new FileInputStream(file1), BUFFSIZE);
+        InputStream in2 = 
+                new BufferedInputStream(new FileInputStream(file2), BUFFSIZE)
+        ) 
+    {
+        int count = 0;
+        while (true) {
+            int a = in1.read();
+            int b = in2.read();
+
+            // compare a and b, check for EOF
+        }
+     }
+     catch( IOException ex ) ...
+```
+
+**How Fast is BufferedInputStream?**
+
+Its not as fast as read to an array of bytes. In my test BufferedInputStream and 1-byte reads was 2X - 4X slower than InputStream with byte array reads.  
+But that's acceptable here.  Reading byte-by-byte simplifies the logic of compare.
+
 ## WordCount
 
 I used 5 test files and one non-existent filename.
@@ -87,13 +139,12 @@ Final test is to enter four files on one command line:
 ```
 java WordCount emptyfile blankfile oneline Quotes.txt
 ```
-Output:
+Expected output:
 ```
-0 0 0 /tmp/emptyfile
-3 0 6 /tmp/blankfile
-1 4 22 /tmp/oneline
-21 80 521 /tmp/Quotes.txt
-1207 9660 52540 /tmp/Alice.txt
+0 0 0  /tmp/emptyfile
+3 0 6  /tmp/blankfile
+1 4 22  /tmp/oneline
+21 80 521  /tmp/Quotes.txt
 ```
 
 ## Can You Write Correct Code?
