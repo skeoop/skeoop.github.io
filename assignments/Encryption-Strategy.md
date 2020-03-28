@@ -1,3 +1,9 @@
+---
+layout: page
+title: Strategy Pattern for Ciphers in PA2
+description: Using Strategy Pattern in the Encryption-Decryption Problem
+---
+
 ## Using Strategy Pattern in the Encryption-Decryption Problem
 
 The *Strategy Pattern* is used when you have different

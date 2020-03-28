@@ -11,6 +11,7 @@ description: Links to labs and assignments
    * [CSV Reader](assignments/PA1-CSVReader.pdf)
 
 [PA2](assignments/PA2-Encryption) - File Encryption and Decryption based on a project at Hyperskill.org
+   * [Using Strategy Pattern for Ciphers](assignments/Encryption-Strategy)
 
 ## Labs
 
@@ -27,7 +28,8 @@ description: Links to labs and assignments
 * [Lab8 Unit test of Auction](labs/Lab8-AuctionTest.pdf)
 * [Lab8 List API Problems](labs/Lab8-List-API.md)
 * [Lab9 File Input/Output](labs/Lab9-IO.pdf)
+* [Lab9 Feedback](feedback/Lab9-Feedback.md)
 * [Lab10 Part 1- Recursion](labs/Lab10)
 * [Lab10 Part 2- Withdraw Strategy for Purse](labs/Lab10-Purse-with-Strategy.pdf)
-* [Lab 11 Recursive Withdraw Strategy)(labs/Lab11-Recursive-Withdraw-Strategy.pdf)
+* [Lab 11 Recursive Withdraw Strategy](labs/Lab11-Recursive-Withdraw-Strategy.pdf)
 

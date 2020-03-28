@@ -39,6 +39,10 @@ java Crypt -alg {shift|unicode} -mode {enc|dec} -key n -data "string data" -in f
 All the arguments are optional.
 The command line options -alg, -mode, -key, -data, -in, -out may be specified in any order.  The notation `-mode {enc|dec}` means that after the `-mode` option the next argument must be either `enc` or `dec`, *without* the braces {}.
 
+The program should be able to encrypt or decrypt a text file of *any size*;
+therefore, do not try to read the whole file into a String or char array!
+(No credit if you do that.)
+
 The meanings of the options are:
 
 **-alg shift|unicode** is the algorithm to use for encryption and decryption. 
