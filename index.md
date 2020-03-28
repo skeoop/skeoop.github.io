@@ -308,6 +308,8 @@ Recursion
 </td>
 <td markdown="span">
 [Recursion](recursion/Recursion.pdf)    
+[Visualize Recursion](recursion/visualize-recursion)    
+[Backtracking Example](recursion/recursion-with-backtrack) from Codingbat.com
 </td>
 <td markdown="span">
 Read: Big Java, Ch. 13 *Recursion*    

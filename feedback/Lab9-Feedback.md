@@ -69,11 +69,11 @@ To check your code, compare your program output to the `cmp` command
 ## Compare Using BufferedInputStream
 
 Many students wrote compare that reads an array of bytes from each file 
-and compares the arrays byte-by-byte.  That's good.  Its much faster
+and compares the arrays byte-by-byte.  That's good!  Its much faster
 than reading 1 byte.  But the logic of `compare` is more complex.
 
 Another way to achieve fast input is using a `BufferedInputStream`.
-Then you can just read 1 byte at a time and let BufferedInputStream
+Then you can read 1 byte at a time and let BufferedInputStream
 take care of "buffering" the input for you.
 
 BufferedInputStream "wraps" another InputStream and does buffered reads.
