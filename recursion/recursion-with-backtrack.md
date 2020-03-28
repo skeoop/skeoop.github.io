@@ -14,7 +14,7 @@ The problem is:
 A couple of things to note about this problem:
 
 1. we have to look at every element before we know the answer.  This is different from the `groupSum` problem where you can return as soon as you find the sum you want.
-2. we need a *helper method* to pass some information, such as the sum so far of elements in the first group and second group.
+2. we need a *helper method* to pass some information, such as the sum of elements in the first group and second group.
 
 ### Think in Code
 
@@ -23,8 +23,7 @@ Before writing the code, write some comments for what you want to do.
 ```java
 public boolean splitOdd10(int[] nums) {
     // call the helper method with initial values for parameters
-    // return whatever result the helper finds
-
+    // return whatever result the helper method returns
 }
 
 /**
@@ -43,7 +42,6 @@ public boolean splitOdd(int start, int[] nums, int sumFirstGroup, int sumSecondG
     // 2. Recursive step
     // 2.1 Assign current element to first group and use recursion
     //     If it succeeds then we found a solution, else try the other case
-
 
     // 2.2 Assign current element to second group and use recursion
     //     Since this is the last case, return whatever result the
@@ -64,18 +62,18 @@ public boolean splitOdd10(int[] nums) {
 public boolean splitOdd(int start, int[] nums, int sumFirstGroup, int sumSecondGroup) {
     // 1. base case: when all numbers have been assigned. Check the sums.
     if (start >= nums.length) {
-        return sumFirstGroup%10 == 0 && sumSecondGroup%2 == 1;
+        return sumFirstGroup % 10 == 0 && sumSecondGroup % 2 == 1;
     }
     
     // 2. Recursive case: assign a number to either first group or second group.
+    int thisNum = nums[start];
     // 2.1 Try assigning it to first group
-    int thisElement = nums[start];
-    if ( splitOdd(start+1, nums, sumFirstGroup+thisElement, sumSecondGroup) )
+    if ( splitOdd(start+1, nums, sumFirstGroup+thisNum, sumSecondGroup) )
         return true; // success!
 
     // 2.2 Try assigning it to second group
     // this is the last case, so return whatever the recursive call returns
-    return splitOdd(start+1, nums, sumFirstGroup, sumSecondGroup+thisElement);
+    return splitOdd(start+1, nums, sumFirstGroup, sumSecondGroup+thisNum);
 
     // 3. Guarantee termination?
     // YES - since we increase start by 1 at each recursive call, 
@@ -117,6 +115,8 @@ public boolean groupSum5(int start, int[] nums, int target) {
     //    a recursive call to check the remaining elements.
 
     // 2.1 If element is multple of 5 then it must be used.
+    //     The recursive call is tricky since we need to skip
+    //     next element if it is 1.
 
 	// 2.2 Else, try to use this element if value <= target
     

@@ -309,7 +309,7 @@ Recursion
 <td markdown="span">
 [Recursion](recursion/Recursion.pdf)    
 [Visualize Recursion](recursion/visualize-recursion)    
-[Backtracking Example](recursion/recursion-with-backtrack) from Codingbat.com
+[Backtracking Example](recursion/recursion-with-backtrack) from [Codingbat.com][]
 </td>
 <td markdown="span">
 Read: Big Java, Ch. 13 *Recursion*    
@@ -332,7 +332,7 @@ All [Design Patterns](patterns/Introduction) material is in the [patterns](patte
 </td>
 <td markdown="span">
 [Lab: Observers](labs/Lab8-Observers.pdf). Starter code: [https://goo.gl/obaqHh](https://goo.gl/obaqHh)    
-[Lab: Purse with Withdraw Strategy](coinpurse/Lab9-Purse-with-Strategy-Pattern.pdf)
+[Lab: Purse with Withdraw Strategy](labs/Lab10-Purse-with-Strategy.pdf)
 </td>
 </tr>
 <!-- events & anonymous classes -->

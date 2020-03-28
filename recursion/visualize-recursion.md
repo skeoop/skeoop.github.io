@@ -4,6 +4,7 @@ Sometimes you would like to see what recursion is doing.
 
 This document shows you how to use polymorphism to add
 "print" statements without changing your recursion code!
+
 This way, you don't complicate your code with a lot of 
 `System.out.println` stuff.
 
@@ -55,8 +56,8 @@ public int fibonacci(int n) {
 }
 ```
 
-This works, but we can't see what's happening.
-Here's how to add print statements without changing the code.
+The code works, but we can't see what's happening.
+Let's add print statements -- without changing the code.
 
 ### 1. Copy the code into a class named Recursion
 
@@ -129,7 +130,8 @@ return 3
 ```
 
 Output would be easier to understand if recursive calls where **indented**.
-Let's add indentation and also make the code more reusable, 
+
+Let's add indentation and also make the code reusable, 
 so we can apply it to other recursion problems:
 
 ```java
@@ -140,7 +142,7 @@ public class RecursionWithPrint extends Recursion {
     private int level = 0;
     
     public void enter(String format, Object ... args) {
-        for(int k=0; k<level; k++) System.out.print(INDENT);
+        for(int k=0; k<level; k++) System.out.print(INDENT); // indent the message
         level++;
         System.out.printf(format, args);
         System.out.println();
@@ -148,7 +150,7 @@ public class RecursionWithPrint extends Recursion {
     
     public void leave(Object value) {
         level--;
-        for(int k=0; k<level; k++) System.out.print(INDENT);
+        for(int k=0; k<level; k++) System.out.print(INDENT); // indent the message
         System.out.println("return "+value);
     }
     
@@ -192,6 +194,7 @@ return 3
 3
 ```
 
+### Does This Help?
 ---
 
 [codingbat.com]: https://codingbat.com.
