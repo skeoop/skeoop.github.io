@@ -313,8 +313,8 @@ Recursion
 </td>
 <td markdown="span">
 Read: Big Java, Ch. 13 *Recursion*    
-Homework: do some specific recursion problems on Codingbat.    
-Lab: add a recursive withdraw strategy to coin purse.  Requires you first rewrite withdraw to use Strategy Pattern.    
+Do the assigned recursion problems on [Codingbat.com][].      
+Lab: Recursive withdraw strategy for Coin Purse.  Requires you first rewrite withdraw to use Strategy Pattern.    
 </td>
 </tr>
 <!-- design patterns -->
@@ -517,6 +517,7 @@ You should *never* store users' passwords as plain text, and don't send them ove
 </tr>
 </table>
 
+[codingbat.com]: https://codingbat.com
 [java-tutorial]: https://docs.oracle.com/javase/tutorial/reallybigindex.html
 [lambda-tutorial]: https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 [lambda-geek-tutorial]: https://www.geeksforgeeks.org/lambda-expressions-java-8/
