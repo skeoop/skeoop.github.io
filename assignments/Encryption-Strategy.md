@@ -2,7 +2,7 @@
 
 The *Strategy Pattern* is used when you have different
 algorithms that can be used to perform a task, and you
-want to be able to change or select which algoritm is used.
+want to be able to change or select which algorithm is used.
 
 The way to apply this pattern is:
 
@@ -10,7 +10,7 @@ The way to apply this pattern is:
 
 2. For each algorithm, define a class that implements the Strategy interface.
 
-3. In the application (called the *Context*) define an attribute to hold a reference to a concrete Strategy object, and call its method(s) when you want to perform the task.
+3. In the application (called the *Context*) define an attribute to hold a reference to a concrete Strategy object. Use this reference to call the strategy method(s).  In this way, your application can work with any concrete strategy.
 
 ![UML for Strategy Pattern](../images/strategy-pattern.png)
 
@@ -29,14 +29,11 @@ Define a `Cipher` interface and concrete classes for actual ciphers.
 What should be the parameters to `encrypt` and `decrypt`?
 A Strategy needs parameters (data) in order to perform its task.
 
-In the Encrypt-Decrypt problem we read *characters* from an InputStream.
-So we should give the cipher strategy an InputStream or Reader for data.
+In the Encrypt-Decrypt problem we read *characters* from an InputStream or string.
+So we culd give the cipher strategy a Reader for input parameter.
 
-The output goes to System.out or a file, so we should also give 
-an OutputStream or Writer for output.
-
-You can also use an array of chars as parameters, and let some other
-part of your application handle reading and writing to streams.
+The output goes to System.out or a file, so we could use
+an OutputStream or Writer as the parameter for output.
 
 Finally, the Cipher needs a `key` for the algorithm.
 
@@ -57,7 +54,9 @@ decrypt(Reader in, Writer out, int key)
 </tr>
 </table>
 
-or:
+
+You can also use an array of chars as parameters, and let some other
+part of your application handle reading and writing to streams:
 
 <table align="center" border="1">
 <tr>
@@ -74,7 +73,7 @@ decrypt(char[] in, char[] out, int key)
 </tr>
 </table>
 
-or return the result:
+or return the result instead:
 
 <table align="center" border="1">
 <tr>
@@ -91,7 +90,7 @@ decrypt(char[] in, int key): char[]
 </tr>
 </table>
 
-`Writer` is a standard interface for writing characters and arrays of characters.
+**Writer** is a standard interface for writing characters and arrays of characters.
 You can use a `PrintWriter` to write to a file.
 `System.out` is not a Writer, 
 but you can "wrap" System.out in a PrintWriter object:
@@ -128,7 +127,8 @@ or use `char[]` arrays for input and output.
 
 ### What About -data "string"?
 
-The Cipher interface shown above works for reading from a file,
+In the Cipher interface, using a `Reader` for input works for 
+reading from a file,
 but what about the case where you want to encrypt a String?
 The application has a command line argument `-data "string to encrypt"`,
 so you need a way to encrypt a string.
