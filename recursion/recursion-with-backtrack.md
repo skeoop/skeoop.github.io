@@ -105,27 +105,61 @@ Before writing the code, write comments for what we want to do.
 
 ```java
 public boolean groupSum5(int start, int[] nums, int target) {
-    // 1. base case - check stopping criteria (success or failure)
-    //    When start >= nums.length check if we reduced the target to zero
+    // 1. base case - check stopping criteria when we reach end of array
+    //    criteria: target is reduced to zero
     
     
-    // 2. recursive case: examine one array value (start) 
+    // 2. recursive case: examine one array element (start)
     //    and either use it to reduce the target amount
-    //    or don't use the element.  Either way, perform 
-    //    a recursive call to check the remaining elements.
+    //    or don't use it. element.  
+    //    Then perform a recursive call to check the remaining elements.
 
     // 2.1 If element is multple of 5 then it must be used.
     //     The recursive call is tricky since we need to skip
-    //     next element if it is 1.
+    //     next element if it is 1. (I hate this part.)
 
 	// 2.2 Else, try to use this element if value <= target
     
-    // 2.3 Otherwise, don't use this element as part of sum
+    // 2.3 Otherwise, don't use this element in the sum
     
     // 3. Review: can we guarantee recursion will stop?
 }
 ```
 
+Fill in the code:
+
+```java
+public boolean groupSum5(int start, int[] nums, int target) {
+    // 1. base case - check stopping criteria when we reach end of array
+    if (start >= nums.length) return target == 0;
+    
+    // 2. recursive case: examine one array element (start)
+    //    and either use it to reduce the target amount or don't use it.
+    int thisNum = nums[start];
+
+    // 2.1 If element is multple of 5 then it must be used.
+    //     The recursive call is tricky since we need to skip
+    //     next element if it is 1. (I hate this part.)
+    if (thisNum % 5 == 0) {
+        if (start < nums.length-1 && nums[start+1]==1) 
+            return groupSum5(start+2, nums, target-thisNum);
+        else
+            return groupSum5(start+1, nums, target-thisNum);
+    } 
+
+	// 2.2 Else, try to use this element if value <= target
+    if (thisNum <= target) {
+        boolean result = groupSum5(start+1, nums, target-thisNum);
+        if (result) return true; // success! 
+    }
+    // 2.3 Otherwise, don't use this element in the sum
+    return groupSum5(start+1, nums, target);
+    
+    // 3. Review: can we guarantee recursion will stop?
+    // YES - each time we increase start by 1 or 2, so eventually
+    // we must have start > nums.length, which will stop recursion.
+}
+```
 
 ---
 

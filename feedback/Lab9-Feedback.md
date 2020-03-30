@@ -2,9 +2,15 @@
 
 ## CopyFile (Problem 2)
 
+**How to test**
+
+1. Copy some files and compare copy to original.
+2. Try different cases: a short file, an empty file, a long binary file.
+3. Try error cases: target already exists (should not overright), source file doesn't exist or not a file.
+
 Problem 2 requires only 3-4 lines of code.   
-And its easy to check if your code works correctly or not.
-Just run it and verify the code is same as original file.
+And its easy to check if your code works correctly.
+Just run it and verify the copy is same as the original file.
 
 Yet, **60%** of the submitted codes are wrong!
 
@@ -29,8 +35,8 @@ Here is an example of testing a student code (with comments):
 -rw-r--r-- 1 jim jim    3 Mar 20 12:46 /tmp/hello
 -rw-r--r-- 1 jim jim 1024 Mar 20 12:47 /tmp/hello2
 
-BUG. hello2 is 1024 bytes long.
 ```
+**BUG**. `hello2` is 1024 bytes long.
 
 Another test: copy a PNG file and examime the copy.
 
@@ -46,15 +52,15 @@ Another test: copy a PNG file and examime the copy.
 
 > cmp /tmp/dilbert.png /tmp/dilbert2.png
 EOF on /tmp/dilbert.png after byte 64369
-(one file is shorter than the other)
 ```
+One file is shorter than the other!
 
 ## Compare
 
 I tested using the following comparisons:
 
-* Identical 1 byte files
-* Two 1 byte files that differ
+* Two identical 1 byte files
+* Two 1 byte files that differ ("a" and "b")
 * A 1 byte and 2 byte file where first byte is same
 * Two identical long files (approx 12,000 bytes)
 * Two long files where last byte is different
@@ -72,7 +78,7 @@ Many students wrote compare that reads an array of bytes from each file
 and compares the arrays byte-by-byte.  That's good!  Its much faster
 than reading 1 byte.  But the logic of `compare` is more complex.
 
-Another way to achieve fast input is using a `BufferedInputStream`.
+Another way to get faster input is using a `BufferedInputStream`.
 Then you can read 1 byte at a time and let BufferedInputStream
 take care of "buffering" the input for you.
 
@@ -126,14 +132,14 @@ Here are the files and correct outputs.
 When I run the tests the files are in the `/tmp` directory.
 On your computer the files may be in a different directory.
 
-| File        |  Expected Output                      |
-|:------------|:--------------------------------------|
-| emptyfile   | 0 0 0 /tmp/emptyfile                  |
-| blankfile   | 3 0 6 /tmp/blankfile                  |
-| oneline     | 1 4 22 /tmp/oneline                   |
-| Quotes.txt  | 21 80 521 /tmp/Quotes.txt             |
-| Alice.txt   | 1207 9660 52540 /tmp/Alice.txt        |
-| nonexistent | /tmp/nonexistent does not exist.      |
+| Filename    | Content    |  Expected Output                      |
+|:------------|:-----------|:--------------------------------------|
+| emptyfile   | empty file | 0 0 0 /tmp/emptyfile                  |
+| blankfile   | space and newline | 3 0 6 /tmp/blankfile           |
+| oneline     | text on one line  | 1 4 22 /tmp/oneline            |
+| Quotes.txt  | programming wisdom | 21 80 521 /tmp/Quotes.txt     |
+| Alice.txt   | Alice in Wonderland | 1207 9660 52540 /tmp/Alice.txt |
+| nonexistent | non-existent file  |/tmp/nonexistent does not exist. |
 
 Final test is to enter four files on one command line:
 ```

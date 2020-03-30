@@ -169,22 +169,23 @@ Encryption-Descryption       - the Hyperskill Project
 For students who start the project after 22 March, your Github Repository is empty, so there is nothing to "clone".  Instead create a local repository first, then add Github as "remote".
 
 1. Create a local repository inside your project directory.  
-   * Usually this is the project directory created by your IDE.  In this case, you create a git repository inside your project directory:
-     ```
-     cd workspace/Encryption
-     git init
-     (create a README.md and .gitignore)
-     git add README.md .gitignore
-     git commit -m "Add initial files"
-     ```
    * If you are using Hyperskill integrated with IntelliJ then create a repo inside the `task` directory:
      ```
+     cd workspace
      cd Encryption-Descryption/Encryption-Decryption/task
      git init
      (create README.md and .gitignore)
      git add README.md .gitignore
      git add src
      git commit -m "add initial code"
+     ```
+   * If you are doing it yourself without Hyperskill, create the usual project directory structure and create a git repository inside your project directory:
+     ```
+     cd workspace/Encryption-Decryption
+     git init
+     (create a README.md and .gitignore)
+     git add README.md .gitignore
+     git commit -m "Add initial files"
      ```
 
 2. Add Github as "remote" repository.  The command for this is shown on Github when create the assignment repo.
