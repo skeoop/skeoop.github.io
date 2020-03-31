@@ -89,7 +89,7 @@ but you should learn Java more deeply than that.
 Objects and Classes    
 </td>
 <td markdown="span">
-[Intro to Classes & Objects](intro/Intro-Classes-and-Objects.pdf) (covered in intro)    
+[Intro to Classes & Objects](intro/Intro-Classes-and-Objects.pdf) (covered in introduction)    
 [Methods](java-basics/12-Methods.pdf), [Method Params](java-basics/12-Method-Parameters.pdf)    
 [Static Methods](java-basics/15-Static-Methods.pdf), [Packages](java-basics/21-Packages.pdf)    
 [Mutable and Immutable Objects](oop/Mutable-Immutable.pdf) 
@@ -106,11 +106,11 @@ Variables
 </td>
 <td markdown="span">
 [Variables](java-basics/02-Variables.pdf)    
-[Object References](oop/Object-References.pdf) and
+[Object References](oop/Object-References.pdf) and    
 [Reference as a Remote Control](oop/Reference-as-Remote-Control.pdf)    
 </td>
 <td markdown="span">
-You need to clearly understand the different between local variables
+You should clearly understand the difference between local variables
 and attributes, and difference between attributes of an object
 and static variables.
 </td>
@@ -123,7 +123,7 @@ and static variables.
 <td markdown="span">
 [3 Fundamentals of OOP](oop/OO-Fundamentals.pdf)
 (and [Why OOP?](oop/3b-Why-Objects.pdf))    
-[Reference as a Remote Control](oop/Reference-as-Remote-Control.pdf)    
+Also [Reference as a Remote Control](oop/Reference-as-Remote-Control.pdf)    
 </td>
 <td markdown="span">
 &nbsp;
