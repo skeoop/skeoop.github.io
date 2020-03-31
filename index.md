@@ -49,6 +49,20 @@ Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning
 [Coding Guidelines](docs/Coding-Guidelines)
 </td>
 </tr>
+<!-- Git -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+[Git](git/)    
+</td>
+<td markdown="span">
+[Intro to Git](git/Intro-git) and [slides](git/Git-Basics.pdf).     
+[Intro to Github](git/Intro-Github) and [slides](git/Using-Github.pdf)    
+</td>
+<td markdown="span">
+[Getting Started](git/Git-get-started)    
+[Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
+</td>
+</tr>
 <!-- Java Basics -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -59,8 +73,7 @@ Java Basics
 [String Types](java-basics/05-Strings-and-Chars.pdf), [Math Functions](java-basics/06-Math-Functions.pdf), [Basic Input/Output](java-basics/07-Basic-Input-Output.pdf)    
 [Conditionals](java-basics/10-Conditional.pdf), [Boolean Ops & Switch](java-basics/10-Conditional2.pdf)     
 [Arrays](java-basics/17-Arrays.pdf), [Using Arrays](java-basics/18-Using-Arrays), [Multi-dimension Arrays](java-basics/19-Arrays-2D.pdf)         
-[Loops](java-basics/11-Loops.pdf), [Methods](java-basics/12-Methods.pdf), [Method Params](java-basics/12-Method-Parameters.pdf)    
-[Static Methods](java-basics/15-Static-Methods.pdf), [Packages](java-basics/21-Packages.pdf)    
+[Loops](java-basics/11-Loops.pdf)
 </td>
 <td markdown="span">
 Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or *Big Java* for Java language.    
@@ -68,6 +81,21 @@ See [Learning Java](Learning) for excellent learning sources.
 
 Everyone should know the Java basics. Slides are posted for review,
 but you should learn Java more deeply than that.
+</td>
+</tr>
+<!-- Objects -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Objects and Classes    
+</td>
+<td markdown="span">
+[Intro to Classes & Objects](intro/Intro-Classes-and-Objects.pdf) (covered in intro)    
+[Methods](java-basics/12-Methods.pdf), [Method Params](java-basics/12-Method-Parameters.pdf)    
+[Static Methods](java-basics/15-Static-Methods.pdf), [Packages](java-basics/21-Packages.pdf)    
+[Mutable and Immutable Objects](oop/Mutable-Immutable.pdf) 
+</td>
+<td>
+&nbsp;
 </td>
 </tr>
 <!-- Variables -->
@@ -127,21 +155,6 @@ Read *BIGJ*, section 9.4 (Polymorphism).
 [Let's Remove Duplicate Code](http://bit.ly/lets-remove-duplicate-code) - rewrite Stopwatch tasks to use polymorphism.
 </td>
 </tr>
-<!-- Git -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Git](git/)    
-</td>
-<td markdown="span">
-[Intro to Git](git/Intro-git) and [slides](git/Git-Basics.pdf).     
-[Intro to Github](git/Intro-Github) and [slides](git/Using-Github.pdf)    
-</td>
-<td markdown="span">
-[Getting Started](git/Git-get-started)    
-[Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
-</td>
-</tr>
-
 <!-- collections -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -267,23 +280,6 @@ Unit Testing
 [Using I-O classes](io/Using-Input-Output.pdf)     
 </td>
 </tr>
-<!-- misc java stuff -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Intermediate Java
-</td>
-<td markdown="span">
-[Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
-[Mutable and Immutable Objects](oop/Mutable-Immutable.pdf)    
-[Enum type](java-basics/22-Enumeration.pdf)      
-[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
-[Generics](java-intermed/Generics.pdf) and rules for [Generic Types](java-intermed/Generic-Types.pdf)   
-</td>
-<td markdown="span">
-Read: Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.    
-[Lab: Generics](labs/Lab13-Generics.pdf)
-</td>
-</tr>
 <!-- graphics -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -299,6 +295,33 @@ Graphical UI
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.   
 [PA3-Unit Converter](assignments/PA3-UnitConverter.pdf).    
 [Currency Converter](docs/currency_service) how to get current exchange rates for your UnitConverter.    
+</td>
+</tr>
+<!-- more advanced java stuff -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Intermediate Java
+</td>
+<td markdown="span">
+[Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
+[Enum type](java-basics/22-Enumeration.pdf)      
+[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
+</td>
+<td markdown="span">
+The Java Tutorial and *Big Java* both have sections on all these topics.
+</td>
+</tr>
+<!-- generics  -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Generics
+</td>
+<td markdown="span">
+[Generics](generics/Generics.pdf) and rules for [Generic Types](generics/Generic-Types.pdf)   
+</td>
+<td markdown="span">
+Read Big Java ch 18 on Generics, and [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html) in Java Tutorial.    
+[Lab: Generics](labs/Lab13-Generics.pdf)
 </td>
 </tr>
 <!-- recursion -->
