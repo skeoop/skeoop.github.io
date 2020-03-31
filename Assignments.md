@@ -32,4 +32,5 @@ description: Links to labs and assignments
 * [Lab10 Part 1- Recursion](labs/Lab10)
 * [Lab10 Part 2- Withdraw Strategy for Purse](labs/Lab10-Purse-with-Strategy.pdf)
 * [Lab 11 Recursive Withdraw Strategy](labs/Lab11-Recursive-Withdraw-Strategy.pdf)
+* [Lab 11 Part 2- Command Line for Purse][] - to be added
 
