@@ -163,7 +163,8 @@ Collections
 <td align="left" markdown="span"> 
 [ArrayList](collections/ArrayList.pdf)    
 [Collections](collections/Collections.pdf)    
-[Iterators](collections/Iterators.pdf) a common design pattern
+[Iterators](collections/Iterators.pdf) a common design pattern    
+[Map](collections/Map.pdf)     
 </td>
 <td align="left" markdown="span"> 
 [Collections Practice](collections/Collections-practice)    
@@ -278,6 +279,18 @@ Unit Testing
 <td markdown="span">
 [Input-Output classes](io/Input-Output.pdf)     
 [Using I-O classes](io/Using-Input-Output.pdf)     
+</td>
+</tr>
+<!-- map -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Map
+</td>
+<td markdown="span">
+[Map](collections/Map.pdf)     
+</td>
+<td markdown="span">
+Map covered in the *Java Tutorial* and *Big Java* section 15.4.    
 </td>
 </tr>
 <!-- graphics -->
