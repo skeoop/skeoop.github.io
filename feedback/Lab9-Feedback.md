@@ -4,8 +4,9 @@
 
 **How to test**
 
-1. Copy some files and compare copy to original.
+1. Copy a file and compare copy to the original. Check the length and content. On Linux/MacOS you can use `cmp`. On Windows, `fc /b`.
 2. Try different cases: a short file, an empty file, a long binary file.
+    * Pay attention to the size of the copied file.
 3. Try error cases: target already exists (should not overright), source file doesn't exist or not a file.
 
 Problem 2 requires only 3-4 lines of code.   
@@ -76,7 +77,8 @@ To check your code, compare your program output to the `cmp` command
 
 Many students wrote compare that reads an array of bytes from each file 
 and compares the arrays byte-by-byte.  That's good!  Its much faster
-than reading 1 byte.  But the logic of `compare` is more complex.
+than reading 1 byte.  But the logic of `compare` is more complex -- but
+not too hard.
 
 Another way to get faster input is using a `BufferedInputStream`.
 Then you can read 1 byte at a time and let BufferedInputStream
@@ -108,10 +110,9 @@ private static void compare(String filename1, String filename2) {
     {
         int count = 0;
         while (true) {
-            int a = in1.read();
-            int b = in2.read();
+            // read a byte from each stream
 
-            // compare a and b, check for EOF
+            // compare bytes, check for EOF
         }
      }
      catch( IOException ex ) ...
@@ -153,7 +154,13 @@ Expected output:
 21 80 521  /tmp/Quotes.txt
 ```
 
-## Can You Write Correct Code?
+Common errors are:
+
+* character counts wrong.  Did you count newlines characters?
+* output format incorrect. It should be as shown above.
+* main method doesn't handle more than one argument
+
+## Learn to Write Correct Code 
 
 *If the only way you can write correct code is for someone else
 to give you an oracle, then you can't write correct code.*
