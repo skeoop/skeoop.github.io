@@ -1,29 +1,74 @@
-## Drawing Text on a Canvas
+## JavaFX
 
-The a `Text` object, if you want to modify the text.
-```java
-Text text = new Text();
-// can't directly add to canvas, so add to a Pane
-// Suggestion: create a Pane that is same size as
-// the canvas and put Canvas in that Pane.
-rootPane.getChildren().add(text);
-text.setX(10);
-text.setY(20);
-text.setText("Hello");
+JavaFX is a framework or library for creating graphical applications in Java.
+JavaFX was a part of the JDK until Java 11, when Oracle split it off.
+If you are using Java 11 or newer you need to download JavaFX from:
+
+[https://gluonhq.com/products/javafx]() - download JavaFX 11 (LTS version) and the **documentation**.
+
+For any version of Java, you also need to download *SceneBuilder* for visual layout of user interfaces:
+
+[https://gluonhq.com/products/scene-builder]() - download SceneBuilder for your version of Java (Java 11 or Java 8).
+
+
+You need the JavaFX documentation! Without it, you will struggle to figure out what the API methods do.
+
+
+There are 2 web sites for JavaFX:
+
+* [openjfx.io](https://openjfx.io) the home for JavaFX information.  There are many impressive examples to show what is possible with JavaFX.
+* [gluonhq.com](https://gluonhq.com) provides the reference implementation for JavaFX.
+
+There are a lot of great tutorials on many other web sites.
+
+## Using JavaFX in an Application
+
+Java 9 added [modules][modules] to Java and divided the entire JDK into [modules][modules].  Modules help professional developers create smaller, more modular apps, but for learners that add some complexity. Modules are different from "packages".   You can see all the modules in the JDK by typing `java --list-modules`.
+
+In your applications, don't use modules.  In Eclipse or IntelliJ, when you create a new project simply do not create the module info file.  Then Java will not crequire you to declare modules.
+
+When compiling and running a JavaFX application, you may need to [add JavaFX modules][https://openjfx.io/openjfx-docs/#install-javafx] to the "Module Path".  This can be done inside your IDE (Eclipse, IntelliJ, ...) or on the command line.  
+
+MacOS/Linux:
+```
+export JAVAFX_HOME=/path/to/javafx/lib
+javac --module-path $JAVAFX_HOME --add-modules javafx.controls,javafx.fxml HelloWorld.java
+# Run the application
+java --module-path $JAVAFX_HOME --add-modules javafx.controls,javafx.fxml HelloWorld
 ```
 
-## Drawing Images
+Windows:
+```
+set JAVAFX_HOME="\path\to\javafx\lib"
+javac --module-path %JAVAFX_HOME --add-modules javafx.controls,javafx.fxml HelloWorld.java
+# Run the application
+java --module-path %JAVAFX_HOME --add-modules javafx.controls,javafx.fxml HelloWorld
+```
 
-You can draw an image on any component using its
-GraphicsContext.  This example is for a Canvas.
-```
-// The filename is relative to the CLASSPATH
-Image image = new Image("images/fish.png");
-GraphicsContext gc = canvas.getGraphicsContext2D();
-double x = canvas.getWidth()/2.0:
-double y = canvas.getHeight()/2.0;
-gc.drawImage( image, x, y);
-```
+IntelliJ:    
+boring Youtube video [configure IntelliJ](https://youtu.be/82QcFSstJs0?t=244) first 4 minutes just downloads JavaFX from gluonhq.com.
+
+1. 
+
+
+### Comparison of JavaFX to Swing, AWT, and SWT
+
+Java has other graphics frameworks that a developer should know about:
+
+* Abstract Widget Toolkit (AWT) was the first one, and the code is still part of the JDK
+* Swing expanded the capabilities of AWT and made graphics independent of the OS, so a graphical app would look the same on any platform (if that's what you want).
+* SWT is a light-weight graphics toolkit developed by the Eclipse foundation. SWT is used to create the UI for Eclipse and Firefox.
+
+The **big difference** between the above and JavaFX is that in JavaFX you can deefine the UI layout and components *declaratively* in an FXML file (a kind of XML).  You can also use CSS styles in JavaFX to style components.
+
+In AWT, Swing, and SWT everything is done in code -- every component is created in code, every component property (color, font, shading) is done in code, all the layout is done in code.  
+
+So, JavaFX is more similar to the way Android apps are developed.  You use a visual layout tool to create the UI, then write code that receives events and data from the UI, updates the UI, etc.
+
+
+### Useful Web Pages
+
+[Getting Started](https://openjfx.io/openjfx-docs/) on [openjfx.io](https://openjfx.io/).
 
 
 ## Learn JavaFX
@@ -291,8 +336,9 @@ To do this in JavaFX, call `stage.sizeToScene()`.  But not clear if it will recu
 
 ## References
 
-* [Gluon]: http://gluonhq.com    
-* [SceneBuilder Download]: http://gluonhq.com/products/scene-builder/
-* [JavaFX Tutorial]: https://docs.oracle.com/javase/8/javase-clienttechnologies.htm
+[Gluon]: http://gluonhq.com    
+[SceneBuilder Download]: http://gluonhq.com/products/scene-builder/
+[JavaFX Tutorial]: https://docs.oracle.com/javase/8/javase-clienttechnologies.htm
+[modules]: https://www.oracle.com/corporate/features/understanding-java-9-modules.html
 
 
