@@ -296,15 +296,17 @@ Map covered in the *Java Tutorial* and *Big Java* section 15.4.
 <!-- graphics -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-Graphical UI
+Graphical UI    
+in JavaFX
 </td>
 <td markdown="span">
-[JavaFX Intro](javafx/Introduction)     
+[Intro to Java Graphics](graphics/Graphics-1-Introduction.pdf)    
+[JavaFX Intro](javafx/Introduction.pdf) and [Getting Started](javafx/Introduction)     
 [Steps to Writing a Graphical UI](graphics/GUI-Step-by-Step.pdf)    
 [Events](javafx/Events) and [Event Listeners](javafx/Event-Handling.pdf)    
 </td>
 <td markdown="span">
-[Lab-LengthConverter](labs/Lab7-LengthConverter.pdf)   
+[Lab-LengthConverter]() to be updated   
 How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) and MVC design.   
 [PA3-Unit Converter](assignments/PA3-UnitConverter.pdf).    
 [Currency Converter](docs/currency_service) how to get current exchange rates for your UnitConverter.    

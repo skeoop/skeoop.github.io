@@ -1,7 +1,9 @@
 ## JavaFX
 
-JavaFX is a framework or library for creating graphical applications in Java.
+JavaFX is a framework for creating graphical applications in Java.
 JavaFX was a part of the JDK until Java 11, when Oracle split it off.
+If you are using Java 8 or 9 then JavaFX is included in the JDK.
+
 If you are using Java 11 or newer you need to download JavaFX from:
 
 [https://gluonhq.com/products/javafx]() - download JavaFX 11 (LTS version) and the **documentation**.
@@ -13,15 +15,16 @@ For any version of Java, you also need to download *SceneBuilder* for visual lay
 
 You need the JavaFX documentation! Without it, you will struggle to figure out what the API methods do.
 
-
-There are 2 web sites for JavaFX:
-
-* [openjfx.io](https://openjfx.io) the home for JavaFX information.  There are many impressive examples to show what is possible with JavaFX.
+* [openjfx.io](https://openjfx.io) the home for JavaFX information.  There are many impressive examples of what is possible.
 * [gluonhq.com](https://gluonhq.com) provides the reference implementation for JavaFX.
 
-There are a lot of great tutorials on many other web sites.
+Some very good tutorials on the web:
 
-## Using JavaFX in an Application
+* [JavaFX Tutorial at code.makery](https://code.makery.ch/library/javafx-tutorial/), 7-part series
+* [JavaFX and SceneBuilder Tutorial](https://www.vojtechruzicka.com/javafx-getting-started/) by Vojtech Ruzicka.
+
+
+## JavaFX and Modules
 
 Java 9 added [modules][modules] to Java and divided the entire JDK into [modules][modules].  Modules help professional developers create smaller, more modular apps, but for learners that add some complexity. Modules are different from "packages".   You can see all the modules in the JDK by typing `java --list-modules`.
 
@@ -45,10 +48,19 @@ javac --module-path %JAVAFX_HOME --add-modules javafx.controls,javafx.fxml Hello
 java --module-path %JAVAFX_HOME --add-modules javafx.controls,javafx.fxml HelloWorld
 ```
 
-IntelliJ:    
-boring Youtube video [configure IntelliJ](https://youtu.be/82QcFSstJs0?t=244) first 4 minutes just downloads JavaFX from gluonhq.com.
+### Shortcut for Command Line Options
 
-1. 
+Save typing by putting command line options in a file.  Here is how.
+
+1. In your project root directory create a file. I used the name `jvmopts` but any name will work.  Put the `java` command line args in it:
+   ```
+   --module-path /path/to/javafx/lib --add-modules javafx.controls,javafx.fxml 
+   ```
+2. When you invoke Java use the `@filename` notation to refer to the file:
+   ```
+   java @jvmopts HelloWorld
+   ```
+
 
 
 ### Comparison of JavaFX to Swing, AWT, and SWT
@@ -71,11 +83,11 @@ So, JavaFX is more similar to the way Android apps are developed.  You use a vis
 [Getting Started](https://openjfx.io/openjfx-docs/) on [openjfx.io](https://openjfx.io/).
 
 
-## Learn JavaFX
+## Official JavaFX Tutorial
 
-Read the [Online Tutorial][JavaFX Tutorial].
+The [Online Tutorial][JavaFX Tutorial] by Oracle.
 
-To get started, the important parts to understand are:
+The most important parts to understand are:
 
 * JavaFX programming model: how a UI is constructed from objects
 * UI Components, esp. [Controls](http://www.oracle.com/pls/topic/lookup?ctx=javase80&id=JFXUI336)
@@ -132,6 +144,9 @@ public class Demo extends Application {
 		Label Label = new Label("Hello, Nerd");
 		inputField = new TextField( );
 		FlowPane pane = new FlowPane(label, nameField);
+
+        // add components to the root node (container)
+        pane.getChildren.addAll( label, inputField );
 
 		// 2. create a Scene to show your pane and components
 		//    The top level (root) element should be a subclass of Parent
