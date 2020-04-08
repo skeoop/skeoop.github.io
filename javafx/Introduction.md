@@ -161,7 +161,7 @@ Here's an example for a scene defined in file `GreeterUI.fxml`.
 public class MyApp extends Application {
     // Name of the FXML file containing scene.
     // Include the package as the path! (example: org.ske.greeter)
-    Strint FXML_FILE = "org/ske/greeter/GreeterUI.fxml";
+    String FXML_FILE = "org/ske/greeter/GreeterUI.fxml";
 
 	/**
 	 * @param stage the primary "stage" for showing the scene.
@@ -208,8 +208,30 @@ JavaFX classes are in packages beginning with `javafx.`, such as `javafx.scene.c
 | javafx           | Top package for JavaFX framework  |
 | javafx.event     | JavaFX event classes              |
 | javafx.scene.control | JavaFX controls, e.g. Button  |
+| javafx.scene.layout  | FlowPane, GridPane, other layouts |
 
+### Beware of Imports from AWT and Swing Toolkits
 
+Usually you **do not want** classes from these packages, so if you see them imported into your JavaFX application, check to see if you are using the correct class or component.
+
+For example, if your app has:
+```java
+import java.awt.Button;
+import java.awt.Label;
+```
+
+then you probably **should** use:
+```java
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+```
+
+| Package          | Meaning                           |
+|:-----------------|-----------------------------------|
+| java.awt         | Top package for AWT classes       |
+| java.awt.event   | AWT event classes                 |
+| javax.swing      | Top package for Swing classes     |
+| javax.swing.event | Swing event classes              |
 
 ## Creating a UI with SceneBuilder
 

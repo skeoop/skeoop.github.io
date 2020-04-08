@@ -52,3 +52,11 @@ Don't create a project yet -- update your Eclipse Preferences first.
 5. Click "Apply and Close"
 
 ![Eclipse Preferences](../images/Eclipse-Preferences.png)
+
+## Creating a JavaFX Project
+
+When you want to create a new JavaFX project in Eclipse, choose "New Project", **not** "New Java Project".
+
+In the new Project Wizard (shown above) select JavaFX application.
+
+If you do create a Java project, you can still use JavaFX, though.
