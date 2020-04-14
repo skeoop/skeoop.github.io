@@ -88,20 +88,27 @@ Save typing by putting command line options in a file.  Here is how.
 
 ## Using FXML
 
-Instead of writing code to create a UI, you can often define the layout
+Instead of writing Java code to create a UI, you can define the layout
 (declaratively) in a file. In JavaFX, this is an FXML file -- a kind of XML.
-Android and Windows .Net Framework also use XML files for layout.
+Android and Windows .Net Framework also use XML files for UI layout.
 
-You don't need to know the syntax of FXML!  Use **SceneBuilder** graphical UI edtor to create FXML and set component properties.
+You don't need to know the syntax of FXML!  
+Use **SceneBuilder** graphical UI edtor to create FXML and set component properties.
 
 ### Connecting FXML components to Code: the Controller Class
 
-To access components and get events, you need to connect your visual UI (in FXML) with Java code.  You do this by defining a *Controller* class for each FXML file.  
-You can specify the controller class in SceneBuilder.
+JavaFX will create the UI from an FXML file, including all the components (Buttons, Panes, TextField, etc).  But your code needs to **reference** those objects so you can get values and handle events.
 
-Then follow these steps.
+There are 3 parts to doing this:
+* create a **Controller** class. In this class you define variables for the components from FXML that you want to access.
+* annotate those variables with `@FXML`.  But do not create objects!
+* using SceneBuilder, specify the Controller class and add an **id** to each component that relates to a variable in the Controller
 
-1. For each component you need to reference in the controller, define an attribute with an `@FXML` annotation:
+Then JavaFX will take care of making your Controller variables refer to the components created from the FXML file.
+
+Follow these steps.
+
+1. For each UI component (created from FXML) you want to reference in the controller, define an attribute with an `@FXML` annotation:
    ```java
    public class GreeterController {
         @FXML

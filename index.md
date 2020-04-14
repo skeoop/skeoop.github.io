@@ -312,6 +312,19 @@ How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) an
 [Currency Converter](docs/currency_service) how to get current exchange rates for your UnitConverter.    
 </td>
 </tr>
+<!-- Events & anonymous classes -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Event Handling
+</td>
+<td markdown="span">
+[Events and Event Handling](javafx/Event-Handling.pdf) in JavaFX     
+[Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
+</td>
+<td markdown="span">
+Exercise/quiz on JavaFX components and Event handling.
+</td>
+</tr>
 <!-- more advanced java stuff -->
 <tr valign="top">
 <td align="center" markdown="span"> 
@@ -320,10 +333,12 @@ Intermediate Java
 <td markdown="span">
 [Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
 [Enum type](java-basics/22-Enumeration.pdf)      
+[Method References](java8/Method-References)    
 [Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
 </td>
 <td markdown="span">
-The Java Tutorial and *Big Java* both have sections on all these topics.
+The Java Tutorial and *Big Java* both have sections on all these topics.    
+Method References are useful for Event Handlers in JavaFX, and are used in SceneBuilder.
 </td>
 </tr>
 <!-- generics  -->
@@ -373,19 +388,6 @@ All [Design Patterns](patterns/Introduction) material is in the [patterns](patte
 [Lab: Purse with Withdraw Strategy](labs/Lab10-Purse-with-Strategy.pdf)
 </td>
 </tr>
-<!-- events & anonymous classes -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-Event Handling
-</td>
-<td markdown="span">
-[Events and Event Handling](javafx/Event-Handling.pdf) in JavaFX     
-[Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
-</td>
-<td markdown="span">
-Exercise/quiz on JavaFX components and Event handling.
-</td>
-</tr>
 <!-- threads -->
 <tr valign="top">
 <td align="center" valign="top" markdown="span">
@@ -427,10 +429,8 @@ A useful app that combines what you learned recently, but not too difficult.
 Lambdas &amp; Streams
 </td>
 <td markdown="span">
-[Lambda Expressions](java8/Lambda-Expressions), one of 
-[Java 8 New Features](java8/Java-8-Features.pdf)    
-[Method References](java8/Method-References)    
-[Streams](java8/Streams) and [slides](java8/Streams.pdf)        
+[Lambda Expressions](java8/Lambda-Expressions)    
+[Streams](java8/Streams) and [slides](java8/Streams.pdf)       
 </td>
 <td markdown="span">
 Read: [Java Tutorial][java-tutorial] for [Lambdas][lambda-tutorial], Method References, and Streams. Short [lambda tutorial][lambda-geek-tutorial] on Geeks site.      
