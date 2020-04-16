@@ -3,7 +3,7 @@
 A method reference is a syntax for defining a reference to a single method.
 
 Method references can be used in place of a class implementing an interface,
-if the interface has only one abstract method (a *functional interface*).
+if the interface has only one abstract method (called a *functional interface*).
 
 The syntax for a method reference is:
 
@@ -13,9 +13,10 @@ The syntax for a method reference is:
 |objectref::methodName | an instance method of an object | this::toString |
 |Classname::new        | a constructor | Person::new |
 
-### Example: Event Handlers
+### Example: Method Reference for Event Handlers
 
-It is often convenient to write event handler methods for JavaFX applications as methods in the Controller class for a JavaFX scene.  This is convenient because the controller has a reference to the components in the scene.
+It is often convenient to write event handler methods for JavaFX applications as methods in the Controller class for a JavaFX scene.  
+This is convenient because the controller has a reference to the components in the scene, and the event handler usually needs to refer to those components.
 
 ```java
 public class LoginController {
@@ -27,25 +28,22 @@ public class LoginController {
     Button loginButton;
 
     /** Handler for login event. */
-    public handleLogin(ActionEvent event) {
+    public void handleLogin(ActionEvent event) {
         String username = loginField.getText();
         String password = passwdField.getText();
         if ( authenticate(username,password) ) ...
 
     }
 ```
-The method `handleLogin` *looks* like an event handler (has the correct parameter), but it is not part of a class that "*implements EventHander*".
+The method `handleLogin` *looks* like an event handler: it has the correct parameter and returns void, but it is not part of a class that "*implements EventHander*".
 
 We can use `handleLogin` as an event handler by refering to it in a *method reference*:
 ```java
-     @FXML
-     public void initialize() {
-         loginButton.setOnClick( this::handleLogin );
-     }
+   loginButton.setOnAction( this::handleLogin );
 ```
-The `setOnClick` method accepts a method reference `this::handleLogin` because the method signature matches the method in the *EventHandler&lt;ActionEvent&gt;* interface.
+The `setOnAction` method accepts a method reference `this::handleLogin` because the method signature matches the method in the *EventHandler&lt;ActionEvent&gt;* interface.
 
-### Example: Consumer
+### Example: Write a Consumer
 
 `Consumer` is an interface with one method:
 ```java
@@ -67,18 +65,19 @@ for(T item: collection) {
 
 ### forEach Example: print elements of a List
 
-Suppose we want to print elements of a List of String.
-The old way is using a loop:
+The old way of printing element in a list is using a loop:
 ```java
 List<String> fruit = List.of("Apple", "Orange", "Grape",...);
 for(String s: fruit) {
     System.out.println( s );
 }
 ```
+Let's change that to a `fruit.forEach()` statement.
 
-To write a `Consumer` that prints each object on System.out,
-we could write an anonymous class:
+Write a `Consumer` that prints one object on System.out.
+We could do this using an *anonymous class* that implements Consumer:
 ```java
+public void 
 Consumer<String> print = new Consumer<String>() {
     public void accept(String x) {
         System.out.println( x ); 
@@ -89,19 +88,29 @@ Consumer<String> print = new Consumer<String>() {
 fruit.forEach( print );
 ```
 
-The anonymous class just defines one method that calls *another* method: `System.out.println()`.
-
-Using a **method reference** we can refer to that method directly:
-
+`Consumer` has **one method** that accepts a String.  The signature is:
 ```java
-Consumer<Object> print = System.out::println;
-collection.forEach( print );
+void xxxxxxxxxx(String s);
 ```
 
-But now the code is so short and clear, we can just do it in one statement:
+Notice that System.out.println has this signature:
+```java
+// In System.out:
+void println(String s);
+```
+
+So we can use a **method reference** to refer to System.out.println as a Consumer:
 
 ```java
-collection.forEach( System.out::println );
+Consumer<String> print = System.out::println;
+fruit.forEach( print );
+```
+
+The method reference is so short and clear, we can just do it in one statement
+without loss of clarity:
+
+```java
+fruit.forEach( System.out::println );
 ```
 
 ### When To Use a Method Reference
