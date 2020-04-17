@@ -32,25 +32,45 @@ public class LoginController {
         String username = loginField.getText();
         String password = passwdField.getText();
         if ( authenticate(username,password) ) ...
-
     }
-```
-The method `handleLogin` *looks* like an event handler: it has the correct parameter and returns void, but it is not part of a class that "*implements EventHander*".
 
-We can use `handleLogin` as an event handler by refering to it in a *method reference*:
-```java
-   loginButton.setOnAction( this::handleLogin );
+    loginButton.setOnAction( this::handleLogin );
+
 ```
-The `setOnAction` method accepts a method reference `this::handleLogin` because the method signature matches the method in the *EventHandler&lt;ActionEvent&gt;* interface.
+The method `handleLogin` *looks* like an event handler -- it has the correct parameter and returns void, but it is not part of a class that "*implements EventHander*".
+
+A **method reference** defines a reference to a method.  You can use it in places that expect a reference to something providing the interface.
+For example, we can write:
+```java
+    EventHandler<ActionEvent> handler = this::handleLogin;
+    loginButton.setOnAction( handler );
+```
+
+since it pretty clear what the intention is, you can just use the method reference directly to set the event handler:
+```java
+    loginButton.setOnAction( this::handleLogin );
+```
+
+The `setOnAction` method accepts a method reference `this::handleLogin` because the method signature matches the method signature in the *EventHandler&lt;ActionEvent&gt;* interface.
+
+### Weird Use of Method Reference
+
+`void System.out.println(Object)` has a compatible signature with `EventHandler.handle(Event)`, because System.out.println can accept any `Event` object. So we could print all the events on System.out by writing:
+```java
+    loginButton.setOnAction( System.out::println );
+```
+
 
 ### Example: Write a Consumer
 
-`Consumer` is an interface with one method:
+`java.util.function.Consumer` is an interface with one method:
+
 ```java
 // T is a type parameter of Consumer
 public void accept(T obj);
 ```
-Consumer is used by many Streams methods.  Every `Collection` and `Iterable` has a **forEach(Consumer)** method which works like this:
+Consumer is used by many Streams methods when they want a method to "consume" an object.
+Every `Collection` and `Iterable` has a **forEach(Consumer)** method which works like this:
 ```java
 collection<T>.forEach( Consumer<T> consumer )
 ```
@@ -66,6 +86,7 @@ for(T item: collection) {
 ### forEach Example: print elements of a List
 
 The old way of printing element in a list is using a loop:
+
 ```java
 List<String> fruit = List.of("Apple", "Orange", "Grape",...);
 for(String s: fruit) {
@@ -74,26 +95,14 @@ for(String s: fruit) {
 ```
 Let's change that to a `fruit.forEach()` statement.
 
-Write a `Consumer` that prints one object on System.out.
-We could do this using an *anonymous class* that implements Consumer:
+`Consumer` has **one method** that accepts a type (T).  The signature is:
 ```java
-public void 
-Consumer<String> print = new Consumer<String>() {
-    public void accept(String x) {
-        System.out.println( x ); 
-    }
-}
-
-// print the fruit using forEach( Consumer )
-fruit.forEach( print );
+void accept(T s);
 ```
 
-`Consumer` has **one method** that accepts a String.  The signature is:
-```java
-void xxxxxxxxxx(String s);
-```
+Since `fruit` is a list of String, this will be `void accept(String s)`.
 
-Notice that System.out.println has this signature:
+Notice that System.out.println (which is overloaded) also has this signature:
 ```java
 // In System.out:
 void println(String s);
@@ -106,8 +115,7 @@ Consumer<String> print = System.out::println;
 fruit.forEach( print );
 ```
 
-The method reference is so short and clear, we can just do it in one statement
-without loss of clarity:
+The method reference is short and clear, so let's simplify without lose of clarity:
 
 ```java
 fruit.forEach( System.out::println );
