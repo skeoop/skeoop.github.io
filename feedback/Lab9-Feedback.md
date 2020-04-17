@@ -2,20 +2,20 @@
 
 ## CopyFile (Problem 2)
 
+Problem 2 requires **only 3-4 lines of code**.   
+And it is easy to verify if your code works correctly -- just use it!
+Run it and verify the copy is same as the original file.
+
+Yet, **60%** of the submitted codes are **wrong**!
+
 **How to test**
 
 1. Copy a file and compare copy to the original. Check the length and content. On Linux/MacOS you can use `cmp`. On Windows, `fc /b`.
-2. Try different cases: a short file, an empty file, a long binary file.
-    * Pay attention to the size of the copied file.
-3. Try error cases: target already exists (should not overright), source file doesn't exist or not a file.
+    * Use different cases: a short file, an empty file, a long binary file.
+    * Pay attention that **size of original and copy are the same**.
+3. Try error cases: target already exists (should not over-write), source file doesn't exist or not a file.
 
-Problem 2 requires only 3-4 lines of code.   
-And its easy to check if your code works correctly.
-Just run it and verify the copy is same as the original file.
-
-Yet, **60%** of the submitted codes are wrong!
-
-Here is an example of testing a student code (with comments):
+Actual Example of testing a student code (with comments):
 
 ```
 // change directory to where the code is
@@ -25,36 +25,36 @@ Here is an example of testing a student code (with comments):
 > javac CopyFile.java
 
 // create a test file in another directory
-> echo "hi" > /tmp/hello
+> echo "hi" > hello
 // check the file. "3" mean the size is 3 bytes
-> ls -l /tmp/hello
--rw-r--r-- 1 jim jim    3 Mar 20 12:46 /tmp/hello
+> ls -l hello
+-rw-r--r-- 1 jim jim    3 Mar 20 12:46 hello
 // copy the file
-> java CopyFile /tmp/hello /tmp/hello2
+> java CopyFile  hello  hello2
 // check the result
-> ls -l /tmp/hello*
--rw-r--r-- 1 jim jim    3 Mar 20 12:46 /tmp/hello
--rw-r--r-- 1 jim jim 1024 Mar 20 12:47 /tmp/hello2
+> ls -l hello*
+-rw-r--r-- 1 jim jim    3 Mar 20 12:46 hello
+-rw-r--r-- 1 jim jim 1024 Mar 20 12:47 hello2
 
 ```
-**BUG**. `hello2` is 1024 bytes long.
+**BUG**. `hello2` is 1024 bytes long!
 
 Another test: copy a PNG file and examime the copy.
 
 ```
-> java CopyFile /tmp/dilbert.png /tmp/dilbert2.png
+> java CopyFile dilbert.png dilbert2.png
 
-> ls -l /tmp/dilbert*
--rw-r--r-- 1 jim jim 64369 Mar 20 12:51 /tmp/dilbert.png
--rw-r--r-- 1 jim jim 64512 Mar 20 12:52 /tmp/dilbert2.png
+> ls -l dilbert*
+-rw-r--r-- 1 jim jim 64369 Mar 20 12:51 dilbert.png
+-rw-r--r-- 1 jim jim 64512 Mar 20 12:52 dilbert2.png
 
-> gimp /tmp/dilbert2.png
-(it works! Image looks ok, but...)
+> gimp dilbert2.png
+(Image looks ok, but...)
 
-> cmp /tmp/dilbert.png /tmp/dilbert2.png
-EOF on /tmp/dilbert.png after byte 64369
+> cmp dilbert.png dilbert2.png
+EOF on dilbert.png after byte 64369
 ```
-One file is shorter than the other!
+One file is shorter than the other.  They are not the same!
 
 ## Compare
 
