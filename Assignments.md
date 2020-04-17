@@ -13,6 +13,9 @@ description: Links to labs and assignments
 [PA2](assignments/PA2-Encryption) - File Encryption and Decryption based on a project at Hyperskill.org
    * [Using Strategy Pattern for Ciphers](assignments/Encryption-Strategy)
 
+[PA3](assignments/PA3-UnitConverter) a Unit Converter with graphics interface using JavaFX
+   * use polymorphism instead of "if" or "switch" when possible
+
 ## Labs
 
 * [Lab0 Getting Started](labs/Lab0-Getting-Started.doc)
@@ -32,5 +35,6 @@ description: Links to labs and assignments
 * [Lab10 Part 1- Recursion](labs/Lab10)
 * [Lab10 Part 2- Withdraw Strategy for Purse](labs/Lab10-Purse-with-Strategy.pdf)
 * [Lab 11 Recursive Withdraw Strategy](labs/Lab11-Recursive-Withdraw-Strategy.pdf)
-* [Lab 11 Part 2- Command Line for Purse][] - to be added
+* [Lab 11 Part 2. Purse Command Line](labs/lab11-Purse-CLI) - add command line args to Purse
+* [Lab 12 Length Converter](labs/Lab12-LengthConverter.pdf) using JavaFX
 
