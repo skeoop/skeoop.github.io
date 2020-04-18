@@ -304,6 +304,7 @@ in JavaFX
 [JavaFX Intro](javafx/Introduction.pdf) and [Getting Started](javafx/Getting-Started)     
 [Steps to Writing a Graphical UI](graphics/GUI-Step-by-Step.pdf)    
 [Events](javafx/Events) and [Event Listeners](javafx/Event-Handling.pdf)    
+[Layout a UI](javafx/Layouts.pdf)
 </td>
 <td markdown="span">
 [Lab12 LengthConverter](labs/Lab12-LengthConverter.pdf)     
