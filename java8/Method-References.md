@@ -9,9 +9,71 @@ The syntax for a method reference is:
 
 | Syntax  | What it refers to | Example         |
 |:--------|:------------------|:----------------|
-|Classname::methodName | a static methods | Math::sqrt |
+|Classname::methodName | a static method | Math::sqrt |
 |objectref::methodName | an instance method of an object | this::toString |
 |Classname::new        | a constructor | Person::new |
+
+### Motivation
+
+Many Java interfaces have only one method:
+
+| Interface | Method with Signature     | What Uses It?    |
+|:----------|:--------------------------|:-----------------|
+| Runnable  | void run( )               | Thread.start(Runnable) |
+| Comparator&lt;T&gt; | int compare(T a, T b) | Collections.sort(List,Comparator) |
+| EventHandler&lt;E&gt; | void handle(E event) | Button.setOnAction(EventHandler) |
+| Consumer&lt;T&gt;  | void accept(T arg) | collection.forEach(Consumer) |
+
+In older versions of Java, the only way to use interfaces was to
+write a class that implements the interface.
+
+It would be nice if we could just pass a method to the code that requires
+the interface, for example:
+```java
+// add event handler to a button
+Button button = new Button("Press me");
+button.setOnAction( handlePress );
+
+public void handlePress(ActionEvent event) {...}
+```
+The button would simply call the handlePress method -- without the complexity
+of writing a class just so we can define one method!
+
+Java Method References lets us do something like this:
+```java
+Button button = new Button("Press me");
+button.setOnAction( this::handlePress );
+```
+
+Any place that requires an interface, where the interface has **only one** 
+abstract method (such as Runnable, EventHandler, Comparator) you can pass 
+a method reference instead!
+
+The only requirement is that the Method Reference should have a signature that is the same as or compatible with the method in the interface.
+
+For example, `Consumer&lt;String&gt;` has a method `void accept(String s)`.
+Instead of writing a class for a Consumer, we can use any of these methods:
+```java
+void save(String s) { writer.write(s); }  // writer is a Writer object
+
+void print(Object o) { System.out.println(o); }
+
+void showDialog(String msg) { 
+     Alert alert = new Alert(Alert.AlertType.INFORMATION);
+     alert.setHeaderText( msg );
+     alert.showAndWait();
+}
+```
+Even though the method names are not the same as in the interface (`accept`), the method signature matches, so they can be used as method reference in place of a Consumer.
+
+The `print(Object o)` method works because it accepts any kind of Object, including String. 
+```java
+List words = Arrays.asList("method","reference","is","easy"};
+// Use a method reference as Consumer:
+list.forEach( this::save );
+list.forEach( this::print );
+list.forEach( this::showDialog );
+```
 
 ### Example: Method Reference for Event Handlers
 
@@ -22,8 +84,6 @@ This is convenient because the controller has a reference to the components in t
 public class LoginController {
     @FXML
     TextField loginField;
-    @FXML
-    PasswordField passwdField;
     @FXML
     Button loginButton;
 
@@ -39,7 +99,7 @@ public class LoginController {
 ```
 The method `handleLogin` *looks* like an event handler -- it has the correct parameter and returns void, but it is not part of a class that "*implements EventHander*".
 
-A **method reference** defines a reference to a method.  You can use it in places that expect a reference to something providing the interface.
+A **method reference** defines a reference to a method.  You can use it any place that expects a reference to something implementing the interface.
 For example, we can write:
 ```java
     EventHandler<ActionEvent> handler = this::handleLogin;

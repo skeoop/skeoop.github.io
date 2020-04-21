@@ -227,7 +227,8 @@ Exceptions
 [Throwing Exceptions](exceptions/Throwing-Exceptions.pdf)
 </td>
 <td markdown="span">
-[Exceptions Practice](exceptions/Exceptions-Practice.pdf)
+[Exceptions Practice](exceptions/Exceptions-Practice.pdf)    
+[Exception Handling Tips](exceptions/Exceptions-Tips-Big-Java.pdf) from Big Java
 </td>
 </tr>
 
@@ -448,7 +449,7 @@ Final Project
 The last programming assignment is an application of your own design.   
 </td>
 <td markdown="span">
-1. Submit a well-written [Project Proposal](assignments/PA5-Final-Project.pdf), in Google Docs.    
+1. Submit a well-written [Project Proposal](assignments/PA4-Final-Project.pdf), in Google Docs.    
 2. Schedule at least one TA review of your work in progress during semester.  Don't wait until the end!
 </td>
 </tr>
@@ -488,8 +489,7 @@ KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)
 </td>
 <td markdown="span">
 [Aliases](git/aliases) how to create aliases for git commands.   
-Using [branches][git-branching] (online Git book).    
-[Branching and Merging][git-book-branching-and-merging] in online Git Book.   
+[Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) from the [Git Book](https://git-scm.com/book/).    
 Using [Github Flow](git/index#github-flow).    
 [Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
 [Pull Request slides](git/Pull-Requests.pdf)    
