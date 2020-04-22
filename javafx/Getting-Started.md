@@ -281,9 +281,9 @@ Gluon.com [IDE Plugins](http://gluonhq.com/get-started/ide-plugins/) page descri
 The FXMLLoader has access:
 
 ```java
-FXMLLoader fxmlLoader = new FXMLLoader();
-Pane p = fxmlLoader.load(getClass().getResource("foo.fxml").openStream());
-FooController fooController = (FooController) fxmlLoader.getController();
+    FXMLLoader fxmlLoader = new FXMLLoader();
+    Pane p = fxmlLoader.load(getClass().getResource("foo.fxml").openStream());
+    FooController fooController = (FooController) fxmlLoader.getController();
 ```
 
 another solution:
@@ -312,41 +312,7 @@ public void start(Stage stage) throws Exception {
 }
 ```
 
-# How to Access a Controller class?
 
-The FXMLLoader has access:
-
-```java
-FXMLLoader fxmlLoader = new FXMLLoader();
-Pane p = fxmlLoader.load(getClass().getResource("foo.fxml").openStream());
-FooController fooController = (FooController) fxmlLoader.getController();
-```
-
-another solution:
-
-//Static global variable for the controller (where MyController is the name of your controller class
-static MyController myControllerHandle;
-
-In the Main class for your application, change the static FXMLLoader.load
-to the instance version (as shown below).  Then use the loader to access
-the controller.
-
-```java
-@Override
-public void start(Stage stage) throws Exception {
-    //Set up instance instead of using static load() method
-    FXMLLoader loader = new FXMLLoader(getClass().getResource("foo.fxml"));
-    Parent root = loader.load();
-
-    //Now we have access to getController() through the instance...
-    myControllerHandle = (MyController)loader.getController();
-
-    Scene scene = new Scene(root);
-
-    stage.setScene(scene);
-    stage.show();
-}
-```
 
 ## How to Resize Container to Fit Components
 
@@ -364,7 +330,8 @@ class MyUI extends JFrame {
     }
 }
 ```
-To do this in JavaFX, call `stage.sizeToScene()`.  But not clear if it will recursively resize contents the way Swing does.
+To do this in JavaFX, call `stage.sizeToScene()`. 
+But not clear if it will recursively resize contents the way Swing does.
 
 
 
