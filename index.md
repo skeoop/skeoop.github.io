@@ -321,10 +321,10 @@ Event Handling
 </td>
 <td markdown="span">
 [Events and Event Handling](javafx/Event-Handling.pdf) in JavaFX     
-[Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
+[Method References](java8/Method-References)    
 </td>
 <td markdown="span">
-Exercise/quiz on JavaFX components and Event handling.
+Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf) has most complete explanation of event handling.        
 </td>
 </tr>
 <!-- more advanced java stuff -->
@@ -334,8 +334,8 @@ Intermediate Java
 </td>
 <td markdown="span">
 [Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
+[Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
 [Enum type](java-basics/22-Enumeration.pdf)      
-[Method References](java8/Method-References)    
 [Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
 </td>
 <td markdown="span">
@@ -397,14 +397,23 @@ Threads &amp;
 Multitasking
 </td>
 <td markdown="span">
-[Threads](threads/Threads.pdf) and multitasking   
-[Worker Threads](javafx/WorkerThreads.md) for background tasks    
+[Threads](threads/Threads.pdf)
 </td>
 <td markdown="span">
-Read: Big Java, Ch 20 [Multithreading](threads/Multithreading-BIGJ.pdf), [Dietel&Dietal slides](threads/Threads-Dietel.pdf)     
-Read: Oracle's [Event Handling Tutorial](https://docs.oracle.com/javase/8/javafx/events-tutorial/events.htm) or [Ebook](javafx/Event_Handling_Tutorial.pdf) has most complete explanation of event handling.        
+Read: Big Java, Ch 20 [Multithreading](threads/Multithreading-BIGJ.pdf) or [Dietel&Dietal slides](threads/Threads-Dietel.pdf)     
+[Threads Homework](threads/Homework-threadsum.pdf) (also on Google Docs)
+</td>
+</tr>
+<!-- worker threads -->
+<tr valign="top">
+<td align="center" valign="top" markdown="span">
+Worker Threads
+</td>
+<td markdown="span">
+[Worker Threads](javafx/WorkerThreads.md) for background tasks in interactive apps.
+</td>
+<td markdown="span">
 Starter code for Worker Threads Exercise: [https://github.com/jbrucker/worker-threads.git](https://github.com/jbrucker/worker-threads)    
-[Lab10: Threads](threads/Lab10-Threads.pdf)  Github URL: [https://goo.gl/PCfJ41](https://goo.gl/PCfJ41)    
 </td>
 </tr>
 <!-- frameworks -->
