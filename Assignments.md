@@ -13,7 +13,7 @@ description: Links to labs and assignments
 [PA2](assignments/PA2-Encryption) - File Encryption and Decryption based on a project at Hyperskill.org
    * [Using Strategy Pattern for Ciphers](assignments/Encryption-Strategy)
 
-[PA3](assignments/PA3-UnitConverter) a Unit Converter with graphics interface using JavaFX
+[PA3](assignments/PA3-UnitConverter.pdf) a Unit Converter with graphics interface using JavaFX
    * use polymorphism instead of "if" or "switch" when possible
 
 ## Labs

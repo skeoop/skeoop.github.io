@@ -122,7 +122,8 @@ Follow these steps.
 
 ### Defining Event Handlers
 
-to be added.
+This is covered in a separate file and slides.
+
 
 ## Example Application Launcher -- for UI defined in code
 
@@ -209,7 +210,9 @@ public class MyApp extends Application {
 
 ## Be Careful of Imports!
 
-JavaFX classes are in packages beginning with `javafx.`, such as `javafx.scene.control`.  Many JavaFX classes have the **same name** as a class in `java.awt` or `javax.swing`.  If you import the wrong class, your application won't work! If you are *lucky*, it won't compile, too.
+JavaFX classes are in packages beginning with `javafx.`, such as `javafx.scene.control`. 
+Many JavaFX classes have the **same name** as a class in `java.awt` or `javax.swing`.
+If you import the wrong class, your application won't work. If you are *lucky*, it won't compile, too.
 
 | Package          | Meaning                           |
 |:-----------------|-----------------------------------|
@@ -219,9 +222,10 @@ JavaFX classes are in packages beginning with `javafx.`, such as `javafx.scene.c
 | javafx.scene.layout  | FlowPane, GridPane, other layouts |
 | javafx.application   | The Application class         |
 
+
 ### Beware of Imports from AWT and Swing Toolkits
 
-Usually you **do not want** classes from these packages, so if you see them imported into your JavaFX application, check to see if you are using the correct class or component.
+You usually **do not want** classes from these packages, so if you see them imported into your JavaFX application, check to see if you are using the correct class or component.
 
 For example, if your app has:
 ```java

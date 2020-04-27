@@ -314,6 +314,18 @@ How to [create a game with JavaFX](https://github.com/jbrucker/guessing-game) an
 [Currency Converter](docs/currency_service) how to get current exchange rates for your UnitConverter.    
 </td>
 </tr>
+<!-- FXML -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+FXML
+</td>
+<td markdown="span">
+[Using FXML in JavaFX](javafx/FXML.pdf) to define the UI without code.
+</td>
+<td>
+Also a video
+</td>
+</tr>
 <!-- Events & anonymous classes -->
 <tr valign="top">
 <td align="center" markdown="span"> 

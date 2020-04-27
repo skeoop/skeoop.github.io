@@ -221,7 +221,7 @@ Its much easier to do on Github or using a GUI tool like gitk, SmartGit, or EGit
 6. Add "origin" as remote and push dev-food all in one command
 
     ```
-    #    git push -u         upstream_name upstrea_branch
+    #    git push -u  upstream_name upstream_branch
     cmd> git push --set-upstream origin dev-food
     ```
 
