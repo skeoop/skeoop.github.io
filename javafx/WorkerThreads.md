@@ -8,6 +8,13 @@ should normally be run on a separate thread to avoid freezing the UI.
 This example shows what happens if you start a long-running
 task on the UI thread.
 
+1. The `CountUp` class is inside the `TimerController`. When the user presses `Start`, the controller calls `CountUp.run()`.
+2. The `run()` method increments the counter in a loop and sleeps for 1 millisec each time.
+3. The `run()` method also updates the UI by calling `displayCount(count)` and `updateProgress()` to update the progress bar.
+
+
+
+
 Clone this code:
 [https://github.com/jbrucker/worker-threads](https://github.com/jbrucker/worker-threads)
 
