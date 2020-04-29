@@ -78,7 +78,7 @@ or handle button click events.
 For long running tasks, you should write a class that **extends**
 `javafx.concurrent.Task`.
 
-![class diagram of Task](Task-uml.png)
+![class diagram of Task](Worker-Task-uml.png)
 
 Your task class should override the abstract `call()` method of `Task`.
 
