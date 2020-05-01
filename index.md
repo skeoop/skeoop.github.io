@@ -348,7 +348,6 @@ Intermediate Java
 [Abstract Class & Method](java-intermed/Abstract-Class-and-Inheritance.pdf)     
 [Anonymous Classes](java-intermed/Anonymous-Class.pdf)    
 [Enum type](java-basics/22-Enumeration.pdf)      
-[Properties and Properties file](properties/Runtime-Application-Properties.pdf) (for lab)    
 </td>
 <td markdown="span">
 The Java Tutorial and *Big Java* both have sections on all these topics.    
@@ -501,6 +500,15 @@ Checkstyle
 problems in code. Works in most IDEs, including BlueJ.    
 KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)    
 [Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
+</td>
+</tr>
+<!-- Properties -->
+<tr valign="top">
+<td align="center" markdown="span"> 
+Properties
+</td>
+<td markdown="span">
+[Using Properties](properties/Using-Properties) for application configuration.   
 </td>
 </tr>
 <!-- More Git -->
