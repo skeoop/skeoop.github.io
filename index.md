@@ -534,8 +534,11 @@ A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) show
 State Machines
 </td>
 <td markdown="span">
-[State Machines](topics/State-Machine.pdf) and "[programming without if](https://www.google.co.th/search?q=programming+without+if)". [Programming a state machine](topics/Programming a State Machine.pdf)    
+[State Machines](topics/State-Machine.pdf)
+Lab: [Syllable Counter Using State Machine](labs/Lab-Syllable-Counter.pdf)
 [UML State Machine Diagram](topics/State-Machine-Diagram.pdf)    
+"[programming without if](https://www.google.co.th/search?q=programming+without+if)".   
+[Programming a state machine](topics/Programming-a-State-Machine.pdf)    
 </td>
 </tr>
 <tr valign="top">
