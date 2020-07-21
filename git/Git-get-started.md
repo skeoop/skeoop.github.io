@@ -1,4 +1,6 @@
-## Git Basics
+---
+title: Git Basics
+---
 
 > The answers to all these questions are in [Pro Git][ProGit] at [https://www.git-scm.com](www.git-scm.com) online book with good navigation aids, also PDF and ePub downloads. This version is *much* shorter than full book but contains all the info.
 > AWS has the full [PDF of Pro Git][ProGitPdf] for download.

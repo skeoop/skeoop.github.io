@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Assignments and Labs
-description: Links to labs and assignments
 ---
 
-## Assignments 
+### Assignments 
 
 [PA1](assignments/PA1) - write one of these applications:
    * [ArrayIterator](assignments/PA1-Arrayiterator.pdf)
@@ -16,7 +15,7 @@ description: Links to labs and assignments
 [PA3](assignments/PA3-UnitConverter.pdf) a Unit Converter with graphics interface using JavaFX
    * use polymorphism instead of "if" or "switch" when possible
 
-## Labs
+### Labs
 
 * [Lab0 Getting Started](labs/Lab0-Getting-Started.doc)
 * [Lab1 Guessing Game](labs/Lab1-Guessing-Game.pdf)

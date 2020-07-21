@@ -12,11 +12,11 @@ except git operates on a collection of files rather than just individual files.
 
 Some things you can do with Git are:
 
-* easily make a copy of a project on another machine
+* easily make a copy of a project's source code on another machine
 * view a history of all changes to project files, and compare revisions
 * checkout any past revision of a project, even files that have been deleted!
 * control who has read and write access to the project
-* quickly update the repository when you make changes to your "working copy" of the files. Only the modifications are saved, so its fast and efficient.
+* quickly update the repository when you make changes to your "working copy" of the files.
 
 This introduction describes how to create and use a local git repository, using the `git` command line program.  
 How to use Github is introduced in a separate document.

@@ -1,4 +1,6 @@
-## Aliases for Git Commands
+---
+title: Aliases for Git Commands
+---
 
 You can define your own aliases for Git commands,
 and some of the git commands you use regularly may

@@ -1,10 +1,7 @@
 ---
 layout: page
-title: Contact
-description: Contact Us
+title: How to Contact Instructor and TAs
 ---
-
-### How to Contact Instructor and TAs
 
 **Instructor**:  James Brucker, CPE Room 417
 ```java

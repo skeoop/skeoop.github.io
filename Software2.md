@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Java Software, Tools, and Documentation
-description: Java Software, Tools, and Documentation for the course
 ---
-
-# Java Software, Tools, and Documentation
 
 For getting started with Java, BlueJ is a good choice. 
 For more serious work, though, you will want:

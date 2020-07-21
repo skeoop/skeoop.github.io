@@ -1,5 +1,6 @@
-## Learning Java
-
+---
+title: Learning Java
+---
 ### Java Tutorials
 
 [The Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) a very extensive collection of tutorials covering the Java language.

@@ -1,10 +1,7 @@
 ---
 layout: page
 title: Required Materials for the Course
-description: Required Materials for the Course
 ---
-
-# Required material for the course
 
 ## 1. Github Account with Profile
 
