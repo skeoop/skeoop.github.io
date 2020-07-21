@@ -18,14 +18,23 @@ getEmail("James","Brucker")
 
 **TAs**: 
 
-* Triwit Muthitakul `triwith.m@your_favorite_university.th`
-* Pawat Nakpiphatkul `pawat.nak@your_favorite_university.th`
-* Dacharat Pankong `dacharat.p@your_favorite_university.th`
+* Triwit Muthitakul `triwith.m@your_favorite_university`
+* Pawat Nakpiphatkul `pawat.nak@your_favorite_university`
+* Dacharat Pankong `dacharat.p@your_favorite_university`
 
 For Student emails we need a slightly different function:
 
 ```java
 public String getEmail(String firstname, String lastname, int count) {
-    //TODO
+    StringBuilder sb = ew StringBuilder();
+    sb.append(firstname.toLowerCase())
+	  .append(".")
+	  .append(lastname.substring(0,count).toLowerCase())
+	  .append(\u0026)  // Unicode character
+      .append(DOMAIN_NAME); // domain of your favorite unisersity
+    return sb.toString();
 }
 ```
+
+In Java its legal to have two methods with the same name (`getEmail`)
+provided that they have different parameters.

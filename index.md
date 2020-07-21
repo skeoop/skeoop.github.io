@@ -23,7 +23,7 @@ Other pages: [About the Course](intro/About), [Google Classroom](https://classro
 [Which Programming Language to Learn?](intro/Language-Comparison)
 </td>
 <td markdown="span">
-Get the [Required software and sign-up](Software1)    
+Get the [Required software and sign-up](intro/Resources)    
 Join [Google Classroom](https://classroom.google.com) using code **umaxt4s**.    
 We use Github Classroom for programs, Google Classroom for other assignments.   
 </td>
