@@ -1,4 +1,6 @@
-## Git Questions
+---
+title: Git Questions
+---
 
 ## Part 1. Background and Basic Information
 
@@ -226,15 +228,18 @@ Its much easier to do on Github or using a GUI tool like gitk, SmartGit, or EGit
     ```
 
 
+## Good Git Questions Online
+
+* [15 Git Questions Every Developer Should Know](https://medium.com/@gauravtaywade/15-interview-questions-about-git-that-every-developer-should-know-bcaf30409647)
+* [Frequently Asked Git Questions](https://www.git-tower.com/learn/git/faq)
+* [13 Essential Git Interview Questions](https://www.toptal.com/git/interview-questions)
+
+
 ## References
 
-The Git [References](references) file has great docs about Git.
+The Git [References](references) file has docs about Git.
 
 [ProGit]: https://www.git-scm.com/book/en/v2 "Pro Git online book on Git-scm.com"
-
 [ProGitPdf]: https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf "Pro Git v.2 PDF on AWS. Longer, book format."
-
-
 [Think Like a Git]: http://think-like-a-git.net/ "Understand visually how git works"
-
 [Visualize Git]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo, as you type"

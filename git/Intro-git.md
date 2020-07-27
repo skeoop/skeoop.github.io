@@ -1,5 +1,4 @@
 ---
-layout: page
 title: Introduction to Git
 ---
 
@@ -21,6 +20,8 @@ Some things you can do with Git are:
 This introduction describes how to create and use a local git repository, using the `git` command line program.  
 How to use Github is introduced in a separate document.
 
+See [Why Use Git?](#why-use-git) (below) for how Git can save you from disaster.
+
 ## Git Software
 
 There are many tools for using git, including:
@@ -39,6 +40,22 @@ For this introduction, we will use the Git command line.
 **Old Mac OSX**:  If your OSX is old and does not have "git", then download Git from [http://git-scm.com/downloads](http://git-scm.com/downloads).   
 **Ubuntu or Debian**:  in a terminal window, enter `sudo apt-get install git`.    
 **Other Linux**: see [install commands for Linux](https://git-scm.com/download/linux)
+
+## Personalize Your Git Config
+
+Before you can use Git to "push" commits to a remote repository
+you need to set global configuration values containing your name and email.
+Using a command or terminal window, enter these:
+
+```
+# your name and email address, which are added to commits you "push"
+git config --global user.name "Bill Gates"
+git config --global user.email "bill@msft.com"
+
+# The editor git should open when you need to edit something.
+# Instead of this, you can set a shell environment variable named EDITOR
+git config --global core.editor "mate -w"
+```
 
 ### Creating a Local Git Repository
 
@@ -128,7 +145,7 @@ Save the directory and its contents to the repository:
 cmd> git commit -m "add source code"
 ```
 
-**Note**:  **After** you add the `demo` dir to git, if you later create a new file in the "demo" directory then you must add that file to git yourself. It is **not** automatic.
+**After** you add the `demo` dir to git, if you later create a new file in the "demo" directory then you must add that file to git yourself. It is **not** automatic.
 
 ### View History
 
@@ -248,9 +265,9 @@ Project files created by common IDEs are:
 
 ### The README.md File
 
-README.md is a text file with Markdown formatting.  Github and Bitbucket show a web page from this file (after formatting it) when someone visits your repository. Use README.md to describe the project and anything the viewer needs to know (like how to build it).  Most projects on Github have a README.md.
+README.md is a text file with Markdown formatting.  Github and Bitbucket show a web page from this file (after formatting it) when someone visits your repository. Use README.md to describe the project and anything the viewer needs to know, like how to build and run it.  Most projects on Github have a README.md.
 
-For examples, look at the Github repositories for the [2017 SKE OOP Student Projects](https://skeoop.github.io/projects). In particular, the [Course Feedback](https://github.com/guitarpawat/course-feedback) README has an excellent introduction to some technology they used.  The [Atom Editor](https://github.com/atom/atom) on Github also has a good README.md.
+The [Atom Editor](https://github.com/atom/atom) on Github also has a good README.md.
 
 Here is a simple example of README.md:
 
@@ -264,7 +281,7 @@ Written in Java and requires Java version 8 or newer.
 Based on my [elab](https://elab.cpe.ku.ac.th) program.
 ```
 
-Markdown is widely used to create web pages and the syntax is simple.  Learn Markdown here:
+Markdown is widely used to create online documentation, and the syntax is simple.  Learn Markdown here:
 
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/) on Github explains Markdown in one page
 * [Markdown Tutorial](https://www.markdowntutorial.com/lesson/2/) interactive tutorial.
@@ -280,9 +297,9 @@ Some good, free text editors are:
 * [Notepad++](https://notepad-plus-plus.org) for Windows only. A great replacement for the crummy "Notepad" in Windows.
 * [Vim](https://vim.sourceforge.io) the standard Linux editor, also part of Apple OSX.  Vim is a keystroke-efficient editor that runs in a terminal window. The GUI version is easier to learn. 
 
-### Using .gitignore to "Ignore" Unwanted Files (Optional)
+### Using .gitignore to "Ignore" Unwanted Files
 
-Every time you type `git status` it will display all the untracked files, including files you **don't** want to commit to git.  You can tell git that it should not commit certain files by creating a file named `.gitignore` in your project top-level directory.  `git status` won't show these files and you won't accidentally commit them.
+Every time you type `git status` it will display all the untracked files, including files you **don't** want to commit to git.  You can tell git that it should never commit certain files by creating a file named `.gitignore` in your project top-level directory.  `git status` won't show these files and you won't accidentally commit them.
 
 The `.gitignore` file is optional, but very useful.  You only need to write it once, then copy it from one project to another.
 
@@ -293,6 +310,7 @@ Here is an example `.gitignore` file for a Java project:
 *.temp
 bin/
 build/
+out/
 
 # Eclipse project files
 .classpath
@@ -311,11 +329,11 @@ out/
 *.iws
 *.ipr
 
-# MacOS junk (if you use a Mac)
+# MacOS junk
 .DS_Store
 ```
 
-**Note:** You **should add** `.gitignore` to the repository:
+**Note:** You must tell git to add `.gitignore` to the repository:
 ```shell
 cmd> git add .gitignore
 cmd> git commit -m "Add .gitignore"
@@ -323,7 +341,7 @@ cmd> git commit -m "Add .gitignore"
 
 **Note:** Github has examples of `.gitignore` for different programming languages.
 
-## Why Use Git? (An Example)
+## Why Use Git
 
 You **work all week** on the final project for your Programming 1 course. You write source code (in /src) and a report (Report.docx), so you project looks like this:
 ```shell
@@ -355,3 +373,50 @@ If your cat deletes (or edits) lots of files, you can revert *everything* in  wo
 cmd> git reset --hard
 ```
 
+
+
+## Repository as a Graph of Commits
+
+Branches, Tags, and HEAD are just labels pointing to commits.
+
+Try the [Git Visualizer][GitVisualizer] at http://git-school.github.io/visualizing-git/ to see a graph of a Git repo.
+
+[Think Like a Git][ThinkLikeaGit] also has visual explanation of git.
+
+## Navigating a Repository.
+
+[Advanced Git Tips for Python Developers][git-tips-python] has good examples of navigating a git repository and using `git stash` to save uncommited changes in your working copy.
+
+Some useful tips:
+
+* `HEAD~` (HEAD tilde) means "the predecessor of HEAD". Instead of HEAD, you can put any commit label, e.g. `git checkout bugfix~` for the predecessor of commit "bugfix".
+* `HEAD~3` means 3 commits before current HEAD.
+* `HEAD^` means a parent of HEAD, by default the first parent.
+* `foo^1` and `foo^2` are parents of a commit `foo` created by a merge (commit with 2 parents).
+
+Example use: what files did the most recent commit change?
+```
+ git diff HEAD^ HEAD
+ # to see just the names of changed files:
+ git diff HEAD^ HEAD --name-only
+```
+
+Github has nice visual tools for showing changes between any commits, 
+but (of course) they are only available for the remote on Github not your local repo.
+
+
+
+## References
+
+* [Pro Git Book][ProGit] and downloadable [PDF][ProGitPdf]
+* [Think Like a Git][ThinkLikeaGit] visually understand how Git works.
+* [Visualizing Git][VizualizeGit] interactive tool is view graph of a repository.
+* [references](references) for more useful documents
+
+
+[ProGit]: https://www.git-scm.com/book/en/v2 "Pro Git online book on Git-scm.com"
+[ProGitPdf]: https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf "Pro Git v.2 PDF on AWS. Longer, book format."
+
+[ThinkLikeaGit]: http://think-like-a-git.net/ "Understand visually how git works"
+[GitVisualizer]: http://git-school.github.io/visualizing-git/ "Online tools draws a graph of commits in a repo, as you type"
+[git-tips-python]: https://realpython.com/advanced-git-for-pythonistas/

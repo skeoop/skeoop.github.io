@@ -1,9 +1,11 @@
-## Git Submodules
+---
+title: Git Submodules
+---
 
-Git submodules let incorporate code from a separate git repository 
+Git **submodules** let you incorporate code from a separate git repository 
 (the submodule) inside another git project.
 
-This let's you: (a) update the repositories separately, (b) use the submodule code in many different projects.
+This let's you: (a) update the repositories separately, (b) use the submodule code in many different projects. 
 
 See [Submodules][git-submodules] in the Pro Git book,
 and [Working with Submodules][working-with-submodules] example in Github blog.
@@ -22,20 +24,29 @@ test code.
 
 ```
 TicTacToe/
-   src/         <-- your source code
-   test/        <-- submodule for "test/" folder (clone submodule here)
-   build.xml    <== Ant build file (create this yourself)
+   src/             your source code
+      tictactoe/   Java package for code
+         TicTacToe.java
+   test/            submodule for "test/" folder ("git submodule" creates this)
+   build.xml        Ant build file for project
 ```
 
-To add the unit tests to your TicTacToe project use:
+The submodule does not have the usual Java project layout.  It contains only files you want to "copy" into the `test` directory without the top-level `test` dir in the submodule.   In this example the submodule is `tictactoe-test` and contains:
+```
+tictactoe/              Java package for test code
+   TicTacToeTest.java   Junit test
+```
+
+To add the submodule to your TicTacToe project use:
 ```shell
-# where your project code is
+# change directory to your project code 
 cmd> cd workspace/TicTacToe
 cmd> git submodule add  https://github.com/ISP2018/tictactoe-test  test
 ```
-In the `git submodule` command: 
-[https://github.com/ISP2018/tictactoe-test](https://github.com/ISP2018/tictactoe-test) is Github repository you want to add as submodule;
-`test` is the directory (relative to your current directory) where the submodule to be cloned to.  It should be a new directory (not exist yet, just like using "git clone").
+
+In this command, the first argument after "add"
+is the Github URL of a submodule to add, and the second argument (`test`)
+is the directory (relative to your current directory) where the submodule will be cloned to.  It should be a new directory (not exist yet, just like using "git clone").
 
 Now type `git status`.  You'll see there are 2 files added:
 ```shell
