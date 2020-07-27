@@ -1,4 +1,6 @@
-## Using Properties for Configuration Data
+---
+title: Using Properties for Configuration Data
+---
 
 Many applications require settings or data values, such as:
 
