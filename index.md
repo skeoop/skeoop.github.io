@@ -49,13 +49,15 @@ Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning
 <!-- Git -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Git](git/)    
+Git
 </td>
 <td markdown="span">
-[Intro to Git](git/Intro-git) and [slides](git/Git-Basics.pdf).     
-[Intro to Github](git/Intro-Github) and [slides](git/Using-Github.pdf)    
+Git material moved to [ISP course site](https://cpske.github.io/ISP/git/).  You should study    
+"Intro to Git"  and "Git Basics" slides    
+"Using Github" document and slides   
 </td>
 <td markdown="span">
+Also moved to ISP course site    
 [Getting Started](git/Git-get-started)    
 [Git Questions](git/git-questions) copy the source file [git/git-questions.md](git/git-questions.md) and write your answers after the questions.    
 </td>
@@ -439,7 +441,6 @@ Files: [ocsf-231.jar](frameworks/ocsf-231.jar), [source code](frameworks/ocsf-23
 [TaskServer](frameworks/TaskServer.jar) for OCSF exercise. Its a runnable jar file. Type `java -jar TaskServer.jar port` where `port` is the port number the server should listen on.          
 [PA4-Flashget URL Downloader](assignments/PA4-Threaded-Downloader.pdf)
 A useful app that combines what you learned recently, but not too difficult.    
-<!-- Github Assignment URL: [https://goo.gl/TtMveL](https://goo.gl/TtMveL) --> 
 </td>
 </tr>
 <!-- lambda & streams -->
@@ -506,23 +507,6 @@ Properties
 </td>
 <td markdown="span">
 [Using Properties](properties/Using-Properties) for application configuration.   
-</td>
-</tr>
-<!-- More Git -->
-<tr valign="top">
-<td align="center" markdown="span"> 
-[Git](git/) branches and more    
-</td>
-<td markdown="span">
-[Aliases](git/aliases) how to create aliases for git commands.   
-[Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) from the [Git Book](https://git-scm.com/book/).    
-Using [Github Flow](git/index#github-flow).    
-[Pull Request Tutorial](https://yangsu.github.io/pull-request-tutorial/) why and how to use pull requests.    
-[Pull Request slides](git/Pull-Requests.pdf)    
-[Commenting on Pull Requests](https://help.github.com/en/articles/commenting-on-a-pull-request)- examples.    
-[Using SSH Keys with Git](https://help.github.com/articles/connecting-to-github-with-ssh/) so you don't need to enter your userid/password (recommended).
-
-A real [pull request in jQuery](https://github.com/jquery/jquery/pull/1051) shows how pull request invokes a serious discussion.     
 </td>
 </tr>
 <!-- state machines -->
