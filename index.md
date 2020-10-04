@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Programming 2 Topics and Assignments
+title: Object-Oriented Programming in Java
 ---
 
 Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Assignments](Assignments), [Contact](Contact)
