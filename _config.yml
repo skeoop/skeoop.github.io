@@ -8,4 +8,5 @@ kramdown:
     auto_ids: true
 
 # Google Analytics Tracking Number included in _includes/google_analytics.html
+# 10/20/2020 I hardcoded this into google_analytics.html
 google_analytics: "UA-104768257-2"

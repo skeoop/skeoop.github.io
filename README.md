@@ -2,7 +2,7 @@
 
 Course material for Object-Oriented Programming 2 at [Kasetsart University](http://www.ku.th).
 
-[Home](http://skeoop.github.io/) schedule of topics, learning material, and assignments.
+[Navigable Web Site](http://skeoop.github.io/) with topics, learning material, and assignments.
 
 [Github Classroom](https://classroom.github.com/classrooms/59547058-ske-programming-2) login to Github and accept invitation. Invitation will also be sent to your KU Email.
 
