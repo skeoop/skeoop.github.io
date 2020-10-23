@@ -385,7 +385,7 @@ Lab: Recursive withdraw strategy for Coin Purse.  Requires you first rewrite wit
 <!-- design patterns -->
 <tr valign="top">
 <td align="center" markdown="span"> 
-[Design Patterns](patterns/Introduction)
+[Design Patterns](patterns/)
 </td>
 <td markdown="span">
 [Intro to Design Patterns](patterns/Intro-Design-Patterns.pdf)    
