@@ -44,8 +44,11 @@ Read the references -- don't rely on this summary for your knowledge.
 * Code to a specification, not an implementation.  Write code based on the specification (or public interface) for how an object or method *should* behave rather than details of how it's implemented. In Java, depend on the *List* API rather than *ArrayList* (an implementation). 
 * Depend on abstractions, not on concretions. Similar to the previous principle, but at a higher (more abstract) level.
 * Don't Reinvent the Wheel.  Don't write code for something that the language already provides, or something that can be provided by an existing, well-tested and maintained package.  For example, don't write your own CSV file parser or password encrypter. There are lots of these and they contain fewer (if any) flaws that what you would write yourself.
+* Encapsulate What Changes and Separate it from What Stays the Same.  "What" means "part of the code". 
 * Information Expert - put a method in the class that has most of the information needed to perform the method.
 * Separation of Concerns - classes and components (groups of classes) should each be concerned with a single aspect of the program. A Data Access Object is concerned with saving and retrieving objects to/from a database, but doesn't manipulate the objects itself. Separating object creation from object use is often helpful -- e.g. use a Factory for objects.
+* Dependency Injection. If an object depends on some other object, try to *inject* that dependency from other code, esp if the dependent part may change.  This helps with *Separation of Concerns*, *Separate what changes from what stays the same*, and reduces coupling.
+  - Example: in Coin Purse we *inject* a WithdrawStrategy using a `set` method.
 * Low Coupling, esp. to unstable or unrelated things. Coupling to the Java API (for Java apps) isn't a problem because the Java API is quite stable.
 * Command-Query Separation - queries should not change the state of an object
 * Simplicity
