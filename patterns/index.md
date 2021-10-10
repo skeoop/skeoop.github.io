@@ -6,12 +6,12 @@ title: Design Patterns
 
 Each design pattern consists of:
 
-* Context - a situation where a design solution is needed
-* Forces (or Motivation) - motivation or "needs" of the situation
-* Solution - a design that solves the problem
-* Applicability - when the pattern applies.  There may be many solutions to a particular context; the applicability can help.
-* Consequences - good and back effects of this solution
-* Example - at least one example of using the pattern
+* **Context** - a situation where a design solution is needed
+* **Forces** (or Motivation) - motivation or "needs" of the situation
+* **Solution** - a design that solves the problem
+* **Applicability** - when the pattern applies.  There may be many solutions to a particular context; the applicability can help.
+* **Consequences** - good and back effects of this solution
+* **Example** - at least one example of using the pattern
 
 Presentation: [Intro to Design Patterns](Intro-Design-Patterns.pdf)
 
@@ -19,7 +19,7 @@ Presentation: [Intro to Design Patterns](Intro-Design-Patterns.pdf)
 
 Design Patterns are motivated by design **Goals** and **Principles**.
 
-Software is plagued by:
+Software is plagued by these problems:
 
 * change - requirements change, technology changes, the environment where software is used changes
 * bugs (errors)
@@ -28,21 +28,16 @@ Software is plagued by:
 
 These forces have given rise to **principles** for good design and coding.
 
-You will become a better programmer by studying the principles behind the patterns,
-and how they lead to the Design Patterns.
-
 ## Principles and Goals for Software Design
 
-Based on experience and the common problems with software,
-some principles for good design have emerged, and been validated
+Some principles for good design have emerged 
+from experience solving the common problems with software,
 through repeated application.
 
-The design principles are what motivate the design patterns --
-a pattern is one way of achieving some design goals in a particular
-situation.
+The design principles are what motivate the design patterns.
 
-This is only a brief summary and no where near a complete list.    
-Please read the references -- don't rely on this summary for your knowledge.
+This is only a brief summary and not a complete list.    
+Please read the references to learn in more depth.
 
 * **Single Responsibility** - a class should have one responsibility. Robert Martin explains this as *a class has only one reason to change*, e.g. one driver or boss that decides what it should do.
 * **Open-Closed Principle** - you can extend the functionality of a class without modifying the class itself
@@ -62,7 +57,7 @@ Please read the references -- don't rely on this summary for your knowledge.
 * **Simplicity** - complexity is the enemy of correctness and security
  
 
-Some **goals** for class design are (the 5 "C"s of class interface design):
+Some **goals** for class design (the 5 "C"s of class interface design):
 
 * High Cohension
 * Consistency - be consistent in naming of methods, variables, and classes. Be consistent in their behavior, too.
