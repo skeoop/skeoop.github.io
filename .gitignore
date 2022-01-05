@@ -6,6 +6,7 @@ misc/
 quiz/
 old/
 video/
+_includes/
 _site/
 .*
 !.gitignore

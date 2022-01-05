@@ -4,30 +4,25 @@ title: Learning Java
 
 ### Java Tutorials
 
-[The Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) a very extensive collection of tutorials covering the Java language.
+[The Official Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) by Oracle. Covers the Java language, including advanced featues.
  * [Download](https://www.oracle.com/technetwork/java/javase/java-tutorial-downloads-2005894.html) the full tutorial and run on your computer, for easy access.
  * The *Really Big Index* is best place to find things. Bookmark it.
 
-[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) many short sections, with interactive code examples you can run in the browser window. This tutorial has less reading than Oracle's Java Tutorial.
+[W3Schools Java Tutorial](https://www.w3schools.com/java/default.asp) many short sections & interactive coding examples. This tutorial has less reading than Oracle's Java Tutorial.
 
 ### Online Courses
 
-[Complete Java Developer Course][] on [Udemy][] is highly-rated, in-depth course that covers Java and OOP. Looks like the best Udemy Java course but not free. Savle Price 300 Bt.
- * [Udemy][] has many Java courses, including some free ones.
+[Complete Java Developer Course][] on [Udemy][] excellent, in-depth course on Java and OOP. But not free; sale price 300 Bt.
+ - [Udemy][] has many Java courses, including some free ones.
 
-[Coursera][] has some series courses using Java.  Interesting ones are:    
- * [Object-Oriented Programming in Java Specialization](duke-oop-java) 4-course series (Duke University), first one is:
+[Coursera][] has several Java course series.  Good ones are:    
+ - [Object-Oriented Programming in Java Specialization](duke-oop-java) 4-course series (Duke University), first one is:
  * [Java Programming: Solving Problems with Software][duke-java-programming] (Duke University)
    - has online resources page http://www.dukelearntoprogram.com/course2/index.php
    - uses BlueJ, Apache CSV, other open source
    - interesting projects
 
 *Java Programming Fundamentals* by Galileo University on [edX](https://edx.org) is a good course.
-
-[Microsoft Java Courses on edX][]. Microsoft Java courses on edX are OK but don't cover much:    
-  * Learn to Program in Java
-  * Object-Oriented Programming in Java.
-  * Data Structures
 
 [Java Code Geeks][] a lot of Java learning material, some very advanced.  Not a good place to start learning Java, but useful when you want to know something in depth.
 

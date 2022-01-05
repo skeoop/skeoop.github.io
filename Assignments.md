@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Assignments and Labs
+title: Assignments & Labs
+navigation_order: 3
 ---
 
 ### Assignments 

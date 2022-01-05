@@ -1,12 +1,25 @@
-#theme: minima
-title: Programming 2
-description: Object-Oriented Progamming in Java
-exclude: [bin, misc, Gemfile, Gemfile.lock]
+# default theme is jekyll-theme-primer (https://github.com/pages-themes/primer)
+theme: minima
+title: Java and OOP
+#description Course Material for Programming in Java
+url: "https://skeoop.github.io/"
+# if exclude 'code' then code-* is also excluded
+exclude: [bin, exam, quiz, solution, misc, old, Gemfile, Gemfile.lock]
+# github username shown in Minima theme
+github_username: cpske
 # Use Git's markdown syntax
 markdown: kramdown
-kramdown:
-    auto_ids: true
+#kramdown:
+#    auto_ids: true
 
-# Google Analytics Tracking Number included in _includes/google_analytics.html
+# Default layout for pages, so you don't need to set "layout: page" in each
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
 # 10/20/2020 I hardcoded this into google_analytics.html
 google_analytics: "UA-104768257-2"

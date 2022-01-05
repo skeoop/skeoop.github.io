@@ -1,9 +1,9 @@
 ---
-layout: page
-title: Object-Oriented Programming in Java
+title: Topics
+navigation_order: 1
 ---
 
-Other pages: [About the Course](intro/About), [Google Classroom](https://classroom.google.com) code **umax14s**, [Learn Java](Learning), [Scores](http://bit.ly/OOP2020-scores), [Assignments](Assignments), [Contact](Contact)
+Other pages: [Learn Java](Learn-Java), [Scores](http://bit.ly/OOP2020-scores)
 
 <table border="1">
 <tr valign="top">
@@ -40,10 +40,10 @@ We use Github Classroom for programs, Google Classroom for other assignments.
 [Coding Standard and Javadoc](intro/Coding-Standard-and-Javadoc.pdf)    
 </td>
 <td markdown="span">
-Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning)    
+Read [OODP Chapter 1](docs/OODP-Chapter1.pdf)
 [Fundamental Java Methods](docs/Fundamental-Methods.pdf) everyone should by able to write    
-[Java Coding Standard](docs/Java-Coding-Standard.pdf) required for all code    
-[Coding Guidelines](docs/Coding-Guidelines)
+[Java Coding Standard](docs/Java-Coding-Standard.pdf) required in this course    
+[Coding Guidelines](docs/Coding-Guidelines) for all languages
 </td>
 </tr>
 <!-- Git -->
@@ -52,7 +52,7 @@ Read [OODP Chapter 1](docs/OODP-Chapter1.pdf) or [these good resources](Learning
 Git
 </td>
 <td markdown="span">
-Git material moved to [ISP course site](https://cpske.github.io/ISP/git/).  You should study    
+Git material is on the [ISP course site](https://cpske.github.io/ISP/git/).  You should study    
 "Intro to Git"  and "Git Basics" slides    
 "Using Github" document and slides   
 </td>
@@ -494,10 +494,9 @@ If some people are interested we can schedule an extra lab session to learn and 
 Checkstyle
 </td>
 <td markdown="span">
-[Checkstyle](docs/Checkstyle.pdf) is a program to help spot
-problems in code. Works in most IDEs, including BlueJ.    
-KU Checkstyle Rules: [ku-checkstyle.xml](docs/ku-checkstyle.xml)    
-[Checkstyle Home](https://checkstyle.sourceforge.io/) lists Checkstyle plugins for IDEs.
+[Checkstyle](checkstyle/Checkstyle.pdf) is a program that checks coding style and potential coding errors.    
+KU Checkstyle Rules: [ku-checkstyle.xml](checkstyle/ku-checkstyle.xml)    
+[Checkstyle Home](https://checkstyle.sourceforge.io/) has plugins for IDEs.
 </td>
 </tr>
 <!-- Properties -->
