@@ -3,7 +3,7 @@ title: Topics
 navigation_order: 1
 ---
 
-Other pages: [Learn Java](Learn-Java), [Scores](http://bit.ly/OOP2020-scores)
+Other pages: [Learn Java](resources)
 
 <table border="1">
 <tr valign="top">

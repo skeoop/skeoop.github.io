@@ -175,6 +175,6 @@ You need to know:
 ---
 [skeoop.github.io]: https://skeoop.github.io
 [google-classroom]: https://classroom.google.com
-[resources]: https://skeoop.github.io/Resources
+[resources]: https://skeoop.github.io/resources
 [github-oop2018]: https://github.com/OOP2018
 [github-classroom]: https://classroom.github.com/classrooms/32051939-ske-programming-2
