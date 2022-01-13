@@ -1,0 +1,19 @@
+---
+# main Sass file requires this front matter
+# change content width to full screen
+---
+$content-width: 95%;
+
+@import "minima";
+
+/*
+ * Override Minima style defs.
+ * This one is from _layout.scss
+ * Remove the black top border
+ *
+ * border-top: 5px solid $border-color-03;
+ */
+.site-header {
+  border-top: none;
+  border-bottom: 2px solid #fff;
+}

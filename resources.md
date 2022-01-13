@@ -2,6 +2,10 @@
 title: Learning Java
 ---
 
+### Software You Need
+
+You need a current JDK and an IDE.  See [software](intro/software).
+
 ### Java Tutorials
 
 [The Official Java Tutorials](https://docs.oracle.com/javase/tutorial/index.html) by Oracle. Covers the Java language, including advanced featues.
