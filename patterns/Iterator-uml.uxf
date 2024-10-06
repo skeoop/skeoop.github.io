@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>12</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>180</y>
-      <w>190</w>
-      <h>90</h>
+      <x>24</x>
+      <y>24</y>
+      <w>228</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Iterator&lt;T&gt;
@@ -19,10 +19,10 @@ next(): T</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>310</y>
-      <w>190</w>
-      <h>70</h>
+      <x>24</x>
+      <y>180</y>
+      <w>228</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>ConcreteIterator
 --
@@ -33,10 +33,10 @@ next(): T</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>260</y>
-      <w>30</w>
-      <h>70</h>
+      <x>132</x>
+      <y>120</y>
+      <w>36</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -44,10 +44,10 @@ next(): T</panel_attributes>
   <element>
     <id>Text</id>
     <coordinates>
-      <x>420</x>
-      <y>180</y>
-      <w>100</w>
-      <h>70</h>
+      <x>276</x>
+      <y>24</y>
+      <w>120</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>T is a type parameter
 style=wordwrap</panel_attributes>
@@ -56,10 +56,10 @@ style=wordwrap</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
-      <y>180</y>
-      <w>190</w>
-      <h>90</h>
+      <x>408</x>
+      <y>24</y>
+      <w>228</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 Iterator[T]
@@ -70,10 +70,10 @@ __next__(): T</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>620</x>
-      <y>260</y>
-      <w>30</w>
-      <h>70</h>
+      <x>516</x>
+      <y>120</y>
+      <w>36</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -81,10 +81,10 @@ __next__(): T</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>530</x>
-      <y>310</y>
-      <w>190</w>
-      <h>70</h>
+      <x>408</x>
+      <y>180</y>
+      <w>228</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>ConcreteIterator
 --
